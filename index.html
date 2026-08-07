@@ -12,7 +12,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
 
-/* ── Header ── */
+/* Header */
 header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
 .logo-wrap{display:flex;align-items:center;gap:14px;}
 .logo-img{width:52px;height:52px;border-radius:50%;filter:drop-shadow(0 0 10px #9b3fe8) drop-shadow(0 0 20px #1eb8f060);flex-shrink:0;}
@@ -20,35 +20,56 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 .subtitle{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:4px;}
 .pill{font-family:'Space Mono',monospace;font-size:11px;background:linear-gradient(135deg,#9b3fe820,#1eb8f020);border:1px solid #9b3fe860;color:#c084fc;padding:6px 16px;border-radius:20px;}
 
-/* ── Calendar ── */
-.cal-section{max-width:960px;margin:32px auto 0;padding:0 40px;}
-.cal-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px;}
-.cal-title{font-family:'Space Mono',monospace;font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+/* Calendar */
+.cal-section{max-width:1100px;margin:28px auto 0;padding:0 32px;}
+.cal-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px;}
+.cal-title{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
 .cal-legend{display:flex;flex-wrap:wrap;gap:8px;}
 .legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted);}
 .legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);}
-.cal-dow{font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding:10px 4px;background:#0a0a14;border-bottom:1px solid var(--border);}
-.cal-day{min-height:88px;padding:6px 5px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:2px;transition:background .12s;}
+
+.cal-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  grid-auto-rows:100px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  background:var(--surface);
+  width:100%;
+}
+.cal-dow{
+  font-family:'Space Mono',monospace;font-size:9px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  text-align:center;padding:10px 4px;background:#0a0a14;
+  border-bottom:1px solid var(--border);
+  grid-row:1;
+}
+.cal-day{
+  padding:6px 5px;overflow:hidden;
+  border-right:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  display:flex;flex-direction:column;gap:2px;
+  transition:background .12s;
+}
 .cal-day:not(.empty){cursor:pointer;}
 .cal-day:not(.empty):hover{background:#12101e;}
 .cal-day.empty{background:#08080f;cursor:default;}
 .cal-day.has-drops{background:#0d0b1a;}
 .cal-day.selected{background:#130f22;box-shadow:inset 0 0 0 2px var(--accent2);}
-.cal-day.today .day-num{background:var(--accent2);color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;}
-.day-num{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--muted);width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.cal-day.today .day-num{background:var(--accent2);color:#fff;border-radius:50%;}
+.day-num{
+  font-family:'Space Mono',monospace;font-size:11px;font-weight:700;
+  color:var(--muted);width:22px;height:22px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
 .cal-day.has-drops .day-num{color:var(--text);}
-.cal-drops{display:flex;flex-direction:column;gap:2px;min-width:0;}
+.cal-drops{display:flex;flex-direction:column;gap:2px;min-width:0;overflow:hidden;}
 .cal-chip{font-size:9px;font-weight:600;padding:2px 5px;border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.4;}
 .cal-more{font-size:8px;color:var(--muted);font-family:'Space Mono',monospace;padding-left:3px;}
 
-/* ── TBD row ── */
-.tbd-section{max-width:960px;margin:12px auto 0;padding:0 40px;}
-.tbd-wrap{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
-.tbd-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:4px;flex-shrink:0;}
-
-/* ── Day panel ── */
-.day-panel{max-width:960px;margin:12px auto 0;padding:0 40px;display:none;}
+/* Day panel */
+.day-panel{max-width:1100px;margin:12px auto 0;padding:0 32px;display:none;}
 .day-panel.visible{display:block;}
 .day-panel-inner{background:var(--surface);border:1px solid #9b3fe850;border-radius:10px;padding:16px 20px;}
 .day-panel-title{font-family:'Space Mono',monospace;font-size:12px;color:#c084fc;margin-bottom:12px;letter-spacing:.06em;}
@@ -59,13 +80,13 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 .panel-srcs a{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;transition:background .12s;}
 .panel-srcs a:hover{background:#0d1a20;}
 
-/* ── Divider ── */
-.divider{max-width:960px;margin:28px auto 0;padding:0 40px;display:flex;align-items:center;gap:12px;}
+/* Divider */
+.divider{max-width:1100px;margin:28px auto 0;padding:0 32px;display:flex;align-items:center;gap:12px;}
 .div-line{flex:1;height:1px;background:var(--border);}
 .div-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
 
-/* ── Controls ── */
-.controls{max-width:960px;margin:16px auto 0;padding:0 40px;display:flex;flex-direction:column;gap:12px;}
+/* Controls */
+.controls{max-width:1100px;margin:16px auto 0;padding:0 32px;display:flex;flex-direction:column;gap:12px;}
 .search-wrap{display:flex;align-items:center;gap:10px;}
 #search{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:14px;padding:9px 14px;border-radius:6px;width:280px;outline:none;transition:border-color .15s;}
 #search:focus{border-color:var(--accent2);box-shadow:0 0 0 2px #9b3fe820;}
@@ -92,8 +113,8 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 .filter-btn[data-filter="non-sports-cards"].active{background:#3a3a1a;color:#fff;border-color:#3a3a1a;}
 
 
-/* ── Table ── */
-.table-wrap{max-width:960px;margin:12px auto 0;padding:0 40px 60px;overflow-x:auto;}
+/* Table */
+.table-wrap{max-width:1100px;margin:12px auto 0;padding:0 32px 60px;overflow-x:auto;}
 table{width:100%;border-collapse:collapse;font-size:13px;}
 thead th{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}
 thead th:hover{color:var(--text);}
@@ -128,9 +149,11 @@ td{padding:10px 16px;vertical-align:middle;}
 .source-cell a:hover{background:#0d1a20;}
 .no-results{text-align:center;padding:60px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:13px;display:none;}
 footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}
+
 @media(max-width:700px){
-  header,.cal-section,.tbd-section,.day-panel,.divider,.controls,.table-wrap{padding-left:16px;padding-right:16px;}
-  #search{width:100%;} .cal-day{min-height:64px;}
+  header,.cal-section,.day-panel,.divider,.controls,.table-wrap{padding-left:16px;padding-right:16px;}
+  #search{width:100%;}
+  .cal-grid{grid-auto-rows:72px;}
 }
 </style>
 </head>
@@ -144,7 +167,6 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
   <div class="pill">August 2026</div>
 </header>
 
-<!-- CALENDAR -->
 <div class="cal-section">
   <div class="cal-top">
     <div class="cal-title">August 2026</div>
@@ -157,14 +179,6 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
   </div>
 </div>
 
-<!-- TBD -->
-<div class="tbd-section">
-  <div class="tbd-wrap" id="tbdWrap">
-    <span class="tbd-label">Date TBD</span>
-  </div>
-</div>
-
-<!-- DAY PANEL -->
 <div class="day-panel" id="dayPanel">
   <div class="day-panel-inner">
     <div class="day-panel-title" id="panelTitle"></div>
@@ -172,17 +186,14 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
   </div>
 </div>
 
-<!-- DIVIDER -->
 <div class="divider"><div class="div-line"></div><div class="div-label">Full Drop List</div><div class="div-line"></div></div>
 
-<!-- CONTROLS -->
 <div class="controls">
   <div class="search-wrap">
     <input id="search" type="text" placeholder="Search drops…" autocomplete="off">
     <span class="count" id="count"></span>
   </div>
-  <div class="filters">
-    <button class="filter-btn active" data-filter="all">All</button>
+  <div class="filters"><button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="collab-lifestyle">COLLAB / LIFESTYLE</button>
     <button class="filter-btn" data-filter="disney-lorcana">DISNEY LORCANA</button>
     <button class="filter-btn" data-filter="disney-parks-pins">DISNEY PARKS PINS</button>
@@ -197,11 +208,9 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
     <button class="filter-btn" data-filter="topps">TOPPS</button>
     <button class="filter-btn" data-filter="vinyl-music">VINYL & MUSIC</button>
     <button class="filter-btn" data-filter="yu-gi-oh">YU-GI-OH!</button>
-
-  </div>
+</div>
 </div>
 
-<!-- TABLE -->
 <div class="table-wrap">
   <table>
     <thead><tr>
@@ -298,40 +307,28 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
 </footer>
 
 <script>
-const DROPS    = [{"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-marvel-collector-corps-shang-chi-box-xl", "url1": "https://www.amazon.com/dp/B091JH6YTY", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-archangel-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-psylocke-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-sabretooth-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-bishop-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-mega-man-x-capcom", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": 3, "name": "one-piece-round1-arcade-exclusive-promo-pack-phase-3-entry", "url1": "https://x.com/OPTCGAlert/status/2083597291852607623", "url2": ""}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 4, "name": "wdw-august-le-pin-week-1", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com"}, {"cat": "PANINI", "slug": "panini", "day": 5, "name": "2026-panini-contenders-pfl", "url1": "https://www.overtimecardsandcollectibles.com/product-release-schedule", "url2": ""}, {"cat": "COLLAB / LIFESTYLE", "slug": "collab-lifestyle", "day": 6, "name": "jjjjound-x-new-balance-740n-mushroom", "url1": "https://jjjjound.com", "url2": "https://hypebeast.com/tags/weekly-footwear-drops"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 7, "name": "first-partner-collection-series-3-hoenn-kalos-paldea", "url1": "https://icv2.com/articles/news/view/61079/pokemon-tcg-2026-product-calendar", "url2": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026"}, {"cat": "MTG", "slug": "mtg", "day": 7, "name": "mtg-the-hobbit-prerelease", "url1": "https://magic.wizards.com/en/products/the-hobbit", "url2": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/"}, {"cat": "YU-GI-OH!", "slug": "yu-gi-oh", "day": 7, "name": "yu-gi-oh-blissful-eternity", "url1": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "NON-SPORTS CARDS", "slug": "non-sports-cards", "day": 7, "name": "2026-leaf-seasons-in-the-sun-baseball", "url1": "https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-topps-universe-wwe", "url1": "https://www.topps.com/pages/topps-universe-wwe", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-bowman-chrome-baseball", "url1": "https://www.topps.com/pages/bowman-chrome-baseball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-topps-wacky-packages-all-new-series", "url1": "https://www.topps.com/pages/2026-topps-wacky-packages-all-new-series", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "2026-topps-vault-marvel", "url1": "https://www.topps.com/pages/topps-vault-marvel", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "topps-flagship-premier-league-2026-27", "url1": "https://www.topps.com/pages/topps-flagship-premier-league", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "2026-topps-chrome-mls", "url1": "https://www.topps.com/pages/topps-mls-chrome", "url2": "https://www.topps.com/release-calendar"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 11, "name": "wdw-august-le-pin-week-2", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com"}, {"cat": "TOPPS", "slug": "topps", "day": 12, "name": "2026-topps-pristine-baseball", "url1": "https://www.topps.com/pages/topps-pristine-baseball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 12, "name": "2026-star-wars-chrome-galaxy", "url1": "https://www.topps.com/pages/star-wars-chrome-galaxy", "url2": "https://www.topps.com/release-calendar"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-global-release", "url1": "https://magic.wizards.com/en/products/the-hobbit", "url2": "https://x.com/wizards_magic/status/2082179288032219416"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-gamegenic-18-pocket-zip-up-album-5-designs", "url1": "https://x.com/Gamegenic_/status/2084308251391226217", "url2": ""}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-gamegenic-premium-art-sleeves", "url1": "https://x.com/Gamegenic_/status/2083221156203573464", "url2": ""}, {"cat": "TOPPS", "slug": "topps", "day": 14, "name": "2026-topps-stadium-club-ufc", "url1": "https://www.topps.com/pages/topps-stadium-club-ufc", "url2": "https://www.topps.com/release-calendar"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-anaheim-disney-pinnacle-booth", "url1": "https://d23.com/d23-2026/", "url2": "https://x.com/DisneyPinnacle/status/2081016173999862201"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-disney-princess-all-13-le-pin-1200", "url1": "https://d23.com/d23-2026/", "url2": "https://x.com/DPrincess_Facts/status/2081016173999862201"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-anaheim-exclusive-pin-drops-weekend", "url1": "https://d23.com/d23-2026/", "url2": "https://disneypinsblog.com"}, {"cat": "TOPPS", "slug": "topps", "day": 17, "name": "2026-topps-museum-collection-baseball", "url1": "https://www.topps.com/pages/topps-museum-collection-baseball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 18, "name": "topps-definitive-basketball", "url1": "https://www.topps.com/pages/topps-definitive-basketball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 18, "name": "wdw-august-le-pin-week-3", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com"}, {"cat": "TOPPS", "slug": "topps", "day": 19, "name": "2026-topps-chrome-baseball-logofractor-edition", "url1": "https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 19, "name": "2026-topps-mint-marvel", "url1": "https://www.topps.com/pages/topps-mint-marvel", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 20, "name": "topps-motif-basketball", "url1": "https://www.topps.com/pages/topps-motif-basketball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 25, "name": "wdw-august-le-pin-week-4", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com"}, {"cat": "TOPPS", "slug": "topps", "day": 27, "name": "2026-topps-chrome-black-basketball", "url1": "https://www.topps.com/pages/topps-chrome-black-basketball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-dragonite-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-darkrai-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-zeraora-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": 28, "name": "one-piece-tcg-op-17-the-worlds-strongest-warriors-global-simultaneous", "url1": "https://en.onepiece-cardgame.com/products/", "url2": "https://x.com/ONEPIECE_tcg_EN/status/2075989349028508136"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": null, "name": "funko-pop-mystery-warner-bros-horror-icons-blind-box-retail", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://sdccblog.com/2026/07/funko-san-diego-comic-con-2026-exclusives/"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": null, "name": "funko-pop-chainsaw-man-movie-reze-arc-exclusive", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": null, "name": "funko-pop-monsters-inc-25th-anniversary-set", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": null, "name": "funko-pop-over-the-garden-wall-series", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": null, "name": "funko-pop-august-hot-topic-exclusive", "url1": "https://funko.com/limited-edition-calendar.html", "url2": ""}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": null, "name": "funko-pop-august-entertainment-earth-exclusive", "url1": "https://funko.com/limited-edition-calendar.html", "url2": ""}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": null, "name": "funko-pop-august-fan-rewards-exclusive", "url1": "https://funko.com/limited-edition-calendar.html", "url2": ""}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": null, "name": "pokemon-tcg-storm-emerald-mega-rayquaza-ex-english-preview", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://www.cardrake.com/guides/upcoming-sets"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": null, "name": "one-piece-tcg-eb-05-heroines-edition-vol-2", "url1": "https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647", "url2": ""}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": null, "name": "one-piece-tcg-premium-card-collection-best-selection-vol-7", "url1": "https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647", "url2": ""}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": null, "name": "one-piece-tcg-premium-booster-vol-2", "url1": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": null, "name": "one-piece-tcg-limited-card-sleeve-premium-matte-vol-6", "url1": "https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647", "url2": ""}, {"cat": "DISNEY LORCANA", "slug": "disney-lorcana", "day": null, "name": "disney-lorcana-attack-of-the-vine", "url1": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "TOPPS", "slug": "topps", "day": null, "name": "2026-topps-flagship-football", "url1": "https://www.beckett.com/news/sports-card-release-calendar-dates/", "url2": ""}, {"cat": "TOPPS", "slug": "topps", "day": null, "name": "2026-skybox-metal-universe-space-jam-30th", "url1": "https://www.beckett.com/news/sports-card-release-calendar-dates/", "url2": ""}, {"cat": "PANINI", "slug": "panini", "day": null, "name": "2026-panini-flawless-fifa-world-cup", "url1": "https://www.beckett.com/news/sports-card-release-calendar-dates/", "url2": ""}, {"cat": "PANINI", "slug": "panini", "day": null, "name": "panini-select-road-to-fifa-world-cup-soccer", "url1": "https://www.beckett.com/news/sports-card-release-calendar-dates/", "url2": ""}, {"cat": "PANINI", "slug": "panini", "day": null, "name": "2026-panini-impeccable-wnba", "url1": "https://www.beckett.com/news/sports-card-release-calendar-dates/", "url2": ""}, {"cat": "PANINI", "slug": "panini", "day": null, "name": "2026-donruss-optic-nwsl-soccer", "url1": "https://www.beckett.com/news/sports-card-release-calendar-dates/", "url2": ""}, {"cat": "NON-SPORTS CARDS", "slug": "non-sports-cards", "day": null, "name": "2026-upper-deck-inspirations-world-of-dc", "url1": "https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "NON-SPORTS CARDS", "slug": "non-sports-cards", "day": null, "name": "2026-rittenhouse-star-trek-voyager", "url1": "https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "NON-SPORTS CARDS", "slug": "non-sports-cards", "day": null, "name": "2026-upper-deck-aew-wrestling", "url1": "https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "NON-SPORTS CARDS", "slug": "non-sports-cards", "day": null, "name": "2026-topps-chrome-sapphire-veefriends", "url1": "https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "MATTEL CREATIONS", "slug": "mattel-creations", "day": null, "name": "mattel-creations-august-member-exclusive", "url1": "https://creations.mattel.com/pages/launch-calendar", "url2": ""}, {"cat": "MATTEL CREATIONS", "slug": "mattel-creations", "day": null, "name": "hot-wheels-august-collector-exclusive", "url1": "https://creations.mattel.com/pages/launch-calendar", "url2": ""}, {"cat": "SUPREME FW26", "slug": "supreme-fw26", "day": null, "name": "supreme-fw26-preview-lookbook", "url1": "https://www.supremecommunity.com/season/fall-winter2026/droplists/", "url2": "https://hypebeast.com/tags/weekly-drops"}, {"cat": "SUPREME FW26", "slug": "supreme-fw26", "day": null, "name": "supreme-fw26-week-1", "url1": "https://www.supremecommunity.com/season/fall-winter2026/droplists/", "url2": "https://hypebeast.com/tags/weekly-drops"}, {"cat": "SUPREME FW26", "slug": "supreme-fw26", "day": null, "name": "supreme-fw26-week-2", "url1": "https://www.supremecommunity.com/season/fall-winter2026/droplists/", "url2": "https://hypebeast.com/tags/weekly-drops"}, {"cat": "COLLAB / LIFESTYLE", "slug": "collab-lifestyle", "day": null, "name": "bobby-hundreds-x-disney-collab", "url1": "https://thehundreds.com", "url2": "https://supremedroplist.com/"}, {"cat": "COLLAB / LIFESTYLE", "slug": "collab-lifestyle", "day": null, "name": "hellstar-x-adidas", "url1": "https://www.adidas.com", "url2": "https://hypebeast.com/tags/weekly-footwear-drops"}, {"cat": "COLLAB / LIFESTYLE", "slug": "collab-lifestyle", "day": null, "name": "kith-august-monthly-drop", "url1": "https://kith.com", "url2": "https://hypebeast.com/tags/weekly-drops"}, {"cat": "COLLAB / LIFESTYLE", "slug": "collab-lifestyle", "day": null, "name": "perks-and-mini-x-asics-collab", "url1": "https://www.asics.com", "url2": "https://hypebeast.com/tags/weekly-footwear-drops"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": null, "name": "wdw-halloween-2026-pin-series-launch", "url1": "https://disneypinsblog.com/halloween-2026-pin-releases-at-disney-store-disney-parks/", "url2": ""}, {"cat": "VINYL & MUSIC", "slug": "vinyl-music", "day": null, "name": "record-store-day-drops-2-2026", "url1": "https://www.recordstoreday.com", "url2": ""}, {"cat": "VINYL & MUSIC", "slug": "vinyl-music", "day": null, "name": "august-limited-pressing-releases", "url1": "https://www.plaidroomrecords.com/collections/pre-orders", "url2": ""}];
-const CAT_MAP  = {"mattel-creations": "#6b2d8b", "topps": "#1a4a6b", "pokemon-tcg": "#b8860b", "mtg": "#0e4e2a", "funko-pop": "#4e2a0e", "one-piece-tcg": "#8b1a4a", "panini": "#0e2a4e", "vinyl-music": "#2a0e4e", "supreme-fw26": "#8b0000", "collab-lifestyle": "#2a4e0e", "disney-parks-pins": "#00457c", "movies": "#8b1a1a", "disney-lorcana": "#1a3a6b", "yu-gi-oh": "#6b1a1a", "non-sports-cards": "#3a3a1a"};
-const MONTH_N  = 8;
-const YEAR_N   = 2026;
-const TODAY_D  = 7;
+const DROPS   = [{"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-marvel-collector-corps-shang-chi-box-xl", "url1": "https://www.amazon.com/dp/B091JH6YTY", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-archangel-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-psylocke-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-sabretooth-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-bishop-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-mega-man-x-capcom", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": 3, "name": "one-piece-round1-arcade-exclusive-promo-pack-phase-3-entry", "url1": "https://x.com/OPTCGAlert/status/2083597291852607623", "url2": ""}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 4, "name": "wdw-august-le-pin-week-1", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com"}, {"cat": "PANINI", "slug": "panini", "day": 5, "name": "2026-panini-contenders-pfl", "url1": "https://www.overtimecardsandcollectibles.com/product-release-schedule", "url2": ""}, {"cat": "COLLAB / LIFESTYLE", "slug": "collab-lifestyle", "day": 6, "name": "jjjjound-x-new-balance-740n-mushroom", "url1": "https://jjjjound.com", "url2": "https://hypebeast.com/tags/weekly-footwear-drops"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 7, "name": "first-partner-collection-series-3-hoenn-kalos-paldea", "url1": "https://icv2.com/articles/news/view/61079/pokemon-tcg-2026-product-calendar", "url2": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026"}, {"cat": "MTG", "slug": "mtg", "day": 7, "name": "mtg-the-hobbit-prerelease", "url1": "https://magic.wizards.com/en/products/the-hobbit", "url2": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/"}, {"cat": "YU-GI-OH!", "slug": "yu-gi-oh", "day": 7, "name": "yu-gi-oh-blissful-eternity", "url1": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "NON-SPORTS CARDS", "slug": "non-sports-cards", "day": 7, "name": "2026-leaf-seasons-in-the-sun-baseball", "url1": "https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/", "url2": ""}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-topps-universe-wwe", "url1": "https://www.topps.com/pages/topps-universe-wwe", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-bowman-chrome-baseball", "url1": "https://www.topps.com/pages/bowman-chrome-baseball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-topps-wacky-packages-all-new-series", "url1": "https://www.topps.com/pages/2026-topps-wacky-packages-all-new-series", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "2026-topps-vault-marvel", "url1": "https://www.topps.com/pages/topps-vault-marvel", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "topps-flagship-premier-league-2026-27", "url1": "https://www.topps.com/pages/topps-flagship-premier-league", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "2026-topps-chrome-mls", "url1": "https://www.topps.com/pages/topps-mls-chrome", "url2": "https://www.topps.com/release-calendar"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 11, "name": "wdw-august-le-pin-week-2", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com"}, {"cat": "TOPPS", "slug": "topps", "day": 12, "name": "2026-topps-pristine-baseball", "url1": "https://www.topps.com/pages/topps-pristine-baseball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 12, "name": "2026-star-wars-chrome-galaxy", "url1": "https://www.topps.com/pages/star-wars-chrome-galaxy", "url2": "https://www.topps.com/release-calendar"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-global-release", "url1": "https://magic.wizards.com/en/products/the-hobbit", "url2": "https://x.com/wizards_magic/status/2082179288032219416"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-gamegenic-18-pocket-zip-up-album-5-designs", "url1": "https://x.com/Gamegenic_/status/2084308251391226217", "url2": ""}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-gamegenic-premium-art-sleeves", "url1": "https://x.com/Gamegenic_/status/2083221156203573464", "url2": ""}, {"cat": "TOPPS", "slug": "topps", "day": 14, "name": "2026-topps-stadium-club-ufc", "url1": "https://www.topps.com/pages/topps-stadium-club-ufc", "url2": "https://www.topps.com/release-calendar"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-anaheim-disney-pinnacle-booth", "url1": "https://d23.com/d23-2026/", "url2": "https://x.com/DisneyPinnacle/status/2081016173999862201"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-disney-princess-all-13-le-pin-1200", "url1": "https://d23.com/d23-2026/", "url2": "https://x.com/DPrincess_Facts/status/2081016173999862201"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-anaheim-exclusive-pin-drops-weekend", "url1": "https://d23.com/d23-2026/", "url2": "https://disneypinsblog.com"}, {"cat": "TOPPS", "slug": "topps", "day": 17, "name": "2026-topps-museum-collection-baseball", "url1": "https://www.topps.com/pages/topps-museum-collection-baseball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 18, "name": "topps-definitive-basketball", "url1": "https://www.topps.com/pages/topps-definitive-basketball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 18, "name": "wdw-august-le-pin-week-3", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com"}, {"cat": "TOPPS", "slug": "topps", "day": 19, "name": "2026-topps-chrome-baseball-logofractor-edition", "url1": "https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 19, "name": "2026-topps-mint-marvel", "url1": "https://www.topps.com/pages/topps-mint-marvel", "url2": "https://www.topps.com/release-calendar"}, {"cat": "TOPPS", "slug": "topps", "day": 20, "name": "topps-motif-basketball", "url1": "https://www.topps.com/pages/topps-motif-basketball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 25, "name": "wdw-august-le-pin-week-4", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com"}, {"cat": "TOPPS", "slug": "topps", "day": 27, "name": "2026-topps-chrome-black-basketball", "url1": "https://www.topps.com/pages/topps-chrome-black-basketball", "url2": "https://www.topps.com/release-calendar"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-dragonite-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-darkrai-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-zeraora-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": 28, "name": "one-piece-tcg-op-17-the-worlds-strongest-warriors-global-simultaneous", "url1": "https://en.onepiece-cardgame.com/products/", "url2": "https://x.com/ONEPIECE_tcg_EN/status/2075989349028508136"}];
+const CAT_MAP = {"mattel-creations": "#6b2d8b", "topps": "#1a4a6b", "pokemon-tcg": "#b8860b", "mtg": "#0e4e2a", "funko-pop": "#4e2a0e", "one-piece-tcg": "#8b1a4a", "panini": "#0e2a4e", "vinyl-music": "#2a0e4e", "supreme-fw26": "#8b0000", "collab-lifestyle": "#2a4e0e", "disney-parks-pins": "#00457c", "movies": "#8b1a1a", "disney-lorcana": "#1a3a6b", "yu-gi-oh": "#6b1a1a", "non-sports-cards": "#3a3a1a"};
+const MONTH_N = 8;
+const YEAR_N  = 2026;
+const TODAY_D = 7;
 
-// ── Build calendar grid ────────────────────────────────────────────────
-const grid = document.getElementById('grid');
-const tbdWrap = document.getElementById('tbdWrap');
-const panel = document.getElementById('dayPanel');
+const grid     = document.getElementById('grid');
+const panel    = document.getElementById('dayPanel');
 const panelTitle = document.getElementById('panelTitle');
-const panelBody = document.getElementById('panelBody');
-const legend = document.getElementById('legend');
+const panelBody  = document.getElementById('panelBody');
+const legend   = document.getElementById('legend');
 
 // Group by day
 const byDay = {};
 DROPS.forEach(d => {
-  if (d.day) {
-    (byDay[d.day] = byDay[d.day] || []).push(d);
-  } else {
-    const chip = document.createElement('div');
-    chip.className = 'cal-chip';
-    chip.style.cssText = `background:${CAT_MAP[d.slug]||'#2a2a35'};color:#fff;cursor:default;`;
-    chip.title = d.name;
-    chip.textContent = d.name;
-    tbdWrap.appendChild(chip);
-  }
+  (byDay[d.day] = byDay[d.day] || []).push(d);
 });
 
-// Calendar weeks
-const firstDow = new Date(YEAR_N, MONTH_N - 1, 1).getDay();
+// Calendar
+const firstDow   = new Date(YEAR_N, MONTH_N - 1, 1).getDay();
 const daysInMonth = new Date(YEAR_N, MONTH_N, 0).getDate();
 
-// Empty prefix cells
 for (let i = 0; i < firstDow; i++) {
   const el = document.createElement('div');
   el.className = 'cal-day empty';
@@ -341,10 +338,10 @@ for (let i = 0; i < firstDow; i++) {
 let selectedDay = null;
 
 for (let day = 1; day <= daysInMonth; day++) {
-  const drops = byDay[day] || [];
+  const dayDrops = byDay[day] || [];
   const el = document.createElement('div');
   el.className = 'cal-day' +
-    (drops.length ? ' has-drops' : '') +
+    (dayDrops.length ? ' has-drops' : '') +
     (day === TODAY_D ? ' today' : '');
   el.dataset.day = day;
 
@@ -353,10 +350,10 @@ for (let day = 1; day <= daysInMonth; day++) {
   num.textContent = day;
   el.appendChild(num);
 
-  if (drops.length) {
+  if (dayDrops.length) {
     const wrap = document.createElement('div');
     wrap.className = 'cal-drops';
-    drops.slice(0, 3).forEach(dr => {
+    dayDrops.slice(0, 3).forEach(dr => {
       const chip = document.createElement('div');
       chip.className = 'cal-chip';
       chip.style.cssText = `background:${CAT_MAP[dr.slug]||'#2a2a35'};color:#fff;`;
@@ -364,10 +361,10 @@ for (let day = 1; day <= daysInMonth; day++) {
       chip.textContent = dr.name;
       wrap.appendChild(chip);
     });
-    if (drops.length > 3) {
+    if (dayDrops.length > 3) {
       const more = document.createElement('div');
       more.className = 'cal-more';
-      more.textContent = `+${drops.length - 3} more`;
+      more.textContent = `+${dayDrops.length - 3} more`;
       wrap.appendChild(more);
     }
     el.appendChild(wrap);
@@ -387,95 +384,93 @@ for (let day = 1; day <= daysInMonth; day++) {
       el.classList.add('selected');
 
       const dt = new Date(YEAR_N, MONTH_N - 1, day);
-      panelTitle.textContent = dt.toLocaleDateString('en-US', {
-        weekday:'long', month:'long', day:'numeric', year:'numeric'
-      });
+      panelTitle.textContent = dt.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
       panelBody.innerHTML = '';
-      drops.forEach(dr => {
+      dayDrops.forEach(dr => {
         const row = document.createElement('div');
         row.className = 'panel-drop';
-        const bg = CAT_MAP[dr.slug] || '#2a2a35';
+        const bg = CAT_MAP[dr.slug]||'#2a2a35';
         row.innerHTML = `
           <span class="cat-badge" style="background:${bg};color:#fff">${dr.cat}</span>
           <span class="panel-drop-name">${dr.name}</span>
           <span class="panel-srcs">
-            ${dr.url1 ? `<a href="${dr.url1}" target="_blank" rel="noopener">Source 1 ↗</a>` : ''}
-            ${dr.url2 ? `<a href="${dr.url2}" target="_blank" rel="noopener">Source 2 ↗</a>` : ''}
+            ${dr.url1?`<a href="${dr.url1}" target="_blank" rel="noopener">Source 1 ↗</a>`:''}
+            ${dr.url2?`<a href="${dr.url2}" target="_blank" rel="noopener">Source 2 ↗</a>`:''}
           </span>`;
         panelBody.appendChild(row);
       });
       panel.classList.add('visible');
-      panel.scrollIntoView({behavior:'smooth', block:'nearest'});
+      panel.scrollIntoView({behavior:'smooth',block:'nearest'});
     });
   }
   grid.appendChild(el);
 }
 
-// Trailing empty cells
+// Trailing empties
 const total = firstDow + daysInMonth;
 const rem = total % 7;
 if (rem) for (let i = 0; i < 7 - rem; i++) {
-  const el = document.createElement('div'); el.className = 'cal-day empty'; grid.appendChild(el);
+  const el = document.createElement('div'); el.className='cal-day empty'; grid.appendChild(el);
 }
 
 // Legend
 const seen = {};
-DROPS.forEach(d => { if (!seen[d.slug]) seen[d.slug] = {cat:d.cat, color:CAT_MAP[d.slug]||'#2a2a35'}; });
-Object.entries(seen).sort((a,b)=>a[1].cat.localeCompare(b[1].cat)).forEach(([sl,info]) => {
+DROPS.forEach(d => { if (!seen[d.slug]) seen[d.slug] = {cat:d.cat,color:CAT_MAP[d.slug]||'#2a2a35'}; });
+Object.entries(seen).sort((a,b)=>a[1].cat.localeCompare(b[1].cat)).forEach(([sl,info])=>{
   const item = document.createElement('div');
-  item.className = 'legend-item';
-  item.innerHTML = `<span class="legend-dot" style="background:${info.color}"></span>${info.cat}`;
+  item.className='legend-item';
+  item.innerHTML=`<span class="legend-dot" style="background:${info.color}"></span>${info.cat}`;
   legend.appendChild(item);
 });
 
-// ── Table ──────────────────────────────────────────────────────────────
-const tbody = document.getElementById('tbody');
-const rows  = Array.from(tbody.querySelectorAll('tr'));
-const noRes = document.getElementById('noResults');
+// Table
+const tbody  = document.getElementById('tbody');
+const rows   = Array.from(tbody.querySelectorAll('tr'));
+const noRes  = document.getElementById('noResults');
 const countEl = document.getElementById('count');
-let activeFilter = 'all', sortCol = 0, sortDesc = false;
+let activeFilter='all', sortCol=0, sortDesc=false;
 
-function updateCount() {
-  const v = rows.filter(r => !r.classList.contains('hidden')).length;
-  countEl.textContent = v + ' drop' + (v !== 1 ? 's' : '');
+function updateCount(){
+  const v=rows.filter(r=>!r.classList.contains('hidden')).length;
+  countEl.textContent=v+' drop'+(v!==1?'s':'');
 }
-function applyFilters() {
-  const q = document.getElementById('search').value.toLowerCase();
-  let any = false;
-  rows.forEach(r => {
-    const cm = activeFilter === 'all' || r.dataset.cat === activeFilter;
-    const tm = !q || r.textContent.toLowerCase().includes(q);
-    r.classList.toggle('hidden', !(cm && tm));
-    if (cm && tm) any = true;
+function applyFilters(){
+  const q=document.getElementById('search').value.toLowerCase();
+  let any=false;
+  rows.forEach(r=>{
+    const cm=activeFilter==='all'||r.dataset.cat===activeFilter;
+    const tm=!q||r.textContent.toLowerCase().includes(q);
+    r.classList.toggle('hidden',!(cm&&tm));
+    if(cm&&tm)any=true;
   });
-  noRes.style.display = any ? 'none' : 'block';
+  noRes.style.display=any?'none':'block';
   updateCount();
 }
-document.querySelectorAll('.filter-btn').forEach(b => {
-  b.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
+document.querySelectorAll('.filter-btn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));
     b.classList.add('active');
-    activeFilter = b.dataset.filter;
+    activeFilter=b.dataset.filter;
     applyFilters();
   });
 });
-document.getElementById('search').addEventListener('input', applyFilters);
-document.querySelectorAll('thead th[data-col]').forEach(th => {
-  th.addEventListener('click', () => {
-    const col = +th.dataset.col;
-    if (sortCol === col) sortDesc = !sortDesc;
-    else { sortCol = col; sortDesc = false; }
-    document.querySelectorAll('thead th').forEach(t => t.classList.remove('sorted','desc'));
+document.getElementById('search').addEventListener('input',applyFilters);
+document.querySelectorAll('thead th[data-col]').forEach(th=>{
+  th.addEventListener('click',()=>{
+    const col=+th.dataset.col;
+    if(sortCol===col)sortDesc=!sortDesc;
+    else{sortCol=col;sortDesc=false;}
+    document.querySelectorAll('thead th').forEach(t=>t.classList.remove('sorted','desc'));
     th.classList.add('sorted');
-    if (sortDesc) th.classList.add('desc');
-    rows.slice().sort((a,b) => {
-      if (col === 0) {
-        const ad = a.dataset.date||'99999999', bd = b.dataset.date||'99999999';
-        return sortDesc ? bd.localeCompare(ad) : ad.localeCompare(bd);
+    if(sortDesc)th.classList.add('desc');
+    rows.slice().sort((a,b)=>{
+      if(col===0){
+        const ad=a.dataset.date||'99999999',bd=b.dataset.date||'99999999';
+        return sortDesc?bd.localeCompare(ad):ad.localeCompare(bd);
       }
-      const av = a.cells[col]?.textContent.trim()||'', bv = b.cells[col]?.textContent.trim()||'';
-      return sortDesc ? bv.localeCompare(av) : av.localeCompare(bv);
-    }).forEach(r => tbody.appendChild(r));
+      const av=a.cells[col]?.textContent.trim()||'',bv=b.cells[col]?.textContent.trim()||'';
+      return sortDesc?bv.localeCompare(av):av.localeCompare(bv);
+    }).forEach(r=>tbody.appendChild(r));
     applyFilters();
   });
 });
