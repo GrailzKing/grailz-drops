@@ -411,8 +411,8 @@ def build_html(drops):
         u2 = (f'<a href="{url2}" target="_blank" rel="noopener">Source 2 ↗</a>'
               if url2 and url2.startswith("http") else "")
 
-        clean_name = re.sub(r'^\\d+-(?:TBD|\\d+)-', '', name)
-    html_rows += f"""
+        clean_name = re.sub(r'^\d+-(?:TBD|\d+)-', '', name)
+        html_rows += f"""
     <tr data-cat="{cs}" data-date="{date_sort}">
       <td class="date-cell">{date_display}</td>
       <td class="name-cell">{clean_name}</td>
