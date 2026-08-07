@@ -445,36 +445,57 @@ def build_html(drops):
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {{
-    --bg:#0d0d10;--surface:#16161c;--border:#2a2a35;
-    --accent:#e8c840;--text:#e8e8f0;--muted:#6b6b80;--row-alt:#111118;
+    --bg:#06060d;--surface:#0e0e1a;--border:#1e1230;
+    --accent:#1eb8f0;--accent2:#9b3fe8;--accent3:#00e5ff;
+    --text:#e8e8f8;--muted:#6b6b90;--row-alt:#0a0a14;
   }}
   *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0;}}
   body{{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}}
-  header{{border-bottom:1px solid var(--border);padding:28px 40px 24px;display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap;}}
-  .logo{{font-family:'Space Mono',monospace;font-size:26px;font-weight:700;color:var(--accent);letter-spacing:-0.5px;line-height:1;}}
-  .logo span{{color:var(--muted);font-weight:400;}}
-  .subtitle{{font-size:13px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;padding-bottom:2px;}}
-  .pill{{margin-left:auto;font-family:'Space Mono',monospace;font-size:11px;background:var(--surface);border:1px solid var(--border);color:var(--muted);padding:5px 12px;border-radius:20px;}}
+  header{{
+    border-bottom:1px solid var(--border);
+    padding:24px 40px;
+    background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);
+  }}
+  .header-inner{{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}}
+  .logo-wrap{{display:flex;align-items:center;gap:16px;}}
+  .vinyl-icon{{filter:drop-shadow(0 0 8px #9b3fe8) drop-shadow(0 0 16px #1eb8f0);flex-shrink:0;}}
+  .logo{{
+    font-family:'Space Mono',monospace;
+    font-size:30px;font-weight:700;
+    background:linear-gradient(90deg,#ffffff 0%,#c084fc 40%,#1eb8f0 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+    letter-spacing:2px;line-height:1;
+    text-shadow:none;
+    filter:drop-shadow(0 0 12px #9b3fe880);
+  }}
+  .subtitle{{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:4px;}}
+  .pill{{
+    font-family:'Space Mono',monospace;font-size:11px;
+    background:linear-gradient(135deg,#9b3fe820,#1eb8f020);
+    border:1px solid #9b3fe860;color:#c084fc;
+    padding:6px 16px;border-radius:20px;white-space:nowrap;
+  }}
   .controls{{padding:20px 40px;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:14px;}}
   .search-wrap{{display:flex;align-items:center;gap:10px;}}
   #search{{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:14px;padding:9px 14px;border-radius:6px;width:280px;outline:none;transition:border-color .15s;}}
-  #search:focus{{border-color:var(--accent);}}
+  #search:focus{{border-color:var(--accent2);box-shadow:0 0 0 2px #9b3fe820;}}
   #search::placeholder{{color:var(--muted);}}
   .count{{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;}}
   .filters{{display:flex;flex-wrap:wrap;gap:6px;}}
   .filter-btn{{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}}
   .filter-btn:hover{{border-color:var(--text);color:var(--text);}}
-  .filter-btn.active{{background:var(--accent);color:#0d0d10;border-color:var(--accent);}}
+  .filter-btn.active{{background:var(--accent2);color:#fff;border-color:var(--accent2);}}
   {btn_css}
   .table-wrap{{padding:0 40px 60px;overflow-x:auto;}}
   table{{width:100%;border-collapse:collapse;margin-top:24px;font-size:13px;}}
   thead th{{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}}
   thead th:hover{{color:var(--text);}}
-  thead th.sorted::after{{content:' ↑';color:var(--accent);}}
+  thead th.sorted::after{{content:' ↑';color:var(--accent3);}}
   thead th.sorted.desc::after{{content:' ↓';}}
   tbody tr{{border-bottom:1px solid #1e1e26;transition:background .1s;}}
   tbody tr:nth-child(even){{background:var(--row-alt);}}
-  tbody tr:hover{{background:#1e1e2a;}}
+  tbody tr:hover{{background:#100d1e;box-shadow:inset 3px 0 0 var(--accent2);}}
   tbody tr.hidden{{display:none;}}
   td{{padding:11px 16px;vertical-align:middle;}}
   .cat-badge{{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap;}}
@@ -482,20 +503,43 @@ def build_html(drops):
   .date-cell{{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap;}}
   .name-cell{{font-size:13px;color:var(--text);max-width:420px;}}
   .source-cell{{white-space:nowrap;display:flex;gap:8px;flex-wrap:wrap;}}
-  .source-cell a{{font-family:'Space Mono',monospace;font-size:10px;color:var(--accent);text-decoration:none;border:1px solid #3a3a20;padding:3px 8px;border-radius:4px;transition:background .1s;}}
-  .source-cell a:hover{{background:#2a2a10;}}
+  .source-cell a{{font-family:'Space Mono',monospace;font-size:10px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:3px 8px;border-radius:4px;transition:all .15s;}}
+  .source-cell a:hover{{background:#0d1a20;box-shadow:0 0 6px #1eb8f040;}}
   .no-results{{text-align:center;padding:60px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:13px;display:none;}}
-  footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}}
+  footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}}
   @media(max-width:680px){{header,.controls,.table-wrap,footer{{padding-left:16px;padding-right:16px;}}#search{{width:100%;}}}}
 </style>
 </head>
 <body>
 <header>
-  <div>
-    <div class="logo">GRAILZ<span>.gg</span></div>
-    <div class="subtitle">Collectibles Drop Calendar</div>
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <svg class="vinyl-icon" viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="vg" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#9b3fe8" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#06060d" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="24" cy="24" r="23" fill="#0e0e1a" stroke="#9b3fe8" stroke-width="1"/>
+        <circle cx="24" cy="24" r="18" fill="none" stroke="#1e1230" stroke-width="1"/>
+        <circle cx="24" cy="24" r="13" fill="none" stroke="#1e1230" stroke-width="1"/>
+        <circle cx="24" cy="24" r="8"  fill="none" stroke="#1e1230" stroke-width="1"/>
+        <circle cx="24" cy="24" r="3"  fill="#9b3fe8"/>
+        <ellipse cx="24" cy="24" rx="23" ry="6" fill="none"
+          stroke="url(#vg)" stroke-width="2"
+          transform="rotate(-20 24 24)"/>
+        <ellipse cx="24" cy="24" rx="23" ry="5" fill="none"
+          stroke="#1eb8f0" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.7"
+          transform="rotate(-20 24 24)"/>
+      </svg>
+      <div>
+        <div class="logo">GRAILZ</div>
+        <div class="subtitle">Collectibles Drop Calendar</div>
+      </div>
+    </div>
+    <div class="pill">{MONTH}</div>
   </div>
-  <div class="pill">{MONTH}</div>
 </header>
 <div class="controls">
   <div class="search-wrap">
