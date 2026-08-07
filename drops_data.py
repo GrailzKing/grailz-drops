@@ -411,11 +411,12 @@ def build_html(drops):
         u2 = (f'<a href="{url2}" target="_blank" rel="noopener">Source 2 ↗</a>'
               if url2 and url2.startswith("http") else "")
 
-        html_rows += f"""
+        clean_name = re.sub(r'^\\d+-(?:TBD|\\d+)-', '', name)
+    html_rows += f"""
     <tr data-cat="{cs}" data-date="{date_sort}">
-      <td><span class="cat-badge cat-{cs}">{cat}</span></td>
       <td class="date-cell">{date_display}</td>
-      <td class="name-cell">{name}</td>
+      <td class="name-cell">{clean_name}</td>
+      <td><span class="cat-badge cat-{cs}">{cat}</span></td>
       <td class="source-cell">{u1}{" " if u1 and u2 else ""}{u2}</td>
     </tr>"""
 
@@ -509,9 +510,9 @@ def build_html(drops):
   <table id="dropsTable">
     <thead>
       <tr>
-        <th data-col="0">Category</th>
-        <th data-col="1" class="sorted">Date</th>
-        <th data-col="2">Drop</th>
+        <th data-col="0" class="sorted">Date</th>
+        <th data-col="1">Drop</th>
+        <th data-col="2">Category</th>
         <th data-col="3">Sources</th>
       </tr>
     </thead>
@@ -530,7 +531,7 @@ def build_html(drops):
   const rows=Array.from(tbody.querySelectorAll('tr'));
   const noRes=document.getElementById('noResults');
   const count=document.getElementById('count');
-  let activeFilter='all',sortCol=1,sortDesc=false;
+  let activeFilter='all',sortCol=0,sortDesc=false;
   function updateCount(){{
     const v=rows.filter(r=>!r.classList.contains('hidden')).length;
     count.textContent=v+' drop'+(v!==1?'s':'');
@@ -565,7 +566,7 @@ def build_html(drops):
       th.classList.add('sorted');
       if(sortDesc)th.classList.add('desc');
       rows.slice().sort((a,b)=>{{
-        if(col===1){{
+        if(col===0){{
           const ad=a.dataset.date||'99999999',bd=b.dataset.date||'99999999';
           return sortDesc?bd.localeCompare(ad):ad.localeCompare(bd);
         }}
