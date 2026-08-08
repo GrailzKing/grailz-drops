@@ -271,6 +271,8 @@ MANUAL_DROPS = [
     ("POKEMON TCG","8-28","pokemon-tcg-mega-darkrai-ex-tin","https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026","https://x.com/PokemonRestocks/status/2065098551382655149", "09:00"),
     ("POKEMON TCG","8-28","pokemon-tcg-mega-zeraora-ex-tin","https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026","https://x.com/PokemonRestocks/status/2065098551382655149", "09:00"),
     ("POKEMON TCG","8-TBD","pokemon-tcg-storm-emerald-mega-rayquaza-ex-english-preview","https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026","https://www.cardrake.com/guides/upcoming-sets", "09:00"),
+    # Pokémon Center Legendary Moments Monthly Pin — 2nd Thursday of every month, 9:00 AM ET
+    ("POKEMON TCG","8-13","pokemon-center-legendary-moments-cosmoem-monthly-pin","https://www.pokemon.com/us/news/go-legendary-with-pokemon-centers-2026-monthly-pins","https://www.pokemoncenter.com", "09:00"),
     # ONE PIECE TCG
     ("ONE PIECE TCG","8-3","one-piece-round1-arcade-exclusive-promo-pack-phase-3-entry","https://x.com/OPTCGAlert/status/2083597291852607623","", "00:00"),
     ("ONE PIECE TCG","8-28","one-piece-tcg-op-17-the-worlds-strongest-warriors-global-simultaneous","https://en.onepiece-cardgame.com/products/","https://x.com/ONEPIECE_tcg_EN/status/2075989349028508136", "00:00"),
