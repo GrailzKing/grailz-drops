@@ -383,244 +383,360 @@ def sort_key(d):
 
 # ── HTML BUILDER ──────────────────────────────────────────────────────────
 def build_html(drops):
-    cats = sorted(set(
-        d[0] if isinstance(d, tuple) else d["cat"]
-        for d in drops
-    ))
+    import json as _json, re as _re, datetime as _dt
 
-    def get_fields(d):
-        if isinstance(d, tuple):
-            return (d[0], d[1], d[2], d[3],
-                    d[4] if len(d) > 4 else "",
-                    d[5] if len(d) > 5 else "09:00")
-        return (d["cat"], d["date"], d["name"], d["url1"],
-                d.get("url2",""), d.get("time","09:00"))
+    MONTH_NUM  = _dt.date.today().month
+    YEAR       = _dt.date.today().year
+    month_name = _dt.date(YEAR, MONTH_NUM, 1).strftime("%B %Y")
+    today_day  = _dt.date.today().day
+    today_str  = _dt.date.today().strftime("%-m/%-d/%Y")
 
-    html_rows = ""
-    for d in drops:
-        cat, date_str, name, url1, url2, time_et = get_fields(d)
-        cs = cat_slug(cat)
+    CAT_TIMES = {
+        "FUNKO POP":"11:00","TOPPS":"12:00","PANINI":"12:00",
+        "POKEMON TCG":"09:00","ONE PIECE TCG":"00:00","MTG":"00:00",
+        "YU-GI-OH!":"00:00","DISNEY LORCANA":"09:00","NON-SPORTS CARDS":"12:00",
+        "DISNEY PARKS PINS":"09:00","SUPREME FW26":"11:00","MATTEL CREATIONS":"09:00",
+        "COLLAB / LIFESTYLE":"10:00","VINYL & MUSIC":"00:00","MOVIES":"00:00",
+    }
+
+    def cslug(c): return _re.sub(r"[^a-z0-9]+"," ",c.lower()).strip().replace(" ","-")
+
+    def get_fields(item):
+        t = item
+        return (t[0],t[1],t[2],t[3],
+                t[4] if len(t)>4 else "",
+                t[5] if len(t)>5 else CAT_TIMES.get(t[0],"09:00"))
+
+    # JS drops (calendar — dated only)
+    js_drops = []
+    for item in drops:
+        cat,date_str,name,url1,url2,time_et = get_fields(item)
+        parts = str(date_str).split("-")
+        try:
+            day = int(parts[1]) if parts[1]!="TBD" else None
+        except: day = None
+        if not day: continue
+        clean = _re.sub(r'^\d+-(?:TBD|\d+)-',"",name)
+        js_drops.append({"cat":cat,"slug":cslug(cat),"day":day,"name":clean,
+                         "url1":url1 if url1 and url1.startswith("http") else "",
+                         "url2":url2 if url2 and url2.startswith("http") else "",
+                         "time":time_et})
+
+    # Table rows (all drops including TBD)
+    table_rows = ""
+    for item in drops:
+        cat,date_str,name,url1,url2,time_et = get_fields(item)
+        sl = cslug(cat)
         parts = str(date_str).split("-")
         try:
             day = parts[1]
-            if day != "TBD":
-                dt = datetime.date(YEAR, int(parts[0]), int(day))
-                date_display = dt.strftime("%-m/%-d/%Y")
-                date_sort = dt.strftime("%Y%m%d")
+            if day!="TBD":
+                d = _dt.date(YEAR,int(parts[0]),int(day))
+                date_display = d.strftime("%-m/%-d/%Y")
+                date_sort = d.strftime("%Y%m%d")
             else:
-                date_display = f"{parts[0]}/TBD/{YEAR}"
-                date_sort = "99999999"
-        except:
-            date_display = date_str
-            date_sort = "99999999"
+                date_display = f"{parts[0]}/TBD/{YEAR}"; date_sort="99999999"
+        except: date_display=date_str; date_sort="99999999"
+        clean = _re.sub(r'^\d+-(?:TBD|\d+)-',"",name)
+        try:
+            h,m = map(int,time_et.split(":"))
+            ampm = "AM" if h<12 else "PM"
+            h12 = h if h<=12 else h-12
+            if h12==0: h12=12
+            time_display = f"{h12}:{str(m).zfill(2)} {ampm}"
+        except: time_display = time_et
+        u1 = f'<a href="{url1}" target="_blank" rel="noopener">Source 1 ↗</a>' if url1 and url1.startswith("http") else ""
+        u2 = f'<a href="{url2}" target="_blank" rel="noopener">Source 2 ↗</a>' if url2 and url2.startswith("http") else ""
+        table_rows += f'\n    <tr data-cat="{sl}" data-date="{date_sort}"><td class="date-cell">{date_display}</td><td class="time-cell">{time_display}</td><td class="name-cell">{clean}</td><td><span class="cat-badge cat-{sl}">{cat}</span></td><td class="source-cell">{u1}{" " if u1 and u2 else ""}{u2}</td></tr>'
 
-        u1 = (f'<a href="{url1}" target="_blank" rel="noopener">Source 1 ↗</a>'
-              if url1 and url1.startswith("http") else "")
-        u2 = (f'<a href="{url2}" target="_blank" rel="noopener">Source 2 ↗</a>'
-              if url2 and url2.startswith("http") else "")
+    badge_css = btn_css = ""
+    for cat,(bg,fg) in CAT_COLORS.items():
+        sl = cslug(cat)
+        badge_css += f".cat-{sl}{{background:{bg};color:{fg};}}\n"
+        btn_css   += f'.filter-btn[data-filter="{sl}"].active{{background:{bg};color:{fg};border-color:{bg};}}\n'
 
-        clean_name = re.sub(r'^\d+-(?:TBD|\d+)-', '', name)
-        html_rows += f"""
-    <tr data-cat="{cs}" data-date="{date_sort}">
-      <td class="date-cell">{date_display}</td>
-      <td class="name-cell">{clean_name}</td>
-      <td><span class="cat-badge cat-{cs}">{cat}</span></td>
-      <td class="source-cell">{u1}{" " if u1 and u2 else ""}{u2}</td>
-    </tr>"""
-
+    cats = sorted(set(get_fields(item)[0] for item in drops))
     filter_btns = '<button class="filter-btn active" data-filter="all">All</button>\n'
     for cat in cats:
-        sl = cat_slug(cat)
+        sl = cslug(cat)
         filter_btns += f'    <button class="filter-btn" data-filter="{sl}">{cat}</button>\n'
 
-    badge_css = ""
-    btn_css = ""
-    for cat, (bg, fg) in CAT_COLORS.items():
-        sl = cat_slug(cat)
-        badge_css += f".cat-{sl} {{ background: {bg}; color: {fg}; }}\n"
-        btn_css   += (f'.filter-btn[data-filter="{sl}"].active'
-                      f' {{ background: {bg}; color: {fg}; border-color: {bg}; }}\n')
-
-    today = datetime.date.today().strftime("%-m/%-d/%Y")
+    CAT_MAP = {cslug(k): v[0] for k,v in CAT_COLORS.items()}
 
     LOGO_64_VAL  = LOGO_64
     LOGO_FAV_VAL = LOGO_FAV
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="{LOGO_FAV_VAL}">
-<title>Grailz — {MONTH} Drops Calendar</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,{LOGO_FAV_VAL}">
+<title>Grailz — {month_name} Drops</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  :root {{
-    --bg:#06060d;--surface:#0e0e1a;--border:#1e1230;
-    --accent:#1eb8f0;--accent2:#9b3fe8;--accent3:#00e5ff;
-    --text:#e8e8f8;--muted:#6b6b90;--row-alt:#0a0a14;
-  }}
-  *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0;}}
-  body{{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}}
-  header{{
-    border-bottom:1px solid var(--border);
-    padding:24px 40px;
-    background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);
-  }}
-  .header-inner{{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}}
-  .logo-wrap{{display:flex;align-items:center;gap:16px;}}
-  .logo-img{{width:64px;height:64px;border-radius:50%;filter:drop-shadow(0 0 10px #9b3fe8) drop-shadow(0 0 20px #1eb8f060);flex-shrink:0;}}
-  .logo{{
-    font-family:'Space Mono',monospace;
-    font-size:30px;font-weight:700;
-    background:linear-gradient(90deg,#ffffff 0%,#c084fc 40%,#1eb8f0 100%);
-    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-    background-clip:text;
-    letter-spacing:2px;line-height:1;
-    text-shadow:none;
-    filter:drop-shadow(0 0 12px #9b3fe880);
-  }}
-  .subtitle{{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:4px;}}
-  .pill{{
-    font-family:'Space Mono',monospace;font-size:11px;
-    background:linear-gradient(135deg,#9b3fe820,#1eb8f020);
-    border:1px solid #9b3fe860;color:#c084fc;
-    padding:6px 16px;border-radius:20px;white-space:nowrap;
-  }}
-  .controls{{padding:20px 40px;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:14px;}}
-  .search-wrap{{display:flex;align-items:center;gap:10px;}}
-  #search{{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:14px;padding:9px 14px;border-radius:6px;width:280px;outline:none;transition:border-color .15s;}}
-  #search:focus{{border-color:var(--accent2);box-shadow:0 0 0 2px #9b3fe820;}}
-  #search::placeholder{{color:var(--muted);}}
-  .count{{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;}}
-  .filters{{display:flex;flex-wrap:wrap;gap:6px;}}
-  .filter-btn{{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}}
-  .filter-btn:hover{{border-color:var(--text);color:var(--text);}}
-  .filter-btn.active{{background:var(--accent2);color:#fff;border-color:var(--accent2);}}
-  {btn_css}
-  .table-wrap{{padding:0 40px 60px;overflow-x:auto;}}
-  table{{width:100%;border-collapse:collapse;margin-top:24px;font-size:13px;}}
-  thead th{{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}}
-  thead th:hover{{color:var(--text);}}
-  thead th.sorted::after{{content:' ↑';color:var(--accent3);}}
-  thead th.sorted.desc::after{{content:' ↓';}}
-  tbody tr{{border-bottom:1px solid #1e1e26;transition:background .1s;}}
-  tbody tr:nth-child(even){{background:var(--row-alt);}}
-  tbody tr:hover{{background:#100d1e;box-shadow:inset 3px 0 0 var(--accent2);}}
-  tbody tr.hidden{{display:none;}}
-  td{{padding:11px 16px;vertical-align:middle;}}
-  .cat-badge{{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap;}}
-  {badge_css}
-  .date-cell{{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap;}}
-  .name-cell{{font-size:13px;color:var(--text);max-width:420px;}}
-  .source-cell{{white-space:nowrap;display:flex;gap:8px;flex-wrap:wrap;}}
-  .source-cell a{{font-family:'Space Mono',monospace;font-size:10px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:3px 8px;border-radius:4px;transition:all .15s;}}
-  .source-cell a:hover{{background:#0d1a20;box-shadow:0 0 6px #1eb8f040;}}
-  .no-results{{text-align:center;padding:60px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:13px;display:none;}}
-  footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}}
-  @media(max-width:680px){{header,.controls,.table-wrap,footer{{padding-left:16px;padding-right:16px;}}#search{{width:100%;}}}}
+:root{{--bg:#06060d;--surface:#0e0e1a;--border:#1e1230;--accent:#1eb8f0;--accent2:#9b3fe8;--accent3:#00e5ff;--text:#e8e8f8;--muted:#6b6b90;--row-alt:#0a0a14;}}
+*,*::before,*::after{{box-sizing:border-box;margin:0;padding:0;}}
+body{{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}}
+header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}}
+.logo-wrap{{display:flex;align-items:center;gap:14px;}}
+.logo-img{{width:52px;height:52px;border-radius:50%;filter:drop-shadow(0 0 10px #9b3fe8) drop-shadow(0 0 20px #1eb8f060);flex-shrink:0;}}
+.logo{{font-family:'Space Mono',monospace;font-size:42px;font-weight:700;background:linear-gradient(90deg,#fff 0%,#c084fc 35%,#9b3fe8 60%,#1eb8f0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:4px;line-height:1;filter:drop-shadow(0 0 18px #9b3fe870);}}
+.subtitle{{font-size:12px;color:#8b6baa;letter-spacing:.16em;text-transform:uppercase;margin-top:6px;}}
+.pill{{font-family:'Space Mono',monospace;font-size:11px;background:linear-gradient(135deg,#9b3fe820,#1eb8f020);border:1px solid #9b3fe860;color:#c084fc;padding:6px 16px;border-radius:20px;}}
+.cal-section{{max-width:1100px;margin:28px auto 0;padding:0 32px;}}
+.cal-top{{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px;}}
+.cal-title{{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}}
+.cal-legend{{display:flex;flex-wrap:wrap;gap:8px;}}
+.legend-item{{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted);}}
+.legend-dot{{width:8px;height:8px;border-radius:50%;flex-shrink:0;}}
+.cal-table{{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);table-layout:fixed;}}
+.cal-table thead th{{font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding:10px 4px;background:#0a0a14;border-bottom:1px solid var(--border);width:14.28%;}}
+.cal-cell{{height:100px;padding:6px 5px;vertical-align:top;border-right:1px solid var(--border);border-bottom:1px solid var(--border);cursor:default;transition:background .12s;}}
+.cal-cell.empty{{background:#08080f;}}
+.cal-cell.has-drops{{background:#0d0b1a;cursor:pointer;}}
+.cal-cell.has-drops:hover{{background:#12101e;}}
+.cal-cell.selected{{background:#130f22;box-shadow:inset 0 0 0 2px var(--accent2);}}
+.cal-cell.today .day-num{{background:var(--accent2);color:#fff;border-radius:50%;}}
+.day-num{{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--muted);width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:3px;}}
+.cal-cell.has-drops .day-num{{color:var(--text);}}
+.cal-chips{{display:flex;flex-direction:column;gap:2px;}}
+.cal-chip{{font-size:9px;font-weight:600;padding:2px 5px;border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.4;}}
+.cal-more{{font-size:8px;color:var(--muted);font-family:'Space Mono',monospace;padding-left:3px;}}
+.day-panel{{max-width:1100px;margin:12px auto 0;padding:0 32px;display:none;}}
+.day-panel.visible{{display:block;}}
+.day-panel-inner{{background:var(--surface);border:1px solid #9b3fe850;border-radius:10px;padding:16px 20px;}}
+.day-panel-title{{font-family:'Space Mono',monospace;font-size:12px;color:#c084fc;margin-bottom:12px;letter-spacing:.06em;}}
+.panel-drop{{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#0a0a14;border-radius:6px;border:1px solid var(--border);margin-bottom:6px;flex-wrap:wrap;}}
+.panel-drop:last-of-type{{margin-bottom:0;}}
+.panel-drop-name{{font-size:12px;color:var(--text);flex:1;min-width:120px;}}
+.panel-srcs{{display:flex;gap:6px;flex-shrink:0;}}
+.panel-srcs a{{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;}}
+.cal-export{{margin-top:12px;padding:12px 14px;background:#08081a;border:1px solid #2a1a40;border-radius:8px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;}}
+.cal-export-label{{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;display:block;}}
+.cal-export input[type="time"],.cal-export input[type="number"],.cal-export select{{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:12px;padding:6px 10px;border-radius:6px;outline:none;-webkit-appearance:none;}}
+.cal-export input[type="number"]{{width:64px;}}
+.cal-export select{{cursor:pointer;}}
+.cal-export-group{{display:flex;flex-direction:column;gap:2px;}}
+.btn-ics{{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;padding:8px 16px;border-radius:6px;border:none;cursor:pointer;background:linear-gradient(135deg,#9b3fe8,#1eb8f0);color:#fff;letter-spacing:.06em;text-transform:uppercase;transition:filter .15s;white-space:nowrap;display:flex;align-items:center;gap:6px;}}
+.btn-ics:hover{{filter:brightness(1.15);}}
+.divider{{max-width:1100px;margin:28px auto 0;padding:0 32px;display:flex;align-items:center;gap:12px;}}
+.div-line{{flex:1;height:1px;background:var(--border);}}
+.div-label{{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}}
+.controls{{max-width:1100px;margin:16px auto 0;padding:0 32px;display:flex;flex-direction:column;gap:12px;}}
+.search-wrap{{display:flex;align-items:center;gap:10px;}}
+#search{{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:14px;padding:9px 14px;border-radius:6px;width:280px;outline:none;}}
+#search:focus{{border-color:var(--accent2);}}
+#search::placeholder{{color:var(--muted);}}
+.count{{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;}}
+.filters{{display:flex;flex-wrap:wrap;gap:6px;}}
+.filter-btn{{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}}
+.filter-btn:hover{{border-color:var(--text);color:var(--text);}}
+.filter-btn.active{{background:var(--accent2);color:#fff;border-color:var(--accent2);}}
+{btn_css}
+.table-wrap{{max-width:1100px;margin:12px auto 0;padding:0 32px 60px;overflow-x:auto;}}
+table.drop-table{{width:100%;border-collapse:collapse;font-size:13px;}}
+table.drop-table thead th{{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}}
+table.drop-table thead th:hover{{color:var(--text);}}
+table.drop-table thead th.sorted::after{{content:' ↑';color:var(--accent3);}}
+table.drop-table thead th.sorted.desc::after{{content:' ↓';}}
+tbody tr{{border-bottom:1px solid #1e1e26;transition:background .1s;}}
+tbody tr:nth-child(even){{background:var(--row-alt);}}
+tbody tr:hover{{background:#100d1e;box-shadow:inset 3px 0 0 var(--accent2);}}
+tbody tr.hidden{{display:none;}}
+td{{padding:10px 16px;vertical-align:middle;}}
+.cat-badge{{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap;}}
+{badge_css}
+.date-cell{{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap;}}
+.time-cell{{font-family:'Space Mono',monospace;font-size:11px;color:#9b3fe8;white-space:nowrap;font-weight:600;}}
+.name-cell{{font-size:13px;color:var(--text);max-width:380px;}}
+.source-cell{{display:flex;gap:8px;flex-wrap:wrap;}}
+.source-cell a{{font-family:'Space Mono',monospace;font-size:10px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:3px 8px;border-radius:4px;}}
+.no-results{{text-align:center;padding:60px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:13px;display:none;}}
+footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}}
+@media(max-width:700px){{header,.cal-section,.day-panel,.divider,.controls,.table-wrap{{padding-left:16px;padding-right:16px;}}#search{{width:100%;}}.cal-cell{{height:72px;}}}}
 </style>
 </head>
 <body>
 <header>
-  <div class="header-inner">
-    <div class="logo-wrap">
-      <img src="{LOGO_64_VAL}" alt="Grailz" class="logo-img">
-      <div>
-        <div class="logo">GRAILZ</div>
-        <div class="subtitle">Collectibles Drop Calendar</div>
-      </div>
-    </div>
-    <div class="pill">{MONTH}</div>
+  <div class="logo-wrap">
+    <img src="data:image/png;base64,{LOGO_64_VAL}" alt="Grailz" class="logo-img">
+    <div><div class="logo">GRAILZ</div><div class="subtitle">Collectibles Drop Calendar</div></div>
   </div>
+  <div class="pill">{month_name}</div>
 </header>
+<div class="cal-section">
+  <div class="cal-top">
+    <div class="cal-title">{month_name}</div>
+    <div class="cal-legend" id="legend"></div>
+  </div>
+  <table class="cal-table">
+    <thead><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr></thead>
+    <tbody id="calBody"></tbody>
+  </table>
+</div>
+<div class="day-panel" id="dayPanel">
+  <div class="day-panel-inner">
+    <div class="day-panel-title" id="panelTitle"></div>
+    <div id="panelBody"></div>
+  </div>
+</div>
+<div class="divider"><div class="div-line"></div><div class="div-label">Full Drop List</div><div class="div-line"></div></div>
 <div class="controls">
   <div class="search-wrap">
     <input id="search" type="text" placeholder="Search drops…" autocomplete="off">
     <span class="count" id="count"></span>
   </div>
-  <div class="filters">
-    {filter_btns}
-  </div>
+  <div class="filters">{filter_btns}</div>
 </div>
 <div class="table-wrap">
-  <table id="dropsTable">
-    <thead>
-      <tr>
-        <th data-col="0" class="sorted">Date</th>
-        <th data-col="1">Drop</th>
-        <th data-col="2">Category</th>
-        <th data-col="3">Sources</th>
-      </tr>
-    </thead>
-    <tbody id="tbody">
-      {html_rows}
-    </tbody>
+  <table class="drop-table">
+    <thead><tr>
+      <th data-col="0" class="sorted">Date</th>
+      <th data-col="1">Time (ET)</th>
+      <th data-col="2">Drop</th>
+      <th data-col="3">Category</th>
+      <th data-col="4">Sources</th>
+    </tr></thead>
+    <tbody id="tbody">{table_rows}</tbody>
   </table>
-  <div class="no-results" id="noResults">No drops found — try a different filter or search.</div>
+  <div class="no-results" id="noResults">No drops found.</div>
 </div>
 <footer>
-  <span>Updated {today} · Grailz Discord Server</span>
+  <span>Updated {today_str} · Grailz Discord Server</span>
   <span>topps.com · beckett.com · tcgradar.eu · disneypinsblog.com · funko.com + social</span>
 </footer>
 <script>
-  const tbody=document.getElementById('tbody');
-  const rows=Array.from(tbody.querySelectorAll('tr'));
-  const noRes=document.getElementById('noResults');
-  const count=document.getElementById('count');
-  let activeFilter='all',sortCol=0,sortDesc=false;
-  function updateCount(){{
-    const v=rows.filter(r=>!r.classList.contains('hidden')).length;
-    count.textContent=v+' drop'+(v!==1?'s':'');
+const DROPS={_json.dumps(js_drops)};
+const CAT_MAP={_json.dumps(CAT_MAP)};
+const MONTH_N={MONTH_NUM};
+const YEAR_N={YEAR};
+const TODAY_D={today_day};
+const calBody=document.getElementById('calBody');
+const panel=document.getElementById('dayPanel');
+const panelTitle=document.getElementById('panelTitle');
+const panelBody=document.getElementById('panelBody');
+const legend=document.getElementById('legend');
+const byDay={{}};
+DROPS.forEach(d=>{{(byDay[d.day]=byDay[d.day]||[]).push(d);}});
+const firstDow=new Date(YEAR_N,MONTH_N-1,1).getDay();
+const daysInMonth=new Date(YEAR_N,MONTH_N,0).getDate();
+let dayCount=0,row=document.createElement('tr'),selectedDay=null;
+calBody.appendChild(row);
+for(let i=0;i<firstDow;i++){{const td=document.createElement('td');td.className='cal-cell empty';row.appendChild(td);dayCount++;}}
+for(let day=1;day<=daysInMonth;day++){{
+  if(dayCount%7===0){{row=document.createElement('tr');calBody.appendChild(row);}}
+  const dayDrops=byDay[day]||[];
+  const td=document.createElement('td');
+  td.className='cal-cell'+(dayDrops.length?' has-drops':'')+(day===TODAY_D?' today':'');
+  td.dataset.day=day;
+  const num=document.createElement('div');num.className='day-num';num.textContent=day;td.appendChild(num);
+  if(dayDrops.length){{
+    const chips=document.createElement('div');chips.className='cal-chips';
+    dayDrops.slice(0,3).forEach(dr=>{{
+      const chip=document.createElement('div');chip.className='cal-chip';
+      chip.style.background=CAT_MAP[dr.slug]||'#2a2a35';chip.style.color='#fff';
+      chip.title=dr.name;chip.textContent=dr.name;chips.appendChild(chip);
+    }});
+    if(dayDrops.length>3){{const m=document.createElement('div');m.className='cal-more';m.textContent='+'+(dayDrops.length-3)+' more';chips.appendChild(m);}}
+    td.appendChild(chips);
+    td.addEventListener('click',()=>{{
+      if(selectedDay===day){{panel.classList.remove('visible');td.classList.remove('selected');selectedDay=null;return;}}
+      const prev=calBody.querySelector('.selected');if(prev)prev.classList.remove('selected');
+      selectedDay=day;td.classList.add('selected');
+      const dt=new Date(YEAR_N,MONTH_N-1,day);
+      panelTitle.textContent=dt.toLocaleDateString('en-US',{{weekday:'long',month:'long',day:'numeric',year:'numeric'}});
+      panelBody.innerHTML='';
+      dayDrops.forEach(dr=>{{
+        const r=document.createElement('div');r.className='panel-drop';
+        const bg=CAT_MAP[dr.slug]||'#2a2a35';
+        r.innerHTML='<span class="cat-badge" style="background:'+bg+';color:#fff">'+dr.cat+'</span>'+
+          '<span class="panel-drop-name">'+dr.name+'</span>'+
+          '<span class="panel-srcs">'+(dr.url1?'<a href="'+dr.url1+'" target="_blank" rel="noopener">Source 1 ↗</a>':'')+
+          (dr.url2?'<a href="'+dr.url2+'" target="_blank" rel="noopener">Source 2 ↗</a>':'')+'</span>';
+        panelBody.appendChild(r);
+      }});
+      const dropTime=(dayDrops[0]&&dayDrops[0].time)?dayDrops[0].time:'09:00';
+      const ew=document.createElement('div');ew.className='cal-export';
+      ew.innerHTML='<div class="cal-export-group"><span class="cal-export-label">Drop Time (ET)</span><input type="time" id="calTime" value="'+dropTime+'"></div>'+
+        '<div class="cal-export-group"><span class="cal-export-label">Alert Before</span><input type="number" id="calAlertNum" value="30" min="1" max="10080"></div>'+
+        '<div class="cal-export-group"><span class="cal-export-label">Unit</span><select id="calAlertUnit"><option value="minutes">Minutes</option><option value="hours">Hours</option><option value="days">Days</option></select></div>'+
+        '<button class="btn-ics" id="btnIcs"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add to Calendar</button>';
+      panelBody.appendChild(ew);
+      document.getElementById('btnIcs').addEventListener('click',()=>{{
+        const t=document.getElementById('calTime').value||dropTime;
+        const n=parseInt(document.getElementById('calAlertNum').value)||30;
+        const u=document.getElementById('calAlertUnit').value;
+        const mins=u==='days'?n*1440:u==='hours'?n*60:n;
+        exportICS(day,t,mins,dayDrops);
+      }});
+      panel.classList.add('visible');panel.scrollIntoView({{behavior:'smooth',block:'nearest'}});
+    }});
   }}
-  function applyFilters(){{
-    const q=document.getElementById('search').value.toLowerCase();
-    let any=false;
-    rows.forEach(r=>{{
-      const cm=activeFilter==='all'||r.dataset.cat===activeFilter;
-      const tm=!q||r.textContent.toLowerCase().includes(q);
-      r.classList.toggle('hidden',!(cm&&tm));
-      if(cm&&tm)any=true;
-    }});
-    noRes.style.display=any?'none':'block';
-    updateCount();
-  }}
-  document.querySelectorAll('.filter-btn').forEach(b=>{{
-    b.addEventListener('click',()=>{{
-      document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));
-      b.classList.add('active');
-      activeFilter=b.dataset.filter;
-      applyFilters();
-    }});
+  row.appendChild(td);dayCount++;
+}}
+while(dayCount%7!==0){{const td=document.createElement('td');td.className='cal-cell empty';row.appendChild(td);dayCount++;}}
+const seen={{}};
+DROPS.forEach(d=>{{if(!seen[d.slug])seen[d.slug]={{cat:d.cat,color:CAT_MAP[d.slug]||'#2a2a35'}};}});
+Object.entries(seen).sort((a,b)=>a[1].cat.localeCompare(b[1].cat)).forEach(([sl,info])=>{{
+  const item=document.createElement('div');item.className='legend-item';
+  item.innerHTML='<span class="legend-dot" style="background:'+info.color+'"></span>'+info.cat;
+  legend.appendChild(item);
+}});
+function pad(n){{return String(n).padStart(2,'0');}}
+function icsDate(y,m,d,time){{const[h,mi]=time.split(':').map(Number);return y+pad(m)+pad(d)+'T'+pad(h)+pad(mi)+'00';}}
+function exportICS(day,time,alertMins,drops){{
+  const dt=new Date(YEAR_N,MONTH_N-1,day);
+  const label=dt.toLocaleDateString('en-US',{{month:'long',day:'numeric',year:'numeric'}});
+  const dtStr=icsDate(YEAR_N,MONTH_N,day,time);
+  const[sh,sm]=time.split(':').map(Number);
+  const dtEnd=icsDate(YEAR_N,MONTH_N,day,pad((sh+1)%24)+':'+pad(sm));
+  const uid='grailz-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'@grailzking.github.io';
+  const desc=drops.map(d=>'['+d.cat+'] '+d.name+(d.url1?' — '+d.url1:'')).join('\n');
+  const names=drops.map(d=>d.name).join(', ');
+  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Grailz//Drops Calendar//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    'BEGIN:VEVENT','UID:'+uid,'DTSTAMP:'+icsDate(YEAR_N,MONTH_N,day,'00:00'),
+    'DTSTART:'+dtStr,'DTEND:'+dtEnd,'SUMMARY:🎯 Grailz Drop — '+label,
+    'DESCRIPTION:'+desc.replace(/\n/g,'\\n'),
+    'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Grailz Drop Reminder — '+names.slice(0,60),
+    'TRIGGER:-PT'+alertMins+'M','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const blob=new Blob([ics],{{type:'text/calendar;charset=utf-8'}});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;a.download='grailz-drop-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
+}}
+const tbody=document.getElementById('tbody');
+const rows=Array.from(tbody.querySelectorAll('tr'));
+const noRes=document.getElementById('noResults');
+const countEl=document.getElementById('count');
+let activeFilter='all',sortCol=0,sortDesc=false;
+function updateCount(){{const v=rows.filter(r=>!r.classList.contains('hidden')).length;countEl.textContent=v+' drop'+(v!==1?'s':'');}}
+function applyFilters(){{
+  const q=document.getElementById('search').value.toLowerCase();let any=false;
+  rows.forEach(r=>{{const cm=activeFilter==='all'||r.dataset.cat===activeFilter;const tm=!q||r.textContent.toLowerCase().includes(q);r.classList.toggle('hidden',!(cm&&tm));if(cm&&tm)any=true;}});
+  noRes.style.display=any?'none':'block';updateCount();
+}}
+document.querySelectorAll('.filter-btn').forEach(b=>{{b.addEventListener('click',()=>{{document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeFilter=b.dataset.filter;applyFilters();}});}});
+document.getElementById('search').addEventListener('input',applyFilters);
+document.querySelectorAll('table.drop-table thead th[data-col]').forEach(th=>{{
+  th.addEventListener('click',()=>{{
+    const col=+th.dataset.col;if(sortCol===col)sortDesc=!sortDesc;else{{sortCol=col;sortDesc=false;}}
+    document.querySelectorAll('table.drop-table thead th').forEach(t=>t.classList.remove('sorted','desc'));
+    th.classList.add('sorted');if(sortDesc)th.classList.add('desc');
+    rows.slice().sort((a,b)=>{{
+      if(col===0){{const ad=a.dataset.date||'99999999',bd=b.dataset.date||'99999999';return sortDesc?bd.localeCompare(ad):ad.localeCompare(bd);}}
+      const av=a.cells[col]?.textContent.trim()||'',bv=b.cells[col]?.textContent.trim()||'';return sortDesc?bv.localeCompare(av):av.localeCompare(bv);
+    }}).forEach(r=>tbody.appendChild(r));applyFilters();
   }});
-  document.getElementById('search').addEventListener('input',applyFilters);
-  document.querySelectorAll('thead th[data-col]').forEach(th=>{{
-    th.addEventListener('click',()=>{{
-      const col=+th.dataset.col;
-      if(sortCol===col)sortDesc=!sortDesc;
-      else{{sortCol=col;sortDesc=false;}}
-      document.querySelectorAll('thead th').forEach(t=>t.classList.remove('sorted','desc'));
-      th.classList.add('sorted');
-      if(sortDesc)th.classList.add('desc');
-      rows.slice().sort((a,b)=>{{
-        if(col===0){{
-          const ad=a.dataset.date||'99999999',bd=b.dataset.date||'99999999';
-          return sortDesc?bd.localeCompare(ad):ad.localeCompare(bd);
-        }}
-        const av=a.cells[col]?.textContent.trim()||'';
-        const bv=b.cells[col]?.textContent.trim()||'';
-        return sortDesc?bv.localeCompare(av):av.localeCompare(bv);
-      }}).forEach(r=>tbody.appendChild(r));
-      applyFilters();
-    }});
-  }});
-  applyFilters();
+}});
+applyFilters();
 </script>
 </body>
 </html>"""
 
 
-# ── MAIN ──────────────────────────────────────────────────────────────────
+
 if __name__ == "__main__":
     print(f"\n=== Grailz Drops Builder — {MONTH} ===\n")
 
