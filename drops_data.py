@@ -252,7 +252,6 @@ def scrape_social():
 
 MANUAL_DROPS = [
     # FUNKO POP
-    ("FUNKO POP","8-3","funko-marvel-collector-corps-shang-chi-box-xl","https://www.amazon.com/dp/B091JH6YTY","https://funko.com/limited-edition-calendar.html", "11:00"),
     ("FUNKO POP","8-3","funko-pop-archangel-x-men","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
     ("FUNKO POP","8-3","funko-pop-psylocke-x-men","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
     ("FUNKO POP","8-3","funko-pop-sabretooth-x-men","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
@@ -366,46 +365,7 @@ MANUAL_DROPS = [
     ("VINYL & MUSIC","8-28","nine-inch-nails-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
     ("VINYL & MUSIC","8-28","marilyn-manson-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
 
-    # ── UPDATE 2026-08-08 ────────────────────────────────────────────────────
-
-    # TOPPS — date/time corrections from live calendar search
-    # Chrome Update Basketball moved to 8-6, confirmed 12pm ET
-    # Bowman Chrome preorder window 8-10 at 12pm ET (was already there, confirm times)
-
-    # FUNKO — Week 1 August confirmed from pops.today
-    ("FUNKO POP","8-3","funko-pop-one-punch-man-saitama","https://pops.today/animation/2526-saitama","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-one-punch-man-genos","https://pops.today/animation/2527-genos","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-one-punch-man-terrible-tornado","https://pops.today/animation/2528-terrible-tornado","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-one-punch-man-garou-chase","https://pops.today/animation/2529-garou-chase","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-over-the-garden-wall-wirt","https://pops.today/animation/2545-wirt","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-over-the-garden-wall-the-beast-gitd","https://pops.today/animation/2549-the-beast-glows-in-the-dark","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-x-men-archangel","https://pops.today/marvel/1610-archangel","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-x-men-psylocke","https://pops.today/marvel/1612-psylocke","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-x-men-sabretooth","https://pops.today/marvel/1609-sabretooth","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-x-men-bishop-x-corp","https://pops.today/marvel/1608-bishop-x-corp","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-finding-nemo-25th-marlin-with-nemo","https://pops.today/disney/1814-marlin-with-nemo","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-finding-nemo-25th-dory","https://pops.today/disney/1817-dory-just-keep-swimming-saying","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-finding-nemo-25th-bruce","https://pops.today/disney/1816-bruce-fish-are-friends-not-food-saying","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-cars-25th-mater-with-jet-pack","https://pops.today/disney/1789-mater-with-jet-pack","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-cars-25th-lightning-mcqueen-kachow","https://pops.today/disney/1790-lightning-mcqueen-kachow-saying","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-beauty-and-the-beast-beast-with-enchanted-rose","https://pops.today/disney/1826-beast-with-enchanted-rose","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-pokemon-dragonite-soft-color-hot-topic-exclusive","https://pops.today/games/850-dragonite-soft-color","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-pokemon-gengar-pearlescent-pokemon-center-exclusive","https://pops.today/games/1031-gengar-pearlescent","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "09:00"),
-    ("FUNKO POP","8-3","funko-pop-mtg-the-hobbit-ajani","https://pops.today/games/1326-ajani","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-mtg-the-hobbit-chandra","https://pops.today/games/1327-chandra","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-universal-monsters-wolfman-black-white","https://pops.today/movies/2148-the-wolfman-black-and-white","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-universal-monsters-frankenstein-black-white","https://pops.today/movies/2141-frankenstein-black-and-white","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-halloween-michael-myers-on-fire","https://pops.today/movies/2122-michael-myers-on-fire","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-inside-out-joy-and-sadness","https://pops.today/disney/1844-joy-sadness","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-michael-jordan-6th-ring","https://pops.today/basketball/235-michael-jordan-6th-ring","https://pops.today/user/POPsToday/list/NEW-POPs-1st-Week-of-August-2026/", "11:00"),
-
-    # TOPPS — confirmed times from live calendar search 8/8
-    # Bowman Chrome 8/10 at 12pm ET, Universe WWE 8/10 at 1pm ET
-    # Wacky Packages 8/10 at 2pm ET, Premier League 8/11, Vault Marvel 8/11 at 1pm ET
-    # Pristine Baseball 8/12 at 12pm ET, Star Wars Chrome Galaxy 8/12 at 1pm ET
-    # Stadium Club UFC 8/14, Museum Collection Baseball 8/17
-    # Chrome Logofractor 8/19 (Topps site), Definitive Basketball 8/18
-    # Motif Basketball 8/20, Chrome Black Basketball 8/27
+    # PANINI — new confirmed from cardlines.com
 
     # PANINI — new confirmed from cardlines.com
     ("PANINI","8-12","2026-panini-prizm-baseball","https://cardlines.com/the-biggest-sports-card-releases-of-august-2026/","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
