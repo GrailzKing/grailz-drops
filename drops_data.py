@@ -344,6 +344,27 @@ MANUAL_DROPS = [
     # VINYL & MUSIC
     ("VINYL & MUSIC","8-TBD","record-store-day-drops-2-2026","https://www.recordstoreday.com","", "00:00"),
     ("VINYL & MUSIC","8-TBD","august-limited-pressing-releases","https://www.plaidroomrecords.com/collections/pre-orders","", "00:00"),
+
+    # ── VINYL & MUSIC — Pause & Play source ─────────────────────────────────
+    # Aug 7 week
+    ("VINYL & MUSIC","8-7","phoebe-bridgers-new-album-2026","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://pharmacyphotos.com", "00:00"),
+    ("VINYL & MUSIC","8-7","alice-in-chains-mtv-unplugged-double-vinyl-reissue","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+    ("VINYL & MUSIC","8-7","bob-marley-and-the-wailers-reissue-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
+    ("VINYL & MUSIC","8-7","everything-but-the-girl-reissue-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
+    ("VINYL & MUSIC","8-7","john-coltrane-reissue-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
+    # Aug 8 — Hamilton box set (Saturday release confirmed)
+    ("VINYL & MUSIC","8-8","lin-manuel-miranda-rise-up-hamilton-anthology-7lp-box-set-10th-anniversary","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+    # Aug 14 week — Leon Bridges white sand vinyl, Joy Oladokun transparent black ice
+    ("VINYL & MUSIC","8-14","leon-bridges-happiness-anytime-white-sand-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+    ("VINYL & MUSIC","8-14","joy-oladokun-hope-is-a-heavy-thing-transparent-black-ice-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+    ("VINYL & MUSIC","8-14","nothing-but-thieves-stray-dogs-pink-rose-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+    ("VINYL & MUSIC","8-14","blondshell-violins-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+    # Aug 21 week — Paul Simon triple vinyl
+    ("VINYL & MUSIC","8-21","paul-simon-the-quiet-celebration-concert-triple-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+    # Aug 28 week — Nickelback, Nine Inch Nails, Marilyn Manson vinyl
+    ("VINYL & MUSIC","8-28","nickelback-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
+    ("VINYL & MUSIC","8-28","nine-inch-nails-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
+    ("VINYL & MUSIC","8-28","marilyn-manson-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
 ]
 
 
