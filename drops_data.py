@@ -753,6 +753,124 @@ for(let day=1;day<=daysInMonth;day++){{
   row.appendChild(td);dayCount++;
 }}
 while(dayCount%7!==0){{const td=document.createElement('td');td.className='cal-cell empty';row.appendChild(td);dayCount++;}}
+// ── View toggle ─────────────────────────────────────────────────────
+let currentView='month';
+let currentWeekStart=null;
+let currentDayDate=null;
+const viewMonth=document.getElementById('viewMonth');
+const viewWeek=document.getElementById('viewWeek');
+const viewDay=document.getElementById('viewDay');
+const calHeading=document.getElementById('calHeading');
+function getWeekStart(d){{const s=new Date(d);s.setDate(s.getDate()-s.getDay());s.setHours(0,0,0,0);return s;}}
+function fmtShort(d){{return d.toLocaleDateString('en-US',{{month:'short',day:'numeric'}});}}
+function fmt12(time){{if(!time)return'';const[h,m]=time.split(':').map(Number);const ap=h<12?'AM':'PM';const h12=h%12||12;return h12+':'+(m<10?'0'+m:m)+' '+ap;}}
+currentWeekStart=getWeekStart(new Date(YEAR_N,MONTH_N-1,TODAY_D));
+currentDayDate=new Date(YEAR_N,MONTH_N-1,TODAY_D);
+
+function buildWeekView(){{
+  const wHead=document.getElementById('weekHead');
+  const wBody=document.getElementById('weekBody');
+  const wLabel=document.getElementById('weekLabel');
+  const days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const today=new Date(YEAR_N,MONTH_N-1,TODAY_D);
+  const weekEnd=new Date(currentWeekStart);weekEnd.setDate(weekEnd.getDate()+6);
+  wLabel.textContent=fmtShort(currentWeekStart)+' \u2013 '+fmtShort(weekEnd);
+  wHead.innerHTML='';
+  const hRow=document.createElement('tr');
+  for(let i=0;i<7;i++){{
+    const d=new Date(currentWeekStart);d.setDate(d.getDate()+i);
+    const th=document.createElement('th');
+    const isToday=d.toDateString()===today.toDateString();
+    th.className=isToday?'week-th-today':'';
+    th.innerHTML=days[i]+'<br><span style="font-size:11px;font-weight:400">'+d.getDate()+'</span>';
+    hRow.appendChild(th);
+  }}
+  wHead.appendChild(hRow);
+  wBody.innerHTML='';
+  const bRow=document.createElement('tr');
+  for(let i=0;i<7;i++){{
+    const d=new Date(currentWeekStart);d.setDate(d.getDate()+i);
+    const dayN=d.getDate(),monthN=d.getMonth()+1,yearN=d.getFullYear();
+    const dayDrops=(monthN===MONTH_N&&yearN===YEAR_N)?byDay[dayN]||[]:[];
+    const isToday=d.toDateString()===today.toDateString();
+    const td=document.createElement('td');
+    td.className='week-cell'+(dayDrops.length?' has-drops':'')+(isToday?' week-today':'');
+    const dateDiv=document.createElement('div');dateDiv.className='week-date';
+    dateDiv.textContent=monthN+'/'+dayN;td.appendChild(dateDiv);
+    if(dayDrops.length){{
+      dayDrops.slice(0,5).forEach(dr=>{{
+        const chip=document.createElement('div');chip.className='cal-chip';
+        chip.style.background=CAT_MAP[dr.slug]||'#2a2a35';chip.style.color='#fff';
+        chip.style.marginBottom='2px';chip.title=dr.name;chip.textContent=dr.name;
+        td.appendChild(chip);
+      }});
+      if(dayDrops.length>5){{const m=document.createElement('div');m.className='cal-more';m.textContent='+'+(dayDrops.length-5)+' more';td.appendChild(m);}}
+      td.addEventListener('click',()=>{{currentDayDate=new Date(d);switchView('day');}});
+    }}
+    bRow.appendChild(td);
+  }}
+  wBody.appendChild(bRow);
+}}
+
+function buildDayView(){{
+  const dInner=document.getElementById('dayViewInner');
+  const dLabel=document.getElementById('dayLabel');
+  dLabel.textContent=currentDayDate.toLocaleDateString('en-US',{{weekday:'long',month:'long',day:'numeric',year:'numeric'}});
+  const dayN=currentDayDate.getDate(),monthN=currentDayDate.getMonth()+1,yearN=currentDayDate.getFullYear();
+  const dayDrops=(monthN===MONTH_N&&yearN===YEAR_N)?byDay[dayN]||[]:[];
+  dInner.innerHTML='';
+  if(!dayDrops.length){{dInner.innerHTML='<div class="day-empty">No drops on this day.</div>';return;}}
+  dayDrops.forEach((dr,idx)=>{{
+    const row=document.createElement('div');row.className='day-drop-row';
+    const bg=CAT_MAP[dr.slug]||'#2a2a35';
+    const dropId='dv-'+dayN+'-'+idx;
+    row.innerHTML=
+      '<span class="day-drop-time">'+fmt12(dr.time||'09:00')+'</span>'+
+      '<span class="cat-badge" style="background:'+bg+';color:#fff">'+dr.cat+'</span>'+
+      '<span class="day-drop-name">'+dr.name+'</span>'+
+      '<span class="day-srcs">'+
+        (dr.url1?'<a href="'+dr.url1+'" target="_blank" rel="noopener">Source 1 \u2197</a>':'')+
+        (dr.url2?'<a href="'+dr.url2+'" target="_blank" rel="noopener">Source 2 \u2197</a>':'')+
+      '</span>'+
+      '<div class="drop-cal-row">'+
+        '<input type="time" class="drop-time-input" id="t-'+dropId+'" value="'+(dr.time||'09:00')+'">'+
+        '<input type="number" class="drop-alert-num" id="n-'+dropId+'" value="30" min="1" max="10080">'+
+        '<select class="drop-alert-unit" id="u-'+dropId+'">'+
+          '<option value="minutes">Min</option><option value="hours">Hrs</option><option value="days">Days</option>'+
+        '</select>'+
+        '<button class="btn-ics-sm" data-id="'+dropId+'">'+
+          '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add'+
+        '</button>'+
+      '</div>';
+    row.querySelector('.btn-ics-sm').addEventListener('click',()=>{{
+      const t=document.getElementById('t-'+dropId).value||(dr.time||'09:00');
+      const n=parseInt(document.getElementById('n-'+dropId).value)||30;
+      const u=document.getElementById('u-'+dropId).value;
+      const mins=u==='days'?n*1440:u==='hours'?n*60:n;
+      exportICS(dayN,t,mins,[dr]);
+    }});
+    dInner.appendChild(row);
+  }});
+}}
+
+function switchView(v){{
+  currentView=v;
+  document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===v));
+  viewMonth.style.display=v==='month'?'block':'none';
+  viewWeek.style.display=v==='week'?'block':'none';
+  viewDay.style.display=v==='day'?'block':'none';
+  if(v==='week')buildWeekView();
+  if(v==='day')buildDayView();
+  calHeading.textContent=v==='month'?'{month_name}':v==='week'?'Week View':'Day View';
+}}
+document.querySelectorAll('.view-btn').forEach(b=>{{
+  b.addEventListener('click',()=>switchView(b.dataset.view));
+}});
+document.getElementById('weekPrev').addEventListener('click',()=>{{currentWeekStart.setDate(currentWeekStart.getDate()-7);buildWeekView();}});
+document.getElementById('weekNext').addEventListener('click',()=>{{currentWeekStart.setDate(currentWeekStart.getDate()+7);buildWeekView();}});
+document.getElementById('dayPrev').addEventListener('click',()=>{{currentDayDate.setDate(currentDayDate.getDate()-1);buildDayView();}});
+document.getElementById('dayNext').addEventListener('click',()=>{{currentDayDate.setDate(currentDayDate.getDate()+1);buildDayView();}});
+
 const seen={{}};
 DROPS.forEach(d=>{{if(!seen[d.slug])seen[d.slug]={{cat:d.cat,color:CAT_MAP[d.slug]||'#2a2a35'}};}});
 Object.entries(seen).sort((a,b)=>a[1].cat.localeCompare(b[1].cat)).forEach(([sl,info])=>{{
