@@ -4,185 +4,126 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
-<title>Grailz — August 2026 Drops</title>
+<title>Grailz — August 2026 Drops Calendar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#06060d;--surface:#0e0e1a;--border:#1e1230;--accent:#1eb8f0;--accent2:#9b3fe8;--accent3:#00e5ff;--text:#e8e8f8;--muted:#6b6b90;--row-alt:#0a0a14;}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+  :root {
+    --bg:#06060d;--surface:#0e0e1a;--border:#1e1230;
+    --accent:#1eb8f0;--accent2:#9b3fe8;--accent3:#00e5ff;
+    --text:#e8e8f8;--muted:#6b6b90;--row-alt:#0a0a14;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+  header{
+    border-bottom:1px solid var(--border);
+    padding:24px 40px;
+    background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+  .logo-wrap{display:flex;align-items:center;gap:16px;}
+  .logo-img{width:64px;height:64px;border-radius:50%;filter:drop-shadow(0 0 10px #9b3fe8) drop-shadow(0 0 20px #1eb8f060);flex-shrink:0;}
+  .logo{
+    font-family:'Space Mono',monospace;
+    font-size:30px;font-weight:700;
+    background:linear-gradient(90deg,#ffffff 0%,#c084fc 40%,#1eb8f0 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+    letter-spacing:2px;line-height:1;
+    text-shadow:none;
+    filter:drop-shadow(0 0 12px #9b3fe880);
+  }
+  .subtitle{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:4px;}
+  .pill{
+    font-family:'Space Mono',monospace;font-size:11px;
+    background:linear-gradient(135deg,#9b3fe820,#1eb8f020);
+    border:1px solid #9b3fe860;color:#c084fc;
+    padding:6px 16px;border-radius:20px;white-space:nowrap;
+  }
+  .controls{padding:20px 40px;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:14px;}
+  .search-wrap{display:flex;align-items:center;gap:10px;}
+  #search{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:14px;padding:9px 14px;border-radius:6px;width:280px;outline:none;transition:border-color .15s;}
+  #search:focus{border-color:var(--accent2);box-shadow:0 0 0 2px #9b3fe820;}
+  #search::placeholder{color:var(--muted);}
+  .count{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;}
+  .filters{display:flex;flex-wrap:wrap;gap:6px;}
+  .filter-btn{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}
+  .filter-btn:hover{border-color:var(--text);color:var(--text);}
+  .filter-btn.active{background:var(--accent2);color:#fff;border-color:var(--accent2);}
+  .filter-btn[data-filter="mattel-creations"].active { background: #6b2d8b; color: #fff; border-color: #6b2d8b; }
+.filter-btn[data-filter="topps"].active { background: #1a4a6b; color: #fff; border-color: #1a4a6b; }
+.filter-btn[data-filter="pokemon-tcg"].active { background: #b8860b; color: #1a1a2e; border-color: #b8860b; }
+.filter-btn[data-filter="mtg"].active { background: #0e4e2a; color: #fff; border-color: #0e4e2a; }
+.filter-btn[data-filter="funko-pop"].active { background: #4e2a0e; color: #fff; border-color: #4e2a0e; }
+.filter-btn[data-filter="one-piece-tcg"].active { background: #8b1a4a; color: #fff; border-color: #8b1a4a; }
+.filter-btn[data-filter="panini"].active { background: #0e2a4e; color: #fff; border-color: #0e2a4e; }
+.filter-btn[data-filter="vinyl-music"].active { background: #2a0e4e; color: #fff; border-color: #2a0e4e; }
+.filter-btn[data-filter="supreme-fw26"].active { background: #8b0000; color: #fff; border-color: #8b0000; }
+.filter-btn[data-filter="collab-lifestyle"].active { background: #2a4e0e; color: #fff; border-color: #2a4e0e; }
+.filter-btn[data-filter="disney-parks-pins"].active { background: #00457c; color: #fff; border-color: #00457c; }
+.filter-btn[data-filter="movies"].active { background: #8b1a1a; color: #fff; border-color: #8b1a1a; }
+.filter-btn[data-filter="disney-lorcana"].active { background: #1a3a6b; color: #fff; border-color: #1a3a6b; }
+.filter-btn[data-filter="yu-gi-oh"].active { background: #6b1a1a; color: #fff; border-color: #6b1a1a; }
+.filter-btn[data-filter="non-sports-cards"].active { background: #3a3a1a; color: #fff; border-color: #3a3a1a; }
 
-/* Header */
-header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
-.logo-wrap{display:flex;align-items:center;gap:14px;}
-.logo-img{width:52px;height:52px;border-radius:50%;filter:drop-shadow(0 0 10px #9b3fe8) drop-shadow(0 0 20px #1eb8f060);flex-shrink:0;}
-.logo{font-family:'Space Mono',monospace;font-size:42px;font-weight:700;background:linear-gradient(90deg,#fff 0%,#c084fc 35%,#9b3fe8 60%,#1eb8f0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:4px;line-height:1;filter:drop-shadow(0 0 18px #9b3fe870);}
-.subtitle{font-size:12px;color:#8b6baa;letter-spacing:.16em;text-transform:uppercase;margin-top:6px;}
-.pill{font-family:'Space Mono',monospace;font-size:11px;background:linear-gradient(135deg,#9b3fe820,#1eb8f020);border:1px solid #9b3fe860;color:#c084fc;padding:6px 16px;border-radius:20px;}
+  .table-wrap{padding:0 40px 60px;overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;margin-top:24px;font-size:13px;}
+  thead th{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}
+  thead th:hover{color:var(--text);}
+  thead th.sorted::after{content:' ↑';color:var(--accent3);}
+  thead th.sorted.desc::after{content:' ↓';}
+  tbody tr{border-bottom:1px solid #1e1e26;transition:background .1s;}
+  tbody tr:nth-child(even){background:var(--row-alt);}
+  tbody tr:hover{background:#100d1e;box-shadow:inset 3px 0 0 var(--accent2);}
+  tbody tr.hidden{display:none;}
+  td{padding:11px 16px;vertical-align:middle;}
+  .cat-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap;}
+  .cat-mattel-creations { background: #6b2d8b; color: #fff; }
+.cat-topps { background: #1a4a6b; color: #fff; }
+.cat-pokemon-tcg { background: #b8860b; color: #1a1a2e; }
+.cat-mtg { background: #0e4e2a; color: #fff; }
+.cat-funko-pop { background: #4e2a0e; color: #fff; }
+.cat-one-piece-tcg { background: #8b1a4a; color: #fff; }
+.cat-panini { background: #0e2a4e; color: #fff; }
+.cat-vinyl-music { background: #2a0e4e; color: #fff; }
+.cat-supreme-fw26 { background: #8b0000; color: #fff; }
+.cat-collab-lifestyle { background: #2a4e0e; color: #fff; }
+.cat-disney-parks-pins { background: #00457c; color: #fff; }
+.cat-movies { background: #8b1a1a; color: #fff; }
+.cat-disney-lorcana { background: #1a3a6b; color: #fff; }
+.cat-yu-gi-oh { background: #6b1a1a; color: #fff; }
+.cat-non-sports-cards { background: #3a3a1a; color: #fff; }
 
-/* Calendar section */
-.cal-section{max-width:1100px;margin:28px auto 0;padding:0 32px;}
-.cal-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px;}
-.cal-title{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
-.cal-legend{display:flex;flex-wrap:wrap;gap:8px;}
-.legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted);}
-.legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
-
-/* Calendar TABLE approach — bulletproof layout */
-.cal-table{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);table-layout:fixed;}
-.cal-table thead th{font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding:10px 4px;background:#0a0a14;border-bottom:1px solid var(--border);width:14.28%;}
-.cal-cell{height:100px;padding:6px 5px;vertical-align:top;border-right:1px solid var(--border);border-bottom:1px solid var(--border);cursor:default;transition:background .12s;}
-.cal-cell.empty{background:#08080f;}
-.cal-cell.has-drops{background:#0d0b1a;cursor:pointer;}
-.cal-cell.has-drops:hover{background:#12101e;}
-.cal-cell.selected{background:#130f22;box-shadow:inset 0 0 0 2px var(--accent2);}
-.cal-cell.today .day-num{background:var(--accent2);color:#fff;border-radius:50%;}
-.day-num{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--muted);width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:3px;}
-.cal-cell.has-drops .day-num{color:var(--text);}
-.cal-chips{display:flex;flex-direction:column;gap:2px;}
-.cal-chip{font-size:9px;font-weight:600;padding:2px 5px;border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.4;}
-.cal-more{font-size:8px;color:var(--muted);font-family:'Space Mono',monospace;padding-left:3px;}
-
-/* Day panel */
-.day-panel{max-width:1100px;margin:12px auto 0;padding:0 32px;display:none;}
-.day-panel.visible{display:block;}
-.day-panel-inner{background:var(--surface);border:1px solid #9b3fe850;border-radius:10px;padding:16px 20px;}
-.day-panel-title{font-family:'Space Mono',monospace;font-size:12px;color:#c084fc;margin-bottom:12px;letter-spacing:.06em;}
-.panel-drop{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#0a0a14;border-radius:6px;border:1px solid var(--border);margin-bottom:6px;flex-wrap:wrap;}
-.panel-drop:last-of-type{margin-bottom:0;}
-.panel-drop-name{font-size:12px;color:var(--text);flex:1;min-width:120px;}
-.panel-srcs{display:flex;gap:6px;flex-shrink:0;}
-.panel-srcs a{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;transition:background .12s;}
-.panel-srcs a:hover{background:#0d1a20;}
-
-/* Calendar export */
-.cal-export{margin-top:12px;padding:12px 14px;background:#08081a;border:1px solid #2a1a40;border-radius:8px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;}
-.cal-export-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;display:block;}
-.cal-export input[type="time"],.cal-export input[type="number"],.cal-export select{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:12px;padding:6px 10px;border-radius:6px;outline:none;transition:border-color .15s;-webkit-appearance:none;}
-.cal-export input[type="time"]:focus,.cal-export input[type="number"]:focus,.cal-export select:focus{border-color:var(--accent2);}
-.cal-export input[type="number"]{width:64px;}
-.cal-export select{cursor:pointer;}
-.cal-export-group{display:flex;flex-direction:column;gap:2px;}
-.btn-ics{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;padding:8px 16px;border-radius:6px;border:none;cursor:pointer;background:linear-gradient(135deg,#9b3fe8,#1eb8f0);color:#fff;letter-spacing:.06em;text-transform:uppercase;transition:filter .15s;white-space:nowrap;display:flex;align-items:center;gap:6px;}
-.btn-ics:hover{filter:brightness(1.15);}
-
-/* Divider */
-.divider{max-width:1100px;margin:28px auto 0;padding:0 32px;display:flex;align-items:center;gap:12px;}
-.div-line{flex:1;height:1px;background:var(--border);}
-.div-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
-
-/* Controls */
-.controls{max-width:1100px;margin:16px auto 0;padding:0 32px;display:flex;flex-direction:column;gap:12px;}
-.search-wrap{display:flex;align-items:center;gap:10px;}
-#search{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:14px;padding:9px 14px;border-radius:6px;width:280px;outline:none;transition:border-color .15s;}
-#search:focus{border-color:var(--accent2);box-shadow:0 0 0 2px #9b3fe820;}
-#search::placeholder{color:var(--muted);}
-.count{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;}
-.filters{display:flex;flex-wrap:wrap;gap:6px;}
-.filter-btn{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}
-.filter-btn:hover{border-color:var(--text);color:var(--text);}
-.filter-btn.active{background:var(--accent2);color:#fff;border-color:var(--accent2);}
-.filter-btn[data-filter="mattel-creations"].active{background:#6b2d8b;color:#fff;border-color:#6b2d8b;}
-.filter-btn[data-filter="topps"].active{background:#1a4a6b;color:#fff;border-color:#1a4a6b;}
-.filter-btn[data-filter="pokemon-tcg"].active{background:#b8860b;color:#1a1a2e;border-color:#b8860b;}
-.filter-btn[data-filter="mtg"].active{background:#0e4e2a;color:#fff;border-color:#0e4e2a;}
-.filter-btn[data-filter="funko-pop"].active{background:#4e2a0e;color:#fff;border-color:#4e2a0e;}
-.filter-btn[data-filter="one-piece-tcg"].active{background:#8b1a4a;color:#fff;border-color:#8b1a4a;}
-.filter-btn[data-filter="panini"].active{background:#0e2a4e;color:#fff;border-color:#0e2a4e;}
-.filter-btn[data-filter="vinyl-music"].active{background:#2a0e4e;color:#fff;border-color:#2a0e4e;}
-.filter-btn[data-filter="supreme-fw26"].active{background:#8b0000;color:#fff;border-color:#8b0000;}
-.filter-btn[data-filter="collab-lifestyle"].active{background:#2a4e0e;color:#fff;border-color:#2a4e0e;}
-.filter-btn[data-filter="disney-parks-pins"].active{background:#00457c;color:#fff;border-color:#00457c;}
-.filter-btn[data-filter="movies"].active{background:#8b1a1a;color:#fff;border-color:#8b1a1a;}
-.filter-btn[data-filter="disney-lorcana"].active{background:#1a3a6b;color:#fff;border-color:#1a3a6b;}
-.filter-btn[data-filter="yu-gi-oh"].active{background:#6b1a1a;color:#fff;border-color:#6b1a1a;}
-.filter-btn[data-filter="non-sports-cards"].active{background:#3a3a1a;color:#fff;border-color:#3a3a1a;}
-
-
-/* Table */
-.table-wrap{max-width:1100px;margin:12px auto 0;padding:0 32px 60px;overflow-x:auto;}
-table.drop-table{width:100%;border-collapse:collapse;font-size:13px;}
-table.drop-table thead th{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}
-table.drop-table thead th:hover{color:var(--text);}
-table.drop-table thead th.sorted::after{content:' ↑';color:var(--accent3);}
-table.drop-table thead th.sorted.desc::after{content:' ↓';}
-tbody tr{border-bottom:1px solid #1e1e26;transition:background .1s;}
-tbody tr:nth-child(even){background:var(--row-alt);}
-tbody tr:hover{background:#100d1e;box-shadow:inset 3px 0 0 var(--accent2);}
-tbody tr.hidden{display:none;}
-td{padding:10px 16px;vertical-align:middle;}
-.cat-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap;}
-.cat-mattel-creations{background:#6b2d8b;color:#fff;}
-.cat-topps{background:#1a4a6b;color:#fff;}
-.cat-pokemon-tcg{background:#b8860b;color:#1a1a2e;}
-.cat-mtg{background:#0e4e2a;color:#fff;}
-.cat-funko-pop{background:#4e2a0e;color:#fff;}
-.cat-one-piece-tcg{background:#8b1a4a;color:#fff;}
-.cat-panini{background:#0e2a4e;color:#fff;}
-.cat-vinyl-music{background:#2a0e4e;color:#fff;}
-.cat-supreme-fw26{background:#8b0000;color:#fff;}
-.cat-collab-lifestyle{background:#2a4e0e;color:#fff;}
-.cat-disney-parks-pins{background:#00457c;color:#fff;}
-.cat-movies{background:#8b1a1a;color:#fff;}
-.cat-disney-lorcana{background:#1a3a6b;color:#fff;}
-.cat-yu-gi-oh{background:#6b1a1a;color:#fff;}
-.cat-non-sports-cards{background:#3a3a1a;color:#fff;}
-
-.date-cell{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap;}
-.time-cell{font-family:'Space Mono',monospace;font-size:11px;color:#9b3fe8;white-space:nowrap;font-weight:600;}
-.name-cell{font-size:13px;color:var(--text);max-width:380px;}
-.source-cell{display:flex;gap:8px;flex-wrap:wrap;}
-.source-cell a{font-family:'Space Mono',monospace;font-size:10px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:3px 8px;border-radius:4px;transition:all .15s;}
-.source-cell a:hover{background:#0d1a20;}
-.no-results{text-align:center;padding:60px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:13px;display:none;}
-
-footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}
-@media(max-width:700px){
-  header,.cal-section,.day-panel,.divider,.controls,.table-wrap{padding-left:16px;padding-right:16px;}
-  #search{width:100%;} .cal-cell{height:72px;}
-}
+  .date-cell{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap;}
+  .name-cell{font-size:13px;color:var(--text);max-width:420px;}
+  .source-cell{white-space:nowrap;display:flex;gap:8px;flex-wrap:wrap;}
+  .source-cell a{font-family:'Space Mono',monospace;font-size:10px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:3px 8px;border-radius:4px;transition:all .15s;}
+  .source-cell a:hover{background:#0d1a20;box-shadow:0 0 6px #1eb8f040;}
+  .no-results{text-align:center;padding:60px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:13px;display:none;}
+  footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}
+  @media(max-width:680px){header,.controls,.table-wrap,footer{padding-left:16px;padding-right:16px;}#search{width:100%;}}
 </style>
 </head>
 <body>
-
 <header>
-  <div class="logo-wrap">
-    <img src="data:image/png;base64,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" alt="Grailz" class="logo-img">
-    <div><div class="logo">GRAILZ</div><div class="subtitle">Collectibles Drop Calendar</div></div>
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <img src="data:image/png;base64,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" alt="Grailz" class="logo-img">
+      <div>
+        <div class="logo">GRAILZ</div>
+        <div class="subtitle">Collectibles Drop Calendar</div>
+      </div>
+    </div>
+    <div class="pill">August 2026</div>
   </div>
-  <div class="pill">August 2026</div>
 </header>
-
-<div class="cal-section">
-  <div class="cal-top">
-    <div class="cal-title">August 2026</div>
-    <div class="cal-legend" id="legend"></div>
-  </div>
-  <table class="cal-table">
-    <thead>
-      <tr>
-        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-      </tr>
-    </thead>
-    <tbody id="calBody"></tbody>
-  </table>
-</div>
-
-<div class="day-panel" id="dayPanel">
-  <div class="day-panel-inner">
-    <div class="day-panel-title" id="panelTitle"></div>
-    <div id="panelBody"></div>
-  </div>
-</div>
-
-<div class="divider"><div class="div-line"></div><div class="div-label">Full Drop List</div><div class="div-line"></div></div>
-
 <div class="controls">
   <div class="search-wrap">
     <input id="search" type="text" placeholder="Search drops…" autocomplete="off">
     <span class="count" id="count"></span>
   </div>
-  <div class="filters"><button class="filter-btn active" data-filter="all">All</button>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="collab-lifestyle">COLLAB / LIFESTYLE</button>
     <button class="filter-btn" data-filter="disney-lorcana">DISNEY LORCANA</button>
     <button class="filter-btn" data-filter="disney-parks-pins">DISNEY PARKS PINS</button>
@@ -197,353 +138,543 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
     <button class="filter-btn" data-filter="topps">TOPPS</button>
     <button class="filter-btn" data-filter="vinyl-music">VINYL & MUSIC</button>
     <button class="filter-btn" data-filter="yu-gi-oh">YU-GI-OH!</button>
-</div>
-</div>
 
+  </div>
+</div>
 <div class="table-wrap">
-  <table class="drop-table">
-    <thead><tr>
-      <th data-col="0" class="sorted">Date</th>
-      <th data-col="1">Time (ET)</th>
-      <th data-col="2">Drop</th>
-      <th data-col="3">Category</th>
-      <th data-col="4">Sources</th>
-    </tr></thead>
+  <table id="dropsTable">
+    <thead>
+      <tr>
+        <th data-col="0" class="sorted">Date</th>
+        <th data-col="1">Drop</th>
+        <th data-col="2">Category</th>
+        <th data-col="3">Sources</th>
+      </tr>
+    </thead>
     <tbody id="tbody">
-    <tr data-cat="funko-pop" data-date="20260803"><td class="date-cell">8/3/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-marvel-collector-corps-shang-chi-box-xl</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://www.amazon.com/dp/B091JH6YTY" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="20260803"><td class="date-cell">8/3/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-archangel-x-men</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="20260803"><td class="date-cell">8/3/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-psylocke-x-men</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="20260803"><td class="date-cell">8/3/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-sabretooth-x-men</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="20260803"><td class="date-cell">8/3/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-bishop-x-men</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="20260803"><td class="date-cell">8/3/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-mega-man-x-capcom</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="one-piece-tcg" data-date="20260803"><td class="date-cell">8/3/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">one-piece-round1-arcade-exclusive-promo-pack-phase-3-entry</td><td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td><td class="source-cell"><a href="https://x.com/OPTCGAlert/status/2083597291852607623" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="disney-parks-pins" data-date="20260804"><td class="date-cell">8/4/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">wdw-august-le-pin-week-1</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://mypincentral.com" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="panini" data-date="20260805"><td class="date-cell">8/5/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-panini-contenders-pfl</td><td><span class="cat-badge cat-panini">PANINI</span></td><td class="source-cell"><a href="https://www.overtimecardsandcollectibles.com/product-release-schedule" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="collab-lifestyle" data-date="20260806"><td class="date-cell">8/6/2026</td><td class="time-cell">10:00 AM</td><td class="name-cell">jjjjound-x-new-balance-740n-mushroom</td><td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td><td class="source-cell"><a href="https://jjjjound.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-footwear-drops" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="pokemon-tcg" data-date="20260807"><td class="date-cell">8/7/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">first-partner-collection-series-3-hoenn-kalos-paldea</td><td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td><td class="source-cell"><a href="https://icv2.com/articles/news/view/61079/pokemon-tcg-2026-product-calendar" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="mtg" data-date="20260807"><td class="date-cell">8/7/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">mtg-the-hobbit-prerelease</td><td><span class="cat-badge cat-mtg">MTG</span></td><td class="source-cell"><a href="https://magic.wizards.com/en/products/the-hobbit" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="yu-gi-oh" data-date="20260807"><td class="date-cell">8/7/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">yu-gi-oh-blissful-eternity</td><td><span class="cat-badge cat-yu-gi-oh">YU-GI-OH!</span></td><td class="source-cell"><a href="https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="non-sports-cards" data-date="20260807"><td class="date-cell">8/7/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-leaf-seasons-in-the-sun-baseball</td><td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td><td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260810"><td class="date-cell">8/10/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-universe-wwe</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-universe-wwe" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260810"><td class="date-cell">8/10/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-bowman-chrome-baseball</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/bowman-chrome-baseball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260810"><td class="date-cell">8/10/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-wacky-packages-all-new-series</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/2026-topps-wacky-packages-all-new-series" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260811"><td class="date-cell">8/11/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-vault-marvel</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-vault-marvel" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260811"><td class="date-cell">8/11/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">topps-flagship-premier-league-2026-27</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-flagship-premier-league" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260811"><td class="date-cell">8/11/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-chrome-mls</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-mls-chrome" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="disney-parks-pins" data-date="20260811"><td class="date-cell">8/11/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">wdw-august-le-pin-week-2</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://mypincentral.com" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260812"><td class="date-cell">8/12/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-pristine-baseball</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-pristine-baseball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260812"><td class="date-cell">8/12/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-star-wars-chrome-galaxy</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/star-wars-chrome-galaxy" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="mtg" data-date="20260814"><td class="date-cell">8/14/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">mtg-the-hobbit-global-release</td><td><span class="cat-badge cat-mtg">MTG</span></td><td class="source-cell"><a href="https://magic.wizards.com/en/products/the-hobbit" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/wizards_magic/status/2082179288032219416" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="mtg" data-date="20260814"><td class="date-cell">8/14/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">mtg-the-hobbit-gamegenic-18-pocket-zip-up-album-5-designs</td><td><span class="cat-badge cat-mtg">MTG</span></td><td class="source-cell"><a href="https://x.com/Gamegenic_/status/2084308251391226217" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="mtg" data-date="20260814"><td class="date-cell">8/14/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">mtg-the-hobbit-gamegenic-premium-art-sleeves</td><td><span class="cat-badge cat-mtg">MTG</span></td><td class="source-cell"><a href="https://x.com/Gamegenic_/status/2083221156203573464" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260814"><td class="date-cell">8/14/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-stadium-club-ufc</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-stadium-club-ufc" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="disney-parks-pins" data-date="20260814"><td class="date-cell">8/14/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">d23-2026-anaheim-disney-pinnacle-booth</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://d23.com/d23-2026/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/DisneyPinnacle/status/2081016173999862201" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="disney-parks-pins" data-date="20260814"><td class="date-cell">8/14/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">d23-2026-disney-princess-all-13-le-pin-1200</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://d23.com/d23-2026/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/DPrincess_Facts/status/2081016173999862201" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="disney-parks-pins" data-date="20260814"><td class="date-cell">8/14/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">d23-2026-anaheim-exclusive-pin-drops-weekend</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://d23.com/d23-2026/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260817"><td class="date-cell">8/17/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-museum-collection-baseball</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-museum-collection-baseball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260818"><td class="date-cell">8/18/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">topps-definitive-basketball</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-definitive-basketball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="disney-parks-pins" data-date="20260818"><td class="date-cell">8/18/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">wdw-august-le-pin-week-3</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://mypincentral.com" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260819"><td class="date-cell">8/19/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-chrome-baseball-logofractor-edition</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260819"><td class="date-cell">8/19/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-mint-marvel</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-mint-marvel" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260820"><td class="date-cell">8/20/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">topps-motif-basketball</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-motif-basketball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="disney-parks-pins" data-date="20260825"><td class="date-cell">8/25/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">wdw-august-le-pin-week-4</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://mypincentral.com" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="20260827"><td class="date-cell">8/27/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-chrome-black-basketball</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.topps.com/pages/topps-chrome-black-basketball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="pokemon-tcg" data-date="20260828"><td class="date-cell">8/28/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">pokemon-tcg-mega-dragonite-ex-tin</td><td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td><td class="source-cell"><a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/PokemonRestocks/status/2065098551382655149" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="pokemon-tcg" data-date="20260828"><td class="date-cell">8/28/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">pokemon-tcg-mega-darkrai-ex-tin</td><td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td><td class="source-cell"><a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/PokemonRestocks/status/2065098551382655149" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="pokemon-tcg" data-date="20260828"><td class="date-cell">8/28/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">pokemon-tcg-mega-zeraora-ex-tin</td><td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td><td class="source-cell"><a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/PokemonRestocks/status/2065098551382655149" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="one-piece-tcg" data-date="20260828"><td class="date-cell">8/28/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">one-piece-tcg-op-17-the-worlds-strongest-warriors-global-simultaneous</td><td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td><td class="source-cell"><a href="https://en.onepiece-cardgame.com/products/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/ONEPIECE_tcg_EN/status/2075989349028508136" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-mystery-warner-bros-horror-icons-blind-box-retail</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://sdccblog.com/2026/07/funko-san-diego-comic-con-2026-exclusives/" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-chainsaw-man-movie-reze-arc-exclusive</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-monsters-inc-25th-anniversary-set</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-over-the-garden-wall-series</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-august-hot-topic-exclusive</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-august-entertainment-earth-exclusive</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="funko-pop" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">funko-pop-august-fan-rewards-exclusive</td><td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td><td class="source-cell"><a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="pokemon-tcg" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">pokemon-tcg-storm-emerald-mega-rayquaza-ex-english-preview</td><td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td><td class="source-cell"><a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.cardrake.com/guides/upcoming-sets" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="one-piece-tcg" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">one-piece-tcg-eb-05-heroines-edition-vol-2</td><td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td><td class="source-cell"><a href="https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="one-piece-tcg" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">one-piece-tcg-premium-card-collection-best-selection-vol-7</td><td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td><td class="source-cell"><a href="https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="one-piece-tcg" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">one-piece-tcg-premium-booster-vol-2</td><td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td><td class="source-cell"><a href="https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="one-piece-tcg" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">one-piece-tcg-limited-card-sleeve-premium-matte-vol-6</td><td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td><td class="source-cell"><a href="https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="disney-lorcana" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">disney-lorcana-attack-of-the-vine</td><td><span class="cat-badge cat-disney-lorcana">DISNEY LORCANA</span></td><td class="source-cell"><a href="https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-flagship-football</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="topps" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-skybox-metal-universe-space-jam-30th</td><td><span class="cat-badge cat-topps">TOPPS</span></td><td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="panini" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-panini-flawless-fifa-world-cup</td><td><span class="cat-badge cat-panini">PANINI</span></td><td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="panini" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">panini-select-road-to-fifa-world-cup-soccer</td><td><span class="cat-badge cat-panini">PANINI</span></td><td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="panini" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-panini-impeccable-wnba</td><td><span class="cat-badge cat-panini">PANINI</span></td><td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="panini" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-donruss-optic-nwsl-soccer</td><td><span class="cat-badge cat-panini">PANINI</span></td><td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="non-sports-cards" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-upper-deck-inspirations-world-of-dc</td><td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td><td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="non-sports-cards" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-rittenhouse-star-trek-voyager</td><td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td><td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="non-sports-cards" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-upper-deck-aew-wrestling</td><td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td><td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="non-sports-cards" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 PM</td><td class="name-cell">2026-topps-chrome-sapphire-veefriends</td><td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td><td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="mattel-creations" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">mattel-creations-august-member-exclusive</td><td><span class="cat-badge cat-mattel-creations">MATTEL CREATIONS</span></td><td class="source-cell"><a href="https://creations.mattel.com/pages/launch-calendar" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="mattel-creations" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">hot-wheels-august-collector-exclusive</td><td><span class="cat-badge cat-mattel-creations">MATTEL CREATIONS</span></td><td class="source-cell"><a href="https://creations.mattel.com/pages/launch-calendar" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="supreme-fw26" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">supreme-fw26-preview-lookbook</td><td><span class="cat-badge cat-supreme-fw26">SUPREME FW26</span></td><td class="source-cell"><a href="https://www.supremecommunity.com/season/fall-winter2026/droplists/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-drops" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="supreme-fw26" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">supreme-fw26-week-1</td><td><span class="cat-badge cat-supreme-fw26">SUPREME FW26</span></td><td class="source-cell"><a href="https://www.supremecommunity.com/season/fall-winter2026/droplists/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-drops" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="supreme-fw26" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">11:00 AM</td><td class="name-cell">supreme-fw26-week-2</td><td><span class="cat-badge cat-supreme-fw26">SUPREME FW26</span></td><td class="source-cell"><a href="https://www.supremecommunity.com/season/fall-winter2026/droplists/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-drops" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="collab-lifestyle" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">10:00 AM</td><td class="name-cell">bobby-hundreds-x-disney-collab</td><td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td><td class="source-cell"><a href="https://thehundreds.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://supremedroplist.com/" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="collab-lifestyle" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">10:00 AM</td><td class="name-cell">hellstar-x-adidas</td><td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td><td class="source-cell"><a href="https://www.adidas.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-footwear-drops" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="collab-lifestyle" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">10:00 AM</td><td class="name-cell">kith-august-monthly-drop</td><td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td><td class="source-cell"><a href="https://kith.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-drops" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="collab-lifestyle" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">10:00 AM</td><td class="name-cell">perks-and-mini-x-asics-collab</td><td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td><td class="source-cell"><a href="https://www.asics.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-footwear-drops" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
-    <tr data-cat="disney-parks-pins" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">wdw-halloween-2026-pin-series-launch</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://disneypinsblog.com/halloween-2026-pin-releases-at-disney-store-disney-parks/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="vinyl-music" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">record-store-day-drops-2-2026</td><td><span class="cat-badge cat-vinyl-music">VINYL & MUSIC</span></td><td class="source-cell"><a href="https://www.recordstoreday.com" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="vinyl-music" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">august-limited-pressing-releases</td><td><span class="cat-badge cat-vinyl-music">VINYL & MUSIC</span></td><td class="source-cell"><a href="https://www.plaidroomrecords.com/collections/pre-orders" target="_blank" rel="noopener">Source 1 ↗</a></td></tr></tbody>
+      
+    <tr data-cat="funko-pop" data-date="20260803">
+      <td class="date-cell">8/3/2026</td>
+      <td class="name-cell">funko-marvel-collector-corps-shang-chi-box-xl</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://www.amazon.com/dp/B091JH6YTY" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="20260803">
+      <td class="date-cell">8/3/2026</td>
+      <td class="name-cell">funko-pop-archangel-x-men</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="20260803">
+      <td class="date-cell">8/3/2026</td>
+      <td class="name-cell">funko-pop-psylocke-x-men</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="20260803">
+      <td class="date-cell">8/3/2026</td>
+      <td class="name-cell">funko-pop-sabretooth-x-men</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="20260803">
+      <td class="date-cell">8/3/2026</td>
+      <td class="name-cell">funko-pop-bishop-x-men</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="20260803">
+      <td class="date-cell">8/3/2026</td>
+      <td class="name-cell">funko-pop-mega-man-x-capcom</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="one-piece-tcg" data-date="20260803">
+      <td class="date-cell">8/3/2026</td>
+      <td class="name-cell">one-piece-round1-arcade-exclusive-promo-pack-phase-3-entry</td>
+      <td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td>
+      <td class="source-cell"><a href="https://x.com/OPTCGAlert/status/2083597291852607623" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-parks-pins" data-date="20260804">
+      <td class="date-cell">8/4/2026</td>
+      <td class="name-cell">wdw-august-le-pin-week-1</td>
+      <td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td>
+      <td class="source-cell"><a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://mypincentral.com" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="panini" data-date="20260805">
+      <td class="date-cell">8/5/2026</td>
+      <td class="name-cell">2026-panini-contenders-pfl</td>
+      <td><span class="cat-badge cat-panini">PANINI</span></td>
+      <td class="source-cell"><a href="https://www.overtimecardsandcollectibles.com/product-release-schedule" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="collab-lifestyle" data-date="20260806">
+      <td class="date-cell">8/6/2026</td>
+      <td class="name-cell">jjjjound-x-new-balance-740n-mushroom</td>
+      <td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td>
+      <td class="source-cell"><a href="https://jjjjound.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-footwear-drops" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="pokemon-tcg" data-date="20260807">
+      <td class="date-cell">8/7/2026</td>
+      <td class="name-cell">first-partner-collection-series-3-hoenn-kalos-paldea</td>
+      <td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td>
+      <td class="source-cell"><a href="https://icv2.com/articles/news/view/61079/pokemon-tcg-2026-product-calendar" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="mtg" data-date="20260807">
+      <td class="date-cell">8/7/2026</td>
+      <td class="name-cell">mtg-the-hobbit-prerelease</td>
+      <td><span class="cat-badge cat-mtg">MTG</span></td>
+      <td class="source-cell"><a href="https://magic.wizards.com/en/products/the-hobbit" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="yu-gi-oh" data-date="20260807">
+      <td class="date-cell">8/7/2026</td>
+      <td class="name-cell">yu-gi-oh-blissful-eternity</td>
+      <td><span class="cat-badge cat-yu-gi-oh">YU-GI-OH!</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="non-sports-cards" data-date="20260807">
+      <td class="date-cell">8/7/2026</td>
+      <td class="name-cell">2026-leaf-seasons-in-the-sun-baseball</td>
+      <td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260810">
+      <td class="date-cell">8/10/2026</td>
+      <td class="name-cell">2026-topps-universe-wwe</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-universe-wwe" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260810">
+      <td class="date-cell">8/10/2026</td>
+      <td class="name-cell">2026-bowman-chrome-baseball</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/bowman-chrome-baseball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260810">
+      <td class="date-cell">8/10/2026</td>
+      <td class="name-cell">2026-topps-wacky-packages-all-new-series</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/2026-topps-wacky-packages-all-new-series" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260811">
+      <td class="date-cell">8/11/2026</td>
+      <td class="name-cell">2026-topps-vault-marvel</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-vault-marvel" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260811">
+      <td class="date-cell">8/11/2026</td>
+      <td class="name-cell">topps-flagship-premier-league-2026-27</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-flagship-premier-league" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260811">
+      <td class="date-cell">8/11/2026</td>
+      <td class="name-cell">2026-topps-chrome-mls</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-mls-chrome" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-parks-pins" data-date="20260811">
+      <td class="date-cell">8/11/2026</td>
+      <td class="name-cell">wdw-august-le-pin-week-2</td>
+      <td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td>
+      <td class="source-cell"><a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://mypincentral.com" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260812">
+      <td class="date-cell">8/12/2026</td>
+      <td class="name-cell">2026-topps-pristine-baseball</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-pristine-baseball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260812">
+      <td class="date-cell">8/12/2026</td>
+      <td class="name-cell">2026-star-wars-chrome-galaxy</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/star-wars-chrome-galaxy" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="mtg" data-date="20260814">
+      <td class="date-cell">8/14/2026</td>
+      <td class="name-cell">mtg-the-hobbit-global-release</td>
+      <td><span class="cat-badge cat-mtg">MTG</span></td>
+      <td class="source-cell"><a href="https://magic.wizards.com/en/products/the-hobbit" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/wizards_magic/status/2082179288032219416" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="mtg" data-date="20260814">
+      <td class="date-cell">8/14/2026</td>
+      <td class="name-cell">mtg-the-hobbit-gamegenic-18-pocket-zip-up-album-5-designs</td>
+      <td><span class="cat-badge cat-mtg">MTG</span></td>
+      <td class="source-cell"><a href="https://x.com/Gamegenic_/status/2084308251391226217" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="mtg" data-date="20260814">
+      <td class="date-cell">8/14/2026</td>
+      <td class="name-cell">mtg-the-hobbit-gamegenic-premium-art-sleeves</td>
+      <td><span class="cat-badge cat-mtg">MTG</span></td>
+      <td class="source-cell"><a href="https://x.com/Gamegenic_/status/2083221156203573464" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260814">
+      <td class="date-cell">8/14/2026</td>
+      <td class="name-cell">2026-topps-stadium-club-ufc</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-stadium-club-ufc" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-parks-pins" data-date="20260814">
+      <td class="date-cell">8/14/2026</td>
+      <td class="name-cell">d23-2026-anaheim-disney-pinnacle-booth</td>
+      <td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td>
+      <td class="source-cell"><a href="https://d23.com/d23-2026/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/DisneyPinnacle/status/2081016173999862201" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-parks-pins" data-date="20260814">
+      <td class="date-cell">8/14/2026</td>
+      <td class="name-cell">d23-2026-disney-princess-all-13-le-pin-1200</td>
+      <td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td>
+      <td class="source-cell"><a href="https://d23.com/d23-2026/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/DPrincess_Facts/status/2081016173999862201" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-parks-pins" data-date="20260814">
+      <td class="date-cell">8/14/2026</td>
+      <td class="name-cell">d23-2026-anaheim-exclusive-pin-drops-weekend</td>
+      <td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td>
+      <td class="source-cell"><a href="https://d23.com/d23-2026/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260817">
+      <td class="date-cell">8/17/2026</td>
+      <td class="name-cell">2026-topps-museum-collection-baseball</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-museum-collection-baseball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260818">
+      <td class="date-cell">8/18/2026</td>
+      <td class="name-cell">topps-definitive-basketball</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-definitive-basketball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-parks-pins" data-date="20260818">
+      <td class="date-cell">8/18/2026</td>
+      <td class="name-cell">wdw-august-le-pin-week-3</td>
+      <td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td>
+      <td class="source-cell"><a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://mypincentral.com" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260819">
+      <td class="date-cell">8/19/2026</td>
+      <td class="name-cell">2026-topps-chrome-baseball-logofractor-edition</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260819">
+      <td class="date-cell">8/19/2026</td>
+      <td class="name-cell">2026-topps-mint-marvel</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-mint-marvel" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260820">
+      <td class="date-cell">8/20/2026</td>
+      <td class="name-cell">topps-motif-basketball</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-motif-basketball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-parks-pins" data-date="20260825">
+      <td class="date-cell">8/25/2026</td>
+      <td class="name-cell">wdw-august-le-pin-week-4</td>
+      <td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td>
+      <td class="source-cell"><a href="https://disneypinsblog.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://mypincentral.com" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="20260827">
+      <td class="date-cell">8/27/2026</td>
+      <td class="name-cell">2026-topps-chrome-black-basketball</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.topps.com/pages/topps-chrome-black-basketball" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.topps.com/release-calendar" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="pokemon-tcg" data-date="20260828">
+      <td class="date-cell">8/28/2026</td>
+      <td class="name-cell">pokemon-tcg-mega-dragonite-ex-tin</td>
+      <td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td>
+      <td class="source-cell"><a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/PokemonRestocks/status/2065098551382655149" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="pokemon-tcg" data-date="20260828">
+      <td class="date-cell">8/28/2026</td>
+      <td class="name-cell">pokemon-tcg-mega-darkrai-ex-tin</td>
+      <td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td>
+      <td class="source-cell"><a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/PokemonRestocks/status/2065098551382655149" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="pokemon-tcg" data-date="20260828">
+      <td class="date-cell">8/28/2026</td>
+      <td class="name-cell">pokemon-tcg-mega-zeraora-ex-tin</td>
+      <td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td>
+      <td class="source-cell"><a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/PokemonRestocks/status/2065098551382655149" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="one-piece-tcg" data-date="20260828">
+      <td class="date-cell">8/28/2026</td>
+      <td class="name-cell">one-piece-tcg-op-17-the-worlds-strongest-warriors-global-simultaneous</td>
+      <td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td>
+      <td class="source-cell"><a href="https://en.onepiece-cardgame.com/products/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://x.com/ONEPIECE_tcg_EN/status/2075989349028508136" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">funko-pop-mystery-warner-bros-horror-icons-blind-box-retail</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://sdccblog.com/2026/07/funko-san-diego-comic-con-2026-exclusives/" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">funko-pop-chainsaw-man-movie-reze-arc-exclusive</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">funko-pop-monsters-inc-25th-anniversary-set</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">funko-pop-over-the-garden-wall-series</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/new-featured/coming-soon/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">funko-pop-august-hot-topic-exclusive</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">funko-pop-august-entertainment-earth-exclusive</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="funko-pop" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">funko-pop-august-fan-rewards-exclusive</td>
+      <td><span class="cat-badge cat-funko-pop">FUNKO POP</span></td>
+      <td class="source-cell"><a href="https://funko.com/limited-edition-calendar.html" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="pokemon-tcg" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">pokemon-tcg-storm-emerald-mega-rayquaza-ex-english-preview</td>
+      <td><span class="cat-badge cat-pokemon-tcg">POKEMON TCG</span></td>
+      <td class="source-cell"><a href="https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://www.cardrake.com/guides/upcoming-sets" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="one-piece-tcg" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">one-piece-tcg-eb-05-heroines-edition-vol-2</td>
+      <td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td>
+      <td class="source-cell"><a href="https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="one-piece-tcg" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">one-piece-tcg-premium-card-collection-best-selection-vol-7</td>
+      <td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td>
+      <td class="source-cell"><a href="https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="one-piece-tcg" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">one-piece-tcg-premium-booster-vol-2</td>
+      <td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="one-piece-tcg" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">one-piece-tcg-limited-card-sleeve-premium-matte-vol-6</td>
+      <td><span class="cat-badge cat-one-piece-tcg">ONE PIECE TCG</span></td>
+      <td class="source-cell"><a href="https://x.com/ONEPIECE_tcg_EN/status/2067925359555690647" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-lorcana" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">disney-lorcana-attack-of-the-vine</td>
+      <td><span class="cat-badge cat-disney-lorcana">DISNEY LORCANA</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-topps-flagship-football</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="topps" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-skybox-metal-universe-space-jam-30th</td>
+      <td><span class="cat-badge cat-topps">TOPPS</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="panini" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-panini-flawless-fifa-world-cup</td>
+      <td><span class="cat-badge cat-panini">PANINI</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="panini" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">panini-select-road-to-fifa-world-cup-soccer</td>
+      <td><span class="cat-badge cat-panini">PANINI</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="panini" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-panini-impeccable-wnba</td>
+      <td><span class="cat-badge cat-panini">PANINI</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="panini" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-donruss-optic-nwsl-soccer</td>
+      <td><span class="cat-badge cat-panini">PANINI</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/sports-card-release-calendar-dates/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="non-sports-cards" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-upper-deck-inspirations-world-of-dc</td>
+      <td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="non-sports-cards" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-rittenhouse-star-trek-voyager</td>
+      <td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="non-sports-cards" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-upper-deck-aew-wrestling</td>
+      <td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="non-sports-cards" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">2026-topps-chrome-sapphire-veefriends</td>
+      <td><span class="cat-badge cat-non-sports-cards">NON-SPORTS CARDS</span></td>
+      <td class="source-cell"><a href="https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="mattel-creations" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">mattel-creations-august-member-exclusive</td>
+      <td><span class="cat-badge cat-mattel-creations">MATTEL CREATIONS</span></td>
+      <td class="source-cell"><a href="https://creations.mattel.com/pages/launch-calendar" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="mattel-creations" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">hot-wheels-august-collector-exclusive</td>
+      <td><span class="cat-badge cat-mattel-creations">MATTEL CREATIONS</span></td>
+      <td class="source-cell"><a href="https://creations.mattel.com/pages/launch-calendar" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="supreme-fw26" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">supreme-fw26-preview-lookbook</td>
+      <td><span class="cat-badge cat-supreme-fw26">SUPREME FW26</span></td>
+      <td class="source-cell"><a href="https://www.supremecommunity.com/season/fall-winter2026/droplists/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-drops" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="supreme-fw26" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">supreme-fw26-week-1</td>
+      <td><span class="cat-badge cat-supreme-fw26">SUPREME FW26</span></td>
+      <td class="source-cell"><a href="https://www.supremecommunity.com/season/fall-winter2026/droplists/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-drops" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="supreme-fw26" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">supreme-fw26-week-2</td>
+      <td><span class="cat-badge cat-supreme-fw26">SUPREME FW26</span></td>
+      <td class="source-cell"><a href="https://www.supremecommunity.com/season/fall-winter2026/droplists/" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-drops" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="collab-lifestyle" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">bobby-hundreds-x-disney-collab</td>
+      <td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td>
+      <td class="source-cell"><a href="https://thehundreds.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://supremedroplist.com/" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="collab-lifestyle" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">hellstar-x-adidas</td>
+      <td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td>
+      <td class="source-cell"><a href="https://www.adidas.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-footwear-drops" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="collab-lifestyle" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">kith-august-monthly-drop</td>
+      <td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td>
+      <td class="source-cell"><a href="https://kith.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-drops" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="collab-lifestyle" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">perks-and-mini-x-asics-collab</td>
+      <td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td>
+      <td class="source-cell"><a href="https://www.asics.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-footwear-drops" target="_blank" rel="noopener">Source 2 ↗</a></td>
+    </tr>
+    <tr data-cat="disney-parks-pins" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">wdw-halloween-2026-pin-series-launch</td>
+      <td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td>
+      <td class="source-cell"><a href="https://disneypinsblog.com/halloween-2026-pin-releases-at-disney-store-disney-parks/" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="vinyl-music" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">record-store-day-drops-2-2026</td>
+      <td><span class="cat-badge cat-vinyl-music">VINYL & MUSIC</span></td>
+      <td class="source-cell"><a href="https://www.recordstoreday.com" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    <tr data-cat="vinyl-music" data-date="99999999">
+      <td class="date-cell">8/TBD/2026</td>
+      <td class="name-cell">august-limited-pressing-releases</td>
+      <td><span class="cat-badge cat-vinyl-music">VINYL & MUSIC</span></td>
+      <td class="source-cell"><a href="https://www.plaidroomrecords.com/collections/pre-orders" target="_blank" rel="noopener">Source 1 ↗</a></td>
+    </tr>
+    </tbody>
   </table>
   <div class="no-results" id="noResults">No drops found — try a different filter or search.</div>
 </div>
-
 <footer>
   <span>Updated 8/8/2026 · Grailz Discord Server</span>
   <span>topps.com · beckett.com · tcgradar.eu · disneypinsblog.com · funko.com + social</span>
 </footer>
-
 <script>
-const DROPS   = [{"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-marvel-collector-corps-shang-chi-box-xl", "url1": "https://www.amazon.com/dp/B091JH6YTY", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-archangel-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-psylocke-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-sabretooth-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-bishop-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-mega-man-x-capcom", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": 3, "name": "one-piece-round1-arcade-exclusive-promo-pack-phase-3-entry", "url1": "https://x.com/OPTCGAlert/status/2083597291852607623", "url2": "", "time": "00:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 4, "name": "wdw-august-le-pin-week-1", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com", "time": "09:00"}, {"cat": "PANINI", "slug": "panini", "day": 5, "name": "2026-panini-contenders-pfl", "url1": "https://www.overtimecardsandcollectibles.com/product-release-schedule", "url2": "", "time": "12:00"}, {"cat": "COLLAB / LIFESTYLE", "slug": "collab-lifestyle", "day": 6, "name": "jjjjound-x-new-balance-740n-mushroom", "url1": "https://jjjjound.com", "url2": "https://hypebeast.com/tags/weekly-footwear-drops", "time": "10:00"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 7, "name": "first-partner-collection-series-3-hoenn-kalos-paldea", "url1": "https://icv2.com/articles/news/view/61079/pokemon-tcg-2026-product-calendar", "url2": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "time": "09:00"}, {"cat": "MTG", "slug": "mtg", "day": 7, "name": "mtg-the-hobbit-prerelease", "url1": "https://magic.wizards.com/en/products/the-hobbit", "url2": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/", "time": "00:00"}, {"cat": "YU-GI-OH!", "slug": "yu-gi-oh", "day": 7, "name": "yu-gi-oh-blissful-eternity", "url1": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/", "url2": "", "time": "00:00"}, {"cat": "NON-SPORTS CARDS", "slug": "non-sports-cards", "day": 7, "name": "2026-leaf-seasons-in-the-sun-baseball", "url1": "https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/", "url2": "", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-topps-universe-wwe", "url1": "https://www.topps.com/pages/topps-universe-wwe", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-bowman-chrome-baseball", "url1": "https://www.topps.com/pages/bowman-chrome-baseball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-topps-wacky-packages-all-new-series", "url1": "https://www.topps.com/pages/2026-topps-wacky-packages-all-new-series", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "2026-topps-vault-marvel", "url1": "https://www.topps.com/pages/topps-vault-marvel", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "topps-flagship-premier-league-2026-27", "url1": "https://www.topps.com/pages/topps-flagship-premier-league", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "2026-topps-chrome-mls", "url1": "https://www.topps.com/pages/topps-mls-chrome", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 11, "name": "wdw-august-le-pin-week-2", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com", "time": "09:00"}, {"cat": "TOPPS", "slug": "topps", "day": 12, "name": "2026-topps-pristine-baseball", "url1": "https://www.topps.com/pages/topps-pristine-baseball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 12, "name": "2026-star-wars-chrome-galaxy", "url1": "https://www.topps.com/pages/star-wars-chrome-galaxy", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-global-release", "url1": "https://magic.wizards.com/en/products/the-hobbit", "url2": "https://x.com/wizards_magic/status/2082179288032219416", "time": "00:00"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-gamegenic-18-pocket-zip-up-album-5-designs", "url1": "https://x.com/Gamegenic_/status/2084308251391226217", "url2": "", "time": "00:00"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-gamegenic-premium-art-sleeves", "url1": "https://x.com/Gamegenic_/status/2083221156203573464", "url2": "", "time": "00:00"}, {"cat": "TOPPS", "slug": "topps", "day": 14, "name": "2026-topps-stadium-club-ufc", "url1": "https://www.topps.com/pages/topps-stadium-club-ufc", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-anaheim-disney-pinnacle-booth", "url1": "https://d23.com/d23-2026/", "url2": "https://x.com/DisneyPinnacle/status/2081016173999862201", "time": "09:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-disney-princess-all-13-le-pin-1200", "url1": "https://d23.com/d23-2026/", "url2": "https://x.com/DPrincess_Facts/status/2081016173999862201", "time": "09:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-anaheim-exclusive-pin-drops-weekend", "url1": "https://d23.com/d23-2026/", "url2": "https://disneypinsblog.com", "time": "09:00"}, {"cat": "TOPPS", "slug": "topps", "day": 17, "name": "2026-topps-museum-collection-baseball", "url1": "https://www.topps.com/pages/topps-museum-collection-baseball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 18, "name": "topps-definitive-basketball", "url1": "https://www.topps.com/pages/topps-definitive-basketball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 18, "name": "wdw-august-le-pin-week-3", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com", "time": "09:00"}, {"cat": "TOPPS", "slug": "topps", "day": 19, "name": "2026-topps-chrome-baseball-logofractor-edition", "url1": "https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 19, "name": "2026-topps-mint-marvel", "url1": "https://www.topps.com/pages/topps-mint-marvel", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 20, "name": "topps-motif-basketball", "url1": "https://www.topps.com/pages/topps-motif-basketball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 25, "name": "wdw-august-le-pin-week-4", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com", "time": "09:00"}, {"cat": "TOPPS", "slug": "topps", "day": 27, "name": "2026-topps-chrome-black-basketball", "url1": "https://www.topps.com/pages/topps-chrome-black-basketball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-dragonite-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149", "time": "09:00"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-darkrai-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149", "time": "09:00"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-zeraora-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149", "time": "09:00"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": 28, "name": "one-piece-tcg-op-17-the-worlds-strongest-warriors-global-simultaneous", "url1": "https://en.onepiece-cardgame.com/products/", "url2": "https://x.com/ONEPIECE_tcg_EN/status/2075989349028508136", "time": "00:00"}];
-const CAT_MAP = {"mattel-creations": "#6b2d8b", "topps": "#1a4a6b", "pokemon-tcg": "#b8860b", "mtg": "#0e4e2a", "funko-pop": "#4e2a0e", "one-piece-tcg": "#8b1a4a", "panini": "#0e2a4e", "vinyl-music": "#2a0e4e", "supreme-fw26": "#8b0000", "collab-lifestyle": "#2a4e0e", "disney-parks-pins": "#00457c", "movies": "#8b1a1a", "disney-lorcana": "#1a3a6b", "yu-gi-oh": "#6b1a1a", "non-sports-cards": "#3a3a1a"};
-const MONTH_N = 8;
-const YEAR_N  = 2026;
-const TODAY_D = 8;
-
-// ── Build calendar (TABLE-based) ───────────────────────────────────────
-const calBody  = document.getElementById('calBody');
-const panel    = document.getElementById('dayPanel');
-const panelTitle = document.getElementById('panelTitle');
-const panelBody  = document.getElementById('panelBody');
-const legend   = document.getElementById('legend');
-
-// Group drops by day
-const byDay = {};
-DROPS.forEach(d => {
-  (byDay[d.day] = byDay[d.day] || []).push(d);
-});
-
-const firstDow    = new Date(YEAR_N, MONTH_N - 1, 1).getDay();
-const daysInMonth = new Date(YEAR_N, MONTH_N, 0).getDate();
-
-let dayCount = 0;
-let row = document.createElement('tr');
-calBody.appendChild(row);
-
-// Leading empty cells
-for (let i = 0; i < firstDow; i++) {
-  const td = document.createElement('td');
-  td.className = 'cal-cell empty';
-  row.appendChild(td);
-  dayCount++;
-}
-
-let selectedDay = null;
-
-for (let day = 1; day <= daysInMonth; day++) {
-  if (dayCount % 7 === 0) {
-    row = document.createElement('tr');
-    calBody.appendChild(row);
+  const tbody=document.getElementById('tbody');
+  const rows=Array.from(tbody.querySelectorAll('tr'));
+  const noRes=document.getElementById('noResults');
+  const count=document.getElementById('count');
+  let activeFilter='all',sortCol=0,sortDesc=false;
+  function updateCount(){
+    const v=rows.filter(r=>!r.classList.contains('hidden')).length;
+    count.textContent=v+' drop'+(v!==1?'s':'');
   }
-
-  const dayDrops = byDay[day] || [];
-  const td = document.createElement('td');
-  td.className = 'cal-cell' +
-    (dayDrops.length ? ' has-drops' : '') +
-    (day === TODAY_D ? ' today' : '');
-  td.dataset.day = day;
-
-  const num = document.createElement('div');
-  num.className = 'day-num';
-  num.textContent = day;
-  td.appendChild(num);
-
-  if (dayDrops.length) {
-    const chips = document.createElement('div');
-    chips.className = 'cal-chips';
-    dayDrops.slice(0, 3).forEach(dr => {
-      const chip = document.createElement('div');
-      chip.className = 'cal-chip';
-      chip.style.background = CAT_MAP[dr.slug] || '#2a2a35';
-      chip.style.color = '#fff';
-      chip.title = dr.name;
-      chip.textContent = dr.name;
-      chips.appendChild(chip);
+  function applyFilters(){
+    const q=document.getElementById('search').value.toLowerCase();
+    let any=false;
+    rows.forEach(r=>{
+      const cm=activeFilter==='all'||r.dataset.cat===activeFilter;
+      const tm=!q||r.textContent.toLowerCase().includes(q);
+      r.classList.toggle('hidden',!(cm&&tm));
+      if(cm&&tm)any=true;
     });
-    if (dayDrops.length > 3) {
-      const more = document.createElement('div');
-      more.className = 'cal-more';
-      more.textContent = '+' + (dayDrops.length - 3) + ' more';
-      chips.appendChild(more);
-    }
-    td.appendChild(chips);
-
-    td.addEventListener('click', () => {
-      if (selectedDay === day) {
-        panel.classList.remove('visible');
-        td.classList.remove('selected');
-        selectedDay = null;
-        return;
-      }
-      // Deselect previous
-      const prev = calBody.querySelector('.selected');
-      if (prev) prev.classList.remove('selected');
-      selectedDay = day;
-      td.classList.add('selected');
-
-      const dt = new Date(YEAR_N, MONTH_N - 1, day);
-      panelTitle.textContent = dt.toLocaleDateString('en-US', {
-        weekday:'long', month:'long', day:'numeric', year:'numeric'
-      });
-      panelBody.innerHTML = '';
-
-      dayDrops.forEach(dr => {
-        const row = document.createElement('div');
-        row.className = 'panel-drop';
-        const bg = CAT_MAP[dr.slug] || '#2a2a35';
-        row.innerHTML =
-          '<span class="cat-badge" style="background:' + bg + ';color:#fff">' + dr.cat + '</span>' +
-          '<span class="panel-drop-name">' + dr.name + '</span>' +
-          '<span class="panel-srcs">' +
-            (dr.url1 ? '<a href="' + dr.url1 + '" target="_blank" rel="noopener">Source 1 ↗</a>' : '') +
-            (dr.url2 ? '<a href="' + dr.url2 + '" target="_blank" rel="noopener">Source 2 ↗</a>' : '') +
-          '</span>';
-        panelBody.appendChild(row);
-      });
-
-      // Export widget
-      const dropTime = (dayDrops[0] && dayDrops[0].time) ? dayDrops[0].time : '09:00';
-      const exportWrap = document.createElement('div');
-      exportWrap.className = 'cal-export';
-      exportWrap.innerHTML =
-        '<div class="cal-export-group"><span class="cal-export-label">Drop Time (ET)</span>' +
-        '<input type="time" id="calTime" value="' + dropTime + '"></div>' +
-        '<div class="cal-export-group"><span class="cal-export-label">Alert Before</span>' +
-        '<input type="number" id="calAlertNum" value="30" min="1" max="10080"></div>' +
-        '<div class="cal-export-group"><span class="cal-export-label">Unit</span>' +
-        '<select id="calAlertUnit"><option value="minutes">Minutes</option><option value="hours">Hours</option><option value="days">Days</option></select></div>' +
-        '<button class="btn-ics" id="btnIcs">' +
-        '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>' +
-        'Add to Calendar</button>';
-      panelBody.appendChild(exportWrap);
-
-      document.getElementById('btnIcs').addEventListener('click', () => {
-        const t = document.getElementById('calTime').value || dropTime;
-        const n = parseInt(document.getElementById('calAlertNum').value) || 30;
-        const u = document.getElementById('calAlertUnit').value;
-        const mins = u==='days' ? n*1440 : u==='hours' ? n*60 : n;
-        exportICS(day, t, mins, dayDrops);
-      });
-
-      panel.classList.add('visible');
-      panel.scrollIntoView({behavior:'smooth', block:'nearest'});
-    });
+    noRes.style.display=any?'none':'block';
+    updateCount();
   }
-
-  row.appendChild(td);
-  dayCount++;
-}
-
-// Trailing empty cells to complete last row
-while (dayCount % 7 !== 0) {
-  const td = document.createElement('td');
-  td.className = 'cal-cell empty';
-  row.appendChild(td);
-  dayCount++;
-}
-
-// Legend
-const seen = {};
-DROPS.forEach(d => { if (!seen[d.slug]) seen[d.slug] = {cat:d.cat, color:CAT_MAP[d.slug]||'#2a2a35'}; });
-Object.entries(seen).sort((a,b)=>a[1].cat.localeCompare(b[1].cat)).forEach(([sl,info]) => {
-  const item = document.createElement('div');
-  item.className = 'legend-item';
-  item.innerHTML = '<span class="legend-dot" style="background:' + info.color + '"></span>' + info.cat;
-  legend.appendChild(item);
-});
-
-// ── ICS export ─────────────────────────────────────────────────────────
-function pad(n) { return String(n).padStart(2,'0'); }
-function icsDate(y,m,d,time) {
-  const [h,mi] = time.split(':').map(Number);
-  return y + pad(m) + pad(d) + 'T' + pad(h) + pad(mi) + '00';
-}
-function exportICS(day, time, alertMins, drops) {
-  const dt = new Date(YEAR_N, MONTH_N-1, day);
-  const label = dt.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
-  const dtStr = icsDate(YEAR_N, MONTH_N, day, time);
-  const [sh,sm] = time.split(':').map(Number);
-  const dtEnd = icsDate(YEAR_N, MONTH_N, day, pad((sh+1)%24)+':'+pad(sm));
-  const uid = 'grailz-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'@grailzking.github.io';
-  const desc = drops.map(d => '['+d.cat+'] '+d.name+(d.url1?' — '+d.url1:'')).join('\n');
-  const names = drops.map(d=>d.name).join(', ');
-  const ics = [
-    'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Grailz//Drops Calendar//EN',
-    'CALSCALE:GREGORIAN','METHOD:PUBLISH',
-    'BEGIN:VEVENT',
-    'UID:'+uid,
-    'DTSTAMP:'+icsDate(YEAR_N,MONTH_N,day,'00:00'),
-    'DTSTART:'+dtStr,'DTEND:'+dtEnd,
-    'SUMMARY:🎯 Grailz Drop — '+label,
-    'DESCRIPTION:'+desc.replace(/\n/g,'\\n'),
-    'BEGIN:VALARM','ACTION:DISPLAY',
-    'DESCRIPTION:Grailz Drop Reminder — '+names.slice(0,60),
-    'TRIGGER:-PT'+alertMins+'M',
-    'END:VALARM','END:VEVENT','END:VCALENDAR'
-  ].join('\r\n');
-  const blob = new Blob([ics], {type:'text/calendar;charset=utf-8'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href=url; a.download='grailz-drop-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
-  document.body.appendChild(a); a.click();
-  document.body.removeChild(a); URL.revokeObjectURL(url);
-}
-
-// ── Table ───────────────────────────────────────────────────────────────
-const tbody   = document.getElementById('tbody');
-const rows    = Array.from(tbody.querySelectorAll('tr'));
-const noRes   = document.getElementById('noResults');
-const countEl = document.getElementById('count');
-let activeFilter='all', sortCol=0, sortDesc=false;
-
-function updateCount() {
-  const v = rows.filter(r=>!r.classList.contains('hidden')).length;
-  countEl.textContent = v+' drop'+(v!==1?'s':'');
-}
-function applyFilters() {
-  const q = document.getElementById('search').value.toLowerCase();
-  let any = false;
-  rows.forEach(r => {
-    const cm = activeFilter==='all' || r.dataset.cat===activeFilter;
-    const tm = !q || r.textContent.toLowerCase().includes(q);
-    r.classList.toggle('hidden', !(cm&&tm));
-    if (cm&&tm) any=true;
+  document.querySelectorAll('.filter-btn').forEach(b=>{
+    b.addEventListener('click',()=>{
+      document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      activeFilter=b.dataset.filter;
+      applyFilters();
+    });
   });
-  noRes.style.display = any?'none':'block';
-  updateCount();
-}
-document.querySelectorAll('.filter-btn').forEach(b => {
-  b.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));
-    b.classList.add('active');
-    activeFilter = b.dataset.filter;
-    applyFilters();
+  document.getElementById('search').addEventListener('input',applyFilters);
+  document.querySelectorAll('thead th[data-col]').forEach(th=>{
+    th.addEventListener('click',()=>{
+      const col=+th.dataset.col;
+      if(sortCol===col)sortDesc=!sortDesc;
+      else{sortCol=col;sortDesc=false;}
+      document.querySelectorAll('thead th').forEach(t=>t.classList.remove('sorted','desc'));
+      th.classList.add('sorted');
+      if(sortDesc)th.classList.add('desc');
+      rows.slice().sort((a,b)=>{
+        if(col===0){
+          const ad=a.dataset.date||'99999999',bd=b.dataset.date||'99999999';
+          return sortDesc?bd.localeCompare(ad):ad.localeCompare(bd);
+        }
+        const av=a.cells[col]?.textContent.trim()||'';
+        const bv=b.cells[col]?.textContent.trim()||'';
+        return sortDesc?bv.localeCompare(av):av.localeCompare(bv);
+      }).forEach(r=>tbody.appendChild(r));
+      applyFilters();
+    });
   });
-});
-document.getElementById('search').addEventListener('input', applyFilters);
-document.querySelectorAll('table.drop-table thead th[data-col]').forEach(th => {
-  th.addEventListener('click', () => {
-    const col = +th.dataset.col;
-    if (sortCol===col) sortDesc=!sortDesc;
-    else { sortCol=col; sortDesc=false; }
-    document.querySelectorAll('table.drop-table thead th').forEach(t=>t.classList.remove('sorted','desc'));
-    th.classList.add('sorted');
-    if (sortDesc) th.classList.add('desc');
-    rows.slice().sort((a,b) => {
-      if (col===0) {
-        const ad=a.dataset.date||'99999999', bd=b.dataset.date||'99999999';
-        return sortDesc?bd.localeCompare(ad):ad.localeCompare(bd);
-      }
-      const av=a.cells[col]?.textContent.trim()||'', bv=b.cells[col]?.textContent.trim()||'';
-      return sortDesc?bv.localeCompare(av):av.localeCompare(bv);
-    }).forEach(r=>tbody.appendChild(r));
-    applyFilters();
-  });
-});
-applyFilters();
+  applyFilters();
 </script>
 </body>
 </html>
