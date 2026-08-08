@@ -471,7 +471,7 @@ def build_html(drops):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="data:image/png;base64,{LOGO_FAV_VAL}">
+<link rel="icon" type="image/png" href="{LOGO_FAV_VAL}">
 <title>Grailz — {month_name} Drops</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -493,7 +493,7 @@ header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linea
 .legend-dot{{width:8px;height:8px;border-radius:50%;flex-shrink:0;}}
 .cal-table{{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);table-layout:fixed;}}
 .cal-table thead th{{font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding:10px 4px;background:#0a0a14;border-bottom:1px solid var(--border);width:14.28%;}}
-.cal-cell{{height:100px;padding:6px 5px;vertical-align:top;border-right:1px solid var(--border);border-bottom:1px solid var(--border);cursor:default;transition:background .12s;}}
+.cal-cell{{height:100px;padding:6px 5px;vertical-align:top;border-right:1px solid var(--border);border-bottom:1px solid var(--border);cursor:default;transition:background .12s;overflow:hidden;position:relative;}}
 .cal-cell.empty{{background:#08080f;}}
 .cal-cell.has-drops{{background:#0d0b1a;cursor:pointer;}}
 .cal-cell.has-drops:hover{{background:#12101e;}}
@@ -545,7 +545,7 @@ tbody tr{{border-bottom:1px solid #1e1e26;transition:background .1s;}}
 tbody tr:nth-child(even){{background:var(--row-alt);}}
 tbody tr:hover{{background:#100d1e;box-shadow:inset 3px 0 0 var(--accent2);}}
 tbody tr.hidden{{display:none;}}
-td{{padding:10px 16px;vertical-align:middle;}}
+td{{padding:10px 16px;vertical-align:middle;}}.cal-table td{{padding:6px 5px;vertical-align:top;}}
 .cat-badge{{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap;}}
 {badge_css}
 .date-cell{{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap;}}
@@ -561,7 +561,7 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
 <body>
 <header>
   <div class="logo-wrap">
-    <img src="data:image/png;base64,{LOGO_64_VAL}" alt="Grailz" class="logo-img">
+    <img src="{LOGO_64_VAL}" alt="Grailz" class="logo-img">
     <div><div class="logo">GRAILZ</div><div class="subtitle">Collectibles Drop Calendar</div></div>
   </div>
   <div class="pill">{month_name}</div>
