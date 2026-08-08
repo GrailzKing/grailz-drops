@@ -80,6 +80,30 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 .panel-srcs a{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;transition:background .12s;}
 .panel-srcs a:hover{background:#0d1a20;}
 
+/* Calendar export */
+.cal-export{margin-top:12px;padding:12px 14px;background:#08081a;border:1px solid #2a1a40;border-radius:8px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;}
+.cal-export-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;display:block;}
+.cal-export input[type="time"],.cal-export input[type="number"],.cal-export select{
+  background:#0e0e1a;border:1px solid var(--border);color:var(--text);
+  font-family:'Space Mono',monospace;font-size:12px;padding:6px 10px;
+  border-radius:6px;outline:none;transition:border-color .15s;
+  -webkit-appearance:none;
+}
+.cal-export input[type="time"]:focus,.cal-export input[type="number"]:focus,.cal-export select:focus{border-color:var(--accent2);}
+.cal-export input[type="number"]{width:64px;}
+.cal-export select{cursor:pointer;}
+.cal-export-group{display:flex;flex-direction:column;gap:2px;}
+.btn-ics{
+  font-family:'Space Mono',monospace;font-size:11px;font-weight:700;
+  padding:8px 16px;border-radius:6px;border:none;cursor:pointer;
+  background:linear-gradient(135deg,#9b3fe8,#1eb8f0);
+  color:#fff;letter-spacing:.06em;text-transform:uppercase;
+  transition:filter .15s;white-space:nowrap;
+  display:flex;align-items:center;gap:6px;
+}
+.btn-ics:hover{filter:brightness(1.15);}
+.btn-ics svg{flex-shrink:0;}
+
 /* Divider */
 .divider{max-width:1100px;margin:28px auto 0;padding:0 32px;display:flex;align-items:center;gap:12px;}
 .div-line{flex:1;height:1px;background:var(--border);}
@@ -475,6 +499,60 @@ document.querySelectorAll('thead th[data-col]').forEach(th=>{
   });
 });
 applyFilters();
+
+// ── ICS generator ──────────────────────────────────────────────────────
+function pad(n){{ return String(n).padStart(2,'0'); }}
+function icsDate(year, month, day, time){{
+  const [h,m] = time.split(':').map(Number);
+  return `${{year}}${{pad(month)}}${{pad(day)}}T${{pad(h)}}${{pad(m)}}00`;
+}}
+function exportICS(day, time, alertMins, drops){{
+  const dt   = new Date(YEAR_N, MONTH_N - 1, day);
+  const label = dt.toLocaleDateString('en-US',{{month:'long',day:'numeric',year:'numeric'}});
+  const dtStr = icsDate(YEAR_N, MONTH_N, day, time);
+  // End time = start + 1 hour
+  const [sh, sm] = time.split(':').map(Number);
+  const endH = sh + 1, endM = sm;
+  const dtEnd = icsDate(YEAR_N, MONTH_N, day, `${{pad(endH % 24)}}:${{pad(endM)}}`);
+  const uid   = `grailz-${{YEAR_N}}-${{pad(MONTH_N)}}-${{pad(day)}}@grailzking.github.io`;
+
+  const names = drops.map(d => d.name).join(', ');
+  const desc  = drops.map(d => `[${{d.cat}}] ${{d.name}}${{d.url1?' — '+d.url1:''}}`)
+                     .join('\n');
+
+  const ics = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Grailz//Drops Calendar//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    `UID:${{uid}}`,
+    `DTSTAMP:${{icsDate(YEAR_N, MONTH_N, day, '00:00')}}`,
+    `DTSTART:${{dtStr}}`,
+    `DTEND:${{dtEnd}}`,
+    `SUMMARY:🎯 Grailz Drop — ${{label}}`,
+    `DESCRIPTION:${{desc.replace(/
+/g,'\n')}}`,
+    'BEGIN:VALARM',
+    'ACTION:DISPLAY',
+    `DESCRIPTION:Grailz Drop Reminder — ${{names.slice(0,60)}}`,
+    `TRIGGER:-PT${{alertMins}}M`,
+    'END:VALARM',
+    'END:VEVENT',
+    'END:VCALENDAR'
+  ].join('\r\n');
+
+  const blob = new Blob([ics], {{type:'text/calendar;charset=utf-8'}});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `grailz-drop-${{YEAR_N}}-${{pad(MONTH_N)}}-${{pad(day)}}.ics`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}}
 </script>
 </body>
 </html>
