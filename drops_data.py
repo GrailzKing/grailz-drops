@@ -251,19 +251,17 @@ def scrape_social():
 # Update this list each month — scrapers will ADD to it, not replace it.
 
 MANUAL_DROPS = [
+    # ── FUNKO POP — funko.com/limited-edition-calendar.html only ─────────
+    # Funko.com Exclusives
+    ("FUNKO POP","8-4","funko-pop-comic-covers-batman-black-and-white-funko-exclusive","https://funko.com/limited-edition-calendar.html","", "12:00"),
+    ("FUNKO POP","8-11","funko-pop-tmnt-michelangelo-eating-pizza-with-pop-protector-funko-exclusive","https://funko.com/limited-edition-calendar.html","", "12:00"),
+    # Retailer Exclusives
+    ("FUNKO POP","8-5","funko-pop-one-piece-toy-temple-collectibles-le-exclusive-9500-pcs","https://funko.com/limited-edition-calendar.html","", "12:00"),
+    ("FUNKO POP","8-5","funko-pop-sonic-the-hedgehog-gamestop-le-exclusive-9500-pcs","https://funko.com/limited-edition-calendar.html","", "12:00"),
+    ("FUNKO POP","8-12","funko-pop-harry-potter-target-le-exclusive-7500-pcs","https://funko.com/limited-edition-calendar.html","", "12:00"),
+    ("FUNKO POP","8-19","funko-pop-alice-in-wonderland-box-lunch-le-exclusive-9500-pcs","https://funko.com/limited-edition-calendar.html","", "12:00"),
+    ("FUNKO POP","8-26","funko-pop-wwe-walmart-le-exclusive-7500-pcs","https://funko.com/limited-edition-calendar.html","", "12:00"),
     # FUNKO POP
-    ("FUNKO POP","8-3","funko-pop-archangel-x-men","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-psylocke-x-men","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-sabretooth-x-men","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-bishop-x-men","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-3","funko-pop-mega-man-x-capcom","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-TBD","funko-pop-mystery-warner-bros-horror-icons-blind-box-retail","https://funko.com/new-featured/coming-soon/","https://sdccblog.com/2026/07/funko-san-diego-comic-con-2026-exclusives/", "11:00"),
-    ("FUNKO POP","8-TBD","funko-pop-chainsaw-man-movie-reze-arc-exclusive","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-TBD","funko-pop-monsters-inc-25th-anniversary-set","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-TBD","funko-pop-over-the-garden-wall-series","https://funko.com/new-featured/coming-soon/","https://funko.com/limited-edition-calendar.html", "11:00"),
-    ("FUNKO POP","8-TBD","funko-pop-august-hot-topic-exclusive","https://funko.com/limited-edition-calendar.html","", "11:00"),
-    ("FUNKO POP","8-TBD","funko-pop-august-entertainment-earth-exclusive","https://funko.com/limited-edition-calendar.html","", "11:00"),
-    ("FUNKO POP","8-TBD","funko-pop-august-fan-rewards-exclusive","https://funko.com/limited-edition-calendar.html","", "11:00"),
     # POKEMON TCG
     ("POKEMON TCG","8-7","first-partner-collection-series-3-hoenn-kalos-paldea","https://icv2.com/articles/news/view/61079/pokemon-tcg-2026-product-calendar","https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "09:00"),
     ("POKEMON TCG","8-28","pokemon-tcg-mega-dragonite-ex-tin","https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026","https://x.com/PokemonRestocks/status/2065098551382655149", "09:00"),
