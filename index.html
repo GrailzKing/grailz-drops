@@ -40,19 +40,18 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 .day-panel.visible{display:block;}
 .day-panel-inner{background:var(--surface);border:1px solid #9b3fe850;border-radius:10px;padding:16px 20px;}
 .day-panel-title{font-family:'Space Mono',monospace;font-size:12px;color:#c084fc;margin-bottom:12px;letter-spacing:.06em;}
-.panel-drop{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#0a0a14;border-radius:6px;border:1px solid var(--border);margin-bottom:6px;flex-wrap:wrap;}
+.panel-drop{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#0a0a14;border-radius:6px;border:1px solid var(--border);margin-bottom:6px;flex-wrap:wrap;flex-direction:row;}
 .panel-drop:last-of-type{margin-bottom:0;}
 .panel-drop-name{font-size:12px;color:var(--text);flex:1;min-width:120px;}
 .panel-srcs{display:flex;gap:6px;flex-shrink:0;}
 .panel-srcs a{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;}
-.cal-export{margin-top:12px;padding:12px 14px;background:#08081a;border:1px solid #2a1a40;border-radius:8px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;}
-.cal-export-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;display:block;}
-.cal-export input[type="time"],.cal-export input[type="number"],.cal-export select{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:12px;padding:6px 10px;border-radius:6px;outline:none;-webkit-appearance:none;}
-.cal-export input[type="number"]{width:64px;}
-.cal-export select{cursor:pointer;}
-.cal-export-group{display:flex;flex-direction:column;gap:2px;}
-.btn-ics{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;padding:8px 16px;border-radius:6px;border:none;cursor:pointer;background:linear-gradient(135deg,#9b3fe8,#1eb8f0);color:#fff;letter-spacing:.06em;text-transform:uppercase;transition:filter .15s;white-space:nowrap;display:flex;align-items:center;gap:6px;}
-.btn-ics:hover{filter:brightness(1.15);}
+.drop-cal-row{display:flex;align-items:center;gap:6px;margin-top:6px;flex-wrap:wrap;padding-top:6px;border-top:1px solid #1e1230;width:100%;}
+.drop-time-input{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:11px;padding:4px 8px;border-radius:5px;outline:none;-webkit-appearance:none;width:110px;}
+.drop-alert-num{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:11px;padding:4px 6px;border-radius:5px;outline:none;width:52px;}
+.drop-alert-unit{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:11px;padding:4px 6px;border-radius:5px;outline:none;cursor:pointer;}
+.btn-ics-sm{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:5px 10px;border-radius:5px;border:none;cursor:pointer;background:linear-gradient(135deg,#9b3fe8,#1eb8f0);color:#fff;letter-spacing:.04em;text-transform:uppercase;transition:filter .15s;display:flex;align-items:center;gap:4px;white-space:nowrap;}
+.btn-ics-sm:hover{filter:brightness(1.2);}
+/* per-drop cal export handled inline */
 .divider{max-width:1100px;margin:28px auto 0;padding:0 32px;display:flex;align-items:center;gap:12px;}
 .div-line{flex:1;height:1px;background:var(--border);}
 .div-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
@@ -302,28 +301,39 @@ for(let day=1;day<=daysInMonth;day++){
       const dt=new Date(YEAR_N,MONTH_N-1,day);
       panelTitle.textContent=dt.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
       panelBody.innerHTML='';
-      dayDrops.forEach(dr=>{
+      dayDrops.forEach((dr,idx)=>{
         const r=document.createElement('div');r.className='panel-drop';
         const bg=CAT_MAP[dr.slug]||'#2a2a35';
-        r.innerHTML='<span class="cat-badge" style="background:'+bg+';color:#fff">'+dr.cat+'</span>'+
+        const dropId='drop-'+day+'-'+idx;
+        r.innerHTML=
+          '<span class="cat-badge" style="background:'+bg+';color:#fff">'+dr.cat+'</span>'+
           '<span class="panel-drop-name">'+dr.name+'</span>'+
-          '<span class="panel-srcs">'+(dr.url1?'<a href="'+dr.url1+'" target="_blank" rel="noopener">Source 1 ↗</a>':'')+
-          (dr.url2?'<a href="'+dr.url2+'" target="_blank" rel="noopener">Source 2 ↗</a>':'')+'</span>';
+          '<span class="panel-srcs">'+
+            (dr.url1?'<a href="'+dr.url1+'" target="_blank" rel="noopener">Source 1 ↗</a>':'')+
+            (dr.url2?'<a href="'+dr.url2+'" target="_blank" rel="noopener">Source 2 ↗</a>':'')+
+          '</span>'+
+          '<div class="drop-cal-row">'+
+            '<input type="time" class="drop-time-input" id="t-'+dropId+'" value="'+(dr.time||'09:00')+'">'+
+            '<input type="number" class="drop-alert-num" id="n-'+dropId+'" value="30" min="1" max="10080">'+
+            '<select class="drop-alert-unit" id="u-'+dropId+'">'+
+              '<option value="minutes">Min</option>'+
+              '<option value="hours">Hrs</option>'+
+              '<option value="days">Days</option>'+
+            '</select>'+
+            '<button class="btn-ics-sm" data-id="'+dropId+'">'+
+              '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>'+
+              'Add'+
+            '</button>'+
+          '</div>';
         panelBody.appendChild(r);
-      });
-      const dropTime=(dayDrops[0]&&dayDrops[0].time)?dayDrops[0].time:'09:00';
-      const ew=document.createElement('div');ew.className='cal-export';
-      ew.innerHTML='<div class="cal-export-group"><span class="cal-export-label">Drop Time (ET)</span><input type="time" id="calTime" value="'+dropTime+'"></div>'+
-        '<div class="cal-export-group"><span class="cal-export-label">Alert Before</span><input type="number" id="calAlertNum" value="30" min="1" max="10080"></div>'+
-        '<div class="cal-export-group"><span class="cal-export-label">Unit</span><select id="calAlertUnit"><option value="minutes">Minutes</option><option value="hours">Hours</option><option value="days">Days</option></select></div>'+
-        '<button class="btn-ics" id="btnIcs"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add to Calendar</button>';
-      panelBody.appendChild(ew);
-      document.getElementById('btnIcs').addEventListener('click',()=>{
-        const t=document.getElementById('calTime').value||dropTime;
-        const n=parseInt(document.getElementById('calAlertNum').value)||30;
-        const u=document.getElementById('calAlertUnit').value;
-        const mins=u==='days'?n*1440:u==='hours'?n*60:n;
-        exportICS(day,t,mins,dayDrops);
+
+        r.querySelector('.btn-ics-sm').addEventListener('click',()=>{
+          const t=document.getElementById('t-'+dropId).value||(dr.time||'09:00');
+          const n=parseInt(document.getElementById('n-'+dropId).value)||30;
+          const u=document.getElementById('u-'+dropId).value;
+          const mins=u==='days'?n*1440:u==='hours'?n*60:n;
+          exportICS(day,t,mins,[dr]);
+        });
       });
       panel.classList.add('visible');panel.scrollIntoView({behavior:'smooth',block:'nearest'});
     });
