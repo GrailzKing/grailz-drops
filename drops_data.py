@@ -487,6 +487,38 @@ header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linea
 .pill{{font-family:'Space Mono',monospace;font-size:11px;background:linear-gradient(135deg,#9b3fe820,#1eb8f020);border:1px solid #9b3fe860;color:#c084fc;padding:6px 16px;border-radius:20px;}}
 .cal-section{{max-width:1100px;margin:28px auto 0;padding:0 32px;}}
 .cal-top{{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px;}}
+.view-toggle{{display:flex;gap:0;border:1px solid var(--border);border-radius:8px;overflow:hidden;}}
+.view-btn{{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:6px 14px;border:none;background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.06em;text-transform:uppercase;transition:all .15s;}}
+.view-btn:hover{{background:#1a1a2a;color:var(--text);}}
+.view-btn.active{{background:var(--accent2);color:#fff;}}
+/* Week view */
+.week-nav{{display:flex;align-items:center;gap:12px;margin-bottom:14px;}}
+.week-nav-btn{{font-family:'Space Mono',monospace;font-size:18px;background:none;border:1px solid var(--border);color:var(--muted);width:32px;height:32px;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;}}
+.week-nav-btn:hover{{border-color:var(--accent2);color:var(--text);}}
+.week-label{{font-family:'Space Mono',monospace;font-size:12px;color:var(--text);letter-spacing:.06em;}}
+.week-table{{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);table-layout:fixed;}}
+.week-table thead th{{font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding:8px 4px;background:#0a0a14;border-bottom:1px solid var(--border);}}
+.week-table thead th.week-th-today{{color:var(--accent2);}}
+.week-cell{{height:140px;padding:8px 6px;vertical-align:top;border-right:1px solid var(--border);cursor:default;overflow:hidden;}}
+.week-cell.has-drops{{background:#0d0b1a;cursor:pointer;}}
+.week-cell.has-drops:hover{{background:#12101e;}}
+.week-cell.selected{{background:#130f22;box-shadow:inset 0 0 0 2px var(--accent2);}}
+.week-cell.week-today{{border-top:2px solid var(--accent2);}}
+.week-date{{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:4px;}}
+.week-cell.has-drops .week-date,.week-cell.week-today .week-date{{color:var(--text);}}
+/* Day view */
+.day-nav{{display:flex;align-items:center;gap:12px;margin-bottom:14px;}}
+.day-nav-btn{{font-family:'Space Mono',monospace;font-size:18px;background:none;border:1px solid var(--border);color:var(--muted);width:32px;height:32px;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;}}
+.day-nav-btn:hover{{border-color:var(--accent2);color:var(--text);}}
+.day-label{{font-family:'Space Mono',monospace;font-size:12px;color:var(--text);letter-spacing:.06em;}}
+.day-view-inner{{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;min-height:200px;}}
+.day-empty{{text-align:center;padding:48px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:12px;}}
+.day-drop-row{{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#0a0a14;border-radius:6px;border:1px solid var(--border);margin-bottom:8px;flex-wrap:wrap;}}
+.day-drop-row:last-of-type{{margin-bottom:0;}}
+.day-drop-time{{font-family:'Space Mono',monospace;font-size:11px;color:var(--accent2);font-weight:700;white-space:nowrap;min-width:72px;}}
+.day-drop-name{{font-size:12px;color:var(--text);flex:1;min-width:120px;}}
+.day-srcs{{display:flex;gap:6px;flex-shrink:0;}}
+.day-srcs a{{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;}}
 .cal-title{{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}}
 .cal-legend{{display:flex;flex-wrap:wrap;gap:8px;}}
 .legend-item{{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted);}}
@@ -567,13 +599,47 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
 </header>
 <div class="cal-section">
   <div class="cal-top">
-    <div class="cal-title">{month_name}</div>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <div class="cal-title" id="calHeading">{month_name}</div>
+      <div class="view-toggle">
+        <button class="view-btn active" data-view="month">Month</button>
+        <button class="view-btn" data-view="week">Week</button>
+        <button class="view-btn" data-view="day">Day</button>
+      </div>
+    </div>
     <div class="cal-legend" id="legend"></div>
   </div>
-  <table class="cal-table">
-    <thead><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr></thead>
-    <tbody id="calBody"></tbody>
-  </table>
+
+  <!-- Month view -->
+  <div id="viewMonth">
+    <table class="cal-table">
+      <thead><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr></thead>
+      <tbody id="calBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Week view -->
+  <div id="viewWeek" style="display:none;">
+    <div class="week-nav">
+      <button class="week-nav-btn" id="weekPrev">‹</button>
+      <span class="week-label" id="weekLabel"></span>
+      <button class="week-nav-btn" id="weekNext">›</button>
+    </div>
+    <table class="week-table" id="weekTable">
+      <thead id="weekHead"></thead>
+      <tbody id="weekBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Day view -->
+  <div id="viewDay" style="display:none;">
+    <div class="day-nav">
+      <button class="day-nav-btn" id="dayPrev">‹</button>
+      <span class="day-label" id="dayLabel"></span>
+      <button class="day-nav-btn" id="dayNext">›</button>
+    </div>
+    <div class="day-view-inner" id="dayViewInner"></div>
+  </div>
 </div>
 <div class="day-panel" id="dayPanel">
   <div class="day-panel-inner">
