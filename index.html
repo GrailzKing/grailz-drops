@@ -16,11 +16,11 @@ body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--tex
 header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
 .logo-wrap{display:flex;align-items:center;gap:14px;}
 .logo-img{width:52px;height:52px;border-radius:50%;filter:drop-shadow(0 0 10px #9b3fe8) drop-shadow(0 0 20px #1eb8f060);flex-shrink:0;}
-.logo{font-family:'Space Mono',monospace;font-size:42px;font-weight:700;background:linear-gradient(90deg,#ffffff 0%,#c084fc 35%,#9b3fe8 60%,#1eb8f0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:4px;line-height:1;filter:drop-shadow(0 0 18px #9b3fe870);}
+.logo{font-family:'Space Mono',monospace;font-size:42px;font-weight:700;background:linear-gradient(90deg,#fff 0%,#c084fc 35%,#9b3fe8 60%,#1eb8f0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:4px;line-height:1;filter:drop-shadow(0 0 18px #9b3fe870);}
 .subtitle{font-size:12px;color:#8b6baa;letter-spacing:.16em;text-transform:uppercase;margin-top:6px;}
 .pill{font-family:'Space Mono',monospace;font-size:11px;background:linear-gradient(135deg,#9b3fe820,#1eb8f020);border:1px solid #9b3fe860;color:#c084fc;padding:6px 16px;border-radius:20px;}
 
-/* Calendar */
+/* Calendar section */
 .cal-section{max-width:1100px;margin:28px auto 0;padding:0 32px;}
 .cal-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px;}
 .cal-title{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
@@ -28,43 +28,18 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 .legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted);}
 .legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
 
-.cal-grid{
-  display:grid;
-  grid-template-columns:repeat(7,1fr);
-  grid-template-rows:36px repeat(6,100px);
-  border:1px solid var(--border);
-  border-radius:12px;
-  overflow:hidden;
-  background:var(--surface);
-  width:100%;
-}
-.cal-dow{
-  font-family:'Space Mono',monospace;font-size:9px;font-weight:700;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
-  text-align:center;padding:0 4px;background:#0a0a14;
-  border-bottom:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-}
-.cal-day{
-  padding:6px 5px;overflow:hidden;
-  border-right:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  display:flex;flex-direction:column;gap:2px;
-  transition:background .12s;
-}
-.cal-day:not(.empty){cursor:pointer;}
-.cal-day:not(.empty):hover{background:#12101e;}
-.cal-day.empty{background:#08080f;cursor:default;}
-.cal-day.has-drops{background:#0d0b1a;}
-.cal-day.selected{background:#130f22;box-shadow:inset 0 0 0 2px var(--accent2);}
-.cal-day.today .day-num{background:var(--accent2);color:#fff;border-radius:50%;}
-.day-num{
-  font-family:'Space Mono',monospace;font-size:11px;font-weight:700;
-  color:var(--muted);width:22px;height:22px;
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-}
-.cal-day.has-drops .day-num{color:var(--text);}
-.cal-drops{display:flex;flex-direction:column;gap:2px;min-width:0;overflow:hidden;}
+/* Calendar TABLE approach — bulletproof layout */
+.cal-table{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);table-layout:fixed;}
+.cal-table thead th{font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding:10px 4px;background:#0a0a14;border-bottom:1px solid var(--border);width:14.28%;}
+.cal-cell{height:100px;padding:6px 5px;vertical-align:top;border-right:1px solid var(--border);border-bottom:1px solid var(--border);cursor:default;transition:background .12s;}
+.cal-cell.empty{background:#08080f;}
+.cal-cell.has-drops{background:#0d0b1a;cursor:pointer;}
+.cal-cell.has-drops:hover{background:#12101e;}
+.cal-cell.selected{background:#130f22;box-shadow:inset 0 0 0 2px var(--accent2);}
+.cal-cell.today .day-num{background:var(--accent2);color:#fff;border-radius:50%;}
+.day-num{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--muted);width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:3px;}
+.cal-cell.has-drops .day-num{color:var(--text);}
+.cal-chips{display:flex;flex-direction:column;gap:2px;}
 .cal-chip{font-size:9px;font-weight:600;padding:2px 5px;border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.4;}
 .cal-more{font-size:8px;color:var(--muted);font-family:'Space Mono',monospace;padding-left:3px;}
 
@@ -74,7 +49,7 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 .day-panel-inner{background:var(--surface);border:1px solid #9b3fe850;border-radius:10px;padding:16px 20px;}
 .day-panel-title{font-family:'Space Mono',monospace;font-size:12px;color:#c084fc;margin-bottom:12px;letter-spacing:.06em;}
 .panel-drop{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#0a0a14;border-radius:6px;border:1px solid var(--border);margin-bottom:6px;flex-wrap:wrap;}
-.panel-drop:last-child{margin-bottom:0;}
+.panel-drop:last-of-type{margin-bottom:0;}
 .panel-drop-name{font-size:12px;color:var(--text);flex:1;min-width:120px;}
 .panel-srcs{display:flex;gap:6px;flex-shrink:0;}
 .panel-srcs a{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;transition:background .12s;}
@@ -83,26 +58,13 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 /* Calendar export */
 .cal-export{margin-top:12px;padding:12px 14px;background:#08081a;border:1px solid #2a1a40;border-radius:8px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;}
 .cal-export-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;display:block;}
-.cal-export input[type="time"],.cal-export input[type="number"],.cal-export select{
-  background:#0e0e1a;border:1px solid var(--border);color:var(--text);
-  font-family:'Space Mono',monospace;font-size:12px;padding:6px 10px;
-  border-radius:6px;outline:none;transition:border-color .15s;
-  -webkit-appearance:none;
-}
+.cal-export input[type="time"],.cal-export input[type="number"],.cal-export select{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:12px;padding:6px 10px;border-radius:6px;outline:none;transition:border-color .15s;-webkit-appearance:none;}
 .cal-export input[type="time"]:focus,.cal-export input[type="number"]:focus,.cal-export select:focus{border-color:var(--accent2);}
 .cal-export input[type="number"]{width:64px;}
 .cal-export select{cursor:pointer;}
 .cal-export-group{display:flex;flex-direction:column;gap:2px;}
-.btn-ics{
-  font-family:'Space Mono',monospace;font-size:11px;font-weight:700;
-  padding:8px 16px;border-radius:6px;border:none;cursor:pointer;
-  background:linear-gradient(135deg,#9b3fe8,#1eb8f0);
-  color:#fff;letter-spacing:.06em;text-transform:uppercase;
-  transition:filter .15s;white-space:nowrap;
-  display:flex;align-items:center;gap:6px;
-}
+.btn-ics{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;padding:8px 16px;border-radius:6px;border:none;cursor:pointer;background:linear-gradient(135deg,#9b3fe8,#1eb8f0);color:#fff;letter-spacing:.06em;text-transform:uppercase;transition:filter .15s;white-space:nowrap;display:flex;align-items:center;gap:6px;}
 .btn-ics:hover{filter:brightness(1.15);}
-.btn-ics svg{flex-shrink:0;}
 
 /* Divider */
 .divider{max-width:1100px;margin:28px auto 0;padding:0 32px;display:flex;align-items:center;gap:12px;}
@@ -139,11 +101,11 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 
 /* Table */
 .table-wrap{max-width:1100px;margin:12px auto 0;padding:0 32px 60px;overflow-x:auto;}
-table{width:100%;border-collapse:collapse;font-size:13px;}
-thead th{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}
-thead th:hover{color:var(--text);}
-thead th.sorted::after{content:' ↑';color:var(--accent3);}
-thead th.sorted.desc::after{content:' ↓';}
+table.drop-table{width:100%;border-collapse:collapse;font-size:13px;}
+table.drop-table thead th{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}
+table.drop-table thead th:hover{color:var(--text);}
+table.drop-table thead th.sorted::after{content:' ↑';color:var(--accent3);}
+table.drop-table thead th.sorted.desc::after{content:' ↓';}
 tbody tr{border-bottom:1px solid #1e1e26;transition:background .1s;}
 tbody tr:nth-child(even){background:var(--row-alt);}
 tbody tr:hover{background:#100d1e;box-shadow:inset 3px 0 0 var(--accent2);}
@@ -173,12 +135,11 @@ td{padding:10px 16px;vertical-align:middle;}
 .source-cell a{font-family:'Space Mono',monospace;font-size:10px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:3px 8px;border-radius:4px;transition:all .15s;}
 .source-cell a:hover{background:#0d1a20;}
 .no-results{text-align:center;padding:60px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:13px;display:none;}
-footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}
 
+footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}
 @media(max-width:700px){
   header,.cal-section,.day-panel,.divider,.controls,.table-wrap{padding-left:16px;padding-right:16px;}
-  #search{width:100%;}
-  .cal-grid{grid-template-rows:30px repeat(6,72px);}
+  #search{width:100%;} .cal-cell{height:72px;}
 }
 </style>
 </head>
@@ -197,11 +158,14 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
     <div class="cal-title">August 2026</div>
     <div class="cal-legend" id="legend"></div>
   </div>
-  <div class="cal-grid" id="grid">
-    <div class="cal-dow">Sun</div><div class="cal-dow">Mon</div><div class="cal-dow">Tue</div>
-    <div class="cal-dow">Wed</div><div class="cal-dow">Thu</div><div class="cal-dow">Fri</div>
-    <div class="cal-dow">Sat</div>
-  </div>
+  <table class="cal-table">
+    <thead>
+      <tr>
+        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+      </tr>
+    </thead>
+    <tbody id="calBody"></tbody>
+  </table>
 </div>
 
 <div class="day-panel" id="dayPanel">
@@ -237,7 +201,7 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
 </div>
 
 <div class="table-wrap">
-  <table>
+  <table class="drop-table">
     <thead><tr>
       <th data-col="0" class="sorted">Date</th>
       <th data-col="1">Time (ET)</th>
@@ -322,296 +286,264 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
     <tr data-cat="collab-lifestyle" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">10:00 AM</td><td class="name-cell">perks-and-mini-x-asics-collab</td><td><span class="cat-badge cat-collab-lifestyle">COLLAB / LIFESTYLE</span></td><td class="source-cell"><a href="https://www.asics.com" target="_blank" rel="noopener">Source 1 ↗</a> <a href="https://hypebeast.com/tags/weekly-footwear-drops" target="_blank" rel="noopener">Source 2 ↗</a></td></tr>
     <tr data-cat="disney-parks-pins" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">9:00 AM</td><td class="name-cell">wdw-halloween-2026-pin-series-launch</td><td><span class="cat-badge cat-disney-parks-pins">DISNEY PARKS PINS</span></td><td class="source-cell"><a href="https://disneypinsblog.com/halloween-2026-pin-releases-at-disney-store-disney-parks/" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
     <tr data-cat="vinyl-music" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">record-store-day-drops-2-2026</td><td><span class="cat-badge cat-vinyl-music">VINYL & MUSIC</span></td><td class="source-cell"><a href="https://www.recordstoreday.com" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    <tr data-cat="vinyl-music" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">august-limited-pressing-releases</td><td><span class="cat-badge cat-vinyl-music">VINYL & MUSIC</span></td><td class="source-cell"><a href="https://www.plaidroomrecords.com/collections/pre-orders" target="_blank" rel="noopener">Source 1 ↗</a></td></tr>
-    </tbody>
+    <tr data-cat="vinyl-music" data-date="99999999"><td class="date-cell">8/TBD/2026</td><td class="time-cell">12:00 AM</td><td class="name-cell">august-limited-pressing-releases</td><td><span class="cat-badge cat-vinyl-music">VINYL & MUSIC</span></td><td class="source-cell"><a href="https://www.plaidroomrecords.com/collections/pre-orders" target="_blank" rel="noopener">Source 1 ↗</a></td></tr></tbody>
   </table>
   <div class="no-results" id="noResults">No drops found — try a different filter or search.</div>
 </div>
 
 <footer>
-  <span>Updated 8/7/2026 · Grailz Discord Server</span>
+  <span>Updated 8/8/2026 · Grailz Discord Server</span>
   <span>topps.com · beckett.com · tcgradar.eu · disneypinsblog.com · funko.com + social</span>
 </footer>
 
 <script>
-const DROPS = [{"cat":"FUNKO POP","slug":"funko-pop","day":3,"name":"funko-marvel-collector-corps-shang-chi-box-xl","url1":"https://www.amazon.com/dp/B091JH6YTY","url2":"https://funko.com/limited-edition-calendar.html","time":"11:00"},{"cat":"FUNKO POP","slug":"funko-pop","day":3,"name":"funko-pop-archangel-x-men","url1":"https://funko.com/new-featured/coming-soon/","url2":"https://funko.com/limited-edition-calendar.html","time":"11:00"},{"cat":"FUNKO POP","slug":"funko-pop","day":3,"name":"funko-pop-psylocke-x-men","url1":"https://funko.com/new-featured/coming-soon/","url2":"https://funko.com/limited-edition-calendar.html","time":"11:00"},{"cat":"FUNKO POP","slug":"funko-pop","day":3,"name":"funko-pop-sabretooth-x-men","url1":"https://funko.com/new-featured/coming-soon/","url2":"https://funko.com/limited-edition-calendar.html","time":"11:00"},{"cat":"FUNKO POP","slug":"funko-pop","day":3,"name":"funko-pop-bishop-x-men","url1":"https://funko.com/new-featured/coming-soon/","url2":"https://funko.com/limited-edition-calendar.html","time":"11:00"},{"cat":"FUNKO POP","slug":"funko-pop","day":3,"name":"funko-pop-mega-man-x-capcom","url1":"https://funko.com/new-featured/coming-soon/","url2":"https://funko.com/limited-edition-calendar.html","time":"11:00"},{"cat":"ONE PIECE TCG","slug":"one-piece-tcg","day":3,"name":"one-piece-round1-arcade-exclusive-promo-pack-phase-3-entry","url1":"https://x.com/OPTCGAlert/status/2083597291852607623","url2":"","time":"00:00"},{"cat":"DISNEY PARKS PINS","slug":"disney-parks-pins","day":4,"name":"wdw-august-le-pin-week-1","url1":"https://disneypinsblog.com","url2":"https://mypincentral.com","time":"09:00"},{"cat":"PANINI","slug":"panini","day":5,"name":"2026-panini-contenders-pfl","url1":"https://www.overtimecardsandcollectibles.com/product-release-schedule","url2":"","time":"12:00"},{"cat":"COLLAB / LIFESTYLE","slug":"collab-lifestyle","day":6,"name":"jjjjound-x-new-balance-740n-mushroom","url1":"https://jjjjound.com","url2":"https://hypebeast.com/tags/weekly-footwear-drops","time":"10:00"},{"cat":"POKEMON TCG","slug":"pokemon-tcg","day":7,"name":"first-partner-collection-series-3-hoenn-kalos-paldea","url1":"https://icv2.com/articles/news/view/61079/pokemon-tcg-2026-product-calendar","url2":"https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026","time":"09:00"},{"cat":"MTG","slug":"mtg","day":7,"name":"mtg-the-hobbit-prerelease","url1":"https://magic.wizards.com/en/products/the-hobbit","url2":"https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/","time":"00:00"},{"cat":"YU-GI-OH!","slug":"yu-gi-oh","day":7,"name":"yu-gi-oh-blissful-eternity","url1":"https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/","url2":"","time":"00:00"},{"cat":"NON-SPORTS CARDS","slug":"non-sports-cards","day":7,"name":"2026-leaf-seasons-in-the-sun-baseball","url1":"https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/","url2":"","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":10,"name":"2026-topps-universe-wwe","url1":"https://www.topps.com/pages/topps-universe-wwe","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":10,"name":"2026-bowman-chrome-baseball","url1":"https://www.topps.com/pages/bowman-chrome-baseball","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":10,"name":"2026-topps-wacky-packages-all-new-series","url1":"https://www.topps.com/pages/2026-topps-wacky-packages-all-new-series","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":11,"name":"2026-topps-vault-marvel","url1":"https://www.topps.com/pages/topps-vault-marvel","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":11,"name":"topps-flagship-premier-league-2026-27","url1":"https://www.topps.com/pages/topps-flagship-premier-league","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":11,"name":"2026-topps-chrome-mls","url1":"https://www.topps.com/pages/topps-mls-chrome","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"DISNEY PARKS PINS","slug":"disney-parks-pins","day":11,"name":"wdw-august-le-pin-week-2","url1":"https://disneypinsblog.com","url2":"https://mypincentral.com","time":"09:00"},{"cat":"TOPPS","slug":"topps","day":12,"name":"2026-topps-pristine-baseball","url1":"https://www.topps.com/pages/topps-pristine-baseball","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":12,"name":"2026-star-wars-chrome-galaxy","url1":"https://www.topps.com/pages/star-wars-chrome-galaxy","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"MTG","slug":"mtg","day":14,"name":"mtg-the-hobbit-global-release","url1":"https://magic.wizards.com/en/products/the-hobbit","url2":"https://x.com/wizards_magic/status/2082179288032219416","time":"00:00"},{"cat":"MTG","slug":"mtg","day":14,"name":"mtg-the-hobbit-gamegenic-18-pocket-zip-up-album-5-designs","url1":"https://x.com/Gamegenic_/status/2084308251391226217","url2":"","time":"00:00"},{"cat":"MTG","slug":"mtg","day":14,"name":"mtg-the-hobbit-gamegenic-premium-art-sleeves","url1":"https://x.com/Gamegenic_/status/2083221156203573464","url2":"","time":"00:00"},{"cat":"TOPPS","slug":"topps","day":14,"name":"2026-topps-stadium-club-ufc","url1":"https://www.topps.com/pages/topps-stadium-club-ufc","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"DISNEY PARKS PINS","slug":"disney-parks-pins","day":14,"name":"d23-2026-anaheim-disney-pinnacle-booth","url1":"https://d23.com/d23-2026/","url2":"https://x.com/DisneyPinnacle/status/2081016173999862201","time":"09:00"},{"cat":"DISNEY PARKS PINS","slug":"disney-parks-pins","day":14,"name":"d23-2026-disney-princess-all-13-le-pin-1200","url1":"https://d23.com/d23-2026/","url2":"https://x.com/DPrincess_Facts/status/2081016173999862201","time":"09:00"},{"cat":"DISNEY PARKS PINS","slug":"disney-parks-pins","day":14,"name":"d23-2026-anaheim-exclusive-pin-drops-weekend","url1":"https://d23.com/d23-2026/","url2":"https://disneypinsblog.com","time":"09:00"},{"cat":"TOPPS","slug":"topps","day":17,"name":"2026-topps-museum-collection-baseball","url1":"https://www.topps.com/pages/topps-museum-collection-baseball","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":18,"name":"topps-definitive-basketball","url1":"https://www.topps.com/pages/topps-definitive-basketball","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"DISNEY PARKS PINS","slug":"disney-parks-pins","day":18,"name":"wdw-august-le-pin-week-3","url1":"https://disneypinsblog.com","url2":"https://mypincentral.com","time":"09:00"},{"cat":"TOPPS","slug":"topps","day":19,"name":"2026-topps-chrome-baseball-logofractor-edition","url1":"https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":19,"name":"2026-topps-mint-marvel","url1":"https://www.topps.com/pages/topps-mint-marvel","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"TOPPS","slug":"topps","day":20,"name":"topps-motif-basketball","url1":"https://www.topps.com/pages/topps-motif-basketball","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"DISNEY PARKS PINS","slug":"disney-parks-pins","day":25,"name":"wdw-august-le-pin-week-4","url1":"https://disneypinsblog.com","url2":"https://mypincentral.com","time":"09:00"},{"cat":"TOPPS","slug":"topps","day":27,"name":"2026-topps-chrome-black-basketball","url1":"https://www.topps.com/pages/topps-chrome-black-basketball","url2":"https://www.topps.com/release-calendar","time":"12:00"},{"cat":"POKEMON TCG","slug":"pokemon-tcg","day":28,"name":"pokemon-tcg-mega-dragonite-ex-tin","url1":"https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026","url2":"https://x.com/PokemonRestocks/status/2065098551382655149","time":"09:00"},{"cat":"POKEMON TCG","slug":"pokemon-tcg","day":28,"name":"pokemon-tcg-mega-darkrai-ex-tin","url1":"https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026","url2":"https://x.com/PokemonRestocks/status/2065098551382655149","time":"09:00"},{"cat":"POKEMON TCG","slug":"pokemon-tcg","day":28,"name":"pokemon-tcg-mega-zeraora-ex-tin","url1":"https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026","url2":"https://x.com/PokemonRestocks/status/2065098551382655149","time":"09:00"},{"cat":"ONE PIECE TCG","slug":"one-piece-tcg","day":28,"name":"one-piece-tcg-op-17-the-worlds-strongest-warriors-global-simultaneous","url1":"https://en.onepiece-cardgame.com/products/","url2":"https://x.com/ONEPIECE_tcg_EN/status/2075989349028508136","time":"00:00"}];
+const DROPS   = [{"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-marvel-collector-corps-shang-chi-box-xl", "url1": "https://www.amazon.com/dp/B091JH6YTY", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-archangel-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-psylocke-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-sabretooth-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-bishop-x-men", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "FUNKO POP", "slug": "funko-pop", "day": 3, "name": "funko-pop-mega-man-x-capcom", "url1": "https://funko.com/new-featured/coming-soon/", "url2": "https://funko.com/limited-edition-calendar.html", "time": "11:00"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": 3, "name": "one-piece-round1-arcade-exclusive-promo-pack-phase-3-entry", "url1": "https://x.com/OPTCGAlert/status/2083597291852607623", "url2": "", "time": "00:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 4, "name": "wdw-august-le-pin-week-1", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com", "time": "09:00"}, {"cat": "PANINI", "slug": "panini", "day": 5, "name": "2026-panini-contenders-pfl", "url1": "https://www.overtimecardsandcollectibles.com/product-release-schedule", "url2": "", "time": "12:00"}, {"cat": "COLLAB / LIFESTYLE", "slug": "collab-lifestyle", "day": 6, "name": "jjjjound-x-new-balance-740n-mushroom", "url1": "https://jjjjound.com", "url2": "https://hypebeast.com/tags/weekly-footwear-drops", "time": "10:00"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 7, "name": "first-partner-collection-series-3-hoenn-kalos-paldea", "url1": "https://icv2.com/articles/news/view/61079/pokemon-tcg-2026-product-calendar", "url2": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "time": "09:00"}, {"cat": "MTG", "slug": "mtg", "day": 7, "name": "mtg-the-hobbit-prerelease", "url1": "https://magic.wizards.com/en/products/the-hobbit", "url2": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/", "time": "00:00"}, {"cat": "YU-GI-OH!", "slug": "yu-gi-oh", "day": 7, "name": "yu-gi-oh-blissful-eternity", "url1": "https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/", "url2": "", "time": "00:00"}, {"cat": "NON-SPORTS CARDS", "slug": "non-sports-cards", "day": 7, "name": "2026-leaf-seasons-in-the-sun-baseball", "url1": "https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/", "url2": "", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-topps-universe-wwe", "url1": "https://www.topps.com/pages/topps-universe-wwe", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-bowman-chrome-baseball", "url1": "https://www.topps.com/pages/bowman-chrome-baseball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 10, "name": "2026-topps-wacky-packages-all-new-series", "url1": "https://www.topps.com/pages/2026-topps-wacky-packages-all-new-series", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "2026-topps-vault-marvel", "url1": "https://www.topps.com/pages/topps-vault-marvel", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "topps-flagship-premier-league-2026-27", "url1": "https://www.topps.com/pages/topps-flagship-premier-league", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 11, "name": "2026-topps-chrome-mls", "url1": "https://www.topps.com/pages/topps-mls-chrome", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 11, "name": "wdw-august-le-pin-week-2", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com", "time": "09:00"}, {"cat": "TOPPS", "slug": "topps", "day": 12, "name": "2026-topps-pristine-baseball", "url1": "https://www.topps.com/pages/topps-pristine-baseball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 12, "name": "2026-star-wars-chrome-galaxy", "url1": "https://www.topps.com/pages/star-wars-chrome-galaxy", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-global-release", "url1": "https://magic.wizards.com/en/products/the-hobbit", "url2": "https://x.com/wizards_magic/status/2082179288032219416", "time": "00:00"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-gamegenic-18-pocket-zip-up-album-5-designs", "url1": "https://x.com/Gamegenic_/status/2084308251391226217", "url2": "", "time": "00:00"}, {"cat": "MTG", "slug": "mtg", "day": 14, "name": "mtg-the-hobbit-gamegenic-premium-art-sleeves", "url1": "https://x.com/Gamegenic_/status/2083221156203573464", "url2": "", "time": "00:00"}, {"cat": "TOPPS", "slug": "topps", "day": 14, "name": "2026-topps-stadium-club-ufc", "url1": "https://www.topps.com/pages/topps-stadium-club-ufc", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-anaheim-disney-pinnacle-booth", "url1": "https://d23.com/d23-2026/", "url2": "https://x.com/DisneyPinnacle/status/2081016173999862201", "time": "09:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-disney-princess-all-13-le-pin-1200", "url1": "https://d23.com/d23-2026/", "url2": "https://x.com/DPrincess_Facts/status/2081016173999862201", "time": "09:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 14, "name": "d23-2026-anaheim-exclusive-pin-drops-weekend", "url1": "https://d23.com/d23-2026/", "url2": "https://disneypinsblog.com", "time": "09:00"}, {"cat": "TOPPS", "slug": "topps", "day": 17, "name": "2026-topps-museum-collection-baseball", "url1": "https://www.topps.com/pages/topps-museum-collection-baseball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 18, "name": "topps-definitive-basketball", "url1": "https://www.topps.com/pages/topps-definitive-basketball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 18, "name": "wdw-august-le-pin-week-3", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com", "time": "09:00"}, {"cat": "TOPPS", "slug": "topps", "day": 19, "name": "2026-topps-chrome-baseball-logofractor-edition", "url1": "https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 19, "name": "2026-topps-mint-marvel", "url1": "https://www.topps.com/pages/topps-mint-marvel", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "TOPPS", "slug": "topps", "day": 20, "name": "topps-motif-basketball", "url1": "https://www.topps.com/pages/topps-motif-basketball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "DISNEY PARKS PINS", "slug": "disney-parks-pins", "day": 25, "name": "wdw-august-le-pin-week-4", "url1": "https://disneypinsblog.com", "url2": "https://mypincentral.com", "time": "09:00"}, {"cat": "TOPPS", "slug": "topps", "day": 27, "name": "2026-topps-chrome-black-basketball", "url1": "https://www.topps.com/pages/topps-chrome-black-basketball", "url2": "https://www.topps.com/release-calendar", "time": "12:00"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-dragonite-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149", "time": "09:00"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-darkrai-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149", "time": "09:00"}, {"cat": "POKEMON TCG", "slug": "pokemon-tcg", "day": 28, "name": "pokemon-tcg-mega-zeraora-ex-tin", "url1": "https://tcgradar.eu/guides/pokemon-tcg-set-release-calendar-2026", "url2": "https://x.com/PokemonRestocks/status/2065098551382655149", "time": "09:00"}, {"cat": "ONE PIECE TCG", "slug": "one-piece-tcg", "day": 28, "name": "one-piece-tcg-op-17-the-worlds-strongest-warriors-global-simultaneous", "url1": "https://en.onepiece-cardgame.com/products/", "url2": "https://x.com/ONEPIECE_tcg_EN/status/2075989349028508136", "time": "00:00"}];
 const CAT_MAP = {"mattel-creations": "#6b2d8b", "topps": "#1a4a6b", "pokemon-tcg": "#b8860b", "mtg": "#0e4e2a", "funko-pop": "#4e2a0e", "one-piece-tcg": "#8b1a4a", "panini": "#0e2a4e", "vinyl-music": "#2a0e4e", "supreme-fw26": "#8b0000", "collab-lifestyle": "#2a4e0e", "disney-parks-pins": "#00457c", "movies": "#8b1a1a", "disney-lorcana": "#1a3a6b", "yu-gi-oh": "#6b1a1a", "non-sports-cards": "#3a3a1a"};
 const MONTH_N = 8;
 const YEAR_N  = 2026;
-const TODAY_D = 7;
+const TODAY_D = 8;
 
-const grid     = document.getElementById('grid');
+// ── Build calendar (TABLE-based) ───────────────────────────────────────
+const calBody  = document.getElementById('calBody');
 const panel    = document.getElementById('dayPanel');
 const panelTitle = document.getElementById('panelTitle');
 const panelBody  = document.getElementById('panelBody');
 const legend   = document.getElementById('legend');
 
-// Group by day
+// Group drops by day
 const byDay = {};
 DROPS.forEach(d => {
   (byDay[d.day] = byDay[d.day] || []).push(d);
 });
 
-// Calendar
-const firstDow   = new Date(YEAR_N, MONTH_N - 1, 1).getDay();
+const firstDow    = new Date(YEAR_N, MONTH_N - 1, 1).getDay();
 const daysInMonth = new Date(YEAR_N, MONTH_N, 0).getDate();
 
+let dayCount = 0;
+let row = document.createElement('tr');
+calBody.appendChild(row);
+
+// Leading empty cells
 for (let i = 0; i < firstDow; i++) {
-  const el = document.createElement('div');
-  el.className = 'cal-day empty';
-  grid.appendChild(el);
+  const td = document.createElement('td');
+  td.className = 'cal-cell empty';
+  row.appendChild(td);
+  dayCount++;
 }
 
 let selectedDay = null;
 
 for (let day = 1; day <= daysInMonth; day++) {
+  if (dayCount % 7 === 0) {
+    row = document.createElement('tr');
+    calBody.appendChild(row);
+  }
+
   const dayDrops = byDay[day] || [];
-  const el = document.createElement('div');
-  el.className = 'cal-day' +
+  const td = document.createElement('td');
+  td.className = 'cal-cell' +
     (dayDrops.length ? ' has-drops' : '') +
     (day === TODAY_D ? ' today' : '');
-  el.dataset.day = day;
+  td.dataset.day = day;
 
   const num = document.createElement('div');
   num.className = 'day-num';
   num.textContent = day;
-  el.appendChild(num);
+  td.appendChild(num);
 
   if (dayDrops.length) {
-    const wrap = document.createElement('div');
-    wrap.className = 'cal-drops';
+    const chips = document.createElement('div');
+    chips.className = 'cal-chips';
     dayDrops.slice(0, 3).forEach(dr => {
       const chip = document.createElement('div');
       chip.className = 'cal-chip';
-      chip.style.cssText = `background:${CAT_MAP[dr.slug]||'#2a2a35'};color:#fff;`;
+      chip.style.background = CAT_MAP[dr.slug] || '#2a2a35';
+      chip.style.color = '#fff';
       chip.title = dr.name;
       chip.textContent = dr.name;
-      wrap.appendChild(chip);
+      chips.appendChild(chip);
     });
     if (dayDrops.length > 3) {
       const more = document.createElement('div');
       more.className = 'cal-more';
-      more.textContent = `+${dayDrops.length - 3} more`;
-      wrap.appendChild(more);
+      more.textContent = '+' + (dayDrops.length - 3) + ' more';
+      chips.appendChild(more);
     }
-    el.appendChild(wrap);
+    td.appendChild(chips);
 
-    el.addEventListener('click', () => {
+    td.addEventListener('click', () => {
       if (selectedDay === day) {
         panel.classList.remove('visible');
-        el.classList.remove('selected');
+        td.classList.remove('selected');
         selectedDay = null;
         return;
       }
-      if (selectedDay) {
-        const prev = grid.querySelector(`[data-day="${selectedDay}"]`);
-        if (prev) prev.classList.remove('selected');
-      }
+      // Deselect previous
+      const prev = calBody.querySelector('.selected');
+      if (prev) prev.classList.remove('selected');
       selectedDay = day;
-      el.classList.add('selected');
+      td.classList.add('selected');
 
       const dt = new Date(YEAR_N, MONTH_N - 1, day);
-      panelTitle.textContent = dt.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+      panelTitle.textContent = dt.toLocaleDateString('en-US', {
+        weekday:'long', month:'long', day:'numeric', year:'numeric'
+      });
       panelBody.innerHTML = '';
+
       dayDrops.forEach(dr => {
         const row = document.createElement('div');
         row.className = 'panel-drop';
-        const bg = CAT_MAP[dr.slug]||'#2a2a35';
-        row.innerHTML = `
-          <span class="cat-badge" style="background:${bg};color:#fff">${dr.cat}</span>
-          <span class="panel-drop-name">${dr.name}</span>
-          <span class="panel-srcs">
-            ${dr.url1?`<a href="${dr.url1}" target="_blank" rel="noopener">Source 1 ↗</a>`:''}
-            ${dr.url2?`<a href="${dr.url2}" target="_blank" rel="noopener">Source 2 ↗</a>`:''}
-          </span>`;
+        const bg = CAT_MAP[dr.slug] || '#2a2a35';
+        row.innerHTML =
+          '<span class="cat-badge" style="background:' + bg + ';color:#fff">' + dr.cat + '</span>' +
+          '<span class="panel-drop-name">' + dr.name + '</span>' +
+          '<span class="panel-srcs">' +
+            (dr.url1 ? '<a href="' + dr.url1 + '" target="_blank" rel="noopener">Source 1 ↗</a>' : '') +
+            (dr.url2 ? '<a href="' + dr.url2 + '" target="_blank" rel="noopener">Source 2 ↗</a>' : '') +
+          '</span>';
         panelBody.appendChild(row);
       });
 
-      // ── Calendar export widget ──────────────────────────────────────
+      // Export widget
+      const dropTime = (dayDrops[0] && dayDrops[0].time) ? dayDrops[0].time : '09:00';
       const exportWrap = document.createElement('div');
       exportWrap.className = 'cal-export';
-
-      // Drop time — pre-filled from dataset
-      const dropTime = (dayDrops[0] && dayDrops[0].time) ? dayDrops[0].time : '09:00';
-
-      const timeGroup = document.createElement('div');
-      timeGroup.className = 'cal-export-group';
-      timeGroup.innerHTML = '<span class="cal-export-label">Drop Time (ET)</span>';
-      const timeInput = document.createElement('input');
-      timeInput.type = 'time';
-      timeInput.value = dropTime;
-      timeInput.id = 'calTime';
-      timeGroup.appendChild(timeInput);
-      exportWrap.appendChild(timeGroup);
-
-      const alertNumGroup = document.createElement('div');
-      alertNumGroup.className = 'cal-export-group';
-      alertNumGroup.innerHTML = '<span class="cal-export-label">Alert Before</span>';
-      const alertNum = document.createElement('input');
-      alertNum.type = 'number';
-      alertNum.value = '30';
-      alertNum.min = '1';
-      alertNum.max = '10080';
-      alertNum.id = 'calAlertNum';
-      alertNumGroup.appendChild(alertNum);
-      exportWrap.appendChild(alertNumGroup);
-
-      const alertUnitGroup = document.createElement('div');
-      alertUnitGroup.className = 'cal-export-group';
-      alertUnitGroup.innerHTML = '<span class="cal-export-label">Unit</span>';
-      const alertUnit = document.createElement('select');
-      alertUnit.id = 'calAlertUnit';
-      [['minutes','Minutes'],['hours','Hours'],['days','Days']].forEach(([v,l]) => {
-        const opt = document.createElement('option');
-        opt.value = v; opt.textContent = l;
-        alertUnit.appendChild(opt);
-      });
-      alertUnitGroup.appendChild(alertUnit);
-      exportWrap.appendChild(alertUnitGroup);
-
-      const btn = document.createElement('button');
-      btn.className = 'btn-ics';
-      btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add to Calendar';
-      btn.addEventListener('click', () => {
-        const timeVal = document.getElementById('calTime').value || dropTime;
-        const numVal  = parseInt(document.getElementById('calAlertNum').value) || 30;
-        const unit    = document.getElementById('calAlertUnit').value;
-        const alertMins = unit === 'days' ? numVal * 1440 : unit === 'hours' ? numVal * 60 : numVal;
-        exportICS(day, timeVal, alertMins, dayDrops);
-      });
-      exportWrap.appendChild(btn);
+      exportWrap.innerHTML =
+        '<div class="cal-export-group"><span class="cal-export-label">Drop Time (ET)</span>' +
+        '<input type="time" id="calTime" value="' + dropTime + '"></div>' +
+        '<div class="cal-export-group"><span class="cal-export-label">Alert Before</span>' +
+        '<input type="number" id="calAlertNum" value="30" min="1" max="10080"></div>' +
+        '<div class="cal-export-group"><span class="cal-export-label">Unit</span>' +
+        '<select id="calAlertUnit"><option value="minutes">Minutes</option><option value="hours">Hours</option><option value="days">Days</option></select></div>' +
+        '<button class="btn-ics" id="btnIcs">' +
+        '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>' +
+        'Add to Calendar</button>';
       panelBody.appendChild(exportWrap);
 
+      document.getElementById('btnIcs').addEventListener('click', () => {
+        const t = document.getElementById('calTime').value || dropTime;
+        const n = parseInt(document.getElementById('calAlertNum').value) || 30;
+        const u = document.getElementById('calAlertUnit').value;
+        const mins = u==='days' ? n*1440 : u==='hours' ? n*60 : n;
+        exportICS(day, t, mins, dayDrops);
+      });
+
       panel.classList.add('visible');
-      panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+      panel.scrollIntoView({behavior:'smooth', block:'nearest'});
     });
   }
-  grid.appendChild(el);
+
+  row.appendChild(td);
+  dayCount++;
 }
 
-// Trailing empties
-const total = firstDow + daysInMonth;
-const rem = total % 7;
-if (rem) for (let i = 0; i < 7 - rem; i++) {
-  const el = document.createElement('div'); el.className='cal-day empty'; grid.appendChild(el);
+// Trailing empty cells to complete last row
+while (dayCount % 7 !== 0) {
+  const td = document.createElement('td');
+  td.className = 'cal-cell empty';
+  row.appendChild(td);
+  dayCount++;
 }
 
 // Legend
 const seen = {};
-DROPS.forEach(d => { if (!seen[d.slug]) seen[d.slug] = {cat:d.cat,color:CAT_MAP[d.slug]||'#2a2a35'}; });
-Object.entries(seen).sort((a,b)=>a[1].cat.localeCompare(b[1].cat)).forEach(([sl,info])=>{
+DROPS.forEach(d => { if (!seen[d.slug]) seen[d.slug] = {cat:d.cat, color:CAT_MAP[d.slug]||'#2a2a35'}; });
+Object.entries(seen).sort((a,b)=>a[1].cat.localeCompare(b[1].cat)).forEach(([sl,info]) => {
   const item = document.createElement('div');
-  item.className='legend-item';
-  item.innerHTML=`<span class="legend-dot" style="background:${info.color}"></span>${info.cat}`;
+  item.className = 'legend-item';
+  item.innerHTML = '<span class="legend-dot" style="background:' + info.color + '"></span>' + info.cat;
   legend.appendChild(item);
 });
 
-// Table
-const tbody  = document.getElementById('tbody');
-const rows   = Array.from(tbody.querySelectorAll('tr'));
-const noRes  = document.getElementById('noResults');
+// ── ICS export ─────────────────────────────────────────────────────────
+function pad(n) { return String(n).padStart(2,'0'); }
+function icsDate(y,m,d,time) {
+  const [h,mi] = time.split(':').map(Number);
+  return y + pad(m) + pad(d) + 'T' + pad(h) + pad(mi) + '00';
+}
+function exportICS(day, time, alertMins, drops) {
+  const dt = new Date(YEAR_N, MONTH_N-1, day);
+  const label = dt.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
+  const dtStr = icsDate(YEAR_N, MONTH_N, day, time);
+  const [sh,sm] = time.split(':').map(Number);
+  const dtEnd = icsDate(YEAR_N, MONTH_N, day, pad((sh+1)%24)+':'+pad(sm));
+  const uid = 'grailz-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'@grailzking.github.io';
+  const desc = drops.map(d => '['+d.cat+'] '+d.name+(d.url1?' — '+d.url1:'')).join('\n');
+  const names = drops.map(d=>d.name).join(', ');
+  const ics = [
+    'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Grailz//Drops Calendar//EN',
+    'CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    'UID:'+uid,
+    'DTSTAMP:'+icsDate(YEAR_N,MONTH_N,day,'00:00'),
+    'DTSTART:'+dtStr,'DTEND:'+dtEnd,
+    'SUMMARY:🎯 Grailz Drop — '+label,
+    'DESCRIPTION:'+desc.replace(/\n/g,'\\n'),
+    'BEGIN:VALARM','ACTION:DISPLAY',
+    'DESCRIPTION:Grailz Drop Reminder — '+names.slice(0,60),
+    'TRIGGER:-PT'+alertMins+'M',
+    'END:VALARM','END:VEVENT','END:VCALENDAR'
+  ].join('\r\n');
+  const blob = new Blob([ics], {type:'text/calendar;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href=url; a.download='grailz-drop-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+}
+
+// ── Table ───────────────────────────────────────────────────────────────
+const tbody   = document.getElementById('tbody');
+const rows    = Array.from(tbody.querySelectorAll('tr'));
+const noRes   = document.getElementById('noResults');
 const countEl = document.getElementById('count');
 let activeFilter='all', sortCol=0, sortDesc=false;
 
-function updateCount(){
-  const v=rows.filter(r=>!r.classList.contains('hidden')).length;
-  countEl.textContent=v+' drop'+(v!==1?'s':'');
+function updateCount() {
+  const v = rows.filter(r=>!r.classList.contains('hidden')).length;
+  countEl.textContent = v+' drop'+(v!==1?'s':'');
 }
-function applyFilters(){
-  const q=document.getElementById('search').value.toLowerCase();
-  let any=false;
-  rows.forEach(r=>{
-    const cm=activeFilter==='all'||r.dataset.cat===activeFilter;
-    const tm=!q||r.textContent.toLowerCase().includes(q);
-    r.classList.toggle('hidden',!(cm&&tm));
-    if(cm&&tm)any=true;
+function applyFilters() {
+  const q = document.getElementById('search').value.toLowerCase();
+  let any = false;
+  rows.forEach(r => {
+    const cm = activeFilter==='all' || r.dataset.cat===activeFilter;
+    const tm = !q || r.textContent.toLowerCase().includes(q);
+    r.classList.toggle('hidden', !(cm&&tm));
+    if (cm&&tm) any=true;
   });
-  noRes.style.display=any?'none':'block';
+  noRes.style.display = any?'none':'block';
   updateCount();
 }
-document.querySelectorAll('.filter-btn').forEach(b=>{
-  b.addEventListener('click',()=>{
+document.querySelectorAll('.filter-btn').forEach(b => {
+  b.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));
     b.classList.add('active');
-    activeFilter=b.dataset.filter;
+    activeFilter = b.dataset.filter;
     applyFilters();
   });
 });
-document.getElementById('search').addEventListener('input',applyFilters);
-document.querySelectorAll('thead th[data-col]').forEach(th=>{
-  th.addEventListener('click',()=>{
-    const col=+th.dataset.col;
-    if(sortCol===col)sortDesc=!sortDesc;
-    else{sortCol=col;sortDesc=false;}
-    document.querySelectorAll('thead th').forEach(t=>t.classList.remove('sorted','desc'));
+document.getElementById('search').addEventListener('input', applyFilters);
+document.querySelectorAll('table.drop-table thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = +th.dataset.col;
+    if (sortCol===col) sortDesc=!sortDesc;
+    else { sortCol=col; sortDesc=false; }
+    document.querySelectorAll('table.drop-table thead th').forEach(t=>t.classList.remove('sorted','desc'));
     th.classList.add('sorted');
-    if(sortDesc)th.classList.add('desc');
-    rows.slice().sort((a,b)=>{
-      if(col===0){
-        const ad=a.dataset.date||'99999999',bd=b.dataset.date||'99999999';
+    if (sortDesc) th.classList.add('desc');
+    rows.slice().sort((a,b) => {
+      if (col===0) {
+        const ad=a.dataset.date||'99999999', bd=b.dataset.date||'99999999';
         return sortDesc?bd.localeCompare(ad):ad.localeCompare(bd);
       }
-      const av=a.cells[col]?.textContent.trim()||'',bv=b.cells[col]?.textContent.trim()||'';
+      const av=a.cells[col]?.textContent.trim()||'', bv=b.cells[col]?.textContent.trim()||'';
       return sortDesc?bv.localeCompare(av):av.localeCompare(bv);
     }).forEach(r=>tbody.appendChild(r));
     applyFilters();
   });
 });
 applyFilters();
-
-// ── ICS generator ──────────────────────────────────────────────────────
-function pad(n){{ return String(n).padStart(2,'0'); }}
-function icsDate(year, month, day, time){{
-  const [h,m] = time.split(':').map(Number);
-  return `${{year}}${{pad(month)}}${{pad(day)}}T${{pad(h)}}${{pad(m)}}00`;
-}}
-function exportICS(day, time, alertMins, drops){{
-  const dt   = new Date(YEAR_N, MONTH_N - 1, day);
-  const label = dt.toLocaleDateString('en-US',{{month:'long',day:'numeric',year:'numeric'}});
-  const dtStr = icsDate(YEAR_N, MONTH_N, day, time);
-  // End time = start + 1 hour
-  const [sh, sm] = time.split(':').map(Number);
-  const endH = sh + 1, endM = sm;
-  const dtEnd = icsDate(YEAR_N, MONTH_N, day, `${{pad(endH % 24)}}:${{pad(endM)}}`);
-  const uid   = `grailz-${{YEAR_N}}-${{pad(MONTH_N)}}-${{pad(day)}}@grailzking.github.io`;
-
-  const names = drops.map(d => d.name).join(', ');
-  const desc  = drops.map(d => `[${{d.cat}}] ${{d.name}}${{d.url1?' — '+d.url1:''}}`)
-                     .join('\n');
-
-  const ics = [
-    'BEGIN:VCALENDAR',
-    'VERSION:2.0',
-    'PRODID:-//Grailz//Drops Calendar//EN',
-    'CALSCALE:GREGORIAN',
-    'METHOD:PUBLISH',
-    'BEGIN:VEVENT',
-    `UID:${{uid}}`,
-    `DTSTAMP:${{icsDate(YEAR_N, MONTH_N, day, '00:00')}}`,
-    `DTSTART:${{dtStr}}`,
-    `DTEND:${{dtEnd}}`,
-    `SUMMARY:🎯 Grailz Drop — ${{label}}`,
-    `DESCRIPTION:${{desc.replace(/
-/g,'\n')}}`,
-    'BEGIN:VALARM',
-    'ACTION:DISPLAY',
-    `DESCRIPTION:Grailz Drop Reminder — ${{names.slice(0,60)}}`,
-    `TRIGGER:-PT${{alertMins}}M`,
-    'END:VALARM',
-    'END:VEVENT',
-    'END:VCALENDAR'
-  ].join('\r\n');
-
-  const blob = new Blob([ics], {{type:'text/calendar;charset=utf-8'}});
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = `grailz-drop-${{YEAR_N}}-${{pad(MONTH_N)}}-${{pad(day)}}.ics`;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-}}
 </script>
 </body>
 </html>
