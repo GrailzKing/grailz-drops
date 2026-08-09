@@ -638,8 +638,8 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
     <thead><tr>
       <th data-col="0" class="sorted">Date</th>
       <th data-col="1">Time (ET)</th>
-      <th data-col="2">Drop</th>
-      <th data-col="3">Category</th>
+      <th data-col="2">Category</th>
+      <th data-col="3">Drop</th>
       <th data-col="4">Sources</th>
       <th>Add</th>
     </tr></thead>
@@ -928,7 +928,7 @@ function buildTable(){{
     const dropId='tbl-'+sl+'-'+(d.day||'tbd')+'-'+Math.random().toString(36).slice(2,6);
     const tr=document.createElement('tr');
     tr.dataset.cat=sl;tr.dataset.date=dateSort;
-    tr.innerHTML=`<td class="date-cell">${{dateDisplay}}</td><td class="time-cell">${{timeDisplay}}</td><td class="name-cell">${{d.name}}</td><td><span class="cat-badge cat-${{sl}}">${{d.cat}}</span></td><td class="source-cell">${{u1}}${{u1&&u2?' ':''}}${{u2}}</td><td class="ics-cell"><div class="tbl-cal-row"><input type="time" class="drop-time-input" id="t-${{dropId}}" value="${{dropTime}}"><input type="number" class="drop-alert-num" id="n-${{dropId}}" value="30" min="1" max="9999"><select class="drop-alert-unit" id="u-${{dropId}}"><option value="minutes">Min</option><option value="hours">Hrs</option><option value="days">Days</option></select><button class="btn-ics-sm" data-id="${{dropId}}"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add</button></div></td>`;
+    tr.innerHTML=`<td class="date-cell">${{dateDisplay}}</td><td class="time-cell">${{timeDisplay}}</td><td class="name-cell">${{d.name}}</td><td><span class="cat-badge cat-${{sl}}">${{d.cat}}</span></td><td class="source-cell">${{u1}}${{u1&&u2?' ':''}}${{u2}}</td><td class="ics-cell"><div class="tbl-cal-row"><input type="time" class="drop-time-input" id="t-${{dropId}}" value="${{dropTime}}" style="display:none"><input type="number" class="drop-alert-num" id="n-${{dropId}}" value="30" min="1" max="9999" style="display:none"><select class="drop-alert-unit" id="u-${{dropId}}" style="display:none"><option value="minutes">Min</option><option value="hours">Hrs</option><option value="days">Days</option></select><button class="btn-ics-sm" data-id="${{dropId}}"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add</button></div></td>`;
     const dayN=d.day||1;
     tr.querySelector('.btn-ics-sm').addEventListener('click',()=>{{
       const t=document.getElementById('t-'+dropId).value||dropTime;
