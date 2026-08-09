@@ -366,7 +366,6 @@ def write_json(drops, month_key, month_name):
             day = None
 
         records.append({
-            "cat":date_str[:1] and cat,  # just cat
             "cat":    cat,
             "date":   date_str,
             "month":  int(parts[0]) if parts[0].isdigit() else MONTH_NUM,
@@ -727,7 +726,6 @@ async function loadManifest(){{
 function renderAll(){{
   document.getElementById('calHeading').textContent = MONTH_NAME;
   buildLegend();
-  buildFilterBtns();
   buildTable();
   switchView(currentView);
 }}
