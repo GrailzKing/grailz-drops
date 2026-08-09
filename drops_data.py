@@ -1051,9 +1051,8 @@ function exportICS(day,time,alertMins,drops){{
   const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Grailz//Drops Calendar//EN',
     'CALSCALE:GREGORIAN','METHOD:PUBLISH','BEGIN:VEVENT',
     'UID:'+uid,'DTSTAMP:'+icsDate(YEAR_N,MONTH_N,day,'00:00'),
-    'DTSTART:'+dtStr,'DTEND:'+dtEnd,'SUMMARY:\uD83C\uDFAF Grailz Drop \u2014 '+label,
-    'DESCRIPTION:'+desc.replace(/\\n/g,'\\\\n'),
-    'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Grailz Drop Reminder \u2014 '+names.slice(0,60),
+    'DTSTART:'+dtStr,'DTEND:'+dtEnd,'SUMMARY:'+names+(drops.length===1?' ['+drops[0].cat+']':''),  'DESCRIPTION:'+desc.replace(/\\n/g,'\\\\n'),
+    'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Grailz Reminder: '+names.slice(0,60),
     'TRIGGER:-PT'+alertMins+'M','END:VALARM','END:VEVENT','END:VCALENDAR'].join(CRLF);
   const blob=new Blob([ics],{{type:'text/calendar;charset=utf-8'}});
   const url=URL.createObjectURL(blob);
