@@ -940,12 +940,13 @@ function switchView(v){{
   if(v==='day')buildDayView();
   document.getElementById('calHeading').textContent=
     v==='month'?MONTH_NAME:v==='week'?'Week View':'Day View';
+  applyFilters(); // re-filter table for new view/date range
 }}
 document.querySelectorAll('.view-btn').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
-document.getElementById('weekPrev').addEventListener('click',()=>{{currentWeekStart.setDate(currentWeekStart.getDate()-7);buildWeekView();}});
-document.getElementById('weekNext').addEventListener('click',()=>{{currentWeekStart.setDate(currentWeekStart.getDate()+7);buildWeekView();}});
-document.getElementById('dayPrev').addEventListener('click',()=>{{currentDayDate.setDate(currentDayDate.getDate()-1);buildDayView();}});
-document.getElementById('dayNext').addEventListener('click',()=>{{currentDayDate.setDate(currentDayDate.getDate()+1);buildDayView();}});
+document.getElementById('weekPrev').addEventListener('click',()=>{{currentWeekStart.setDate(currentWeekStart.getDate()-7);buildWeekView();applyFilters();}});
+document.getElementById('weekNext').addEventListener('click',()=>{{currentWeekStart.setDate(currentWeekStart.getDate()+7);buildWeekView();applyFilters();}});
+document.getElementById('dayPrev').addEventListener('click',()=>{{currentDayDate.setDate(currentDayDate.getDate()-1);buildDayView();applyFilters();}});
+document.getElementById('dayNext').addEventListener('click',()=>{{currentDayDate.setDate(currentDayDate.getDate()+1);buildDayView();applyFilters();}});
 
 // ── Table ──────────────────────────────────────────────────────────────────
 function buildTable(){{
@@ -971,7 +972,7 @@ function buildTable(){{
     const dropTime=d.time||'09:00';
     const dropId='tbl-'+sl+'-'+(d.day||'tbd')+'-'+Math.random().toString(36).slice(2,6);
     const tr=document.createElement('tr');
-    tr.dataset.cat=sl;tr.dataset.date=dateSort;tr.dataset.tbd=d.tbd?'true':'false';
+    tr.dataset.cat=sl;tr.dataset.date=dateSort;tr.dataset.tbd=d.tbd?'true':'false';tr.dataset.day=d.day||0;
     tr.innerHTML=`<td class="date-cell">${{dateDisplay}}</td><td class="time-cell">${{timeDisplay}}</td><td><span class="cat-badge cat-${{sl}}">${{d.cat}}</span></td><td class="name-cell">${{d.name}}</td><td class="source-cell">${{u1}}${{u1&&u2?' ':''}}${{u2}}</td><td class="ics-cell"><div class="tbl-cal-row"><input type="time" class="drop-time-input" id="t-${{dropId}}" value="${{dropTime}}" style="display:none"><input type="number" class="drop-alert-num" id="n-${{dropId}}" value="30" min="1" max="9999" style="display:none"><select class="drop-alert-unit" id="u-${{dropId}}" style="display:none"><option value="minutes">Min</option><option value="hours">Hrs</option><option value="days">Days</option></select><button class="btn-ics-sm" data-id="${{dropId}}"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add</button></div></td>`;
     const dayN=d.day||1;
     tr.querySelector('.btn-ics-sm').addEventListener('click',()=>{{
@@ -999,16 +1000,48 @@ function buildTable(){{
 }}
 
 let activeFilter='all',sortCol=0,sortDesc=false,showTBD=false;
+function getViewDateRange(){{
+  // Returns {{minDay, maxDay}} for the current view, or null for month view (no filter)
+  if(currentView==='day'){{
+    const d=currentDayDate;
+    if(d.getMonth()+1!==MONTH_N||d.getFullYear()!==YEAR_N)return{{minDay:-1,maxDay:-1}};
+    return{{minDay:d.getDate(),maxDay:d.getDate()}};
+  }}
+  if(currentView==='week'){{
+    // Week spans currentWeekStart to currentWeekStart+6
+    // Only include days that fall within the current month/year
+    const ws=new Date(currentWeekStart);
+    const we=new Date(currentWeekStart);we.setDate(we.getDate()+6);
+    const monthStart=new Date(YEAR_N,MONTH_N-1,1);
+    const monthEnd=new Date(YEAR_N,MONTH_N,0);
+    // Clamp to current month
+    const lo=ws<monthStart?monthStart:ws;
+    const hi=we>monthEnd?monthEnd:we;
+    if(lo.getMonth()+1!==MONTH_N||hi<lo)return{{minDay:-1,maxDay:-1}};
+    return{{minDay:lo.getDate(),maxDay:hi.getDate()}};
+  }}
+  return null; // month view — no date filter
+}}
+
 function applyFilters(){{
   const q=document.getElementById('search').value.toLowerCase();
   const rows=Array.from(document.getElementById('tbody').querySelectorAll('tr'));
+  const dateRange=getViewDateRange();
   let any=false;
   rows.forEach(r=>{{
     const cm=activeFilter==='all'||r.dataset.cat===activeFilter;
     const tm=!q||r.textContent.toLowerCase().includes(q);
     const isTbd=r.dataset.tbd==='true';
-    r.classList.toggle('hidden',!(cm&&tm&&(showTBD||!isTbd)));
-    if(cm&&tm&&(showTBD||!isTbd))any=true;
+    let dm=true;
+    if(dateRange){{
+      const day=parseInt(r.dataset.day||'0');
+      if(dateRange.minDay===-1){{dm=false;}} // week/day is outside this month
+      else{{dm=!isTbd&&day>=dateRange.minDay&&day<=dateRange.maxDay;}}
+    }}else{{
+      dm=showTBD||!isTbd; // month view: respect TBD toggle
+    }}
+    r.classList.toggle('hidden',!(cm&&tm&&dm));
+    if(cm&&tm&&dm)any=true;
   }});
   document.getElementById('noResults').style.display=any?'none':'block';
   const v=rows.filter(r=>!r.classList.contains('hidden')).length;
