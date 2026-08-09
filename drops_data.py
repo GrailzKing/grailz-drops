@@ -470,7 +470,7 @@ header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linea
 .view-btn{{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:6px 14px;border:none;background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.06em;text-transform:uppercase;transition:all .15s;}}
 .view-btn:hover{{background:#1a1a2a;color:var(--text);}}
 .view-btn.active{{background:var(--accent2);color:#fff;}}
-.cal-legend{{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}}
+.cal-legend{{display:none;}}
 .legend-item{{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted);}}
 .legend-dot{{width:8px;height:8px;border-radius:50%;flex-shrink:0;}}
 .cal-table{{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);table-layout:fixed;}}
