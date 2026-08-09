@@ -71,7 +71,7 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 .panel-drop-name{font-size:12px;color:var(--text);flex:1;min-width:120px;}
 .panel-srcs{display:flex;gap:6px;flex-shrink:0;}
 .panel-srcs a{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;}
-.drop-cal-row{display:flex;align-items:center;gap:6px;margin-top:6px;flex-wrap:wrap;padding-top:6px;border-top:1px solid #1e1230;width:100%;}
+.drop-cal-row{display:none;}
 .drop-time-input{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:11px;padding:4px 8px;border-radius:5px;outline:none;-webkit-appearance:none;width:110px;}
 .drop-alert-num{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:11px;padding:4px 6px;border-radius:5px;outline:none;width:52px;}
 .drop-alert-unit{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:11px;padding:4px 6px;border-radius:5px;outline:none;cursor:pointer;}
@@ -144,6 +144,11 @@ td{padding:10px 16px;vertical-align:middle;}
 .time-cell{font-family:'Space Mono',monospace;font-size:11px;color:#9b3fe8;white-space:nowrap;font-weight:600;}
 .name-cell{font-size:13px;color:var(--text);max-width:380px;}
 .source-cell{display:flex;gap:8px;flex-wrap:wrap;}
+.ics-cell{vertical-align:middle;white-space:nowrap;}
+.tbl-cal-row{display:flex;align-items:center;gap:4px;flex-wrap:nowrap;}
+.tbl-cal-row .drop-time-input{width:90px;font-size:10px;padding:3px 6px;}
+.tbl-cal-row .drop-alert-num{width:42px;font-size:10px;padding:3px 4px;}
+.tbl-cal-row .drop-alert-unit{font-size:10px;padding:3px 4px;}
 .source-cell a{font-family:'Space Mono',monospace;font-size:10px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:3px 8px;border-radius:4px;}
 .no-results{text-align:center;padding:60px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:13px;display:none;}
 footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:linear-gradient(135deg,#06060d,#0a0814);}
@@ -226,6 +231,7 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
       <th data-col="2">Drop</th>
       <th data-col="3">Category</th>
       <th data-col="4">Sources</th>
+      <th>Add</th>
     </tr></thead>
     <tbody id="tbody"></tbody>
   </table>
@@ -463,23 +469,7 @@ function buildDropRows(container, dayDrops, dayN, showTime=false){
     if(dr.url1)inner+=`<a href="${dr.url1}" target="_blank" rel="noopener">Source 1 ↗</a>`;
     if(dr.url2)inner+=`<a href="${dr.url2}" target="_blank" rel="noopener">Source 2 ↗</a>`;
     inner+='</span>';
-    inner+=`<div class="drop-cal-row">
-      <input type="time" class="drop-time-input" id="t-${dropId}" value="${dr.time||'09:00'}">
-      <input type="number" class="drop-alert-num" id="n-${dropId}" value="30" min="1" max="10080">
-      <select class="drop-alert-unit" id="u-${dropId}">
-        <option value="minutes">Min</option><option value="hours">Hrs</option><option value="days">Days</option>
-      </select>
-      <button class="btn-ics-sm" data-id="${dropId}">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add
-      </button></div>`;
     row.innerHTML=inner;
-    row.querySelector('.btn-ics-sm').addEventListener('click',()=>{
-      const t=document.getElementById('t-'+dropId).value||(dr.time||'09:00');
-      const n=parseInt(document.getElementById('n-'+dropId).value)||30;
-      const u=document.getElementById('u-'+dropId).value;
-      const mins=u==='days'?n*1440:u==='hours'?n*60:n;
-      exportICS(dayN,t,mins,[dr]);
-    });
     container.appendChild(row);
   });
 }
@@ -524,9 +514,19 @@ function buildTable(){
     const timeDisplay=h12+':'+(m<10?'0'+m:m)+' '+ap;
     const u1=d.url1?`<a href="${d.url1}" target="_blank" rel="noopener">Source 1 ↗</a>`:'';
     const u2=d.url2?`<a href="${d.url2}" target="_blank" rel="noopener">Source 2 ↗</a>`:'';
+    const dropTime=d.time||'09:00';
+    const dropId='tbl-'+sl+'-'+(d.day||'tbd')+'-'+Math.random().toString(36).slice(2,6);
     const tr=document.createElement('tr');
     tr.dataset.cat=sl;tr.dataset.date=dateSort;
-    tr.innerHTML=`<td class="date-cell">${dateDisplay}</td><td class="time-cell">${timeDisplay}</td><td class="name-cell">${d.name}</td><td><span class="cat-badge cat-${sl}">${d.cat}</span></td><td class="source-cell">${u1}${u1&&u2?' ':''}${u2}</td>`;
+    tr.innerHTML=`<td class="date-cell">${dateDisplay}</td><td class="time-cell">${timeDisplay}</td><td class="name-cell">${d.name}</td><td><span class="cat-badge cat-${sl}">${d.cat}</span></td><td class="source-cell">${u1}${u1&&u2?' ':''}${u2}</td><td class="ics-cell"><div class="tbl-cal-row"><input type="time" class="drop-time-input" id="t-${dropId}" value="${dropTime}"><input type="number" class="drop-alert-num" id="n-${dropId}" value="30" min="1" max="9999"><select class="drop-alert-unit" id="u-${dropId}"><option value="minutes">Min</option><option value="hours">Hrs</option><option value="days">Days</option></select><button class="btn-ics-sm" data-id="${dropId}"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add</button></div></td>`;
+    const dayN=d.day||1;
+    tr.querySelector('.btn-ics-sm').addEventListener('click',()=>{
+      const t=document.getElementById('t-'+dropId).value||dropTime;
+      const n=parseInt(document.getElementById('n-'+dropId).value)||30;
+      const u=document.getElementById('u-'+dropId).value;
+      const mins=u==='days'?n*1440:u==='hours'?n*60:n;
+      exportICS(dayN,t,mins,[d]);
+    });
     tbody.appendChild(tr);
   });
   // Filter buttons
