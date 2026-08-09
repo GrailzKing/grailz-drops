@@ -798,7 +798,10 @@ function buildMonthView(){{
       }});
       if(dayDrops.length>3){{const m=document.createElement('div');m.className='cal-more';m.textContent='+'+(dayDrops.length-3)+' more';chips.appendChild(m);}}
       td.appendChild(chips);
-      td.addEventListener('click',()=>openDayPanel(day,dayDrops,td));
+      td.addEventListener('click',()=>{{
+      currentDayDate=new Date(YEAR_N,MONTH_N-1,day);
+      switchView('day');
+    }});
     }}
     row.appendChild(td);dayCount++;
   }}
