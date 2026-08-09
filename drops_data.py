@@ -754,8 +754,12 @@ async function loadManifest(){{
       `<option value="${{m.month_key}}">${{m.month}}</option>`
     ).join('');
     sel.addEventListener('change', e=>loadMonth(e.target.value));
-    // Load current/first month
-    await loadMonth(manifest[0].month_key);
+    // Load current month by default, fall back to most recent
+    const currentKey = TODAY_YR+'-'+(TODAY_MON<10?'0'+TODAY_MON:TODAY_MON);
+    const match = manifest.find(m=>m.month_key===currentKey);
+    const toLoad = match ? match.month_key : manifest[0].month_key;
+    sel.value = toLoad;
+    await loadMonth(toLoad);
   }}catch(e){{
     console.error('Failed to load manifest',e);
     // Fallback: try current month directly
