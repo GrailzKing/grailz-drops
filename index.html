@@ -92,6 +92,8 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 #search:focus{border-color:var(--accent2);}
 #search::placeholder{color:var(--muted);}
 .count{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;}
+.tbd-btn{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}
+.tbd-btn.active{background:var(--accent2);color:#fff;border-color:var(--accent2);}
 .filters{display:flex;flex-wrap:wrap;gap:6px;}
 .filter-btn{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}
 .filter-btn:hover{border-color:var(--text);color:var(--text);}
@@ -220,6 +222,7 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
 <div class="controls">
   <div class="search-wrap">
     <input id="search" type="text" placeholder="Search drops…" autocomplete="off">
+    <button id="tbdToggle" class="tbd-btn">Show TBD</button>
     <span class="count" id="count"></span>
   </div>
   <div class="filters" id="filterBtns"></div>
@@ -519,7 +522,7 @@ function buildTable(){
     const dropTime=d.time||'09:00';
     const dropId='tbl-'+sl+'-'+(d.day||'tbd')+'-'+Math.random().toString(36).slice(2,6);
     const tr=document.createElement('tr');
-    tr.dataset.cat=sl;tr.dataset.date=dateSort;
+    tr.dataset.cat=sl;tr.dataset.date=dateSort;tr.dataset.tbd=d.tbd?'true':'false';
     tr.innerHTML=`<td class="date-cell">${dateDisplay}</td><td class="time-cell">${timeDisplay}</td><td><span class="cat-badge cat-${sl}">${d.cat}</span></td><td class="name-cell">${d.name}</td><td class="source-cell">${u1}${u1&&u2?' ':''}${u2}</td><td class="ics-cell"><div class="tbl-cal-row"><input type="time" class="drop-time-input" id="t-${dropId}" value="${dropTime}" style="display:none"><input type="number" class="drop-alert-num" id="n-${dropId}" value="30" min="1" max="9999" style="display:none"><select class="drop-alert-unit" id="u-${dropId}" style="display:none"><option value="minutes">Min</option><option value="hours">Hrs</option><option value="days">Days</option></select><button class="btn-ics-sm" data-id="${dropId}"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Add</button></div></td>`;
     const dayN=d.day||1;
     tr.querySelector('.btn-ics-sm').addEventListener('click',()=>{
@@ -546,7 +549,7 @@ function buildTable(){
   applyFilters();
 }
 
-let activeFilter='all',sortCol=0,sortDesc=false;
+let activeFilter='all',sortCol=0,sortDesc=false,showTBD=false;
 function applyFilters(){
   const q=document.getElementById('search').value.toLowerCase();
   const rows=Array.from(document.getElementById('tbody').querySelectorAll('tr'));
@@ -554,14 +557,21 @@ function applyFilters(){
   rows.forEach(r=>{
     const cm=activeFilter==='all'||r.dataset.cat===activeFilter;
     const tm=!q||r.textContent.toLowerCase().includes(q);
-    r.classList.toggle('hidden',!(cm&&tm));
-    if(cm&&tm)any=true;
+    const isTbd=r.dataset.tbd==='true';
+    r.classList.toggle('hidden',!(cm&&tm&&(showTBD||!isTbd)));
+    if(cm&&tm&&(showTBD||!isTbd))any=true;
   });
   document.getElementById('noResults').style.display=any?'none':'block';
   const v=rows.filter(r=>!r.classList.contains('hidden')).length;
   document.getElementById('count').textContent=v+' drop'+(v!==1?'s':'');
 }
 document.getElementById('search').addEventListener('input',applyFilters);
+document.getElementById('tbdToggle').addEventListener('click',()=>{
+  showTBD=!showTBD;
+  document.getElementById('tbdToggle').classList.toggle('active',showTBD);
+  document.getElementById('tbdToggle').textContent=showTBD?'Hide TBD':'Show TBD';
+  applyFilters();
+});
 document.querySelectorAll('table.drop-table thead th[data-col]').forEach(th=>{
   th.addEventListener('click',()=>{
     const col=+th.dataset.col;
