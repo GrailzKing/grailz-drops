@@ -778,7 +778,7 @@ function buildMonthView(){{
       dayDrops.slice(0,3).forEach(dr=>{{
         const chip=document.createElement('div');chip.className='cal-chip';
         chip.style.background=CAT_MAP[cslug(dr.cat)]||'#2a2a35';chip.style.color='#fff';
-        chip.title=dr.name;chip.textContent=dr.cat;chips.appendChild(chip);
+        chip.title=dr.name;chip.textContent=dr.name;chips.appendChild(chip);
       }});
       if(dayDrops.length>3){{const m=document.createElement('div');m.className='cal-more';m.textContent='+'+(dayDrops.length-3)+' more';chips.appendChild(m);}}
       td.appendChild(chips);
@@ -842,7 +842,7 @@ function buildWeekView(){{
       dayDrops.slice(0,5).forEach(dr=>{{
         const chip=document.createElement('div');chip.className='cal-chip';
         chip.style.background=CAT_MAP[cslug(dr.cat)]||'#2a2a35';chip.style.color='#fff';
-        chip.style.marginBottom='2px';chip.title=dr.name;chip.textContent=dr.cat;td.appendChild(chip);
+        chip.style.marginBottom='2px';chip.title=dr.name;chip.textContent=dr.name;td.appendChild(chip);
       }});
       if(dayDrops.length>5){{const m=document.createElement('div');m.className='cal-more';m.textContent='+'+(dayDrops.length-5)+' more';td.appendChild(m);}}
       td.addEventListener('click',()=>{{currentDayDate=new Date(d);switchView('day');}});
