@@ -74,6 +74,7 @@ CAT_COLORS = {
     "DISNEY LORCANA":     ("#1a3a6b", "#fff"),
     "YU-GI-OH!":          ("#6b1a1a", "#fff"),
     "NON-SPORTS CARDS":   ("#3a3a1a", "#fff"),
+    "US MINT":            ("#1a3a1a", "#7fff7f"),
 }
 
 CAT_TIMES = {
@@ -82,6 +83,7 @@ CAT_TIMES = {
     "YU-GI-OH!":"00:00","DISNEY LORCANA":"09:00","NON-SPORTS CARDS":"12:00",
     "DISNEY PARKS PINS":"09:00","SUPREME FW26":"11:00","MATTEL CREATIONS":"09:00",
     "COLLAB / LIFESTYLE":"10:00","VINYL & MUSIC":"00:00","MOVIES":"00:00",
+    "US MINT":"12:00",
 }
 
 def cslug(c): return re.sub(r"[^a-z0-9]+"," ",c.lower()).strip().replace(" ","-")
@@ -268,6 +270,16 @@ MANUAL_DROPS = [
     ("PANINI","8-TBD","2025-26-panini-select-road-to-fifa-world-cup-soccer","https://www.beckett.com/news/sports-card-release-calendar-dates/","", "12:00"),
     ("PANINI","8-TBD","2026-panini-impeccable-wnba","https://www.beckett.com/news/sports-card-release-calendar-dates/","", "12:00"),
     ("PANINI","8-TBD","2026-donruss-optic-nwsl-soccer","https://www.beckett.com/news/sports-card-release-calendar-dates/","", "12:00"),
+
+    # ── US MINT ────────────────────────────────────────────────────────────
+    # Source: usmint.gov/product-schedule/2026 — August releases only
+    # All drop at 12:00 PM ET on release date
+    ("US MINT","8-3","comic-art-three-medal-set-2025-super-heroes","https://www.usmint.gov/comic-art-three-medal-set-2025-super-heroes-M25DC3.html","https://www.usmint.gov/product-schedule/2026/?start=0&sz=64", "12:00"),
+    ("US MINT","8-6","best-of-the-mint-1916-walking-liberty-half-dollar-gold-coin-silver-medal-set","https://www.usmint.gov/best-of-the-mint-1916-walking-liberty-half-dollar-gold-coin-and-silver-medal-set-26BM3.html","https://www.usmint.gov/product-schedule/2026/?start=0&sz=64", "12:00"),
+    ("US MINT","8-25","morgan-silver-dollar-2026-enhanced-uncirculated-coin","https://www.usmint.gov/morgan-silver-dollar-2026-enhanced-uncirculated-coin-26XE.html","https://www.usmint.gov/product-schedule/2026/?start=0&sz=64", "12:00"),
+    ("US MINT","8-25","peace-silver-dollar-2026-enhanced-uncirculated-coin","https://www.usmint.gov/peace-silver-dollar-2026-enhanced-uncirculated-coin-26XH.html","https://www.usmint.gov/product-schedule/2026/?start=0&sz=64", "12:00"),
+    ("US MINT","8-26","semiquincentennial-quarters-2026-rolls-and-bags-us-constitution","https://www.usmint.gov/semiquincentennial-quarters-2026-rolls-and-bags-us-constitution-MASTER_SEMIQC.html","https://www.usmint.gov/product-schedule/2026/?start=0&sz=64", "12:00"),
+    ("US MINT","8-27","best-of-the-mint-1804-silver-dollar-gold-coin-silver-medal-set","https://www.usmint.gov/best-of-the-mint-1804-silver-dollar-gold-coin-and-silver-medal-set-26BM4.html","https://www.usmint.gov/product-schedule/2026/?start=0&sz=64", "12:00"),
     # ── NON-SPORTS CARDS ──────────────────────────────────────────────────
     ("NON-SPORTS CARDS","8-7","2026-leaf-seasons-in-the-sun-baseball","https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/","", "12:00"),
     ("NON-SPORTS CARDS","8-19","2025-26-upper-deck-clear-cut-hockey","https://cardlines.com/the-biggest-sports-card-releases-of-august-2026/","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
