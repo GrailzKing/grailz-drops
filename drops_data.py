@@ -341,6 +341,13 @@ MANUAL_DROPS = [
     ("VINYL & MUSIC","8-28","editors-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
     ("VINYL & MUSIC","8-28","ministry-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
     ("VINYL & MUSIC","8-28","fuel-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
+    # Sound Garden Baltimore — Monday Leftovers (recurring weekly @ 10am ET)
+    ("VINYL & MUSIC","8-3","sound-garden-baltimore-leftovers-8-3","https://www.instagram.com/sg_bmore/","", "10:00"),
+    ("VINYL & MUSIC","8-10","sound-garden-baltimore-leftovers-8-10","https://www.instagram.com/sg_bmore/","", "10:00"),
+    ("VINYL & MUSIC","8-17","sound-garden-baltimore-leftovers-8-17","https://www.instagram.com/sg_bmore/","", "10:00"),
+    ("VINYL & MUSIC","8-24","sound-garden-baltimore-leftovers-8-24","https://www.instagram.com/sg_bmore/","", "10:00"),
+    ("VINYL & MUSIC","8-31","sound-garden-baltimore-leftovers-8-31","https://www.instagram.com/sg_bmore/","", "10:00"),
+
 ]
 
 
