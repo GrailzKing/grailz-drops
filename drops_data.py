@@ -502,7 +502,7 @@ header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linea
 .week-cell.has-drops .week-date{{color:var(--text);}}
 .day-view-inner{{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;min-height:200px;}}
 .day-empty{{text-align:center;padding:48px 0;color:var(--muted);font-family:'Space Mono',monospace;font-size:12px;}}
-.day-panel{{max-width:1100px;margin:12px auto 0;padding:0 32px;display:none;}}
+.day-panel{{display:none !important;}}
 .day-panel.visible{{display:block;}}
 .day-panel-inner{{background:var(--surface);border:1px solid #9b3fe850;border-radius:10px;padding:16px 20px;}}
 .day-panel-title{{font-family:'Space Mono',monospace;font-size:12px;color:#c084fc;margin-bottom:12px;letter-spacing:.06em;}}
