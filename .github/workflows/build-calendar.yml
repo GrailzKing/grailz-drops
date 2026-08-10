@@ -1,17 +1,9 @@
 name: Build & Deploy Drops Calendar
 
 on:
-  # Run every Monday at 9am CT (15:00 UTC)
   schedule:
     - cron: '0 15 * * 1'
-  # Also allow manual trigger from GitHub Actions tab
   workflow_dispatch:
-  # And auto-deploy whenever index.html is pushed directly
-  push:
-    branches: [main]
-    paths:
-      - 'index.html'
-      - 'drops_data.py'
 
 permissions:
   contents: write
@@ -32,14 +24,13 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: |
-          pip install openpyxl requests
+        run: pip install openpyxl requests
 
-      - name: Build index.html
+      - name: Build index.html and data JSON
         run: |
           if [ -f drops_data.py ]; then
             python drops_data.py
-            echo "Built index.html from drops_data.py"
+            echo "Built index.html and data/*.json from drops_data.py"
           else
             echo "No drops_data.py found — using existing index.html"
           fi
@@ -48,6 +39,6 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html
+          git add index.html data/
           git diff --cached --quiet || git commit -m "Auto-update drops calendar $(date +'%Y-%m-%d')"
           git push
