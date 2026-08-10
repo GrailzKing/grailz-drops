@@ -485,6 +485,14 @@ def build_html(month_key, month_name):
 :root{{--bg:#06060d;--surface:#0e0e1a;--border:#1e1230;--accent:#1eb8f0;--accent2:#9b3fe8;--accent3:#00e5ff;--text:#e8e8f8;--muted:#6b6b90;--row-alt:#0a0a14;}}
 *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0;}}
 body{{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}}
+.bg-watermark{{
+  position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:70vw;max-width:700px;height:auto;aspect-ratio:1;
+  background-image:url({logo_img_src});
+  background-size:contain;background-repeat:no-repeat;background-position:center;
+  opacity:0.04;pointer-events:none;z-index:0;filter:saturate(0) brightness(2);
+}}
+header,main,.cal-section,.day-panel,.divider,.controls,.table-wrap,footer{{position:relative;z-index:1;}}
 header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}}
 .logo-wrap{{display:flex;align-items:center;gap:14px;}}
 .logo-img{{width:52px;height:52px;border-radius:50%;filter:drop-shadow(0 0 10px #9b3fe8) drop-shadow(0 0 20px #1eb8f060);flex-shrink:0;}}
@@ -603,6 +611,7 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
 </head>
 <body>
 <div class="loading-bar" id="loadingBar"></div>
+<div class="bg-watermark"></div>
 
 <header>
   <div class="logo-wrap">
