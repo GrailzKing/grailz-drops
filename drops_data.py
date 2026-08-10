@@ -487,10 +487,10 @@ def build_html(month_key, month_name):
 body{{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}}
 .bg-watermark{{
   position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:70vw;max-width:700px;height:auto;aspect-ratio:1;
+  width:110vw;max-width:1100px;height:auto;aspect-ratio:1;
   background-image:url({logo_img_src});
   background-size:contain;background-repeat:no-repeat;background-position:center;
-  opacity:0.04;pointer-events:none;z-index:0;filter:saturate(0) brightness(2);
+  opacity:0.10;pointer-events:none;z-index:0;filter:saturate(0.3) brightness(1.5);
 }}
 header,main,.cal-section,.day-panel,.divider,.controls,.table-wrap,footer{{position:relative;z-index:1;}}
 header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linear-gradient(135deg,#06060d 60%,#0e0a1a 100%);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}}
