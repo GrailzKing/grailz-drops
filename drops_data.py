@@ -251,6 +251,7 @@ MANUAL_DROPS = [
     ("TOPPS","8-12","2026-topps-pristine-baseball","https://www.topps.com/pages/topps-pristine-baseball","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-12","2026-star-wars-chrome-galaxy","https://www.topps.com/pages/star-wars-chrome-galaxy","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-14","2026-topps-stadium-club-ufc","https://www.topps.com/pages/topps-stadium-club-ufc","https://www.topps.com/release-calendar", "12:00"),
+    ("TOPPS","8-14","2025-26-topps-chrome-update-basketball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
     ("TOPPS","8-17","2026-topps-museum-collection-baseball","https://www.topps.com/pages/topps-museum-collection-baseball","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-18","2025-26-topps-definitive-basketball","https://www.topps.com/pages/topps-definitive-basketball","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-19","2026-topps-chrome-baseball-logofractor-edition","https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition","https://www.topps.com/release-calendar", "12:00"),
@@ -307,16 +308,26 @@ MANUAL_DROPS = [
     ("DISNEY PARKS PINS","8-14","d23-2026-anaheim-disney-pinnacle-booth","https://d23.com/d23-2026/","https://x.com/DisneyPinnacle/status/2081016173999862201", "09:00"),
     ("DISNEY PARKS PINS","8-14","d23-2026-disney-princess-all-13-le-pin-1200","https://d23.com/d23-2026/","https://x.com/DPrincess_Facts/status/2081016173999862201", "09:00"),
     ("DISNEY PARKS PINS","8-14","d23-2026-anaheim-exclusive-pin-drops-weekend","https://d23.com/d23-2026/","https://disneypinsblog.com", "09:00"),
-    ("DISNEY PARKS PINS","8-18","wdw-august-le-pin-week-3","https://disneypinsblog.com","https://mypincentral.com", "09:00"),
+
+    ("DISNEY PARKS PINS","8-15","d23-2026-wdi-mickeys-of-glendale-pin-releases-saturday","https://disneypinsblog.com/d23-marketplace-pin-store-pin-releases-at-d23-2026/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-15","d23-2026-disney-studio-store-hollywood-pin-releases-saturday","https://disneypinsblog.com/d23-marketplace-pin-store-pin-releases-at-d23-2026/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-16","d23-2026-wdi-mickeys-of-glendale-pin-releases-sunday","https://disneypinsblog.com/d23-marketplace-pin-store-pin-releases-at-d23-2026/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-16","d23-2026-disney-studio-store-hollywood-pin-releases-sunday","https://disneypinsblog.com/d23-marketplace-pin-store-pin-releases-at-d23-2026/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-16","d23-2026-walt-disney-company-pin-store-releases-sunday","https://disneypinsblog.com/d23-marketplace-pin-store-pin-releases-at-d23-2026/","https://disneypinsblog.com", "09:00"),    ("DISNEY PARKS PINS","8-18","wdw-august-le-pin-week-3","https://disneypinsblog.com","https://mypincentral.com", "09:00"),
     ("DISNEY PARKS PINS","8-25","wdw-august-le-pin-week-4","https://disneypinsblog.com","https://mypincentral.com", "09:00"),
     ("DISNEY PARKS PINS","8-TBD","wdw-halloween-2026-pin-series-launch","https://disneypinsblog.com/halloween-2026-pin-releases-at-disney-store-disney-parks/","", "09:00"),
 
     ("DISNEY PARKS PINS","8-4","wdw-windows-of-attraction-zurg-le-2500","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
     ("DISNEY PARKS PINS","8-4","wdw-ap-halloween-mickey-castle-le-4000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
     ("DISNEY PARKS PINS","8-4","wdw-pinocchio-kingdom-hearts-pin-le-4000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
-    ("DISNEY PARKS PINS","8-11","wdw-digitize-disney-figment-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+
+    ("DISNEY PARKS PINS","8-4","wdw-jose-play-along-pins-series-8-le-2000","https://disneypinsblog.com/new-disney-pins-august-2026-week-1/","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/", "09:00"),
+    ("DISNEY PARKS PINS","8-4","wdw-ap-halloween-mickey-castle-le-4000-pin","https://disneypinsblog.com/new-disney-pins-august-2026-week-1/","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/", "09:00"),
+    ("DISNEY PARKS PINS","8-4","wdw-windows-of-attraction-buzz-lightyear-space-ranger-spin-le-2500","https://disneypinsblog.com/new-disney-pins-august-2026-week-1/","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/", "09:00"),    ("DISNEY PARKS PINS","8-11","wdw-digitize-disney-figment-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
     ("DISNEY PARKS PINS","8-11","wdw-magical-theater-pinocchio-pin-of-month-le-4500","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
-    ("DISNEY PARKS PINS","8-18","wdw-hocus-pocus-cats-dogs-halloween-mystery-set","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+
+    ("DISNEY PARKS PINS","8-11","wdw-digitize-disney-spaceship-earth-epcot-jumbo-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-11","wdw-digitize-disney-tower-of-terror-jumbo-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),    ("DISNEY PARKS PINS","8-18","wdw-hocus-pocus-cats-dogs-halloween-mystery-set","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
     ("DISNEY PARKS PINS","8-18","wdw-alice-in-wonderland-75th-anniversary-pins","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
     # ── VINYL & MUSIC — pauseandplay.com ──────────────────────────────────
     ("VINYL & MUSIC","8-7","phoebe-bridgers-new-album-2026","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
@@ -329,7 +340,9 @@ MANUAL_DROPS = [
     ("VINYL & MUSIC","8-14","joy-oladokun-hope-is-a-heavy-thing-transparent-black-ice-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
     ("VINYL & MUSIC","8-14","nothing-but-thieves-stray-dogs-pink-rose-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
     ("VINYL & MUSIC","8-14","blondshell-violins-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
-    ("VINYL & MUSIC","8-21","paul-simon-the-quiet-celebration-concert-triple-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+
+    ("VINYL & MUSIC","8-14","weezer-new-album-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
+    ("VINYL & MUSIC","8-14","sam-smith-new-album-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),    ("VINYL & MUSIC","8-21","paul-simon-the-quiet-celebration-concert-triple-vinyl","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
     ("VINYL & MUSIC","8-28","nickelback-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
     ("VINYL & MUSIC","8-28","nine-inch-nails-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
     ("VINYL & MUSIC","8-28","marilyn-manson-new-album-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
