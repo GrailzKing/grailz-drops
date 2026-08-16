@@ -290,8 +290,20 @@ MANUAL_DROPS = [
     ("NON-SPORTS CARDS","8-TBD","2026-upper-deck-aew-wrestling","https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/","", "12:00"),
     ("NON-SPORTS CARDS","8-TBD","2026-topps-chrome-sapphire-veefriends","https://www.beckett.com/news/2026-non-sports-cards-release-dates-checklists-and-set-information/","", "12:00"),
     # ── MATTEL CREATIONS ──────────────────────────────────────────────────
-    ("MATTEL CREATIONS","8-TBD","mattel-creations-august-member-exclusive","https://creations.mattel.com/pages/launch-calendar","", "09:00"),
-    ("MATTEL CREATIONS","8-TBD","hot-wheels-august-collector-exclusive","https://creations.mattel.com/pages/launch-calendar","", "09:00"),
+
+    # ── MATTEL CREATIONS — confirmed from launch calendar ─────────────────
+    # 8/18: Hot Wheels RLC Member Exclusive Ferrari F40 @ 9am PT (12pm ET)
+    ("MATTEL CREATIONS","8-18","hot-wheels-rlc-exclusive-ferrari-f40","https://creations.mattel.com/products/hot-wheels-rlc-exclusive-ferrari-f40-jjy72","https://creations.mattel.com/pages/launch-calendar", "12:00"),
+    # 8/18: Barbie Signature Creations Exclusive @ 9pm PT (12am ET 8/19)
+    ("MATTEL CREATIONS","8-18","barbie-signature-creations-exclusive-design-august","https://creations.mattel.com/pages/launch-calendar","", "00:00"),
+    # 8/19: Monster High Skullector Member Only Access 24 Hours @ 9am PT (12pm ET)
+    ("MATTEL CREATIONS","8-19","monster-high-skullector-member-only-august","https://creations.mattel.com/pages/launch-calendar","", "12:00"),
+    # 8/20: Hot Wheels Collector Creations Exclusive Design @ 9am PT (12pm ET)
+    ("MATTEL CREATIONS","8-20","hot-wheels-collector-creations-exclusive-design-august-20","https://creations.mattel.com/pages/launch-calendar","", "12:00"),
+    # 8/25: Hot Wheels Collector Member Exclusive @ 9am PT (12pm ET)
+    ("MATTEL CREATIONS","8-25","hot-wheels-collector-member-exclusive-august-25","https://creations.mattel.com/pages/launch-calendar","", "12:00"),
+    # 8/28: Hot Wheels Collector Creations Exclusive Design @ 6am PT (9am ET)
+    ("MATTEL CREATIONS","8-28","hot-wheels-collector-creations-exclusive-design-august-28","https://creations.mattel.com/pages/launch-calendar","", "09:00"),
     # ── SUPREME FW26 ──────────────────────────────────────────────────────
     ("SUPREME FW26","8-TBD","supreme-fw26-preview-lookbook","https://www.supremecommunity.com/season/fall-winter2026/droplists/","https://hypebeast.com/tags/weekly-drops", "11:00"),
     ("SUPREME FW26","8-TBD","supreme-fw26-week-1","https://www.supremecommunity.com/season/fall-winter2026/droplists/","https://hypebeast.com/tags/weekly-drops", "11:00"),
