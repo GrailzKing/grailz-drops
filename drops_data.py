@@ -237,6 +237,17 @@ MANUAL_DROPS = [
     ("MTG","8-14","mtg-the-hobbit-global-release","https://magic.wizards.com/en/products/the-hobbit","https://x.com/wizards_magic/status/2082179288032219416", "00:00"),
     ("MTG","8-14","mtg-the-hobbit-gamegenic-18-pocket-zip-up-album-5-designs","https://x.com/Gamegenic_/status/2084308251391226217","", "00:00"),
     ("MTG","8-14","mtg-the-hobbit-gamegenic-premium-art-sleeves","https://x.com/Gamegenic_/status/2083221156203573464","", "00:00"),
+
+    # ── MTG SECRET LAIR ───────────────────────────────────────────────────
+    # Source: secretlair.wizards.com / magic.wizards.com/en/news
+    # 24-hr window orders — all times ET
+    ("MTG","8-10","mtg-secret-lair-commander-deck-hatsune-miku","https://magic.wizards.com/en/news/announcements/secret-lair-commander-deck-hatsune-miku-decklist","https://secretlair.wizards.com/us/", "12:00"),
+    ("MTG","8-17","mtg-secret-lair-x-the-hobbit-marvelous-mathoms-superdrop","https://magic.wizards.com/en/news/announcements/secret-lair-a-marvelous-mathom-superdrop","https://secretlair.wizards.com/us/", "12:00"),
+    ("MTG","8-17","mtg-secret-lair-hobbit-he-who-walks-unseen","https://magic.wizards.com/en/news/announcements/secret-lair-a-marvelous-mathom-superdrop","https://secretlair.wizards.com/us/", "12:00"),
+    ("MTG","8-17","mtg-secret-lair-hobbit-second-breakfast","https://magic.wizards.com/en/news/announcements/secret-lair-a-marvelous-mathom-superdrop","https://secretlair.wizards.com/us/", "12:00"),
+    ("MTG","8-17","mtg-secret-lair-hobbit-beyond-the-shire","https://magic.wizards.com/en/news/announcements/secret-lair-a-marvelous-mathom-superdrop","https://secretlair.wizards.com/us/", "12:00"),
+    ("MTG","8-17","mtg-secret-lair-hobbit-smaug-worthy-artifacts","https://magic.wizards.com/en/news/announcements/secret-lair-a-marvelous-mathom-superdrop","https://secretlair.wizards.com/us/", "12:00"),
+    ("MTG","8-17","mtg-secret-lair-hobbit-dark-things-under-the-mountain","https://magic.wizards.com/en/news/announcements/secret-lair-a-marvelous-mathom-superdrop","https://secretlair.wizards.com/us/", "12:00"),
     # ── YU-GI-OH! ─────────────────────────────────────────────────────────
     ("YU-GI-OH!","8-7","yu-gi-oh-blissful-eternity","https://www.beckett.com/news/2026-tcg-release-dates-checklists-and-set-information/","", "00:00"),
     # ── DISNEY LORCANA ────────────────────────────────────────────────────
