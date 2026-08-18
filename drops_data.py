@@ -258,14 +258,19 @@ MANUAL_DROPS = [
     ("TOPPS","8-12","2026-star-wars-chrome-galaxy","https://www.topps.com/pages/star-wars-chrome-galaxy","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-14","2026-topps-stadium-club-ufc","https://www.topps.com/pages/topps-stadium-club-ufc","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-14","2025-26-topps-chrome-update-basketball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
-    ("TOPPS","8-17","2026-topps-museum-collection-baseball","https://www.topps.com/pages/topps-museum-collection-baseball","https://www.topps.com/release-calendar", "12:00"),
+    ("TOPPS","8-24","2026-topps-museum-collection-baseball","https://www.topps.com/pages/topps-museum-collection-baseball","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-18","2025-26-topps-definitive-basketball","https://www.topps.com/pages/topps-definitive-basketball","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-19","2026-topps-chrome-baseball-logofractor-edition","https://www.topps.com/pages/topps-chrome-baseball-logofractor-edition","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-19","2026-topps-mint-marvel","https://www.topps.com/pages/topps-mint-marvel","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-20","2025-26-topps-motif-basketball","https://www.topps.com/pages/topps-motif-basketball","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-27","2026-topps-chrome-black-basketball","https://www.topps.com/pages/topps-chrome-black-basketball","https://www.topps.com/release-calendar", "12:00"),
     ("TOPPS","8-21","2026-topps-flagship-football","https://www.beckett.com/news/sports-card-release-calendar-dates/","", "12:00"),
-    ("TOPPS","8-TBD","2026-skybox-metal-universe-space-jam-30th","https://www.beckett.com/news/sports-card-release-calendar-dates/","", "12:00"),
+
+    ("TOPPS","8-18","2026-topps-royalty-premier-league","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
+    ("TOPPS","8-25","2025-26-topps-pristine-basketball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
+    ("TOPPS","8-25","2026-topps-chrome-star-wars","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
+    ("TOPPS","8-26","2026-topps-chrome-baseball-sapphire-edition","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
+    ("TOPPS","8-26","2026-topps-chrome-team-japan-samurai-collection","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),    ("TOPPS","8-TBD","2026-skybox-metal-universe-space-jam-30th","https://www.beckett.com/news/sports-card-release-calendar-dates/","", "12:00"),
     # ── PANINI ────────────────────────────────────────────────────────────
     ("PANINI","8-5","2026-panini-contenders-pfl","https://www.overtimecardsandcollectibles.com/product-release-schedule","", "12:00"),
     ("PANINI","8-12","2026-panini-prizm-baseball","https://cardlines.com/the-biggest-sports-card-releases-of-august-2026/","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
@@ -333,7 +338,10 @@ MANUAL_DROPS = [
     ("DISNEY PARKS PINS","8-16","d23-2026-disney-studio-store-hollywood-pin-releases-sunday","https://disneypinsblog.com/d23-marketplace-pin-store-pin-releases-at-d23-2026/","https://disneypinsblog.com", "09:00"),
     ("DISNEY PARKS PINS","8-16","d23-2026-walt-disney-company-pin-store-releases-sunday","https://disneypinsblog.com/d23-marketplace-pin-store-pin-releases-at-d23-2026/","https://disneypinsblog.com", "09:00"),    ("DISNEY PARKS PINS","8-18","wdw-august-le-pin-week-3","https://disneypinsblog.com","https://mypincentral.com", "09:00"),
     ("DISNEY PARKS PINS","8-25","wdw-august-le-pin-week-4","https://disneypinsblog.com","https://mypincentral.com", "09:00"),
-    ("DISNEY PARKS PINS","8-TBD","wdw-halloween-2026-pin-series-launch","https://disneypinsblog.com/halloween-2026-pin-releases-at-disney-store-disney-parks/","", "09:00"),
+
+    ("DISNEY PARKS PINS","8-25","wdw-hocus-pocus-sanderson-sisters-minnie-clarabelle-daisy-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-25","wdw-hocus-pocus-sanderson-sisters-mystery-set-lr","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-25","wdw-hispanic-latin-heritage-month-emperors-new-groove-artist-spotlight","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),    ("DISNEY PARKS PINS","8-TBD","wdw-halloween-2026-pin-series-launch","https://disneypinsblog.com/halloween-2026-pin-releases-at-disney-store-disney-parks/","", "09:00"),
 
     ("DISNEY PARKS PINS","8-4","wdw-windows-of-attraction-zurg-le-2500","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
     ("DISNEY PARKS PINS","8-4","wdw-ap-halloween-mickey-castle-le-4000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
@@ -347,7 +355,12 @@ MANUAL_DROPS = [
     ("DISNEY PARKS PINS","8-11","wdw-digitize-disney-spaceship-earth-epcot-jumbo-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
     ("DISNEY PARKS PINS","8-11","wdw-digitize-disney-tower-of-terror-jumbo-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),    ("DISNEY PARKS PINS","8-18","wdw-hocus-pocus-cats-dogs-halloween-mystery-set","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
     ("DISNEY PARKS PINS","8-18","wdw-alice-in-wonderland-75th-anniversary-pins","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
-    # ── VINYL & MUSIC — pauseandplay.com ──────────────────────────────────
+
+    ("DISNEY PARKS PINS","8-18","wdw-alice-in-wonderland-75th-anniversary-jumbo-pin-le","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-18","wdw-alice-in-wonderland-75th-anniversary-mystery-set","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-18","wdw-alice-in-wonderland-75th-anniversary-pin-series-6-pins","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-18","wdw-digitize-disney-goofy-kilimanjaro-safaris-pandora-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),
+    ("DISNEY PARKS PINS","8-18","wdw-digitize-disney-yeti-expedition-everest-festival-lion-king-le-3000","https://wdwnt.com/2026/08/august-2026-walt-disney-world-pin-releases-include-halloween-hocus-pocus-alice-in-wonderland-75th-anniversary/","https://disneypinsblog.com", "09:00"),    # ── VINYL & MUSIC — pauseandplay.com ──────────────────────────────────
     ("VINYL & MUSIC","8-7","phoebe-bridgers-new-album-2026","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
     ("VINYL & MUSIC","8-7","alice-in-chains-mtv-unplugged-double-vinyl-reissue","https://www.pauseandplay.com/release-dates/vinyl-releases/","https://www.pauseandplay.com/release-dates/on-the-cd-front/", "00:00"),
     ("VINYL & MUSIC","8-7","bob-marley-and-the-wailers-reissue-vinyl","https://www.pauseandplay.com/release-dates/on-the-cd-front/","https://www.pauseandplay.com/release-dates/vinyl-releases/", "00:00"),
