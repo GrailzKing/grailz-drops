@@ -9,7 +9,12 @@
     "month": "August 2026",
     "month_key": "2026-08",
     "file": "data/2026-08.json",
+<<<<<<< HEAD
     "active": true,
     "updated": "2026-08-30"
+=======
+    "active": false,
+    "updated": "2026-08-18"
+>>>>>>> d18a6cd (Set September as default month, freeze August (active:false))
   }
 ]

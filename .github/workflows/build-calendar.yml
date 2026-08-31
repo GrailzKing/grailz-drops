@@ -2,18 +2,15 @@ name: Build & Deploy Drops Calendar
 
 on:
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '0 15 * * *'   # daily 9am CT
   workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -24,15 +21,12 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install openpyxl requests
+        run: pip install requests openpyxl
 
-      - name: Build index.html and data JSON
+      - name: Build calendar
         run: |
           if [ -f drops_data.py ]; then
             python drops_data.py
-            echo "Built index.html and data/*.json from drops_data.py"
-          else
-            echo "No drops_data.py found — using existing index.html"
           fi
 
       - name: Commit & push if changed
