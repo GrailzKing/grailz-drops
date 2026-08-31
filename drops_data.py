@@ -747,9 +747,10 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
 <script>
 // ── Constants ─────────────────────────────────────────────────────────────
 const CAT_MAP   = {cat_map_js};
-const TODAY_DAY = {today_day};
-const TODAY_MON = {today_month};
-const TODAY_YR  = {today_year};
+const _now = new Date();
+const TODAY_DAY = _now.getDate();
+const TODAY_MON = _now.getMonth() + 1;
+const TODAY_YR  = _now.getFullYear();
 
 // ── State ──────────────────────────────────────────────────────────────────
 let DROPS=[], MONTH_N=0, YEAR_N=0, MONTH_NAME='', byDay={{}};
