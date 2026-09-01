@@ -325,6 +325,7 @@ MANUAL_DROPS = [
     ("COLLAB / LIFESTYLE","8-TBD","hellstar-x-adidas","https://www.adidas.com","https://hypebeast.com/tags/weekly-footwear-drops", "10:00"),
     ("COLLAB / LIFESTYLE","8-TBD","kith-august-monthly-drop","https://kith.com","https://hypebeast.com/tags/weekly-drops", "10:00"),
     ("COLLAB / LIFESTYLE","8-TBD","perks-and-mini-x-asics-collab","https://www.asics.com","https://hypebeast.com/tags/weekly-footwear-drops", "10:00"),
+    ("COLLAB / LIFESTYLE","9-1","walmart-rotisserie-chicken-purse","https://www.sparkshop.com/store.html?vid=20241204519&cid=99373&utm_source=GlobalComms&utm_medium=GlobalCommsChickenPurseMedia&utm_campaign=ChickenPurse2026","https://corporate.walmart.com/news/2026/08/31/walmart-serves-up-a-limited-edition-rotisserie-chicken-purse-for-national-chicken-month", "08:00"),
     # ── DISNEY PARKS PINS ─────────────────────────────────────────────────
     ("DISNEY PARKS PINS","8-4","wdw-august-le-pin-week-1","https://disneypinsblog.com","https://mypincentral.com", "09:00"),
     ("DISNEY PARKS PINS","8-11","wdw-august-le-pin-week-2","https://disneypinsblog.com","https://mypincentral.com", "09:00"),
