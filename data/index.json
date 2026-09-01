@@ -3,7 +3,8 @@
     "month": "September 2026",
     "month_key": "2026-09",
     "file": "data/2026-09.json",
-    "active": true
+    "active": true,
+    "updated": "2026-09-01"
   },
   {
     "month": "August 2026",
