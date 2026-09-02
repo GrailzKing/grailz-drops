@@ -605,7 +605,7 @@ header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linea
 .drop-alert-unit{{background:#0e0e1a;border:1px solid var(--border);color:var(--text);font-family:'Space Mono',monospace;font-size:11px;padding:4px 6px;border-radius:5px;outline:none;cursor:pointer;}}
 .btn-ics-sm{{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:5px 10px;border-radius:5px;border:none;cursor:pointer;background:linear-gradient(135deg,#9b3fe8,#1eb8f0);color:#fff;letter-spacing:.04em;text-transform:uppercase;transition:filter .15s;display:flex;align-items:center;gap:4px;white-space:nowrap;}}
 .btn-ics-sm:hover{{filter:brightness(1.2);}}
-.day-drop-row{{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#0a0a14;border-radius:6px;border:1px solid var(--border);margin-bottom:8px;flex-wrap:wrap;}}
+.day-drop-row{{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#0a0a14;border-radius:6px;border:1px solid var(--border);margin-bottom:8px;flex-wrap:wrap;;flex-wrap:wrap;}}.day-ics-btn{{margin-left:auto;white-space:nowrap;}}
 .day-drop-row:last-of-type{{margin-bottom:0;}}
 .day-drop-time{{font-family:'Space Mono',monospace;font-size:11px;color:var(--accent2);font-weight:700;white-space:nowrap;min-width:72px;}}
 .day-drop-name{{font-size:12px;color:var(--text);flex:1;min-width:120px;}}
@@ -970,7 +970,7 @@ function buildDropRows(container, dayDrops, dayN, showTime=false){{
     const row=document.createElement('div');
     row.className=showTime?'day-drop-row':'panel-drop';
     const bg=CAT_MAP[cslug(dr.cat)]||'#2a2a35';
-    const dropId='dr-'+dayN+'-'+idx;
+    const dropId='day-'+dayN+'-'+idx;
     let inner='';
     if(showTime) inner+=`<span class="day-drop-time">${{fmt12(dr.time||'09:00')}}</span>`;
     inner+=`<span class="cat-badge" style="background:${{bg}};color:#fff">${{dr.cat}}</span>`;
@@ -979,7 +979,12 @@ function buildDropRows(container, dayDrops, dayN, showTime=false){{
     if(dr.url1)inner+=`<a href="${{dr.url1}}" target="_blank" rel="noopener">Source 1 ↗</a>`;
     if(dr.url2)inner+=`<a href="${{dr.url2}}" target="_blank" rel="noopener">Source 2 ↗</a>`;
     inner+='</span>';
+    if(showTime) inner+=`<button class="btn-ics-sm day-ics-btn" data-id="${{dropId}}">&#128197; ADD</button>`;
     row.innerHTML=inner;
+    if(showTime){{
+      const btn=row.querySelector('.day-ics-btn');
+      btn.addEventListener('click',()=>exportICS(dayN,dr.time||'09:00',30,[dr]));
+    }}
     container.appendChild(row);
   }});
 }}
