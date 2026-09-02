@@ -1146,7 +1146,7 @@ function exportICS(day,time,alertMins,drops){{
   const blob=new Blob([ics],{{type:'text/calendar;charset=utf-8'}});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;
-  a.download='grailz-drop-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
+  a.download='grailz-'+drops[0].name.slice(0,40)+'-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
   document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
 }}
 

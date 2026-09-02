@@ -254,7 +254,7 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
 </div>
 
 <footer>
-  <span id="footerUpdated">Updated 9/1/2026 · Grailz Discord Server</span>
+  <span id="footerUpdated">Updated 9/2/2026 · Grailz Discord Server</span>
   <span>topps.com · beckett.com · tcgradar.eu · disneypinsblog.com · funko.com + social</span>
 </footer>
 
@@ -659,7 +659,7 @@ function exportICS(day,time,alertMins,drops){
   const blob=new Blob([ics],{type:'text/calendar;charset=utf-8'});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;
-  a.download='grailz-drop-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
+  a.download='grailz-'+drops[0].name.slice(0,40)+'-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
   document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
 }
 
