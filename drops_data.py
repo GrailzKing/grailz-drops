@@ -1129,27 +1129,40 @@ document.querySelectorAll('table.drop-table thead th[data-col]').forEach(th=>{{
 // ── ICS export ─────────────────────────────────────────────────────────────
 function exportICS(day,time,alertMins,drops){{
   const CRLF=String.fromCharCode(13,10);
-  const dt=new Date(YEAR_N,MONTH_N-1,day);
-  const label=dt.toLocaleDateString('en-US',{{month:'long',day:'numeric',year:'numeric'}});
+  const d0=drops[0];
+  // Convert slug to Title Case for display
+  const toTitle=s=>s.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+  const title=toTitle(d0.name)+' ['+d0.cat+']';
   const dtStr=icsDate(YEAR_N,MONTH_N,day,time);
   const[sh,sm]=time.split(':').map(Number);
   const dtEnd=icsDate(YEAR_N,MONTH_N,day,pad((sh+1)%24)+':'+pad(sm));
-  const uid='grailz-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'@grailzking.github.io';
-  const desc=drops.map(d=>'['+d.cat+'] '+d.name+(d.url1?' \u2014 '+d.url1:'')).join('\\n');
-  const names=drops.map(d=>d.name).join(', ');
+  // Unique UID per drop
+  const uid='grailz-'+d0.name.slice(0,40)+'-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'@grailzking.github.io';
+  // Human-readable time label
+  const[h,m]=time.split(':').map(Number);
+  const ampm=h<12?'AM':'PM';const h12=h%12||12;
+  const timeLabel=h12+':'+(m<10?'0':'')+m+' '+ampm+' ET';
+  // Description with clean fields
+  const descLines=['Drop: '+toTitle(d0.name),'Category: '+d0.cat,'Time: '+timeLabel,'Link: '+(d0.url1||'https://grailzking.github.io/grailz-drops')];
+  if(d0.url2)descLines.push('Source 2: '+d0.url2);
+  descLines.push('');descLines.push('Grailz Drops Calendar: https://grailzking.github.io/grailz-drops');
+  const desc=descLines.join('\\n');
+  const link=d0.url1||'https://grailzking.github.io/grailz-drops';
   const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Grailz//Drops Calendar//EN',
     'CALSCALE:GREGORIAN','METHOD:PUBLISH','BEGIN:VEVENT',
     'UID:'+uid,'DTSTAMP:'+icsDate(YEAR_N,MONTH_N,day,'00:00'),
-    'DTSTART:'+dtStr,'DTEND:'+dtEnd,'SUMMARY:'+names+(drops.length===1?' ['+drops[0].cat+']':''),  'DESCRIPTION:'+desc.replace(/\\n/g,'\\\\n'),
-    'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Grailz Reminder: '+names.slice(0,60),
+    'DTSTART:'+dtStr,'DTEND:'+dtEnd,
+    'SUMMARY:'+title,
+    'DESCRIPTION:'+desc.replace(/\\n/g,'\\\\n'),
+    'URL:'+link,
+    'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Grailz Drop: '+toTitle(d0.name).slice(0,60),
     'TRIGGER:-PT'+alertMins+'M','END:VALARM','END:VEVENT','END:VCALENDAR'].join(CRLF);
   const blob=new Blob([ics],{{type:'text/calendar;charset=utf-8'}});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;
-  a.download='grailz-'+drops[0].name.slice(0,40)+'-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
+  a.download='grailz-'+d0.name.slice(0,40)+'-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'.ics';
   document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
 }}
-
 // ── Boot ───────────────────────────────────────────────────────────────────
 loadManifest();
 </script>
