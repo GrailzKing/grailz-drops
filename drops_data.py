@@ -1194,7 +1194,24 @@ if __name__ == "__main__":
     # 3. Write JSON data file
     print(f"\nWriting data files…")
     os.makedirs(DATA_DIR, exist_ok=True)
-    write_json(all_drops, MONTH_KEY, MONTH_NAME)
+    json_path = os.path.join(DATA_DIR, f"{MONTH_KEY}.json")
+    if not os.path.exists(json_path):
+        write_json(all_drops, MONTH_KEY, MONTH_NAME)
+        print(f"  Created {json_path}")
+    else:
+        # File exists — only update the manifest entry, never overwrite curated drop data
+        manifest_path = os.path.join(DATA_DIR, "index.json")
+        if os.path.exists(manifest_path):
+            with open(manifest_path) as mf:
+                manifest = json.load(mf)
+            if not any(m["month_key"] == MONTH_KEY for m in manifest):
+                manifest.append({"month": MONTH_NAME, "month_key": MONTH_KEY,
+                                  "file": f"data/{MONTH_KEY}.json", "active": True})
+                manifest.sort(key=lambda x: x["month_key"], reverse=True)
+                with open(manifest_path, "w") as mf:
+                    json.dump(manifest, mf, indent=2)
+                print(f"  Manifest updated")
+        print(f"  Skipped {json_path} (exists — managed manually)")
 
     # 4. Build HTML shell
     html = build_html(MONTH_KEY, MONTH_NAME)
