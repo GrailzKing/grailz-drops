@@ -830,7 +830,9 @@ function renderAll(){{
   document.getElementById('calHeading').textContent = MONTH_NAME;
   buildLegend();
   buildTable();
-  switchView(currentView);
+  // Default to Day view showing today's drops on load
+  currentDayDate = new Date(YEAR_N, MONTH_N-1, TODAY_DAY);
+  switchView('day');
 }}
 
 // ── Legend ─────────────────────────────────────────────────────────────────
