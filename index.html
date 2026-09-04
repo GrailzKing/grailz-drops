@@ -254,7 +254,7 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
 </div>
 
 <footer>
-  <span id="footerUpdated">Updated 9/3/2026 · Grailz Discord Server</span>
+  <span id="footerUpdated">Updated 9/4/2026 · Grailz Discord Server</span>
   <span>topps.com · beckett.com · tcgradar.eu · disneypinsblog.com · funko.com + social</span>
 </footer>
 
@@ -648,24 +648,37 @@ document.querySelectorAll('table.drop-table thead th[data-col]').forEach(th=>{
 function exportICS(day,time,alertMins,drops){
   const CRLF=String.fromCharCode(13,10);
   const d0=drops[0];
-  // Convert slug to Title Case for display
   const toTitle=s=>s.replace(/-/g,' ').replace(/\w/g,c=>c.toUpperCase());
-  const title=toTitle(d0.name)+' ['+d0.cat+']';
   const dtStr=icsDate(YEAR_N,MONTH_N,day,time);
   const[sh,sm]=time.split(':').map(Number);
   const dtEnd=icsDate(YEAR_N,MONTH_N,day,pad((sh+1)%24)+':'+pad(sm));
-  // Unique UID per drop
   const uid='grailz-'+d0.name.slice(0,40)+'-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'@grailzking.github.io';
-  // Human-readable time label
   const[h,m]=time.split(':').map(Number);
   const ampm=h<12?'AM':'PM';const h12=h%12||12;
   const timeLabel=h12+':'+(m<10?'0':'')+m+' '+ampm+' ET';
-  // Description with clean fields
-  const descLines=['Drop: '+toTitle(d0.name),'Category: '+d0.cat,'Time: '+timeLabel,'Link: '+(d0.url1||'https://grailzking.github.io/grailz-drops')];
-  if(d0.url2)descLines.push('Source 2: '+d0.url2);
-  descLines.push('');descLines.push('Grailz Drops Calendar: https://grailzking.github.io/grailz-drops');
-  const desc=descLines.join('\n');
-  const link=d0.url1||'https://grailzking.github.io/grailz-drops';
+  // Build title and description — handle grouped (multi-drop) entries
+  let title,desc,link;
+  if(drops.length===1){
+    // Single drop
+    title=toTitle(d0.name)+' ['+d0.cat+']';
+    link=d0.url1||'https://grailzking.github.io/grailz-drops';
+    const descLines=['Drop: '+toTitle(d0.name),'Category: '+d0.cat,'Time: '+timeLabel,'Link: '+link];
+    if(d0.url2)descLines.push('Source 2: '+d0.url2);
+    descLines.push('');descLines.push('Grailz Drops Calendar: https://grailzking.github.io/grailz-drops');
+    desc=descLines.join('\n');
+  }else{
+    // Grouped drop — list all items
+    title=toTitle(d0.name)+' + '+(drops.length-1)+' more ['+d0.cat+']';
+    link=d0.url1||'https://grailzking.github.io/grailz-drops';
+    const descLines=['Category: '+d0.cat,'Time: '+timeLabel,'','Items in this drop:'];
+    drops.forEach((dr,i)=>{
+      descLines.push((i+1)+'. '+toTitle(dr.name));
+      if(dr.url1)descLines.push('   Link: '+dr.url1);
+      if(dr.url2)descLines.push('   Source 2: '+dr.url2);
+    });
+    descLines.push('');descLines.push('Grailz Drops Calendar: https://grailzking.github.io/grailz-drops');
+    desc=descLines.join('\n');
+  }
   const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Grailz//Drops Calendar//EN',
     'CALSCALE:GREGORIAN','METHOD:PUBLISH','BEGIN:VEVENT',
     'UID:'+uid,'DTSTAMP:'+icsDate(YEAR_N,MONTH_N,day,'00:00'),
