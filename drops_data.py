@@ -644,6 +644,9 @@ td{{padding:10px 16px;vertical-align:middle;}}
 .cat-badge{{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap;}}
 {badge_css}
 .date-cell{{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap;}}
+.date-time-cell{{white-space:nowrap;min-width:115px;line-height:1;}}
+.dt-date{{font-family:'Space Mono',monospace;font-size:10px;color:var(--muted);display:block;margin-bottom:3px;}}
+.dt-time{{font-family:'Space Mono',monospace;font-size:13px;color:var(--accent3);font-weight:700;display:block;}}
 .time-cell{{font-family:'Space Mono',monospace;font-size:11px;color:#9b3fe8;white-space:nowrap;font-weight:600;}}
 .name-cell{{font-size:13px;color:var(--text);max-width:380px;}}
 .source-cell{{display:flex;gap:8px;flex-wrap:wrap;}}
