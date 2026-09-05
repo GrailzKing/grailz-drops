@@ -138,12 +138,16 @@ table.drop-table{width:100%;border-collapse:collapse;font-size:13px;}
   .drop-table thead{display:none;}
   .drop-table tr{display:block;background:var(--surface);border-radius:8px;margin-bottom:8px;padding:8px 10px;border:1px solid var(--border);position:relative;}
   .drop-table td{display:none;border:none;padding:0;white-space:normal;width:100% !important;}
+  /* Col 1: ADD — absolute top-right */
   .drop-table td:nth-child(1){display:block;position:absolute;top:8px;right:8px;width:auto !important;}
+  /* Col 2+3: Date/Time + Category — inline on row 1, leave room for ADD button */
   .drop-table td:nth-child(2),.drop-table td:nth-child(3){display:inline-block;width:auto !important;vertical-align:middle;}
-  .drop-table td:nth-child(2){margin-right:8px;}
-  .drop-table td:nth-child(3){margin-right:8px;}
-  .drop-table td:nth-child(4){display:block;font-size:12px;margin-top:4px;padding-right:60px;word-break:break-word;}
-  .drop-table td:nth-child(5){display:block;margin-top:6px;font-size:11px;}
+  .drop-table td:nth-child(2){margin-right:8px;padding-right:64px;}
+  .drop-table td:nth-child(3){}
+  /* Col 4: Drop name — full width row 2 */
+  .drop-table td:nth-child(4){display:block;font-size:12px;color:var(--text);margin-top:5px;word-break:break-word;font-weight:500;}
+  /* Col 5: Sources — row 3 */
+  .drop-table td:nth-child(5){display:block;margin-top:5px;font-size:11px;}
   .drop-table tr.hidden{display:none;}
   .dt-date{font-size:10px;display:inline;margin-right:4px;}
   .dt-time{font-size:12px;display:inline;}
