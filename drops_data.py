@@ -1100,7 +1100,7 @@ function getViewDateRange(){{
 
 function applyFilters(){{
   const q=document.getElementById('search').value.toLowerCase();
-  const rows=Array.from(document.getElementById('tbody').querySelectorAll('tr:not(.sub-row)'));
+  const rows=Array.from(document.getElementById('tbody').querySelectorAll('tr'));
   const dateRange=getViewDateRange();
   let any=false;
   rows.forEach(r=>{{
