@@ -670,14 +670,14 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
   <div class="cal-top">
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
       <div class="cal-title" id="calHeading">Loading…</div>
-      <select class="month-select" id="monthSelect"><option value="">Loading…</option></select>
       <div class="view-toggle">
         <button class="view-btn active" data-view="month">Month</button>
         <button class="view-btn" data-view="week">Week</button>
         <button class="view-btn" data-view="day">Day</button>
       </div>
     </div>
-    <div class="cal-controls"></div>
+    <div class="cal-controls">
+        <select class="month-select" id="monthSelect"><option value="">Loading…</option></select></div>
   </div>
   <div class="cal-legend" id="legend"></div>
 
