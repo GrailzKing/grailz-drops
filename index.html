@@ -136,22 +136,21 @@ table.drop-table{width:100%;border-collapse:collapse;font-size:13px;}
 .drop-table th:nth-child(5),.drop-table td:nth-child(5){width:150px;white-space:nowrap;}
 @media(max-width:700px){
   .drop-table thead{display:none;}
-  .drop-table tr{display:block;background:var(--surface);border-radius:8px;margin-bottom:8px;padding:8px 10px;border:1px solid var(--border);position:relative;padding-right:72px;}
-  .drop-table tr.hidden{display:none !important;}
-  /* Hide sources by default on mobile */
-  .drop-table td{border:none;padding:2px 0;white-space:normal;width:100%;display:block;}
-  /* Col 1: ADD button — absolute top-right */
-  .drop-table td:nth-child(1){position:absolute;top:8px;right:8px;width:auto !important;display:block;}
-  /* Col 2: Date/Time — inline */
-  .drop-table td:nth-child(2){display:inline-block;width:auto !important;margin-right:8px;vertical-align:middle;}
-  /* Col 3: Category badge — inline next to date */
-  .drop-table td:nth-child(3){display:inline-block;width:auto !important;vertical-align:middle;}
-  /* Col 4: Drop name — full row below */
-  .drop-table td:nth-child(4){display:block !important;font-size:12px;color:var(--text);margin-top:4px;word-break:break-word;font-weight:500;width:100% !important;}
-  /* Col 5: Sources */
-  .drop-table td:nth-child(5){display:block !important;margin-top:5px;font-size:11px;width:100% !important;}
+  .drop-table tr{display:block;background:var(--surface);border-radius:8px;margin-bottom:8px;padding:8px 10px;border:1px solid var(--border);position:relative;}
+  .drop-table td{display:none;border:none;padding:0;white-space:normal;width:100% !important;}
+  /* Col 1: ADD — absolute top-right */
+  .drop-table td:nth-child(1){display:block;position:absolute;top:8px;right:8px;width:auto !important;}
+  /* Col 2+3: Date/Time + Category — inline on row 1, leave room for ADD button */
+  .drop-table td:nth-child(2),.drop-table td:nth-child(3){display:inline-block;width:auto !important;vertical-align:middle;}
+  .drop-table td:nth-child(2){margin-right:8px;padding-right:64px;}
+  .drop-table td:nth-child(3){}
+  /* Col 4: Drop name — full width row 2 */
+  .drop-table td:nth-child(4){display:block;font-size:12px;color:var(--text);margin-top:5px;word-break:break-word;font-weight:500;}
+  /* Col 5: Sources — row 3 */
+  .drop-table td:nth-child(5){display:block;margin-top:5px;font-size:11px;}
+  .drop-table tr.hidden{display:none;}
   .dt-date{font-size:10px;display:inline;margin-right:4px;}
-  .dt-time{font-size:12px;display:inline;font-weight:700;}
+  .dt-time{font-size:12px;display:inline;}
 }
 table.drop-table thead th{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}
 table.drop-table thead th:hover{color:var(--text);}
