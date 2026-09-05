@@ -625,12 +625,7 @@ header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linea
 .count{{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;}}
 .sub-row{{display:none;}}
 .sub-row-name{{font-size:11px;color:var(--muted);padding:0 10px 8px 10px !important;border-bottom:1px solid var(--border);font-family:'Space Mono',monospace;word-break:break-word;}}
-@media(max-width:700px){{
-  .sub-row{{display:table-row;}}
-  .sub-row.hidden{{display:none !important;}}
-  .drop-table .name-cell{{display:none;}}
-  .drop-table th:nth-child(5){{display:none;}}
-}}
+@media(max-width:700px){{.sub-row{{display:table-row;}}.sub-row.hidden{{display:none !important;}}}}
 .tbd-btn{{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}}
 .tbd-btn.active{{background:var(--accent2);color:#fff;border-color:var(--accent2);}}
 .filters{{display:flex;flex-wrap:wrap;gap:6px;}}
