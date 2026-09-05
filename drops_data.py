@@ -544,8 +544,8 @@ header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linea
 .logo-img{{width:52px;height:52px;border-radius:50%;filter:drop-shadow(0 0 10px #9b3fe8) drop-shadow(0 0 20px #1eb8f060);flex-shrink:0;}}
 .logo{{font-family:'Space Mono',monospace;font-size:42px;font-weight:700;background:linear-gradient(90deg,#fff 0%,#c084fc 35%,#9b3fe8 60%,#1eb8f0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:4px;line-height:1;filter:drop-shadow(0 0 18px #9b3fe870);}}
 .subtitle{{font-size:12px;color:#8b6baa;letter-spacing:.16em;text-transform:uppercase;margin-top:6px;}}
-.header-right{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}}
-.month-select{{font-family:'Space Mono',monospace;font-size:11px;background:linear-gradient(135deg,#9b3fe820,#1eb8f020);border:1px solid #9b3fe860;color:#c084fc;padding:6px 12px;border-radius:20px;cursor:pointer;outline:none;}}
+
+.month-select{{font-family:'Space Mono',monospace;font-size:11px;background:linear-gradient(135deg,#9b3fe820,#1eb8f020);border:1px solid #9b3fe860;color:#c084fc;padding:6px 14px;border-radius:20px;cursor:pointer;outline:none;max-width:180px;}}
 .month-select option{{background:#0e0e1a;color:#e8e8f8;}}
 .loading-bar{{width:100%;height:2px;background:linear-gradient(90deg,#9b3fe8,#1eb8f0);position:fixed;top:0;left:0;z-index:999;transform-origin:left;animation:loadbar 1.2s ease-in-out infinite;display:none;}}
 .loading-bar.active{{display:block;}}
@@ -664,15 +664,13 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
     {"<img src='" + logo_img_src + "' alt='Grailz' class='logo-img'>" if logo_img_src else ""}
     <div><div class="logo">GRAILZ</div><div class="subtitle">Collectibles Drop Calendar</div></div>
   </div>
-  <div class="header-right">
-    <select class="month-select" id="monthSelect"><option value="">Loading…</option></select>
-  </div>
 </header>
 
 <div class="cal-section">
   <div class="cal-top">
-    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
       <div class="cal-title" id="calHeading">Loading…</div>
+      <select class="month-select" id="monthSelect"><option value="">Loading…</option></select>
       <div class="view-toggle">
         <button class="view-btn active" data-view="month">Month</button>
         <button class="view-btn" data-view="week">Week</button>
