@@ -337,7 +337,7 @@ async function loadManifest(){
 
 // ── Render all views ───────────────────────────────────────────────────────
 function renderAll(){
-  document.getElementById('calHeading').textContent = MONTH_NAME;
+  const ch=document.getElementById('calHeading');if(ch)ch.textContent=MONTH_NAME;
   buildLegend();
   buildTable();
   switchView(currentView);
@@ -509,8 +509,8 @@ function switchView(v){
   if(v==='month')buildMonthView();
   if(v==='week')buildWeekView();
   if(v==='day')buildDayView();
-  document.getElementById('calHeading').textContent=
-    v==='month'?MONTH_NAME:v==='week'?'Week View':'Day View';
+  const _ch=document.getElementById('calHeading');
+  if(_ch)_ch.textContent=v==='month'?MONTH_NAME:v==='week'?'Week View':'Day View';
   applyFilters(); // re-filter table for new view/date range
 }
 document.querySelectorAll('.view-btn').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
