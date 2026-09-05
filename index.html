@@ -138,16 +138,52 @@ table.drop-table{width:100%;border-collapse:collapse;font-size:13px;}
   .drop-table thead{display:none;}
   .drop-table tr{display:block;background:var(--surface);border-radius:8px;margin-bottom:8px;padding:8px 10px;border:1px solid var(--border);position:relative;padding-right:72px;}
   .drop-table tr.hidden{display:none !important;}
-  .drop-table td{border:none;padding:0;white-space:normal;width:100%;display:block;}
-  .drop-table td:nth-child(1){position:absolute;top:8px;right:8px;width:auto !important;}
+  /* Hide sources by default on mobile */
+  .drop-table td{border:none;padding:2px 0;white-space:normal;width:100%;display:block;}
+  /* Col 1: ADD button — absolute top-right */
+  .drop-table td:nth-child(1){position:absolute;top:8px;right:8px;width:auto !important;display:block;}
+  /* Col 2: Date/Time — inline */
   .drop-table td:nth-child(2){display:inline-block;width:auto !important;margin-right:8px;vertical-align:middle;}
-  .drop-table td:nth-child(3),.drop-table td:nth-child(4){display:none !important;}
-  .drop-table td:nth-child(5){display:inline-block;width:auto !important;vertical-align:middle;}
-  .drop-table td:nth-child(6){display:block;font-size:12px;color:var(--text);margin-top:5px;word-break:break-word;font-weight:500;width:100% !important;}
-  .drop-table td:nth-child(7){display:block;margin-top:5px;font-size:11px;width:100% !important;}
+  /* Col 3: Category badge — inline next to date */
+  .drop-table td:nth-child(3){display:inline-block;width:auto !important;vertical-align:middle;}
+  /* Col 4: Drop name — full row below */
+  .drop-table td:nth-child(4){display:block !important;font-size:12px;color:var(--text);margin-top:4px;word-break:break-word;font-weight:500;width:100% !important;}
+  /* Col 5: Sources */
+  .drop-table td:nth-child(5){display:block !important;margin-top:5px;font-size:11px;width:100% !important;}
   .dt-date{font-size:10px;display:inline;margin-right:4px;}
   .dt-time{font-size:12px;display:inline;font-weight:700;}
 }
+table.drop-table thead th{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;}
+table.drop-table thead th:hover{color:var(--text);}
+table.drop-table thead th.sorted::after{content:' ↑';color:var(--accent3);}
+table.drop-table thead th.sorted.desc::after{content:' ↓';}
+tbody tr{border-bottom:1px solid #1e1e26;transition:background .1s;}
+tbody tr:nth-child(even){background:var(--row-alt);}
+tbody tr:hover{background:#100d1e;box-shadow:inset 3px 0 0 var(--accent2);}
+tbody tr.hidden{display:none;}
+td{padding:10px 16px;vertical-align:middle;}
+.cat-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap;}
+.cat-mattel-creations{background:#6b2d8b;color:#fff;}
+.cat-topps{background:#1a4a6b;color:#fff;}
+.cat-pokemon-tcg{background:#b8860b;color:#1a1a2e;}
+.cat-mtg{background:#0e4e2a;color:#fff;}
+.cat-funko-pop{background:#4e2a0e;color:#fff;}
+.cat-one-piece-tcg{background:#8b1a4a;color:#fff;}
+.cat-panini{background:#0e2a4e;color:#fff;}
+.cat-vinyl-music{background:#2a0e4e;color:#fff;}
+.cat-supreme-fw26{background:#8b0000;color:#fff;}
+.cat-collab-lifestyle{background:#2a4e0e;color:#fff;}
+.cat-disney-parks-pins{background:#00457c;color:#fff;}
+.cat-movies{background:#8b1a1a;color:#fff;}
+.cat-disney-lorcana{background:#1a3a6b;color:#fff;}
+.cat-yu-gi-oh{background:#6b1a1a;color:#fff;}
+.cat-non-sports-cards{background:#3a3a1a;color:#fff;}
+.cat-us-mint{background:#1a3a1a;color:#7fff7f;}
+
+.date-cell{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap;}
+.date-time-cell{white-space:nowrap;line-height:1;overflow:visible;}
+.dt-date{font-family:'Space Mono',monospace;font-size:10px;color:var(--muted);display:block;margin-bottom:3px;}
+.dt-time{font-family:'Space Mono',monospace;font-size:13px;color:var(--accent3);font-weight:700;display:block;}
 .time-cell{font-family:'Space Mono',monospace;font-size:11px;color:#9b3fe8;white-space:nowrap;font-weight:600;}
 .name-cell{font-size:13px;color:var(--text);max-width:380px;}
 .source-cell{display:flex;gap:8px;flex-wrap:wrap;}
