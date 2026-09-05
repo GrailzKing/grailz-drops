@@ -1,5 +1,23 @@
 [
   {
+    "month": "December 2026",
+    "month_key": "2026-12",
+    "file": "data/2026-12.json",
+    "active": false
+  },
+  {
+    "month": "November 2026",
+    "month_key": "2026-11",
+    "file": "data/2026-11.json",
+    "active": false
+  },
+  {
+    "month": "October 2026",
+    "month_key": "2026-10",
+    "file": "data/2026-10.json",
+    "active": false
+  },
+  {
     "month": "September 2026",
     "month_key": "2026-09",
     "file": "data/2026-09.json",
