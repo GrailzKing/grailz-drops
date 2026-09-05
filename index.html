@@ -244,9 +244,9 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
 <div class="table-wrap">
   <table class="drop-table">
     <thead><tr>
-      <th data-col="0" class="sorted">Date / Time (ET)</th>
+      <th data-col="0" class="sorted">DATE</th>
       <th data-col="1" style="display:none">Date</th>
-      <th data-col="2" style="display:none">Time (ET)</th>
+      <th data-col="2" style="display:none">Time (CT)</th>
       <th data-col="3">Category</th>
       <th data-col="4">Drop</th>
       <th data-col="5">Sources</th>
@@ -665,7 +665,7 @@ function exportICS(day,time,alertMins,drops){
   const uid='grailz-'+d0.name.slice(0,40)+'-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(day)+'@grailzking.github.io';
   const[h,m]=time.split(':').map(Number);
   const ampm=h<12?'AM':'PM';const h12=h%12||12;
-  const timeLabel=h12+':'+(m<10?'0':'')+m+' '+ampm+' ET';
+  const timeLabel=h12+':'+(m<10?'0':'')+m+' '+ampm+' CT';
   // Build title and description — handle grouped (multi-drop) entries
   let title,desc,link;
   if(drops.length===1){
