@@ -611,7 +611,10 @@ header{{border-bottom:1px solid var(--border);padding:18px 40px;background:linea
 .day-drop-name{{font-size:12px;color:var(--text);flex:1;min-width:120px;}}
 .day-srcs{{display:flex;gap:6px;flex-shrink:0;}}
 .day-srcs a{{font-family:'Space Mono',monospace;font-size:9px;color:var(--accent3);text-decoration:none;border:1px solid #1eb8f030;padding:2px 7px;border-radius:3px;}}
-.divider{{max-width:1100px;margin:28px auto 0;padding:0 32px;display:flex;align-items:center;gap:12px;}}
+.divider{{max-width:1100px;margin:28px auto 0;padding:0 32px;display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;}}
+.divider:hover .div-label{{color:var(--accent2);}}
+#controlsWrap{{overflow:hidden;transition:max-height .3s ease,opacity .3s ease;max-height:300px;opacity:1;}}
+#controlsWrap.collapsed{{max-height:0 !important;opacity:0;pointer-events:none;}}
 .div-line{{flex:1;height:1px;background:var(--border);}}
 .div-label{{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}}
 .controls{{max-width:1100px;margin:16px auto 0;padding:0 32px;display:flex;flex-direction:column;gap:12px;}}
@@ -711,9 +714,9 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
   </div>
 </div>
 
-<div class="divider"><div class="div-line"></div><div class="div-label">Full Drop List</div><div class="div-line"></div></div>
+<div class="divider" id="filterToggle" style="cursor:pointer;" title="Click to collapse/expand filters"><div class="div-line"></div><div class="div-label">Full Drop List <span id="filterChevron">▲</span></div><div class="div-line"></div></div>
 
-<div class="controls">
+<div class="controls" id="controlsWrap">
   <div class="search-wrap">
     <input id="search" type="text" placeholder="Search drops…" autocomplete="off">
     <button id="tbdToggle" class="tbd-btn">Show TBD</button>
@@ -1106,6 +1109,12 @@ function applyFilters(){{
   document.getElementById('count').textContent=v+' drop'+(v!==1?'s':'');
 }}
 document.getElementById('search').addEventListener('input',applyFilters);
+document.getElementById('filterToggle').addEventListener('click',()=>{{
+  const wrap=document.getElementById('controlsWrap');
+  const chevron=document.getElementById('filterChevron');
+  const collapsed=wrap.classList.toggle('collapsed');
+  chevron.textContent=collapsed?'▼':'▲';
+}});
 document.getElementById('tbdToggle').addEventListener('click',()=>{{
   showTBD=!showTBD;
   document.getElementById('tbdToggle').classList.toggle('active',showTBD);
