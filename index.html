@@ -109,8 +109,10 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 @media(max-width:700px){
   .sub-row{display:table-row;}
   .sub-row.hidden{display:none !important;}
-  .drop-table .name-cell{display:none;}
-  .drop-table th:nth-child(5){display:none;}
+  .drop-table td.name-cell{display:none !important;}
+  .drop-table td.source-cell{display:none !important;}
+  .drop-table th:nth-child(6),.drop-table th:nth-child(7){display:none;}
+  .sub-row-name{color:var(--text);font-size:11px;}
 }
 .tbd-btn{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}
 .tbd-btn.active{background:var(--accent2);color:#fff;border-color:var(--accent2);}
@@ -675,7 +677,17 @@ document.querySelectorAll('table.drop-table thead th[data-col]').forEach(th=>{
       const subTd=document.createElement('td');
       subTd.colSpan=7;
       subTd.className='sub-row-name';
-      subTd.textContent=r.dataset.name||'';
+      // Find the source links from the source-cell in the parent row
+      const srcCell=r.querySelector('.source-cell');
+      const nameDiv=document.createElement('div');
+      nameDiv.textContent=r.dataset.name||'';
+      subTd.appendChild(nameDiv);
+      if(srcCell){
+        const srcDiv=document.createElement('div');
+        srcDiv.style.cssText='margin-top:3px;';
+        srcDiv.innerHTML=srcCell.innerHTML;
+        subTd.appendChild(srcDiv);
+      }
       subTr.appendChild(subTd);
       document.getElementById('tbody').appendChild(subTr);
     });
