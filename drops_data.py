@@ -714,7 +714,7 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
   </div>
 </div>
 
-<div class="divider" id="filterToggle" style="cursor:pointer;" title="Click to collapse/expand filters"><div class="div-line"></div><div class="div-label">Full Drop List <span id="filterChevron">▼</span></div><div class="div-line"></div></div>
+<div class="divider" id="filterToggle" style="cursor:pointer;" title="Click to collapse/expand filters"><div class="div-line"></div><div class="div-label">Drop Filter <span id="filterChevron">▼</span></div><div class="div-line"></div></div>
 
 <div class="controls collapsed" id="controlsWrap">
   <div class="search-wrap">
