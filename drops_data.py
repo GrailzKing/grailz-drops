@@ -745,8 +745,12 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
 </div>
 
 <footer>
-  <span id="footerUpdated">Updated {today_str} · Grailz Discord Server</span>
-  <span>topps.com · beckett.com · tcgradar.eu · disneypinsblog.com · funko.com + social</span>
+  <span id="footerUpdated">Updated {today_str} · <em style="color:var(--accent2);font-style:normal;">The early bird gets the grail.</em></span>
+  <div class="social-links">
+    <a href="#" class="social-btn" id="socialLink1">Discord</a>
+    <a href="#" class="social-btn" id="socialLink2">Instagram</a>
+    <a href="#" class="social-btn" id="socialLink3">TikTok</a>
+  </div>
 </footer>
 
 <script>
