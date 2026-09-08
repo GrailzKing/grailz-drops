@@ -671,7 +671,7 @@ footer{{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;colo
 <header>
   <div class="logo-wrap">
     {"<img src='" + logo_img_src + "' alt='Grailz' class='logo-img'>" if logo_img_src else ""}
-    <div><div class="logo">GRAILZ</div><div class="subtitle">Artist &amp; Collectible Drop</div></div>
+    <div><div class="logo">GRAILZ</div><div class="subtitle">Artist &amp; Collectible Drops</div></div>
   </div>
 </header>
 
