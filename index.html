@@ -165,7 +165,17 @@ td{padding:10px 16px;vertical-align:middle;}
 .time-cell{font-family:'Space Mono',monospace;font-size:11px;color:#9b3fe8;white-space:nowrap;font-weight:600;}
 .name-cell{font-size:13px;color:var(--text);max-width:380px;}
 .source-cell{display:flex;gap:8px;flex-wrap:wrap;}
-@media(max-width:700px){.source-cell a:nth-child(2),.source-cell a:nth-child(n+2){display:none;}}
+@media(max-width:700px){
+  .source-cell a:nth-child(2),.source-cell a:nth-child(n+2){display:none;}
+  .drop-table td{padding:5px 6px !important;}
+  .dt-date{font-size:9px;}
+  .dt-time{font-size:11px;}
+  .date-time-cell{min-width:80px;}
+  .cat-badge{font-size:8px !important;padding:2px 5px !important;}
+  .name-cell{font-size:11px;}
+  .btn-ics-sm{font-size:9px;padding:4px 6px;}
+  .source-cell a{font-size:9px;padding:2px 5px;}
+}
 .ics-cell{vertical-align:middle;white-space:nowrap;}
 .tbl-cal-row{display:flex;align-items:center;gap:4px;flex-wrap:nowrap;}
 .tbl-cal-row .drop-time-input{width:90px;font-size:10px;padding:3px 6px;}
