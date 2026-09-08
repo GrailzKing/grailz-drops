@@ -105,6 +105,8 @@ header{border-bottom:1px solid var(--border);padding:18px 40px;background:linear
 #search::placeholder{color:var(--muted);}
 .count{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;}
 .tbd-btn{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}
+.add-all-btn{border-color:var(--accent2);color:var(--accent2);}
+.add-all-btn:hover{background:var(--accent2);color:#fff;}
 .tbd-btn.active{background:var(--accent2);color:#fff;border-color:var(--accent2);}
 .filters{display:flex;flex-wrap:wrap;gap:6px;}
 .filter-btn{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;letter-spacing:.04em;text-transform:uppercase;}
@@ -236,6 +238,7 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
   <div class="search-wrap">
     <input id="search" type="text" placeholder="Search drops…" autocomplete="off">
     <button id="tbdToggle" class="tbd-btn">Show TBD</button>
+    <button id="addAllBtn" class="tbd-btn add-all-btn">&#128197; Add All to Calendar</button>
     <span class="count" id="count"></span>
   </div>
   <div class="filters" id="filterBtns"></div>
@@ -258,7 +261,7 @@ footer{border-top:1px solid var(--border);padding:20px 40px;font-size:11px;color
 </div>
 
 <footer>
-  <span id="footerUpdated">Updated 9/7/2026 · <em style="color:var(--accent2);font-style:normal;">The early bird gets the grail.</em></span>
+  <span id="footerUpdated">Updated 9/8/2026 · <em style="color:var(--accent2);font-style:normal;">The early bird gets the grail.</em></span>
   <div class="social-links">
     <a href="#" class="social-btn" id="socialLink1">Discord</a>
     <a href="#" class="social-btn" id="socialLink2">Instagram</a>
@@ -630,6 +633,62 @@ function applyFilters(){
   document.getElementById('count').textContent=v+' drop'+(v!==1?'s':'');
 }
 document.getElementById('search').addEventListener('input',applyFilters);
+
+// Add All to Calendar — exports all dated (non-TBD) drops as one ICS file
+function exportAllICS(){
+  const CRLF=String.fromCharCode(13,10);
+  const toTitle=s=>s.replace(/-/g,' ').replace(/\w/g,c=>c.toUpperCase());
+  const datedDrops=DROPS.filter(d=>d.day&&!d.tbd);
+  if(!datedDrops.length)return;
+
+  const events=datedDrops.map(d=>{
+    const time=d.time||'09:00';
+    const[sh,sm]=time.split(':').map(Number);
+    const dtStart=icsDate(YEAR_N,MONTH_N,d.day,time);
+    const dtEnd=icsDate(YEAR_N,MONTH_N,d.day,pad((sh+1)%24)+':'+pad(sm));
+    const uid='grailz-'+d.name.slice(0,40)+'-'+YEAR_N+'-'+pad(MONTH_N)+'-'+pad(d.day)+'@grailzking.github.io';
+    const[h,m]=time.split(':').map(Number);
+    const ampm=h<12?'AM':'PM';const h12=h%12||12;
+    const timeLabel=h12+':'+(m<10?'0':'')+m+' '+ampm+' CT';
+    const title=toTitle(d.name)+' ['+d.cat+']';
+    const link=d.url1||'https://grailzking.github.io/grailz-drops';
+    const desc='Drop: '+toTitle(d.name)+'\nCategory: '+d.cat+'\nTime: '+timeLabel+'\nLink: '+link+(d.url2?'\nSource 2: '+d.url2:'')+'\n\nGrailz Drops Calendar: https://grailzking.github.io/grailz-drops';
+    return [
+      'BEGIN:VEVENT',
+      'UID:'+uid,
+      'DTSTAMP:'+icsDate(YEAR_N,MONTH_N,d.day,'00:00'),
+      'DTSTART:'+dtStart,
+      'DTEND:'+dtEnd,
+      'SUMMARY:'+title,
+      'DESCRIPTION:'+desc,
+      'URL:'+link,
+      'BEGIN:VALARM','ACTION:DISPLAY',
+      'DESCRIPTION:Grailz Drop: '+toTitle(d.name).slice(0,60),
+      'TRIGGER:-PT30M','END:VALARM',
+      'END:VEVENT'
+    ].join(CRLF);
+  });
+
+  const ics=[
+    'BEGIN:VCALENDAR','VERSION:2.0',
+    'PRODID:-//Grailz//Drops Calendar//EN',
+    'CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    'X-WR-CALNAME:Grailz Drops — '+MONTH_NAME,
+    'X-WR-CALDESC:Collectibles drop calendar for '+MONTH_NAME,
+    ...events,
+    'END:VCALENDAR'
+  ].join(CRLF);
+
+  const blob=new Blob([ics],{type:'text/calendar;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download='grailz-drops-'+YEAR_N+'-'+pad(MONTH_N)+'.ics';
+  document.body.appendChild(a);a.click();
+  document.body.removeChild(a);URL.revokeObjectURL(url);
+}
+
+document.getElementById('addAllBtn').addEventListener('click', exportAllICS);
 document.getElementById('filterToggle').addEventListener('click',()=>{
   const wrap=document.getElementById('controlsWrap');
   const chevron=document.getElementById('filterChevron');
