@@ -750,6 +750,15 @@
       "price": "19.99",
       "tier": "SUPREME",
       "pieces": 9500
+    },
+    {
+      "cat": "MATTEL CREATIONS",
+      "month": 10,
+      "day": 13,
+      "name": "monster-jam-october-exclusive-164-die-cast",
+      "url1": "https://shop.monsterjam.com/pages/october-exclusive",
+      "url2": "",
+      "time": "14:00"
     }
   ]
 }
