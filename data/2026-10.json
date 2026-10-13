@@ -664,50 +664,6 @@
       "time": "00:00"
     },
     {
-      "cat": "FUNKO POP",
-      "date": "10-TBD",
-      "month": 10,
-      "day": null,
-      "tbd": true,
-      "name": "funko-pop-2026-10-funko-exclusive-1",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "12:00"
-    },
-    {
-      "cat": "FUNKO POP",
-      "date": "10-TBD",
-      "month": 10,
-      "day": null,
-      "tbd": true,
-      "name": "funko-pop-2026-10-funko-exclusive-2",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "12:00"
-    },
-    {
-      "cat": "FUNKO POP",
-      "date": "10-TBD",
-      "month": 10,
-      "day": null,
-      "tbd": true,
-      "name": "funko-pop-2026-10-funko-exclusive-3",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "12:00"
-    },
-    {
-      "cat": "FUNKO POP",
-      "date": "10-TBD",
-      "month": 10,
-      "day": null,
-      "tbd": true,
-      "name": "funko-pop-2026-10-funko-exclusive-4",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "12:00"
-    },
-    {
       "cat": "MATTEL CREATIONS",
       "date": "10-TBD",
       "month": 10,
@@ -770,6 +726,30 @@
       "url1": "https://magic.wizards.com/en/news/announcements/secret-lair-corn-maze-superdrop",
       "url2": "https://secretlair.wizards.com",
       "time": "11:00"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 10,
+      "day": 13,
+      "name": "pop-skeletor-translucent-masters-of-the-universe",
+      "url1": "https://funko.com/limited-edition-calendar.html",
+      "url2": "",
+      "time": "11:00",
+      "price": "24.99",
+      "tier": "ULTRA",
+      "pieces": 5000
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 10,
+      "day": 20,
+      "name": "pop-stitch-in-bath-lilo-and-stitch",
+      "url1": "https://funko.com/limited-edition-calendar.html",
+      "url2": "",
+      "time": "11:00",
+      "price": "19.99",
+      "tier": "SUPREME",
+      "pieces": 9500
     }
   ]
 }
