@@ -759,6 +759,26 @@
       "url1": "https://shop.monsterjam.com/pages/october-exclusive",
       "url2": "",
       "time": "14:00"
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 10,
+      "day": 15,
+      "name": "bratz-x-the-craft-3-pack-sarah-rochelle-bonnie",
+      "url1": "https://www.bratz.com/collections/bratz-x-the-craft",
+      "url2": "https://www.instagram.com/p/bratz-the-craft",
+      "time": "10:00",
+      "price": "120.00"
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 10,
+      "day": 15,
+      "name": "bratz-x-the-craft-nancy-collector-doll",
+      "url1": "https://www.bratz.com/collections/bratz-x-the-craft",
+      "url2": "",
+      "time": "10:00",
+      "price": "60.00"
     }
   ]
 }
