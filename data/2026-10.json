@@ -779,6 +779,16 @@
       "url2": "",
       "time": "10:00",
       "price": "60.00"
+    },
+    {
+      "cat": "MATTEL CREATIONS",
+      "month": 10,
+      "day": 13,
+      "name": "monster-high-draculaura-halloween-edition-doll",
+      "url1": "https://creations.mattel.com/products/monster-high-draculaura-halloween-edition-doll-jmg90",
+      "url2": "",
+      "time": "11:00",
+      "price": "65.00"
     }
   ]
 }
