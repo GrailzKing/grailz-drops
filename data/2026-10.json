@@ -290,6 +290,15 @@
       "time": "10:00"
     },
     {
+      "cat": "MTG",
+      "month": 10,
+      "day": 12,
+      "name": "secret-lair-corn-maze-superdrop",
+      "url1": "https://magic.wizards.com/en/news/announcements/secret-lair-corn-maze-superdrop",
+      "url2": "https://secretlair.wizards.com",
+      "time": "11:00"
+    },
+    {
       "cat": "DISNEY PINS",
       "date": "10-13",
       "month": 10,
@@ -299,6 +308,28 @@
       "url1": "https://disneypinsblog.com",
       "url2": "https://wdwnt.com",
       "time": "09:00"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 10,
+      "day": 13,
+      "name": "pop-skeletor-translucent-masters-of-the-universe",
+      "url1": "https://funko.com/limited-edition-calendar.html",
+      "url2": "",
+      "time": "11:00",
+      "price": "24.99",
+      "tier": "ULTRA",
+      "pieces": 5000
+    },
+    {
+      "cat": "MATTEL CREATIONS",
+      "month": 10,
+      "day": 13,
+      "name": "monster-high-draculaura-halloween-edition-doll",
+      "url1": "https://creations.mattel.com/products/monster-high-draculaura-halloween-edition-doll-jmg90",
+      "url2": "",
+      "time": "11:00",
+      "price": "65.00"
     },
     {
       "cat": "TOPPS",
@@ -332,6 +363,15 @@
       "url1": "https://topps.com/release-calendar",
       "url2": "",
       "time": "12:00"
+    },
+    {
+      "cat": "MATTEL CREATIONS",
+      "month": 10,
+      "day": 13,
+      "name": "monster-jam-october-exclusive-164-die-cast",
+      "url1": "https://shop.monsterjam.com/pages/october-exclusive",
+      "url2": "",
+      "time": "14:00"
     },
     {
       "cat": "TOPPS",
@@ -376,6 +416,26 @@
       "url1": "https://drinkechelon.com/products/goth-girl-blood",
       "url2": "https://whitephosphor.com",
       "time": "10:00"
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 10,
+      "day": 15,
+      "name": "bratz-x-the-craft-3-pack-sarah-rochelle-bonnie",
+      "url1": "https://www.bratz.com/collections/bratz-x-the-craft",
+      "url2": "https://www.instagram.com/p/bratz-the-craft",
+      "time": "10:00",
+      "price": "120.00"
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 10,
+      "day": 15,
+      "name": "bratz-x-the-craft-nancy-collector-doll",
+      "url1": "https://www.bratz.com/collections/bratz-x-the-craft",
+      "url2": "",
+      "time": "10:00",
+      "price": "60.00"
     },
     {
       "cat": "SUPREME FW26",
@@ -488,6 +548,18 @@
       "time": "10:00"
     },
     {
+      "cat": "FUNKO POP",
+      "month": 10,
+      "day": 20,
+      "name": "pop-stitch-in-bath-lilo-and-stitch",
+      "url1": "https://funko.com/limited-edition-calendar.html",
+      "url2": "",
+      "time": "11:00",
+      "price": "19.99",
+      "tier": "SUPREME",
+      "pieces": 9500
+    },
+    {
       "cat": "TOPPS",
       "date": "10-21",
       "month": 10,
@@ -519,6 +591,16 @@
       "url1": "https://topps.com/release-calendar",
       "url2": "",
       "time": "12:00"
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "date": "10-22",
+      "month": 10,
+      "day": 22,
+      "name": "dualsense-gran-turismo-30th-anniversary-limited-edition",
+      "url1": "https://direct.playstation.com/en-us/buy-accessories/dualsense-wireless-controller-gran-turismo-30th-anniversary-limited-edition",
+      "time": "10:00",
+      "price": 84.99
     },
     {
       "cat": "SUPREME FW26",
@@ -717,78 +799,6 @@
       "url1": "https://www.usmint.gov/product-schedule/2026/?start=0&sz=64",
       "url2": "https://www.govmint.com/learn/post/united-states-mint-2026-coin-release-schedule",
       "time": "12:00"
-    },
-    {
-      "cat": "MTG",
-      "month": 10,
-      "day": 12,
-      "name": "secret-lair-corn-maze-superdrop",
-      "url1": "https://magic.wizards.com/en/news/announcements/secret-lair-corn-maze-superdrop",
-      "url2": "https://secretlair.wizards.com",
-      "time": "11:00"
-    },
-    {
-      "cat": "FUNKO POP",
-      "month": 10,
-      "day": 13,
-      "name": "pop-skeletor-translucent-masters-of-the-universe",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "11:00",
-      "price": "24.99",
-      "tier": "ULTRA",
-      "pieces": 5000
-    },
-    {
-      "cat": "FUNKO POP",
-      "month": 10,
-      "day": 20,
-      "name": "pop-stitch-in-bath-lilo-and-stitch",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "11:00",
-      "price": "19.99",
-      "tier": "SUPREME",
-      "pieces": 9500
-    },
-    {
-      "cat": "MATTEL CREATIONS",
-      "month": 10,
-      "day": 13,
-      "name": "monster-jam-october-exclusive-164-die-cast",
-      "url1": "https://shop.monsterjam.com/pages/october-exclusive",
-      "url2": "",
-      "time": "14:00"
-    },
-    {
-      "cat": "COLLAB / LIFESTYLE",
-      "month": 10,
-      "day": 15,
-      "name": "bratz-x-the-craft-3-pack-sarah-rochelle-bonnie",
-      "url1": "https://www.bratz.com/collections/bratz-x-the-craft",
-      "url2": "https://www.instagram.com/p/bratz-the-craft",
-      "time": "10:00",
-      "price": "120.00"
-    },
-    {
-      "cat": "COLLAB / LIFESTYLE",
-      "month": 10,
-      "day": 15,
-      "name": "bratz-x-the-craft-nancy-collector-doll",
-      "url1": "https://www.bratz.com/collections/bratz-x-the-craft",
-      "url2": "",
-      "time": "10:00",
-      "price": "60.00"
-    },
-    {
-      "cat": "MATTEL CREATIONS",
-      "month": 10,
-      "day": 13,
-      "name": "monster-high-draculaura-halloween-edition-doll",
-      "url1": "https://creations.mattel.com/products/monster-high-draculaura-halloween-edition-doll-jmg90",
-      "url2": "",
-      "time": "11:00",
-      "price": "65.00"
     }
   ]
 }
