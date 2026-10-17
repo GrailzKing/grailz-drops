@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-17T21:22:02+00:00",
+ "checked_at": "2026-10-17T21:36:29+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -98,10 +98,10 @@
    "error": "HTTPError"
   },
   "CCS": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
+   "state": "in_stock",
+   "price": "$154.95",
+   "url": "https://shop.ccs.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-00",
+   "title": "Santa Cruz x Pokemon TCG Blind Bag Skateboard Deck - 8.00\""
   },
   "Warehouse Skateboards": {
    "state": "unchecked",
@@ -521,39 +521,34 @@
    "title": ""
   },
   "Eastern Boarder": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Orchard Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Exodus Ride Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "3rd Lair": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Familia": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Escapist Skateboarding": {
    "state": "unchecked",
