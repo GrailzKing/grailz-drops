@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-17T20:53:07+00:00",
+ "checked_at": "2026-10-17T21:07:34+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -155,7 +155,7 @@
   },
   "Skates USA": {
    "state": "in_stock",
-   "price": "$249.00",
+   "price": "$279.90",
    "url": "https://www.skatesusa.com/products/santa-cruz-x-pokemon-tcg-blind-bag-deck-8-0",
    "title": "Santa Cruz X Pokémon TCG Blind Bag Skateboard Deck - 8.0\" Assorted [Limited]"
   },
@@ -533,17 +533,17 @@
    "title": ""
   },
   "Exodus Ride Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "3rd Lair": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
-  },
-  "3rd Lair": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
   },
   "Familia": {
    "state": "unchecked",
