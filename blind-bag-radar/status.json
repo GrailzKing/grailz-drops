@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-17T22:49:18+00:00",
+ "checked_at": "2026-10-17T23:03:45+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -491,7 +491,7 @@
    "error": "HTTPError"
   },
   "Warped Skateshop": {
-   "state": "sold_out",
+   "state": "in_stock",
    "price": "$200.00",
    "url": "https://warpedskateshop.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
    "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
@@ -701,16 +701,18 @@
    "title": ""
   },
   "Breakfree Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Brooklyn Projects": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Everyday Skateshop": {
    "state": "not_listed",
@@ -719,28 +721,32 @@
    "title": ""
   },
   "Goodtimes": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Hardline Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Inner City Skate (IDS)": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Garage Skate Shop": {
-   "state": "sold_out",
-   "price": "$139.95",
-   "url": "https://garageskateshop.com/products/santa-cruz-x-pokemon-blind-bag-deck-2026",
-   "title": "Santa Cruz x Pokemon Blind Bag Deck (2026)"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Kingswell": {
    "state": "unchecked",
@@ -750,28 +756,32 @@
    "error": "JSONDecodeError"
   },
   "Lowkey Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Marriage Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Midnite Theories": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Overload": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pancho's": {
    "state": "unchecked",
@@ -781,10 +791,11 @@
    "error": "HTTPError"
   },
   "PLA Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Programme": {
    "state": "unchecked",
@@ -794,22 +805,25 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rip City Skates": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rose Street Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
@@ -840,10 +854,11 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Vault Boardshop": {
    "state": "unchecked",
