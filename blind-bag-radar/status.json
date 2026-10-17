@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-17T17:16:13+00:00",
+ "checked_at": "2026-10-17T17:30:41+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -478,10 +478,11 @@
    "title": ""
   },
   "Stratosphere Skateboards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "First Gear Skateshop": {
    "state": "unchecked",
@@ -497,16 +498,18 @@
    "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
   },
   "Studio Skate Supply": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Home Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pure Boardshop": {
    "state": "not_listed",
@@ -515,22 +518,25 @@
    "title": ""
   },
   "Vu Skateboard Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Eastern Boarder": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Orchard Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Exodus Ride Shop": {
    "state": "unchecked",
@@ -643,6 +649,705 @@
    "url": "",
    "title": "",
    "error": "HTTPError"
+  },
+  "Central Board Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Blue and Gold": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Faith Skate Supply": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Funwheels": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Reset Mercantile": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "World Conspiracy": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Action Park Alliance": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Baker Street Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Blackhole Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Boarders LA": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Breakfree Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Brooklyn Projects": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Everyday Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Goodtimes": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Hardline Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Inner City Skate (IDS)": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Garage Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Kingswell": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Lowkey Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Marriage Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Midnite Theories": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Overload": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Pancho's": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "PLA Skateboarding": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Programme": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Prooflab": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Rip City Skates": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Rose Street Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Sideroom Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Slappy's Garage": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Stix SGV": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Surfside Sports": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Unmodern Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Vault Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Wavelengths": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "805 Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Abstract Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Asylum Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Boardgarden": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Witt's Carlsbad Pipelines": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "CB Supply Co": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Crooks Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "ET Surf": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Furnace Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Grandeur Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "The House Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Milo Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "On The Beach": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Orbit Skates": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Sifu Skate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Soul Grind": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Transport Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "BC Surf & Sport": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Emage": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Market Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Prom Skates": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Transition Sports": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Plush": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Sartorius Sports": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Archives": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Sister Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Crushed Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Switch Skate & Snow": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Andrew": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Anchors Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Necessary Skate Co": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Compound Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Waterboyz": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Greater Miami Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Ocala Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Parkside Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Vinylyte Records & Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Aloha Boards": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "APB Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Deckadence": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Prestige Skateboards": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Fargo Skateboarding": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Starlight Skatepark": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Blacklist Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Killer Skatepark": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Rhett Skateboarding": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Subsect Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "River Rat": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Thunderkats": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Rukus": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Mocean": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Embark Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Boarding House": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Solstice Skateboarding": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Theory Skate & Snow": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Plus Skateboarding": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Premier": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Skater's Advocate": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Olympia Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "People Skate & Snowboard": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Anthem Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Cal Surf": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Northside Boards": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "After Hours Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Change": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
   }
  }
 }
