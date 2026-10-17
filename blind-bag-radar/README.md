@@ -2,7 +2,7 @@
 
 Live page: https://grailzking.github.io/grailz-drops/blind-bag-radar/
 
-Tracks the Santa Cruz x Pokémon TCG blind bag deck (item 11117698) across 100 US skate shops.
+Tracks the Santa Cruz x Pokémon TCG blind bag deck (item 11117698) across 200 US skate shops.
 
 - `shops.json` is the shop list (name, state, site, deck page, manual status, known product URL). Edit it to add or remove shops.
 - `check_stock.py` checks each Shopify shop's product listing and writes `status.json` every run.
