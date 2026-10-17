@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-17T20:09:44+00:00",
+ "checked_at": "2026-10-17T20:24:12+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -358,11 +358,10 @@
    "error": "HTTPError"
   },
   "Heritage Skateboards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Icon Boardshop": {
    "state": "not_listed",
@@ -384,18 +383,16 @@
    "error": "HTTPError"
   },
   "Kingpin Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "LA Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "McGill's Skateshop": {
    "state": "unchecked",
@@ -419,18 +416,16 @@
    "error": "JSONDecodeError"
   },
   "Pawnshop Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Prodigy Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Ray's Boardshop": {
    "state": "unchecked",
@@ -447,53 +442,46 @@
    "error": "HTTPError"
   },
   "Skateworks": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Status Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Val Surf": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Xtreme Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sun Diego": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Kinetic Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Stratosphere Skateboards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "First Gear Skateshop": {
    "state": "unchecked",
@@ -503,25 +491,22 @@
    "error": "HTTPError"
   },
   "Warped Skateshop": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "in_stock",
+   "price": "$200.00",
+   "url": "https://warpedskateshop.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
+   "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
   },
   "Studio Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Home Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pure Boardshop": {
    "state": "unchecked",
