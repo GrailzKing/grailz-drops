@@ -1,0 +1,902 @@
+[
+ {
+  "name": "NHS Skate Direct (official Santa Cruz)",
+  "state": "CA",
+  "site": "https://nhsskatedirect.com",
+  "decks": "https://nhsskatedirect.com/collections/santa-cruz-skateboard-decks",
+  "baseline": "waves",
+  "note": "$139.95, limit 2. 'Unavailable' means more stock is coming",
+  "product": "https://nhsskatedirect.com/products/8in-pokemon-tcg-blind-bag-santa-cruz-skateboard-deck"
+ },
+ {
+  "name": "Zumiez",
+  "state": "WA",
+  "site": "https://www.zumiez.com",
+  "decks": "https://www.zumiez.com/skate/skateboard-decks.html",
+  "baseline": "drop",
+  "note": "Drop page at /santa-cruz-x-pokemon; check the app",
+  "product": ""
+ },
+ {
+  "name": "Amateur Athlete",
+  "state": "PA",
+  "site": "https://aa1982.com",
+  "decks": "",
+  "baseline": "annc",
+  "note": "Said Drop 2 would be on their site",
+  "product": ""
+ },
+ {
+  "name": "The Longboard Store",
+  "state": "—",
+  "site": "https://www.thelongboardstore.com",
+  "decks": "",
+  "baseline": "resale",
+  "note": "$499, limit 3 per week",
+  "product": ""
+ },
+ {
+  "name": "Skate Warehouse",
+  "state": "CA",
+  "site": "https://www.skatewarehouse.com",
+  "decks": "https://www.skatewarehouse.com/Santa_Cruz_Skateboard_Decks/catpage-DKSANTACRUZ.html",
+  "baseline": "pulled",
+  "note": "Was $149.95, limit 5",
+  "product": ""
+ },
+ {
+  "name": "TGM Skateboards",
+  "state": "MI",
+  "site": "https://tgmskateboards.com",
+  "decks": "https://tgmskateboards.com/collections/skateboard-deck",
+  "baseline": "pulled",
+  "note": "Was $199.95",
+  "product": ""
+ },
+ {
+  "name": "Old Skull Skateboards",
+  "state": "NY",
+  "site": "https://www.oldskullskateboards.com",
+  "decks": "https://oldskullskateboards.com/collections/decks",
+  "baseline": "out",
+  "note": "$154.95 incl. shipping, limit 5",
+  "product": "https://oldskullskateboards.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-skateboard-deck"
+ },
+ {
+  "name": "Pharmacy Boardshop",
+  "state": "CA",
+  "site": "https://pharmacyboardshop.com",
+  "decks": "https://pharmacyboardshop.com/collections/decks-1",
+  "baseline": "out",
+  "note": "$149.95, limit 1",
+  "product": "https://pharmacyboardshop.com/products/santa-cruz-pokemon-tcg-blind-bag-deck-8-0"
+ },
+ {
+  "name": "Mainland Skate & Surf",
+  "state": "CA",
+  "site": "https://mainlandskateandsurf.com",
+  "decks": "https://mainlandskateandsurf.com/collections/decks",
+  "baseline": "pulled",
+  "note": "Pokémon collection page is empty",
+  "product": ""
+ },
+ {
+  "name": "Coast Board Shop",
+  "state": "CA",
+  "site": "https://coastboardshop.com",
+  "decks": "https://coastboardshop.com/collections/decks",
+  "baseline": "pulled",
+  "note": "Pokémon collection page is empty",
+  "product": ""
+ },
+ {
+  "name": "Humidity",
+  "state": "LA",
+  "site": "https://humiditynola.com",
+  "decks": "",
+  "baseline": "out",
+  "note": "$125",
+  "product": "https://humiditynola.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-deck"
+ },
+ {
+  "name": "Forever Fly",
+  "state": "—",
+  "site": "https://www.foreverflyskate.com",
+  "decks": "",
+  "baseline": "out",
+  "note": "$119.95",
+  "product": ""
+ },
+ {
+  "name": "Darkside Snowboards",
+  "state": "VT",
+  "site": "https://darksidesnowboards.com",
+  "decks": "",
+  "baseline": "pulled",
+  "note": "Product page removed, was $139.95",
+  "product": "https://darksidesnowboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck"
+ },
+ {
+  "name": "Damage Boardshop",
+  "state": "MN",
+  "site": "http://www.damageboardshop.com",
+  "decks": "",
+  "baseline": "store",
+  "note": "$139.95, limit 1",
+  "product": ""
+ },
+ {
+  "name": "Tactics",
+  "state": "OR",
+  "site": "https://www.tactics.com",
+  "decks": "https://www.tactics.com/santa-cruz/jeff-kendall/decks/new-arrivals",
+  "baseline": "none",
+  "note": "Large online shop",
+  "product": ""
+ },
+ {
+  "name": "CCS",
+  "state": "OR",
+  "site": "https://shop.ccs.com",
+  "decks": "https://shop.ccs.com/collections/santa-cruz-skateboards/skateboard-deck",
+  "baseline": "none",
+  "note": "Large online shop",
+  "product": ""
+ },
+ {
+  "name": "Warehouse Skateboards",
+  "state": "—",
+  "site": "https://www.warehouseskateboards.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "Large online shop",
+  "product": ""
+ },
+ {
+  "name": "SoCal Skateshop",
+  "state": "CA",
+  "site": "https://socalskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "Large online shop",
+  "product": ""
+ },
+ {
+  "name": "evo",
+  "state": "WA",
+  "site": "https://www.evo.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "Ships Santa Cruz within US only",
+  "product": ""
+ },
+ {
+  "name": "Long Beach Skate (LB Skate)",
+  "state": "CA",
+  "site": "https://lbskate.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Cal Skate",
+  "state": "OR",
+  "site": "https://calsk8.com",
+  "decks": "https://calsk8.com/collections/santa-cruz-skateboards",
+  "baseline": "none",
+  "note": "Sells Santa Cruz blind bags (Natas)",
+  "product": ""
+ },
+ {
+  "name": "Labor Skate Shop",
+  "state": "NY",
+  "site": "https://laborskateshop.com",
+  "decks": "https://laborskateshop.com/collections/decks",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Uprise Skateshop",
+  "state": "IL",
+  "site": "https://www.upriseskateboards.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Modern Skate & Surf",
+  "state": "MI",
+  "site": "https://www.modernskate.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Skates USA",
+  "state": "FL",
+  "site": "https://www.skatesusa.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "Online only",
+  "product": ""
+ },
+ {
+  "name": "SPoT (Skatepark of Tampa)",
+  "state": "FL",
+  "site": "https://skateparkoftampa.com/spot/",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Black Sheep Skate Shop",
+  "state": "NC",
+  "site": "https://blacksheepskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "This Skateshop",
+  "state": "ND",
+  "site": "https://thisskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "Sold the 2023 bags online",
+  "product": ""
+ },
+ {
+  "name": "Bluetile",
+  "state": "SC",
+  "site": "https://bluetilesc.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "Sold the 2023 bags online",
+  "product": ""
+ },
+ {
+  "name": "Atlas",
+  "state": "CA",
+  "site": "https://shop.atlasskateboarding.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "DLX Shop",
+  "state": "CA",
+  "site": "https://dlxskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Skate Hub",
+  "state": "TX",
+  "site": "https://www.skate-hub.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Deli Skate Supply",
+  "state": "TX",
+  "site": "https://deliskatesupply.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "No Comply",
+  "state": "TX",
+  "site": "https://nocomplyatx.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Rhythm Skateshop",
+  "state": "TX",
+  "site": "https://www.rhythmskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Insanity Boardshop",
+  "state": "TX",
+  "site": "https://www.insanitybs.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Geometric Skateshop",
+  "state": "TX",
+  "site": "https://www.geometricskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "South Side Skateshop",
+  "state": "TX",
+  "site": "https://southsideskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Freedom Boardshop",
+  "state": "AZ",
+  "site": "https://www.freedomboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Sidewalk Surfer",
+  "state": "AZ",
+  "site": "https://sidewalksurfer.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Faces Skateshop",
+  "state": "AZ",
+  "site": "https://www.facesskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "The Block Skate Supply",
+  "state": "FL",
+  "site": "https://theblockskatesupply.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Relief Skate Supply",
+  "state": "FL",
+  "site": "https://reliefskatesupply.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Plus Skateshop",
+  "state": "FL",
+  "site": "https://plusskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Westside Skateshop",
+  "state": "FL",
+  "site": "https://www.westsideskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "LoCo Skate Shop",
+  "state": "CO",
+  "site": "https://locoskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "303 Boards",
+  "state": "CO",
+  "site": "https://www.303boards.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Satellite Boardshop",
+  "state": "CO",
+  "site": "https://www.satelliteboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "510 Skateboarding",
+  "state": "CA",
+  "site": "https://510skateboarding.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "818 Skate Shop",
+  "state": "CA",
+  "site": "https://818skateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "APT Skateshop",
+  "state": "CA",
+  "site": "https://aptskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Attic Skateshop",
+  "state": "CA",
+  "site": "https://atticskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Bill's Wheels",
+  "state": "CA",
+  "site": "https://billswheels.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Brotherhood",
+  "state": "CA",
+  "site": "https://www.brotherhoodboard.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Ceremony Skateshop",
+  "state": "CA",
+  "site": "https://ceremonyskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "East 4th",
+  "state": "CA",
+  "site": "https://www.east4th.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Heritage Skateboards",
+  "state": "CA",
+  "site": "https://heritagesktbds.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Icon Boardshop",
+  "state": "CA",
+  "site": "https://www.iconboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Impact Skate",
+  "state": "CA",
+  "site": "https://www.impactskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Jokers Skate Shop",
+  "state": "CA",
+  "site": "https://www.jokersskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Kingpin Skate",
+  "state": "CA",
+  "site": "https://www.kingpinskate.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "LA Skate",
+  "state": "CA",
+  "site": "https://laskate.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "McGill's Skateshop",
+  "state": "CA",
+  "site": "https://www.mcgillsskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "NC Boardshop",
+  "state": "CA",
+  "site": "https://www.ncboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Pacific Drive",
+  "state": "CA",
+  "site": "https://pacificdrive.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Pawnshop Skate",
+  "state": "CA",
+  "site": "https://www.pawnshopskate.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Prodigy Skateshop",
+  "state": "CA",
+  "site": "https://prodigyskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Ray's Boardshop",
+  "state": "CA",
+  "site": "https://www.raysboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Santa Cruz Boardroom",
+  "state": "CA",
+  "site": "https://www.santacruzboardroom.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Skateworks",
+  "state": "CA",
+  "site": "https://skateworks.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Status Skateshop",
+  "state": "CA",
+  "site": "https://statusskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Val Surf",
+  "state": "CA",
+  "site": "https://valsurf.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Xtreme Boardshop",
+  "state": "CA",
+  "site": "https://xbusa.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Sun Diego",
+  "state": "CA",
+  "site": "https://sundiego.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Kinetic Skateboarding",
+  "state": "DE",
+  "site": "https://kineticskateboarding.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Stratosphere Skateboards",
+  "state": "GA",
+  "site": "https://stratosphereskateboards.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "First Gear Skateshop",
+  "state": "IL",
+  "site": "https://www.firstgearskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Warped Skateshop",
+  "state": "IN",
+  "site": "https://warpedskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Studio Skate Supply",
+  "state": "KS",
+  "site": "https://www.studioskatesupply.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Home Skateshop",
+  "state": "KY",
+  "site": "https://www.homeskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Pure Boardshop",
+  "state": "MD",
+  "site": "https://www.pureboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Vu Skateboard Shop",
+  "state": "MD",
+  "site": "https://vuskateboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Eastern Boarder",
+  "state": "MA",
+  "site": "https://easternboarder.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Orchard Skateshop",
+  "state": "MA",
+  "site": "https://orchardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Exodus Ride Shop",
+  "state": "MI",
+  "site": "https://exodusrideshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "3rd Lair",
+  "state": "MN",
+  "site": "https://3rdlair.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Familia",
+  "state": "MN",
+  "site": "https://familiaskate.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Escapist Skateboarding",
+  "state": "MO",
+  "site": "https://www.escapistskateboarding.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Infinity Skateshop",
+  "state": "MO",
+  "site": "https://www.infinityskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Boardparadise",
+  "state": "NC",
+  "site": "https://www.boardparadise.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "NJ Skateshop",
+  "state": "NJ",
+  "site": "https://njskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Pro Skateboard Shop",
+  "state": "NJ",
+  "site": "https://proskateboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Krudco",
+  "state": "NY",
+  "site": "https://www.krudco.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Seasons Skate Shop",
+  "state": "NY",
+  "site": "https://seasonsskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Manifest Skateshop",
+  "state": "NC",
+  "site": "https://www.manifestskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Embassy Boardshop",
+  "state": "OH",
+  "site": "https://embassyboardshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Proper Skate Shop",
+  "state": "OK",
+  "site": "https://properskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Holistic Skate Shop",
+  "state": "PA",
+  "site": "https://holisticskateshop.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Salty Peaks",
+  "state": "UT",
+  "site": "https://www.saltypeaks.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ },
+ {
+  "name": "Commonwealth",
+  "state": "WA",
+  "site": "https://cwskate.com",
+  "decks": "",
+  "baseline": "none",
+  "note": "",
+  "product": ""
+ }
+]

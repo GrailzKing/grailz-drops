@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blind Bag Radar</title>
+<meta name="description" content="Live stock check across 100 US skate shops for the Santa Cruz x Pokémon TCG blind bag decks.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: header summary, sticky filter bar with Refresh, dense shop table that becomes cards on phones */
+:root{
+  --bg:#f3f5fa;--surface:#ffffff;--ink:#141a2b;--muted:#5a6280;--line:#dde2ee;
+  --accent:#2349c9;--accent-ink:#ffffff;--accent-soft:#e3e9fb;
+  --ok:#1d7a45;--ok-bg:#e1f3e8;--warn:#9a5b00;--warn-bg:#fbefd9;--bad:#a52a2a;--bad-bg:#f8e2e2;--na:#5a6280;--na-bg:#eceff6;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0e1220;--surface:#161b2d;--ink:#e8ecf7;--muted:#9aa3c2;--line:#262e48;
+  --accent:#7b9bff;--accent-ink:#0e1220;--accent-soft:#1d2645;
+  --ok:#6fd49a;--ok-bg:#15301f;--warn:#f0b75a;--warn-bg:#33270f;--bad:#f08a8a;--bad-bg:#3a1a1a;--na:#9aa3c2;--na-bg:#1f2538;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.back{font-size:13px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+header h1{font-family:var(--display);font-size:clamp(30px,5vw,44px);line-height:1;margin:6px 0 0;letter-spacing:.01em;text-wrap:balance}
+header p{margin:8px 0 0;color:var(--muted);max-width:68ch}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.stat{font-family:var(--mono);font-size:12px;padding:4px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-variant-numeric:tabular-nums}
+.stat b{color:var(--accent)}
+.stat.hot{border-color:var(--ok);background:var(--ok-bg)}
+.stat.hot b{color:var(--ok)}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding-block:10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:1px solid var(--line)}
+input,select,button{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:7px 10px}
+input{flex:1 1 220px;min-width:0}
+button{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+button:disabled{opacity:.6;cursor:progress}
+button svg{width:14px;height:14px}
+button.spin svg{animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){button.spin svg{animation:none}}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.updated{font-family:var(--mono);font-size:12px;color:var(--muted);margin-left:auto;font-variant-numeric:tabular-nums}
+.tablebox{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+table{width:100%;border-collapse:collapse}
+th{font-family:var(--display);font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+tr.instock td{background:var(--ok-bg)}
+td.n{font-family:var(--mono);color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;width:3ch}
+.name{font-weight:600}
+.state{font-family:var(--mono);font-size:12px}
+.links{display:flex;flex-wrap:wrap;gap:6px}
+.links a{font-size:12px;font-weight:500;color:var(--accent);text-decoration:none;padding:3px 8px;border-radius:5px;background:var(--accent-soft);white-space:nowrap}
+.links a.buy{background:var(--ok);color:var(--surface)}
+.links a:hover{text-decoration:underline}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.live{display:block;font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:2px}
+.s-ok{color:var(--ok);background:var(--ok-bg);border:1px solid var(--ok)}
+.s-watch{color:var(--warn);background:var(--warn-bg)}
+.s-out{color:var(--bad);background:var(--bad-bg)}
+.s-none{color:var(--na);background:var(--na-bg)}
+.note{color:var(--muted);font-size:12.5px}
+.msg{padding:16px;color:var(--muted)}
+footer{color:var(--muted);font-size:12.5px;max-width:78ch;display:flex;flex-direction:column;gap:6px}
+footer a{color:var(--accent)}
+@media (max-width:640px){
+  thead{display:none}
+  table,tbody,tr,td{display:block;width:100%}
+  tr{padding:10px 12px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:4px 10px}
+  tr.instock{background:var(--ok-bg)}
+  td{padding:0;border:0}
+  td.n{display:none}
+  td.status{grid-column:2;grid-row:1;justify-self:end;text-align:right}
+  td.st{grid-column:1;grid-row:2}
+  td.lk,td.nt{grid-column:1 / -1}
+  .updated{margin-left:0;width:100%}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="back" href="../">&larr; Grailz Drops Calendar</a>
+  <h1>Blind Bag Radar</h1>
+  <p>100 US skate shops checked for the Santa Cruz x Pokémon TCG blind bag decks (item no. 11117698, dropped Oct 17, 2026). A bot checks every shop it can read about every 15 minutes. In-stock shops jump to the top.</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="bar">
+  <button id="refresh" type="button" aria-label="Refresh stock status">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+    Refresh
+  </button>
+  <input id="q" type="search" placeholder="Search shop or state" aria-label="Search shops">
+  <select id="st" aria-label="Filter by state"><option value="">All states</option></select>
+  <select id="ss" aria-label="Filter by status"><option value="">All statuses</option></select>
+  <span class="updated" id="updated">Loading…</span>
+</div>
+
+<div class="tablebox">
+<table>
+<thead><tr><th>#</th><th>Shop</th><th>State</th><th>Pokémon bag</th><th>Links</th><th>Notes</th></tr></thead>
+<tbody id="rows"><tr><td colspan="6" class="msg">Loading shops…</td></tr></tbody>
+</table>
+</div>
+
+<footer>
+  <span><b>How the status works.</b> "In stock" and "Sold out" come from the bot's last check of the shop's own product listing. Shops it can't read automatically (non-Shopify sites, or sites that block bots) keep the status from a manual check on Oct 17, 2026, marked "manual". Use "Find Pokémon" to search any shop's site yourself.</span>
+  <span>Every shop is US-based with an online store, but most haven't been individually confirmed to ship to every US state. Prices and stock change fast; always confirm on the shop's page.</span>
+  <span>Grailz Discord · Not affiliated with Santa Cruz Skateboards, NHS Inc., The Pokémon Company or any shop listed.</span>
+</footer>
+</div>
+
+<script>
+const BASE={waves:["Releasing in waves","s-watch"],drop:["Drop page live","s-watch"],annc:["Announced online drop","s-watch"],resale:["Resale price","s-watch"],out:["Sold out","s-out"],pulled:["Listing pulled","s-out"],store:["In store only","s-out"],none:["Not checked","s-none"]};
+const LIVE={in_stock:["In stock","s-ok"],sold_out:["Sold out","s-out"],not_listed:["Not listed","s-none"]};
+const ORDER={in_stock:0,waves:1,drop:2,annc:3,resale:4,sold_out:5,out:6,pulled:7,store:8,not_listed:9,none:10};
+let SHOPS=[],STATUS={shops:{}},lastFetch=0;
+
+const $=id=>document.getElementById(id);
+const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){return u}};
+const gsearch=u=>"https://www.google.com/search?q="+encodeURIComponent("site:"+host(u)+" pokemon blind bag");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ago=iso=>{if(!iso)return"never";const m=Math.round((Date.now()-new Date(iso))/60000);return m<1?"just now":m<60?m+" min ago":Math.round(m/60)+" hr ago"};
+
+function view(s){
+  const live=STATUS.shops?.[s.name];
+  if(live&&LIVE[live.state]){
+    return {key:live.state,label:LIVE[live.state][0]+(live.price?" "+live.price:""),cls:LIVE[live.state][1],live:true,url:live.url};
+  }
+  const b=BASE[s.baseline]||BASE.none;
+  return {key:s.baseline,label:b[0],cls:b[1],live:false,url:""};
+}
+
+function filters(){
+  const states=[...new Set(SHOPS.map(s=>s.state))].sort();
+  states.forEach(s=>$("st").add(new Option(s,s)));
+}
+function statusOptions(views){
+  const keep=$("ss").value,keys=[...new Set(views.map(v=>v.key))].sort((a,b)=>ORDER[a]-ORDER[b]);
+  $("ss").length=1;
+  keys.forEach(k=>{const lab=(LIVE[k]||BASE[k]||BASE.none)[0];$("ss").add(new Option(lab,k))});
+  if(keys.includes(keep))$("ss").value=keep;
+}
+
+function render(){
+  const all=SHOPS.map((s,i)=>({s,v:view(s),i}));
+  statusOptions(all.map(x=>x.v));
+  const counts={};all.forEach(({v})=>counts[v.key]=(counts[v.key]||0)+1);
+  const checked=Object.values(STATUS.shops||{}).filter(r=>LIVE[r.state]).length;
+  $("stats").innerHTML=
+    `<span class="stat${counts.in_stock?" hot":""}"><b>${counts.in_stock||0}</b> in stock now</span>`+
+    `<span class="stat"><b>${checked}</b> of ${SHOPS.length} checked by bot</span>`+
+    `<span class="stat"><b>${(counts.sold_out||0)+(counts.out||0)+(counts.pulled||0)}</b> sold out or pulled</span>`;
+  const q=$("q").value.trim().toLowerCase(),st=$("st").value,ss=$("ss").value;
+  const rows=all.filter(({s,v})=>(!q||(s.name+" "+s.state+" "+host(s.site)).toLowerCase().includes(q))&&(!st||s.state===st)&&(!ss||v.key===ss))
+    .sort((a,b)=>(ORDER[a.v.key]??20)-(ORDER[b.v.key]??20)||a.i-b.i);
+  $("rows").innerHTML=rows.map(({s,v},n)=>{
+    const links=[];
+    if(v.url)links.push(`<a class="${v.key==="in_stock"?"buy":""}" href="${esc(v.url)}" target="_blank" rel="noopener">${v.key==="in_stock"?"Buy":"Product"}</a>`);
+    links.push(`<a href="${esc(s.site)}" target="_blank" rel="noopener">Site</a>`);
+    if(s.decks)links.push(`<a href="${esc(s.decks)}" target="_blank" rel="noopener">Decks</a>`);
+    links.push(`<a href="${esc(gsearch(s.site))}" target="_blank" rel="noopener">Find Pokémon</a>`);
+    return `<tr class="${v.key==="in_stock"?"instock":""}"><td class="n">${n+1}</td><td class="name">${esc(s.name)}</td><td class="st state">${esc(s.state)}</td><td class="status"><span class="pill ${v.cls}">${esc(v.label)}</span><span class="live">${v.live?"bot":"manual"}</span></td><td class="lk"><div class="links">${links.join("")}</div></td><td class="nt note">${esc(s.note)}</td></tr>`;
+  }).join("")||`<tr><td colspan="6" class="msg">No shops match that search.</td></tr>`;
+  $("updated").textContent=STATUS.checked_at?`Bot checked ${ago(STATUS.checked_at)}`:"Waiting for the first bot check";
+}
+
+async function loadStatus(){
+  const btn=$("refresh");btn.disabled=true;btn.classList.add("spin");
+  try{
+    const r=await fetch("status.json?t="+Date.now(),{cache:"no-store"});
+    if(r.ok)STATUS=await r.json();
+    lastFetch=Date.now();
+  }catch(e){
+    $("updated").textContent="Couldn't load the latest check. Try Refresh again.";
+  }finally{btn.disabled=false;btn.classList.remove("spin");render();}
+}
+
+async function init(){
+  try{
+    const r=await fetch("shops.json?t="+Date.now(),{cache:"no-store"});
+    SHOPS=await r.json();
+  }catch(e){$("rows").innerHTML=`<tr><td colspan="6" class="msg">Couldn't load the shop list. Reload the page.</td></tr>`;return}
+  filters();
+  ["q","st","ss"].forEach(id=>$(id).addEventListener("input",render));
+  $("refresh").addEventListener("click",loadStatus);
+  await loadStatus();
+  setInterval(()=>{if(document.visibilityState==="visible")loadStatus()},5*60*1000);
+  setInterval(()=>{if(STATUS.checked_at)$("updated").textContent=`Bot checked ${ago(STATUS.checked_at)}`},30000);
+}
+init();
+</script>
+</body>
+</html>
