@@ -8,8 +8,8 @@ How each shop is checked:
   2. Otherwise ask the shop's Shopify search (/search/suggest.json) for "pokemon tcg blind bag".
   3. Non-Shopify shops (or blocked requests) are marked "unchecked" and keep their manual status.
 
-status.json is only rewritten when a result changes, or once an hour as a heartbeat,
-so the scheduled workflow doesn't commit every 15 minutes for nothing.
+status.json is rewritten when a result changes and at least every 15 minutes,
+so the page can show when the bot last checked.
 """
 import json
 import re
@@ -25,7 +25,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 SHOPS = HERE / "shops.json"
 STATUS = HERE / "status.json"
-HEARTBEAT_MIN = 60
+HEARTBEAT_MIN = 14  # write every run so the page shows when the bot last checked
 TIMEOUT = 12
 UA = "Mozilla/5.0 (compatible; GrailzBlindBagRadar/1.0; +https://grailzking.github.io/grailz-drops/blind-bag-radar/)"
 QUERY = "pokemon tcg blind bag"

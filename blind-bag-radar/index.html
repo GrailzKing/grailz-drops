@@ -87,7 +87,7 @@ footer a{color:var(--accent)}
 <header>
   <a class="back" href="../">&larr; Grailz Drops Calendar</a>
   <h1>Blind Bag Radar</h1>
-  <p>100 US skate shops checked for the Santa Cruz x Pokémon TCG blind bag decks (item no. 11117698, dropped Oct 17, 2026). A bot checks every shop it can read about every 15 minutes. In-stock shops jump to the top.</p>
+  <p>100 US skate shops checked for the Santa Cruz x Pokémon TCG blind bag decks (item no. 11117698, dropped Oct 17, 2026). Refresh checks shops live; a bot also rechecks every shop every 15 minutes. In-stock shops jump to the top.</p>
   <div class="stats" id="stats"></div>
 </header>
 
@@ -110,7 +110,7 @@ footer a{color:var(--accent)}
 </div>
 
 <footer>
-  <span><b>How the status works.</b> "In stock" and "Sold out" come from the bot's last check of the shop's own product listing. Shops it can't read automatically (non-Shopify sites, or sites that block bots) keep the status from a manual check on Oct 17, 2026, marked "manual". Use "Find Pokémon" to search any shop's site yourself.</span>
+  <span><b>How the status works.</b> Refresh checks every shop with a known product page live from your browser ("live just now"). The bot checks all 100 shops every 15 minutes ("bot"). Shops it can't read automatically (non-Shopify sites, or sites that block bots) keep the status from a manual check on Oct 17, 2026, marked "manual". Use "Find Pokémon" to search any shop's site yourself.</span>
   <span>Every shop is US-based with an online store, but most haven't been individually confirmed to ship to every US state. Prices and stock change fast; always confirm on the shop's page.</span>
   <span>Grailz Discord · Not affiliated with Santa Cruz Skateboards, NHS Inc., The Pokémon Company or any shop listed.</span>
 </footer>
@@ -120,7 +120,7 @@ footer a{color:var(--accent)}
 const BASE={waves:["Releasing in waves","s-watch"],drop:["Drop page live","s-watch"],annc:["Announced online drop","s-watch"],resale:["Resale price","s-watch"],out:["Sold out","s-out"],pulled:["Listing pulled","s-out"],store:["In store only","s-out"],none:["Not checked","s-none"]};
 const LIVE={in_stock:["In stock","s-ok"],sold_out:["Sold out","s-out"],not_listed:["Not listed","s-none"]};
 const ORDER={in_stock:0,waves:1,drop:2,annc:3,resale:4,sold_out:5,out:6,pulled:7,store:8,not_listed:9,none:10};
-let SHOPS=[],STATUS={shops:{}},lastFetch=0;
+let SHOPS=[],STATUS={shops:{}},LIVECHK={},liveAt=null,lastFetch=0;
 
 const $=id=>document.getElementById(id);
 const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){return u}};
@@ -129,12 +129,16 @@ const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 const ago=iso=>{if(!iso)return"never";const m=Math.round((Date.now()-new Date(iso))/60000);return m<1?"just now":m<60?m+" min ago":Math.round(m/60)+" hr ago"};
 
 function view(s){
+  const now=LIVECHK[s.name];
+  if(now){
+    return {key:now.state,label:LIVE[now.state][0]+(now.price?" "+now.price:""),cls:LIVE[now.state][1],src:"live",url:now.url};
+  }
   const live=STATUS.shops?.[s.name];
   if(live&&LIVE[live.state]){
-    return {key:live.state,label:LIVE[live.state][0]+(live.price?" "+live.price:""),cls:LIVE[live.state][1],live:true,url:live.url};
+    return {key:live.state,label:LIVE[live.state][0]+(live.price?" "+live.price:""),cls:LIVE[live.state][1],src:"bot",url:live.url};
   }
   const b=BASE[s.baseline]||BASE.none;
-  return {key:s.baseline,label:b[0],cls:b[1],live:false,url:""};
+  return {key:s.baseline,label:b[0],cls:b[1],src:"manual",url:""};
 }
 
 function filters(){
@@ -166,17 +170,45 @@ function render(){
     links.push(`<a href="${esc(s.site)}" target="_blank" rel="noopener">Site</a>`);
     if(s.decks)links.push(`<a href="${esc(s.decks)}" target="_blank" rel="noopener">Decks</a>`);
     links.push(`<a href="${esc(gsearch(s.site))}" target="_blank" rel="noopener">Find Pokémon</a>`);
-    return `<tr class="${v.key==="in_stock"?"instock":""}"><td class="n">${n+1}</td><td class="name">${esc(s.name)}</td><td class="st state">${esc(s.state)}</td><td class="status"><span class="pill ${v.cls}">${esc(v.label)}</span><span class="live">${v.live?"bot":"manual"}</span></td><td class="lk"><div class="links">${links.join("")}</div></td><td class="nt note">${esc(s.note)}</td></tr>`;
+    return `<tr class="${v.key==="in_stock"?"instock":""}"><td class="n">${n+1}</td><td class="name">${esc(s.name)}</td><td class="st state">${esc(s.state)}</td><td class="status"><span class="pill ${v.cls}">${esc(v.label)}</span><span class="live">${v.src==="live"?"live just now":v.src}</span></td><td class="lk"><div class="links">${links.join("")}</div></td><td class="nt note">${esc(s.note)}</td></tr>`;
   }).join("")||`<tr><td colspan="6" class="msg">No shops match that search.</td></tr>`;
-  $("updated").textContent=STATUS.checked_at?`Bot checked ${ago(STATUS.checked_at)}`:"Waiting for the first bot check";
+  updatedText();
+}
+function updatedText(){
+  const n=Object.keys(LIVECHK).length;
+  const bot=STATUS.checked_at?`bot checked all shops ${ago(STATUS.checked_at)}`:"waiting for the first bot check";
+  $("updated").textContent=liveAt?`${n} shops checked live ${ago(liveAt)} · ${bot}`:bot.charAt(0).toUpperCase()+bot.slice(1);
+}
+
+// Shops whose product page we know: check them right now from this browser (Shopify's .js endpoint allows it)
+async function liveCheck(){
+  const targets=SHOPS.map(s=>({s,url:(STATUS.shops?.[s.name]?.url)||s.product})).filter(t=>t.url);
+  const next={};
+  await Promise.all(targets.map(async({s,url})=>{
+    const u=url.split("?")[0].replace(/\/$/,"");
+    try{
+      const ctl=new AbortController(),tm=setTimeout(()=>ctl.abort(),10000);
+      const r=await fetch(u+".js?t="+Date.now(),{cache:"no-store",signal:ctl.signal});
+      clearTimeout(tm);
+      if(r.status===404){next[s.name]={state:"not_listed",price:"",url:""};return}
+      if(!r.ok)return;
+      const j=await r.json();
+      const avail=!!j.available||(j.variants||[]).some(v=>v.available);
+      next[s.name]={state:avail?"in_stock":"sold_out",price:j.price!=null?"$"+(j.price/100).toFixed(2):"",url:u};
+    }catch(e){/* shop blocks browser checks; keep the bot's result */}
+  }));
+  LIVECHK=next;liveAt=new Date().toISOString();
 }
 
 async function loadStatus(){
   const btn=$("refresh");btn.disabled=true;btn.classList.add("spin");
+  $("updated").textContent="Checking shops…";
   try{
     const r=await fetch("status.json?t="+Date.now(),{cache:"no-store"});
     if(r.ok)STATUS=await r.json();
     lastFetch=Date.now();
+    render();
+    await liveCheck();
   }catch(e){
     $("updated").textContent="Couldn't load the latest check. Try Refresh again.";
   }finally{btn.disabled=false;btn.classList.remove("spin");render();}
@@ -192,7 +224,7 @@ async function init(){
   $("refresh").addEventListener("click",loadStatus);
   await loadStatus();
   setInterval(()=>{if(document.visibilityState==="visible")loadStatus()},5*60*1000);
-  setInterval(()=>{if(STATUS.checked_at)$("updated").textContent=`Bot checked ${ago(STATUS.checked_at)}`},30000);
+  setInterval(()=>{if(!$("refresh").disabled)updatedText()},30000);
 }
 init();
 </script>
