@@ -1,1 +1,645 @@
-{"checked_at": null, "shops": {}}
+{
+ "checked_at": "2026-10-17T15:17:05+00:00",
+ "shops": {
+  "NHS Skate Direct (official Santa Cruz)": {
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://nhsskatedirect.com/products/8in-pokemon-tcg-blind-bag-santa-cruz-skateboard-deck",
+   "title": "8.0in Pokémon TCG Blind Bag Santa Cruz Skateboard Deck"
+  },
+  "Zumiez": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Amateur Athlete": {
+   "state": "sold_out",
+   "price": "$155.00",
+   "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
+   "title": "SANTA CRUZ POKÉMON TCG BLIND BAG SKATEBOARD DECK 8.0 (1 Per/house hold)"
+  },
+  "The Longboard Store": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Skate Warehouse": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "TGM Skateboards": {
+   "state": "in_stock",
+   "price": "$249.95",
+   "url": "https://tgmskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-0in-x-31-6in",
+   "title": "Santa Cruz x Pokémon TCG Blind Bag Skateboard Deck 8.0in x 31.6in"
+  },
+  "Old Skull Skateboards": {
+   "state": "sold_out",
+   "price": "$154.95",
+   "url": "https://oldskullskateboards.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-skateboard-deck",
+   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Skateboard Deck"
+  },
+  "Pharmacy Boardshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Mainland Skate & Surf": {
+   "state": "in_stock",
+   "price": "$249.99",
+   "url": "https://mainlandskateandsurf.com/products/santa-cruz-skateboards-x-pokemon-tcg-blind-bag-skateboard-deck",
+   "title": "Santa Cruz Skateboards X Pokémon TCG Blind Bag Skateboard Deck"
+  },
+  "Coast Board Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Humidity": {
+   "state": "sold_out",
+   "price": "$125.00",
+   "url": "https://humiditynola.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-deck",
+   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Deck"
+  },
+  "Forever Fly": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Darkside Snowboards": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Damage Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Tactics": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "CCS": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Warehouse Skateboards": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "SoCal Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "evo": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Long Beach Skate (LB Skate)": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Cal Skate": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Labor Skate Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Uprise Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Modern Skate & Surf": {
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://www.modernskate.com/products/tcg-blind-bag-deck",
+   "title": "SANTA CRUZ X POKEMON TCG BLIND BAG DECK"
+  },
+  "Skates USA": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "SPoT (Skatepark of Tampa)": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Black Sheep Skate Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "This Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Bluetile": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Atlas": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "DLX Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Skate Hub": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Deli Skate Supply": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "No Comply": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Rhythm Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Insanity Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Geometric Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "South Side Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Freedom Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Sidewalk Surfer": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Faces Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "The Block Skate Supply": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Relief Skate Supply": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Plus Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Westside Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "LoCo Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "303 Boards": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Satellite Boardshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "510 Skateboarding": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "818 Skate Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "APT Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Attic Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
+  },
+  "Bill's Wheels": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Brotherhood": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Ceremony Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "East 4th": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Heritage Skateboards": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Icon Boardshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Impact Skate": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Jokers Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Kingpin Skate": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "LA Skate": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "McGill's Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "NC Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Pacific Drive": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Pawnshop Skate": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Prodigy Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Ray's Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Santa Cruz Boardroom": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Skateworks": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Status Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Val Surf": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Xtreme Boardshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Sun Diego": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Kinetic Skateboarding": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Stratosphere Skateboards": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "First Gear Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Warped Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Studio Skate Supply": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Home Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Pure Boardshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Vu Skateboard Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Eastern Boarder": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Orchard Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Exodus Ride Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "3rd Lair": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Familia": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Escapist Skateboarding": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Infinity Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Boardparadise": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "NJ Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Pro Skateboard Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Krudco": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Seasons Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Manifest Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Embassy Boardshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Proper Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Holistic Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Salty Peaks": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "JSONDecodeError"
+  },
+  "Commonwealth": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
+  }
+ }
+}
