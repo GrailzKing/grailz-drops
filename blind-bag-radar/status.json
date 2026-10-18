@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T14:16:29+00:00",
+ "checked_at": "2026-10-18T14:30:56+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -184,10 +184,10 @@
    "title": ""
   },
   "Atlas": {
-   "state": "sold_out",
-   "price": "$140.00",
-   "url": "https://shop.atlasskateboarding.com/products/santa-cruz-x-pokemon-tcg-blind-bag-deck",
-   "title": "Santa Cruz X Pokémon TCG Blind Bag Deck"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "DLX Shop": {
    "state": "not_listed",
@@ -228,10 +228,10 @@
    "error": "JSONDecodeError"
   },
   "Geometric Skateshop": {
-   "state": "in_stock",
-   "price": "$200.00",
-   "url": "https://www.geometricskateshop.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-0",
-   "title": "Santa Cruz X Pokémon TCG Blind Bag Skateboard Deck - 8.0\""
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "South Side Skateshop": {
    "state": "not_listed",
@@ -840,10 +840,11 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Vault Boardshop": {
    "state": "unchecked",
@@ -916,10 +917,11 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -971,10 +973,11 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "BC Surf & Sport": {
    "state": "unchecked",
