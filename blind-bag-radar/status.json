@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T14:30:56+00:00",
+ "checked_at": "2026-10-18T14:45:22+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -184,10 +184,10 @@
    "title": ""
   },
   "Atlas": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
+   "state": "sold_out",
+   "price": "$140.00",
+   "url": "https://shop.atlasskateboarding.com/products/santa-cruz-x-pokemon-tcg-blind-bag-deck",
+   "title": "Santa Cruz X Pokémon TCG Blind Bag Deck"
   },
   "DLX Shop": {
    "state": "not_listed",
@@ -794,22 +794,25 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rip City Skates": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rose Street Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
