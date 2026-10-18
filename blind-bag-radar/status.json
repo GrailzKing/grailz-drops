@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T12:35:22+00:00",
+ "checked_at": "2026-10-18T12:49:49+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -794,18 +794,16 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rip City Skates": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rose Street Skateshop": {
    "state": "not_listed",
@@ -842,11 +840,10 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vault Boardshop": {
    "state": "unchecked",
@@ -888,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -919,11 +916,10 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -975,11 +971,10 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "BC Surf & Sport": {
    "state": "unchecked",
@@ -1017,11 +1012,10 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sartorius Sports": {
    "state": "unchecked",
@@ -1031,11 +1025,10 @@
    "error": "JSONDecodeError"
   },
   "Archives": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sister Skate Shop": {
    "state": "unchecked",
