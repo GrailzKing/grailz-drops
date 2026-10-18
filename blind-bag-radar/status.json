@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T03:10:01+00:00",
+ "checked_at": "2026-10-18T03:24:28+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -267,18 +267,16 @@
    "title": ""
   },
   "Relief Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Plus Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Westside Skateshop": {
    "state": "unchecked",
@@ -302,11 +300,10 @@
    "error": "HTTPError"
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "510 Skateboarding": {
    "state": "unchecked",
@@ -1265,7 +1262,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Mocean": {
    "state": "unchecked",
