@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T03:38:56+00:00",
+ "checked_at": "2026-10-18T03:53:24+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -261,11 +261,10 @@
    "error": "JSONDecodeError"
   },
   "The Block Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Relief Skate Supply": {
    "state": "not_listed",
@@ -274,11 +273,10 @@
    "title": ""
   },
   "Plus Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Westside Skateshop": {
    "state": "unchecked",
@@ -302,11 +300,10 @@
    "error": "HTTPError"
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "510 Skateboarding": {
    "state": "unchecked",
@@ -316,11 +313,10 @@
    "error": "HTTPError"
   },
   "818 Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "APT Skateshop": {
    "state": "unchecked",
@@ -943,7 +939,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
