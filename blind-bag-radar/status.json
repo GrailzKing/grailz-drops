@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T14:02:02+00:00",
+ "checked_at": "2026-10-18T14:16:29+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -768,11 +768,10 @@
    "title": ""
   },
   "Overload": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pancho's": {
    "state": "unchecked",
@@ -782,11 +781,10 @@
    "error": "HTTPError"
   },
   "PLA Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Programme": {
    "state": "unchecked",
@@ -796,25 +794,22 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rip City Skates": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rose Street Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
@@ -845,11 +840,10 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vault Boardshop": {
    "state": "unchecked",
@@ -922,11 +916,10 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -978,11 +971,10 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "BC Surf & Sport": {
    "state": "unchecked",
@@ -1213,7 +1205,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "HTTPError"
   },
   "Mocean": {
    "state": "unchecked",
@@ -1230,10 +1222,11 @@
    "error": "HTTPError"
   },
   "Boarding House": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Solstice Skateboarding": {
    "state": "unchecked",
