@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T19:06:27+00:00",
+ "checked_at": "2026-10-18T19:20:54+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -293,11 +293,10 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Satellite Boardshop": {
    "state": "not_listed",
@@ -306,17 +305,17 @@
    "title": ""
   },
   "510 Skateboarding": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "818 Skate Shop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
-  },
-  "818 Skate Shop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
   },
   "APT Skateshop": {
    "state": "unchecked",
@@ -939,7 +938,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
