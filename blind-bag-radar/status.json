@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T20:33:13+00:00",
+ "checked_at": "2026-10-18T20:33:51+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -300,11 +300,10 @@
    "error": "HTTPError"
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "510 Skateboarding": {
    "state": "unchecked",
@@ -941,7 +940,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -1263,7 +1262,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Mocean": {
    "state": "unchecked",
