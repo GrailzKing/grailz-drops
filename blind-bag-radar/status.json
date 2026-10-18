@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T13:33:09+00:00",
+ "checked_at": "2026-10-18T13:47:36+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -228,10 +228,10 @@
    "error": "JSONDecodeError"
   },
   "Geometric Skateshop": {
-   "state": "in_stock",
-   "price": "$200.00",
-   "url": "https://www.geometricskateshop.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-0",
-   "title": "Santa Cruz X Pokémon TCG Blind Bag Skateboard Deck - 8.0\""
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "South Side Skateshop": {
    "state": "not_listed",
@@ -527,10 +527,10 @@
    "title": ""
   },
   "Orchard Skateshop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
+   "state": "sold_out",
+   "price": "$155.00",
+   "url": "https://orchardshop.com/products/santa-cruz-x-pokemon-tcg-blind-bag-deck",
+   "title": "Santa Cruz x Pokémon TCG Blind Bag Deck"
   },
   "Exodus Ride Shop": {
    "state": "not_listed",
@@ -916,10 +916,11 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -971,10 +972,11 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "BC Surf & Sport": {
    "state": "unchecked",
@@ -1012,10 +1014,11 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sartorius Sports": {
    "state": "unchecked",
@@ -1025,16 +1028,18 @@
    "error": "JSONDecodeError"
   },
   "Archives": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sister Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
