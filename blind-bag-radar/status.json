@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-18T21:17:14+00:00",
+ "checked_at": "2026-10-18T21:31:42+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -155,7 +155,7 @@
   },
   "Skates USA": {
    "state": "in_stock",
-   "price": "$299.90",
+   "price": "$325.95",
    "url": "https://www.skatesusa.com/products/santa-cruz-x-pokemon-tcg-blind-bag-deck-8-0",
    "title": "Santa Cruz X Pokémon TCG Blind Bag Skateboard Deck - 8.0\" Assorted [Limited]"
   },
@@ -299,32 +299,28 @@
    "title": ""
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "510 Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "818 Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "APT Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Attic Skateshop": {
    "state": "unchecked",
@@ -1027,10 +1023,11 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "BC Surf & Sport": {
    "state": "unchecked",
@@ -1299,10 +1296,11 @@
    "error": "HTTPError"
   },
   "Plus Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Premier": {
    "state": "unchecked",
