@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-19T16:07:40+00:00",
+ "checked_at": "2026-10-19T16:22:07+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -293,10 +293,10 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "sold_out",
-   "price": "$139.95",
-   "url": "https://www.303boards.com/products/santa-cruz-pokemon-tcg-blindbag-deck-8",
-   "title": "Santa Cruz - Santa Cruz x Pokémon TCG Blind Bag Deck (8\")"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Satellite Boardshop": {
    "state": "not_listed",
@@ -442,11 +442,10 @@
    "error": "HTTPError"
   },
   "Skateworks": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Status Skateshop": {
    "state": "not_listed",
@@ -573,28 +572,32 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pro Skateboard Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Krudco": {
-   "state": "sold_out",
-   "price": "$140.00",
-   "url": "https://www.krudco.com/products/pokemon-tcg-blind-bag-santa-cruz-deck",
-   "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
-  },
-  "Seasons Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Seasons Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Manifest Skateshop": {
    "state": "unchecked",
@@ -909,7 +912,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -1283,10 +1286,11 @@
    "error": "HTTPError"
   },
   "Skater's Advocate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Olympia Skateshop": {
    "state": "unchecked",
