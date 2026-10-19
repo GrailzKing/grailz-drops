@@ -139,7 +139,7 @@
       "cat": "TOPPS",
       "date": "10-5",
       "month": 10,
-      "day": 5,
+      "day": 30,
       "tbd": false,
       "name": "2026-bowman-u-best-football",
       "url1": "https://www.topps.com/release-calendar",
@@ -839,6 +839,67 @@
       "url1": "https://www.usmint.gov/product-schedule/2026/?start=0&sz=64",
       "url2": "https://www.govmint.com/learn/post/united-states-mint-2026-coin-release-schedule",
       "time": "12:00"
+    },
+    {
+      "cat": "TOPPS",
+      "month": 10,
+      "day": 19,
+      "name": "2026-topps-chrome-football",
+      "url1": "https://www.topps.com/products/2026-topps-chrome-football",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": 10,
+      "day": 25,
+      "name": "2026-topps-gilded-collection-baseball",
+      "url1": "https://www.topps.com/products/2026-topps-gilded-collection-baseball",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": 10,
+      "day": 27,
+      "name": "2025-26-topps-stadium-club-basketball",
+      "url1": "https://www.topps.com/products/2025-26-topps-stadium-club-basketball",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": 10,
+      "day": 28,
+      "name": "2026-topps-five-star-baseball",
+      "url1": "https://www.topps.com/products/2026-topps-five-star-baseball",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": 10,
+      "day": 28,
+      "name": "2026-topps-collector-kit-wave-2",
+      "url1": "https://www.topps.com/products/2026-topps-collector-kit-wave-2",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": 10,
+      "day": 29,
+      "name": "2026-bowman-football-sapphire-edition",
+      "url1": "https://www.topps.com/products/2026-bowman-football-sapphire-edition",
+      "url2": "",
+      "time": "12:00",
+      "price": null
     }
-  ]
+  ],
+  "drop_count": 83
 }
