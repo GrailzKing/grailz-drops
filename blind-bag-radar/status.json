@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-19T23:36:58+00:00",
+ "checked_at": "2026-10-19T23:51:26+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -59,18 +59,16 @@
    "title": "Santa Cruz Skateboards X Pokémon TCG Blind Bag Skateboard Deck"
   },
   "Coast Board Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Humidity": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$125.00",
+   "url": "https://humiditynola.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-deck",
+   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Deck"
   },
   "Forever Fly": {
    "state": "unchecked",
@@ -126,11 +124,10 @@
    "title": ""
   },
   "Long Beach Skate (LB Skate)": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Cal Skate": {
    "state": "not_listed",
@@ -175,18 +172,16 @@
    "title": ""
   },
   "This Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Bluetile": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Atlas": {
    "state": "sold_out",
@@ -465,11 +460,10 @@
    "title": ""
   },
   "Xtreme Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sun Diego": {
    "state": "not_listed",
@@ -521,16 +515,18 @@
    "title": ""
   },
   "Vu Skateboard Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Eastern Boarder": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Orchard Skateshop": {
    "state": "unchecked",
@@ -540,10 +536,11 @@
    "error": "HTTPError"
   },
   "Exodus Ride Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "3rd Lair": {
    "state": "unchecked",
@@ -921,7 +918,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
