@@ -560,6 +560,16 @@
       "pieces": 9500
     },
     {
+      "cat": "MATTEL CREATIONS",
+      "date": "10-20",
+      "month": 10,
+      "day": 20,
+      "name": "hot-wheels-rlc-exclusive-rwb-porsche-930",
+      "url1": "https://creations.mattel.com/products/hot-wheels-rlc-exclusive-rwb-porsche-930-jjy69",
+      "time": "11:00",
+      "price": 38.0
+    },
+    {
       "cat": "TOPPS",
       "date": "10-21",
       "month": 10,
@@ -623,6 +633,16 @@
       "url1": "https://topps.com/release-calendar",
       "url2": "",
       "time": "12:00"
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "date": "10-23",
+      "month": 10,
+      "day": 23,
+      "name": "pidgin-doll-x-atomic-lab-12in-vinyl-fashion-doll",
+      "url1": "https://atomiclabtoys.com",
+      "time": "00:00",
+      "tbd": false
     },
     {
       "cat": "VINYL & MUSIC",
@@ -691,6 +711,16 @@
       "time": "09:00"
     },
     {
+      "cat": "MATTEL CREATIONS",
+      "date": "10-29",
+      "month": 10,
+      "day": 29,
+      "name": "monster-high-skullector-oogie-boogie-nightmare-before-christmas-doll-fang-club",
+      "url1": "https://creations.mattel.com/products/monster-high-the-nightmare-before-christmas-oogie-boogie-doll-jkm56",
+      "time": "11:00",
+      "price": 70.0
+    },
+    {
       "cat": "SUPREME FW26",
       "date": "10-29",
       "month": 10,
@@ -722,6 +752,16 @@
       "url1": "https://direct.playstation.com",
       "url2": "https://resellcalendar.com/news/news/playstation-lisa-dualsense-controller-limited-edition-ps5-blackpink/",
       "time": "09:00"
+    },
+    {
+      "cat": "MATTEL CREATIONS",
+      "date": "10-30",
+      "month": 10,
+      "day": 30,
+      "name": "monster-high-skullector-oogie-boogie-nightmare-before-christmas-doll",
+      "url1": "https://creations.mattel.com/products/monster-high-the-nightmare-before-christmas-oogie-boogie-doll-jkm56",
+      "time": "11:00",
+      "price": 70.0
     },
     {
       "cat": "ONE PIECE TCG",
