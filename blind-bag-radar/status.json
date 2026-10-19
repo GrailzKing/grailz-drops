@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-19T20:57:40+00:00",
+ "checked_at": "2026-10-19T21:12:08+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -642,17 +642,17 @@
    "error": "HTTPError"
   },
   "Blue and Gold": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Faith Skate Supply": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
-  },
-  "Faith Skate Supply": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
   },
   "Funwheels": {
    "state": "unchecked",
@@ -697,11 +697,10 @@
    "error": "HTTPError"
   },
   "Boarders LA": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Breakfree Skateshop": {
    "state": "unchecked",
@@ -904,7 +903,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
