@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-19T15:53:12+00:00",
+ "checked_at": "2026-10-19T16:07:40+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -16,7 +16,7 @@
   },
   "Amateur Athlete": {
    "state": "sold_out",
-   "price": "$155.00",
+   "price": "$225.00",
    "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
    "title": "SANTA CRUZ POKÉMON TCG BLIND BAG SKATEBOARD DECK 8.0 (1 Per/house hold)"
   },
@@ -293,10 +293,10 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://www.303boards.com/products/santa-cruz-pokemon-tcg-blindbag-deck-8",
+   "title": "Santa Cruz - Santa Cruz x Pokémon TCG Blind Bag Deck (8\")"
   },
   "Satellite Boardshop": {
    "state": "not_listed",
@@ -442,10 +442,11 @@
    "error": "HTTPError"
   },
   "Skateworks": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Status Skateshop": {
    "state": "not_listed",
@@ -572,32 +573,28 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pro Skateboard Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Krudco": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$140.00",
+   "url": "https://www.krudco.com/products/pokemon-tcg-blind-bag-santa-cruz-deck",
+   "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Manifest Skateshop": {
    "state": "unchecked",
@@ -1286,11 +1283,10 @@
    "error": "HTTPError"
   },
   "Skater's Advocate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Olympia Skateshop": {
    "state": "unchecked",
@@ -1300,10 +1296,11 @@
    "error": "HTTPError"
   },
   "People Skate & Snowboard": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
