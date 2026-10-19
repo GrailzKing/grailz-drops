@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-19T19:15:42+00:00",
+ "checked_at": "2026-10-19T19:30:11+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -196,10 +196,11 @@
    "title": ""
   },
   "Skate Hub": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Deli Skate Supply": {
    "state": "not_listed",
@@ -299,10 +300,11 @@
    "title": ""
   },
   "Satellite Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "510 Skateboarding": {
    "state": "not_listed",
@@ -491,10 +493,11 @@
    "error": "HTTPError"
   },
   "Warped Skateshop": {
-   "state": "in_stock",
-   "price": "$200.00",
-   "url": "https://warpedskateshop.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
-   "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Studio Skate Supply": {
    "state": "not_listed",
@@ -503,10 +506,11 @@
    "title": ""
   },
   "Home Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pure Boardshop": {
    "state": "not_listed",
@@ -533,10 +537,11 @@
    "title": ""
   },
   "Exodus Ride Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "3rd Lair": {
    "state": "unchecked",
@@ -914,7 +919,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
