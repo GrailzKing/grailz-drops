@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-20T15:47:41+00:00",
+ "checked_at": "2026-10-20T16:02:09+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -35,10 +35,10 @@
    "error": "HTTPError"
   },
   "TGM Skateboards": {
-   "state": "in_stock",
-   "price": "$219.95",
-   "url": "https://tgmskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-0in-x-31-6in",
-   "title": "Santa Cruz x Pokémon TCG Blind Bag Skateboard Deck 8.0in x 31.6in"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Old Skull Skateboards": {
    "state": "sold_out",
@@ -737,11 +737,10 @@
    "title": "Santa Cruz x Pokémon TCG Blind Bag Deck"
   },
   "Garage Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Kingswell": {
    "state": "unchecked",
@@ -751,32 +750,28 @@
    "error": "JSONDecodeError"
   },
   "Lowkey Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Marriage Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Midnite Theories": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Overload": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pancho's": {
    "state": "unchecked",
@@ -786,11 +781,10 @@
    "error": "HTTPError"
   },
   "PLA Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Programme": {
    "state": "unchecked",
@@ -800,18 +794,16 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rip City Skates": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rose Street Skateshop": {
    "state": "unchecked",
