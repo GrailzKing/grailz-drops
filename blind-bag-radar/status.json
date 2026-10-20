@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-20T22:04:20+00:00",
+ "checked_at": "2026-10-20T22:18:48+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -293,10 +293,10 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://www.303boards.com/products/santa-cruz-pokemon-tcg-blindbag-deck-8",
+   "title": "Santa Cruz - Santa Cruz x Pokémon TCG Blind Bag Deck (8\")"
   },
   "Satellite Boardshop": {
    "state": "not_listed",
