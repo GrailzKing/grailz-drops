@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-20T20:52:01+00:00",
+ "checked_at": "2026-10-20T21:06:29+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -491,10 +491,10 @@
    "error": "HTTPError"
   },
   "Warped Skateshop": {
-   "state": "sold_out",
-   "price": "$200.00",
-   "url": "https://warpedskateshop.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
-   "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Studio Skate Supply": {
    "state": "not_listed",
