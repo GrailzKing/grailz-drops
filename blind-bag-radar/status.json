@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-20T14:35:24+00:00",
+ "checked_at": "2026-10-20T14:49:51+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -642,16 +642,18 @@
    "error": "HTTPError"
   },
   "Blue and Gold": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Faith Skate Supply": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Funwheels": {
    "state": "unchecked",
@@ -661,10 +663,11 @@
    "error": "HTTPError"
   },
   "Reset Mercantile": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "World Conspiracy": {
    "state": "unchecked",
