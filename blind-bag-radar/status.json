@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-21T12:04:55+00:00",
+ "checked_at": "2026-10-21T12:19:23+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -747,7 +747,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "TimeoutError"
   },
   "Lowkey Skateshop": {
    "state": "not_listed",
