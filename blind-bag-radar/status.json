@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-21T19:48:57+00:00",
+ "checked_at": "2026-10-21T20:03:25+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -35,7 +35,7 @@
    "error": "HTTPError"
   },
   "TGM Skateboards": {
-   "state": "in_stock",
+   "state": "sold_out",
    "price": "$219.95",
    "url": "https://tgmskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-0in-x-31-6in",
    "title": "Santa Cruz x Pokémon TCG Blind Bag Skateboard Deck 8.0in x 31.6in"
@@ -885,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
