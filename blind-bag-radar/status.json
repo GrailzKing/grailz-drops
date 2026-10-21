@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-21T20:32:22+00:00",
+ "checked_at": "2026-10-21T20:46:50+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -115,7 +115,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "evo": {
    "state": "not_listed",
@@ -488,7 +488,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Warped Skateshop": {
    "state": "not_listed",
@@ -885,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -1002,7 +1002,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Transition Sports": {
    "state": "unchecked",
