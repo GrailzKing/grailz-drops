@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-22T20:55:33+00:00",
+ "checked_at": "2026-10-22T20:56:10+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -18,7 +18,7 @@
    "state": "in_stock",
    "price": "$225.00",
    "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
-   "title": "SANTA CRUZ POKÉMON TCG BLIND BAG SKATEBOARD DECK 8.0 (1 Per/house hold)"
+   "title": "SANTA CRUZ POKÉMON TCG BLIND BAG SKATEBOARD DECK 8.0 W/ GRIP"
   },
   "The Longboard Store": {
    "state": "unchecked",
@@ -98,10 +98,10 @@
    "error": "HTTPError"
   },
   "CCS": {
-   "state": "sold_out",
-   "price": "$154.95",
-   "url": "https://shop.ccs.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-00",
-   "title": "Santa Cruz x Pokemon TCG Blind Bag Skateboard Deck - 8.00\""
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Warehouse Skateboards": {
    "state": "unchecked",
@@ -971,10 +971,11 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "BC Surf & Sport": {
    "state": "unchecked",
@@ -1191,7 +1192,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Mocean": {
    "state": "sold_out",
