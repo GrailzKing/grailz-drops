@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-22T16:19:47+00:00",
+ "checked_at": "2026-10-22T16:20:27+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -731,10 +731,10 @@
    "title": ""
   },
   "Inner City Skate (IDS)": {
-   "state": "sold_out",
-   "price": "$139.99",
-   "url": "https://innercityskate.com/products/sc-bb",
-   "title": "Santa Cruz x Pokémon TCG Blind Bag Deck"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Garage Skate Shop": {
    "state": "not_listed",
@@ -981,7 +981,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Emage": {
    "state": "unchecked",
