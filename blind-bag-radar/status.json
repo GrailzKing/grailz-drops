@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-22T21:25:04+00:00",
+ "checked_at": "2026-10-22T21:39:30+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -98,10 +98,10 @@
    "error": "HTTPError"
   },
   "CCS": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
+   "state": "sold_out",
+   "price": "$154.95",
+   "url": "https://shop.ccs.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-00",
+   "title": "Santa Cruz x Pokemon TCG Blind Bag Skateboard Deck - 8.00\""
   },
   "Warehouse Skateboards": {
    "state": "unchecked",
