@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-22T16:34:55+00:00",
+ "checked_at": "2026-10-22T16:49:25+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -348,7 +348,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "HTTPError"
   },
   "East 4th": {
    "state": "unchecked",
@@ -692,7 +692,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "HTTPError"
   },
   "Boarders LA": {
    "state": "not_listed",
@@ -1067,7 +1067,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "HTTPError"
   },
   "Compound Boardshop": {
    "state": "unchecked",
