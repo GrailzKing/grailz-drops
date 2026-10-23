@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-23T22:13:48+00:00",
+ "checked_at": "2026-10-23T22:28:16+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -841,7 +841,7 @@
   },
   "Unmodern Skateshop": {
    "state": "in_stock",
-   "price": "$359.00",
+   "price": "$249.00",
    "url": "https://unmodernskateshop.com/products/nhs-pokemon-tcg-blind-bag-santa-cruz-decks",
    "title": "SANTA CRUZ X POKÉMON | TCG Blind BAG Deck"
   },
