@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-23T10:38:16+00:00",
+ "checked_at": "2026-10-23T10:53:18+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -413,7 +413,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Pawnshop Skate": {
    "state": "not_listed",
@@ -678,7 +678,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Baker Street Skate": {
    "state": "unchecked",
@@ -885,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -913,7 +913,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Furnace Skate": {
    "state": "not_listed",
@@ -1022,7 +1022,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Archives": {
    "state": "not_listed",
