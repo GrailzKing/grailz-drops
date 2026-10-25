@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-25T12:36:56+00:00",
+ "checked_at": "2026-10-25T12:51:23+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1093,7 +1093,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Parkside Skate Shop": {
    "state": "not_listed",
