@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-26T04:47:38+00:00",
+ "checked_at": "2026-10-26T05:02:05+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -251,7 +251,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Faces Skateshop": {
    "state": "unchecked",
