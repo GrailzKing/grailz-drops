@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-27T11:27:56+00:00",
+ "checked_at": "2026-10-27T11:42:23+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -341,7 +341,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Ceremony Skateshop": {
    "state": "unchecked",
@@ -406,7 +406,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Pacific Drive": {
    "state": "unchecked",
@@ -439,7 +439,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "RemoteDisconnected"
   },
   "Skateworks": {
    "state": "not_listed",
@@ -778,7 +778,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "PLA Skateboarding": {
    "state": "not_listed",
@@ -857,7 +857,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "805 Boardshop": {
    "state": "unchecked",
@@ -1074,7 +1074,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Waterboyz": {
    "state": "not_listed",
@@ -1216,7 +1216,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Theory Skate & Snow": {
    "state": "not_listed",
@@ -1259,7 +1259,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Cal Surf": {
    "state": "not_listed",
