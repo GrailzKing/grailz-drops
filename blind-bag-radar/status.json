@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-28T12:35:01+00:00",
+ "checked_at": "2026-10-28T12:49:28+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -488,7 +488,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Warped Skateshop": {
    "state": "not_listed",
