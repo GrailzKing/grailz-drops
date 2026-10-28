@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-28T14:45:27+00:00",
+ "checked_at": "2026-10-28T14:59:46+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -15,11 +15,10 @@
    "error": "JSONDecodeError"
   },
   "Amateur Athlete": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "TimeoutError"
+   "state": "sold_out",
+   "price": "$200.00",
+   "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
+   "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
   },
   "The Longboard Store": {
    "state": "unchecked",
@@ -886,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
