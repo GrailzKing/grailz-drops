@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-28T02:40:56+00:00",
+ "checked_at": "2026-10-28T02:55:24+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -658,7 +658,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Reset Mercantile": {
    "state": "not_listed",
@@ -899,7 +899,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Crooks Skate Shop": {
    "state": "unchecked",
@@ -1165,7 +1165,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "JSONDecodeError"
   },
   "Subsect Skateshop": {
    "state": "not_listed",
