@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-28T10:24:52+00:00",
+ "checked_at": "2026-10-28T10:39:22+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -892,7 +892,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "CB Supply Co": {
    "state": "unchecked",
@@ -1165,7 +1165,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "JSONDecodeError"
   },
   "Subsect Skateshop": {
    "state": "not_listed",
