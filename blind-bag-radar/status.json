@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-29T01:20:51+00:00",
+ "checked_at": "2026-10-29T01:35:19+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -885,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -1093,7 +1093,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Parkside Skate Shop": {
    "state": "not_listed",
