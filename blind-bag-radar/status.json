@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-29T03:31:00+00:00",
+ "checked_at": "2026-10-29T03:45:28+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -413,7 +413,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Pawnshop Skate": {
    "state": "not_listed",
@@ -639,7 +639,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Blue and Gold": {
    "state": "not_listed",
@@ -707,10 +707,11 @@
    "title": ""
   },
   "Brooklyn Projects": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "URLError"
   },
   "Everyday Skateshop": {
    "state": "not_listed",
