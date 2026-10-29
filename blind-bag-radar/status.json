@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-29T22:07:37+00:00",
+ "checked_at": "2026-10-29T22:22:07+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -53,10 +53,10 @@
    "title": ""
   },
   "Mainland Skate & Surf": {
-   "state": "in_stock",
-   "price": "$249.99",
-   "url": "https://mainlandskateandsurf.com/products/santa-cruz-skateboards-x-pokemon-tcg-blind-bag-skateboard-deck",
-   "title": "Santa Cruz Skateboards X Pokémon TCG Blind Bag Skateboard Deck"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Coast Board Shop": {
    "state": "not_listed",
