@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-30T23:15:08+00:00",
+ "checked_at": "2026-10-30T23:29:35+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -737,10 +737,10 @@
    "title": ""
   },
   "Garage Skate Shop": {
-   "state": "in_stock",
-   "price": "$139.95",
-   "url": "https://garageskateshop.com/products/santa-cruz-x-pokemon-blind-bag-deck-2026",
-   "title": "Santa Cruz x Pokemon Blind Bag Deck (2026)"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Kingswell": {
    "state": "unchecked",
@@ -885,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
