@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-30T22:46:15+00:00",
+ "checked_at": "2026-10-30T23:00:41+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -521,10 +521,11 @@
    "title": ""
   },
   "Eastern Boarder": {
-   "state": "in_stock",
-   "price": "$199.95",
-   "url": "https://easternboarder.com/products/santa-cruz-pokemon-tcg-blind-bag-deck",
-   "title": "Santa Cruz Pokemon TCG Blind Bag Deck 8.0\" (NO RETURNS)"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Orchard Skateshop": {
    "state": "not_listed",
