@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-30T14:47:44+00:00",
+ "checked_at": "2026-10-30T15:02:11+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -995,7 +995,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Prom Skates": {
    "state": "unchecked",
