@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-30T22:31:48+00:00",
+ "checked_at": "2026-10-30T22:46:15+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -737,7 +737,7 @@
    "title": ""
   },
   "Garage Skate Shop": {
-   "state": "sold_out",
+   "state": "in_stock",
    "price": "$139.95",
    "url": "https://garageskateshop.com/products/santa-cruz-x-pokemon-blind-bag-deck-2026",
    "title": "Santa Cruz x Pokemon Blind Bag Deck (2026)"
