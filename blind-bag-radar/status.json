@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-30T13:49:53+00:00",
+ "checked_at": "2026-10-30T14:04:21+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -885,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -899,7 +899,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Crooks Skate Shop": {
    "state": "unchecked",
@@ -1093,7 +1093,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Parkside Skate Shop": {
    "state": "not_listed",
@@ -1191,7 +1191,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Mocean": {
    "state": "sold_out",
