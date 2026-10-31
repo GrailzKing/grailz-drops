@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-31T17:52:59+00:00",
+ "checked_at": "2026-10-31T18:07:16+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -899,7 +899,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Crooks Skate Shop": {
    "state": "unchecked",
@@ -1191,7 +1191,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "HTTPError"
   },
   "Mocean": {
    "state": "sold_out",
