@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-31T11:11:32+00:00",
+ "checked_at": "2026-10-31T11:12:00+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -35,10 +35,11 @@
    "error": "HTTPError"
   },
   "TGM Skateboards": {
-   "state": "in_stock",
-   "price": "$219.95",
-   "url": "https://tgmskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-0in-x-31-6in",
-   "title": "Santa Cruz x Pokémon TCG Blind Bag Skateboard Deck 8.0in x 31.6in"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
   },
   "Old Skull Skateboards": {
    "state": "sold_out",
@@ -539,10 +540,11 @@
    "title": ""
   },
   "3rd Lair": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "TimeoutError"
   },
   "Familia": {
    "state": "not_listed",
@@ -1275,11 +1277,10 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Change": {
    "state": "unchecked",
