@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-31T15:00:57+00:00",
+ "checked_at": "2026-10-31T15:15:16+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -15,10 +15,11 @@
    "error": "JSONDecodeError"
   },
   "Amateur Athlete": {
-   "state": "sold_out",
-   "price": "$225.00",
-   "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
-   "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
   },
   "The Longboard Store": {
    "state": "unchecked",
@@ -41,11 +42,10 @@
    "title": "Santa Cruz x Pokémon TCG Blind Bag Skateboard Deck 8.0in x 31.6in"
   },
   "Old Skull Skateboards": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "URLError"
+   "state": "sold_out",
+   "price": "$154.95",
+   "url": "https://oldskullskateboards.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-skateboard-deck",
+   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Skateboard Deck"
   },
   "Pharmacy Boardshop": {
    "state": "not_listed",
@@ -1175,10 +1175,11 @@
    "title": ""
   },
   "River Rat": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Thunderkats": {
    "state": "unchecked",
@@ -1195,25 +1196,22 @@
    "error": "HTTPError"
   },
   "Mocean": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
+   "title": "Santa Cruz X Pokémon TCG Blind Bag"
   },
   "Embark Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Boarding House": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Solstice Skateboarding": {
    "state": "unchecked",
@@ -1223,25 +1221,22 @@
    "error": "HTTPError"
   },
   "Theory Skate & Snow": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Plus Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Premier": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skater's Advocate": {
    "state": "unchecked",
