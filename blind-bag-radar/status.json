@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-31T13:49:25+00:00",
+ "checked_at": "2026-10-31T14:03:43+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -41,11 +41,10 @@
    "title": "Santa Cruz x Pokémon TCG Blind Bag Skateboard Deck 8.0in x 31.6in"
   },
   "Old Skull Skateboards": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "URLError"
+   "state": "sold_out",
+   "price": "$154.95",
+   "url": "https://oldskullskateboards.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-skateboard-deck",
+   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Skateboard Deck"
   },
   "Pharmacy Boardshop": {
    "state": "not_listed",
@@ -66,10 +65,11 @@
    "title": ""
   },
   "Humidity": {
-   "state": "sold_out",
-   "price": "$125.00",
-   "url": "https://humiditynola.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-deck",
-   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Deck"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "URLError"
   },
   "Forever Fly": {
    "state": "unchecked",
