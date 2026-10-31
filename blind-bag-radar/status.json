@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-31T11:55:01+00:00",
+ "checked_at": "2026-10-31T12:09:19+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -35,17 +35,17 @@
    "error": "HTTPError"
   },
   "TGM Skateboards": {
+   "state": "in_stock",
+   "price": "$219.95",
+   "url": "https://tgmskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-0in-x-31-6in",
+   "title": "Santa Cruz x Pokémon TCG Blind Bag Skateboard Deck 8.0in x 31.6in"
+  },
+  "Old Skull Skateboards": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "URLError"
-  },
-  "Old Skull Skateboards": {
-   "state": "sold_out",
-   "price": "$154.95",
-   "url": "https://oldskullskateboards.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-skateboard-deck",
-   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Skateboard Deck"
   },
   "Pharmacy Boardshop": {
    "state": "not_listed",
@@ -708,40 +708,46 @@
    "title": ""
   },
   "Brooklyn Projects": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Everyday Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Goodtimes": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Hardline Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Inner City Skate (IDS)": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Garage Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Kingswell": {
    "state": "unchecked",
@@ -751,28 +757,32 @@
    "error": "JSONDecodeError"
   },
   "Lowkey Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Marriage Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Midnite Theories": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Overload": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pancho's": {
    "state": "unchecked",
@@ -782,10 +792,11 @@
    "error": "HTTPError"
   },
   "PLA Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Programme": {
    "state": "unchecked",
@@ -795,22 +806,25 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rip City Skates": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rose Street Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
@@ -841,10 +855,11 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "sold_out",
-   "price": "$249.00",
-   "url": "https://unmodernskateshop.com/products/nhs-pokemon-tcg-blind-bag-santa-cruz-decks",
-   "title": "SANTA CRUZ X POKÉMON | TCG Blind BAG Deck"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Vault Boardshop": {
    "state": "unchecked",
@@ -917,10 +932,11 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -972,17 +988,18 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "BC Surf & Sport": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "HTTPError"
   },
   "Emage": {
    "state": "unchecked",
@@ -1013,10 +1030,11 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sartorius Sports": {
    "state": "unchecked",
@@ -1026,16 +1044,18 @@
    "error": "JSONDecodeError"
   },
   "Archives": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sister Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
@@ -1052,16 +1072,18 @@
    "error": "HTTPError"
   },
   "Andrew": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anchors Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Necessary Skate Co": {
    "state": "unchecked",
@@ -1078,16 +1100,18 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Greater Miami Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
@@ -1097,10 +1121,11 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
@@ -1131,16 +1156,18 @@
    "error": "JSONDecodeError"
   },
   "Prestige Skateboards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Fargo Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Starlight Skatepark": {
    "state": "unchecked",
@@ -1150,16 +1177,18 @@
    "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Killer Skatepark": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rhett Skateboarding": {
    "state": "unchecked",
@@ -1169,16 +1198,18 @@
    "error": "JSONDecodeError"
   },
   "Subsect Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "River Rat": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Thunderkats": {
    "state": "unchecked",
@@ -1195,10 +1226,11 @@
    "error": "HTTPError"
   },
   "Mocean": {
-   "state": "sold_out",
-   "price": "$139.95",
-   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
-   "title": "Santa Cruz X Pokémon TCG Blind Bag"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Embark Skateshop": {
    "state": "unchecked",
