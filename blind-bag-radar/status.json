@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-31T13:20:49+00:00",
+ "checked_at": "2026-10-31T13:35:07+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -738,11 +738,10 @@
    "title": ""
   },
   "Garage Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Kingswell": {
    "state": "unchecked",
@@ -759,18 +758,16 @@
    "error": "HTTPError"
   },
   "Marriage Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Midnite Theories": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Overload": {
    "state": "unchecked",
@@ -896,7 +893,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
