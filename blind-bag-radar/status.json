@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-31T10:57:14+00:00",
+ "checked_at": "2026-10-31T11:11:32+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -713,11 +713,10 @@
    "title": ""
   },
   "Everyday Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "TimeoutError"
+   "title": ""
   },
   "Goodtimes": {
    "state": "not_listed",
@@ -1166,7 +1165,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "JSONDecodeError"
   },
   "Subsect Skateshop": {
    "state": "not_listed",
@@ -1276,10 +1275,11 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Change": {
    "state": "unchecked",
