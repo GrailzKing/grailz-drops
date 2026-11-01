@@ -361,7 +361,27 @@
       "edition": "Ultra",
       "print_run": 5000,
       "retailer": "Amazon"
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 11,
+      "day": 5,
+      "name": "starbucks-2026-holiday-merchandise-launch",
+      "url1": "https://www.starbucks.com/menu/at-home-coffee/holiday",
+      "url2": "https://about.starbucks.com/stories/2026/starbucks-2026-holiday-merchandise-begins-to-arrive-nov-5-heres-whats-coming/",
+      "time": "07:00",
+      "price": 32.95
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 11,
+      "day": 10,
+      "name": "starbucks-bearista-glass-cold-cup-mystery-box",
+      "url1": "https://www.starbucks.com",
+      "url2": "https://about.starbucks.com/stories/2026/starbucks-2026-holiday-merchandise-begins-to-arrive-nov-5-heres-whats-coming/",
+      "time": "07:00",
+      "price": null
     }
   ],
-  "drop_count": 32
+  "drop_count": 34
 }
