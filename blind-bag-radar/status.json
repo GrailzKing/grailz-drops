@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-01T19:53:41+00:00",
+ "checked_at": "2026-11-01T20:07:57+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1231,11 +1231,10 @@
    "title": ""
   },
   "Premier": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skater's Advocate": {
    "state": "not_listed",
