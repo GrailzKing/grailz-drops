@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-01T00:33:54+00:00",
+ "checked_at": "2026-11-01T00:48:12+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -142,11 +142,10 @@
    "title": ""
   },
   "Uprise Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Modern Skate & Surf": {
    "state": "not_listed",
@@ -714,11 +713,10 @@
    "title": ""
   },
   "Everyday Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Goodtimes": {
    "state": "not_listed",
@@ -887,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
