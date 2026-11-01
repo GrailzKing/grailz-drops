@@ -9,20 +9,22 @@
     "month": "November 2026",
     "month_key": "2026-11",
     "file": "data/2026-11.json",
-    "active": false
+    "active": true,
+    "updated": "2026-11-01"
   },
   {
     "month": "October 2026",
     "month_key": "2026-10",
     "file": "data/2026-10.json",
-    "active": false
+    "active": false,
+    "updated": "2026-10-31"
   },
   {
     "month": "September 2026",
     "month_key": "2026-09",
     "file": "data/2026-09.json",
-    "active": true,
-    "updated": "2026-09-02"
+    "active": false,
+    "updated": "2026-09-30"
   },
   {
     "month": "August 2026",
