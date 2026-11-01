@@ -245,50 +245,6 @@
       "time": "00:00"
     },
     {
-      "cat": "FUNKO POP",
-      "date": "11-TBD",
-      "month": 11,
-      "day": null,
-      "tbd": true,
-      "name": "funko-pop-2026-11-funko-exclusive-1",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "12:00"
-    },
-    {
-      "cat": "FUNKO POP",
-      "date": "11-TBD",
-      "month": 11,
-      "day": null,
-      "tbd": true,
-      "name": "funko-pop-2026-11-funko-exclusive-2",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "12:00"
-    },
-    {
-      "cat": "FUNKO POP",
-      "date": "11-TBD",
-      "month": 11,
-      "day": null,
-      "tbd": true,
-      "name": "funko-pop-2026-11-funko-exclusive-3",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "12:00"
-    },
-    {
-      "cat": "FUNKO POP",
-      "date": "11-TBD",
-      "month": 11,
-      "day": null,
-      "tbd": true,
-      "name": "funko-pop-2026-11-funko-exclusive-4",
-      "url1": "https://funko.com/limited-edition-calendar.html",
-      "url2": "",
-      "time": "12:00"
-    },
-    {
       "cat": "MATTEL CREATIONS",
       "date": "11-TBD",
       "month": 11,
@@ -353,6 +309,59 @@
       "url1": "https://www.usmint.gov/product-schedule/2026/?start=0&sz=64",
       "url2": "https://www.govmint.com/learn/post/united-states-mint-2026-coin-release-schedule",
       "time": "12:00"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 4,
+      "name": "funko-pop-marvel-iron-man-hot-topic-le-exclusive",
+      "url1": "https://www.hottopic.com",
+      "url2": "https://funko.com/limited-edition-calendar.html",
+      "time": "11:00",
+      "price": 15.0,
+      "edition": "Elite",
+      "print_run": 7500,
+      "retailer": "Hot Topic"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 8,
+      "name": "funko-pop-marvel-professor-x-target-le-exclusive",
+      "url1": "https://www.target.com",
+      "url2": "https://funko.com/limited-edition-calendar.html",
+      "time": "11:00",
+      "price": 15.0,
+      "edition": "Supreme",
+      "print_run": 9500,
+      "retailer": "Target"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 11,
+      "name": "funko-pop-dc-porky-pig-butcher-gamestop-le-exclusive",
+      "url1": "https://www.gamestop.com",
+      "url2": "https://funko.com/limited-edition-calendar.html",
+      "time": "11:00",
+      "price": 15.0,
+      "edition": "Supreme",
+      "print_run": 9500,
+      "retailer": "GameStop"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 25,
+      "name": "funko-pop-marvel-mystique-amazon-le-exclusive",
+      "url1": "https://www.amazon.com",
+      "url2": "https://funko.com/limited-edition-calendar.html",
+      "time": "11:00",
+      "price": 15.0,
+      "edition": "Ultra",
+      "print_run": 5000,
+      "retailer": "Amazon"
     }
-  ]
+  ],
+  "drop_count": 32
 }
