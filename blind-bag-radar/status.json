@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-02T04:00:14+00:00",
+ "checked_at": "2026-11-02T04:00:46+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -885,7 +885,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -981,7 +981,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Emage": {
    "state": "unchecked",
@@ -1262,10 +1262,11 @@
    "error": "HTTPError"
   },
   "Cal Surf": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Northside Boards": {
    "state": "unchecked",
@@ -1275,10 +1276,11 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Change": {
    "state": "unchecked",
