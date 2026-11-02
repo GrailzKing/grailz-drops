@@ -15,6 +15,39 @@
       "time": "10:00"
     },
     {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 2,
+      "tbd": false,
+      "name": "topps-merlin-uefa-club-competitions-2025-26",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "10:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 2,
+      "tbd": false,
+      "name": "topps-chrome-update-series-baseball-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "10:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 2,
+      "tbd": false,
+      "name": "bowman-u-signature-football-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "10:00",
+      "price": null
+    },
+    {
       "cat": "DISNEY PINS",
       "date": "11-3",
       "month": 11,
@@ -24,6 +57,84 @@
       "url1": "https://disneypinsblog.com",
       "url2": "https://wdwnt.com",
       "time": "09:00"
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 3,
+      "tbd": false,
+      "name": "topps-true-football-bundesliga-2025-26",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "10:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 4,
+      "tbd": false,
+      "name": "topps-stadium-club-chrome-uefa-champions-league",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "10:00",
+      "price": null
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 4,
+      "name": "funko-pop-marvel-iron-man-hot-topic-le-exclusive",
+      "url1": "https://www.hottopic.com",
+      "url2": "https://funko.com/limited-edition-calendar.html",
+      "time": "11:00",
+      "price": 15.0,
+      "edition": "Elite",
+      "print_run": 7500,
+      "retailer": "Hot Topic"
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 4,
+      "tbd": false,
+      "name": "topps-cosmic-chrome-baseball-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "11:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 4,
+      "tbd": false,
+      "name": "topps-heritage-football-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 4,
+      "tbd": false,
+      "name": "topps-mint-disney-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "13:00",
+      "price": null
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 11,
+      "day": 5,
+      "name": "starbucks-2026-holiday-merchandise-launch",
+      "url1": "https://www.starbucks.com/menu/at-home-coffee/holiday",
+      "url2": "https://about.starbucks.com/stories/2026/starbucks-2026-holiday-merchandise-begins-to-arrive-nov-5-heres-whats-coming/",
+      "time": "07:00",
+      "price": 32.95
     },
     {
       "cat": "SUPREME FW26",
@@ -37,6 +148,17 @@
       "time": "11:00"
     },
     {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 5,
+      "tbd": false,
+      "name": "topps-flagship-basketball-2026-27",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "11:00",
+      "price": null
+    },
+    {
       "cat": "VINYL & MUSIC",
       "date": "11-6",
       "month": 11,
@@ -48,6 +170,17 @@
       "time": "00:00"
     },
     {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 6,
+      "tbd": false,
+      "name": "topps-inception-football-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "11:00",
+      "price": null
+    },
+    {
       "cat": "COLLAB / LIFESTYLE",
       "date": "11-6",
       "month": 11,
@@ -56,6 +189,30 @@
       "url1": "https://tollhouse.com/adventcalendar",
       "time": "13:00",
       "price": 29.99
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 8,
+      "name": "funko-pop-marvel-professor-x-target-le-exclusive",
+      "url1": "https://www.target.com",
+      "url2": "https://funko.com/limited-edition-calendar.html",
+      "time": "11:00",
+      "price": 15.0,
+      "edition": "Supreme",
+      "print_run": 9500,
+      "retailer": "Target"
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 8,
+      "tbd": false,
+      "name": "topps-stadium-club-football-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "23:00",
+      "price": null
     },
     {
       "cat": "VINYL & MUSIC",
@@ -69,6 +226,16 @@
       "time": "10:00"
     },
     {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 11,
+      "day": 10,
+      "name": "starbucks-bearista-glass-cold-cup-mystery-box",
+      "url1": "https://www.starbucks.com",
+      "url2": "https://about.starbucks.com/stories/2026/starbucks-2026-holiday-merchandise-begins-to-arrive-nov-5-heres-whats-coming/",
+      "time": "07:00",
+      "price": null
+    },
+    {
       "cat": "DISNEY PINS",
       "date": "11-10",
       "month": 11,
@@ -78,6 +245,52 @@
       "url1": "https://disneypinsblog.com",
       "url2": "https://wdwnt.com",
       "time": "09:00"
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 10,
+      "tbd": false,
+      "name": "topps-hoops-basketball-2026-27",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 11,
+      "name": "funko-pop-dc-porky-pig-butcher-gamestop-le-exclusive",
+      "url1": "https://www.gamestop.com",
+      "url2": "https://funko.com/limited-edition-calendar.html",
+      "time": "11:00",
+      "price": 15.0,
+      "edition": "Supreme",
+      "print_run": 9500,
+      "retailer": "GameStop"
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 11,
+      "tbd": false,
+      "name": "topps-allen-ginter-x-baseball-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 11,
+      "tbd": false,
+      "name": "topps-museum-collection-baseball-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
     },
     {
       "cat": "POKEMON TCG",
@@ -102,6 +315,17 @@
       "time": "11:00"
     },
     {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 12,
+      "tbd": false,
+      "name": "topps-flagship-bundesliga-2026-27",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
       "cat": "VINYL & MUSIC",
       "date": "11-13",
       "month": 11,
@@ -111,6 +335,50 @@
       "url1": "https://www.pauseandplay.com/release-dates/vinyl-releases/",
       "url2": "https://www.pauseandplay.com/release-dates/on-the-cd-front/",
       "time": "00:00"
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 13,
+      "tbd": false,
+      "name": "topps-royalty-ufc-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 13,
+      "tbd": false,
+      "name": "topps-midnight-football-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 13,
+      "tbd": false,
+      "name": "topps-royalty-tennis-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
+    },
+    {
+      "cat": "TOPPS",
+      "month": "2026-11",
+      "day": 13,
+      "tbd": false,
+      "name": "topps-t205-baseball-2026",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "",
+      "time": "12:00",
+      "price": null
     },
     {
       "cat": "VINYL & MUSIC",
@@ -188,6 +456,19 @@
       "url1": "https://disneypinsblog.com",
       "url2": "https://wdwnt.com",
       "time": "09:00"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 25,
+      "name": "funko-pop-marvel-mystique-amazon-le-exclusive",
+      "url1": "https://www.amazon.com",
+      "url2": "https://funko.com/limited-edition-calendar.html",
+      "time": "11:00",
+      "price": 15.0,
+      "edition": "Ultra",
+      "print_run": 5000,
+      "retailer": "Amazon"
     },
     {
       "cat": "SUPREME FW26",
@@ -289,17 +570,6 @@
       "time": "12:00"
     },
     {
-      "cat": "TOPPS",
-      "date": "11-TBD",
-      "month": 11,
-      "day": null,
-      "tbd": true,
-      "name": "topps-2026-11-new-release",
-      "url1": "https://www.topps.com/release-calendar",
-      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
-      "time": "12:00"
-    },
-    {
       "cat": "US MINT",
       "date": "11-TBD",
       "month": 11,
@@ -309,79 +579,7 @@
       "url1": "https://www.usmint.gov/product-schedule/2026/?start=0&sz=64",
       "url2": "https://www.govmint.com/learn/post/united-states-mint-2026-coin-release-schedule",
       "time": "12:00"
-    },
-    {
-      "cat": "FUNKO POP",
-      "month": 11,
-      "day": 4,
-      "name": "funko-pop-marvel-iron-man-hot-topic-le-exclusive",
-      "url1": "https://www.hottopic.com",
-      "url2": "https://funko.com/limited-edition-calendar.html",
-      "time": "11:00",
-      "price": 15.0,
-      "edition": "Elite",
-      "print_run": 7500,
-      "retailer": "Hot Topic"
-    },
-    {
-      "cat": "FUNKO POP",
-      "month": 11,
-      "day": 8,
-      "name": "funko-pop-marvel-professor-x-target-le-exclusive",
-      "url1": "https://www.target.com",
-      "url2": "https://funko.com/limited-edition-calendar.html",
-      "time": "11:00",
-      "price": 15.0,
-      "edition": "Supreme",
-      "print_run": 9500,
-      "retailer": "Target"
-    },
-    {
-      "cat": "FUNKO POP",
-      "month": 11,
-      "day": 11,
-      "name": "funko-pop-dc-porky-pig-butcher-gamestop-le-exclusive",
-      "url1": "https://www.gamestop.com",
-      "url2": "https://funko.com/limited-edition-calendar.html",
-      "time": "11:00",
-      "price": 15.0,
-      "edition": "Supreme",
-      "print_run": 9500,
-      "retailer": "GameStop"
-    },
-    {
-      "cat": "FUNKO POP",
-      "month": 11,
-      "day": 25,
-      "name": "funko-pop-marvel-mystique-amazon-le-exclusive",
-      "url1": "https://www.amazon.com",
-      "url2": "https://funko.com/limited-edition-calendar.html",
-      "time": "11:00",
-      "price": 15.0,
-      "edition": "Ultra",
-      "print_run": 5000,
-      "retailer": "Amazon"
-    },
-    {
-      "cat": "COLLAB / LIFESTYLE",
-      "month": 11,
-      "day": 5,
-      "name": "starbucks-2026-holiday-merchandise-launch",
-      "url1": "https://www.starbucks.com/menu/at-home-coffee/holiday",
-      "url2": "https://about.starbucks.com/stories/2026/starbucks-2026-holiday-merchandise-begins-to-arrive-nov-5-heres-whats-coming/",
-      "time": "07:00",
-      "price": 32.95
-    },
-    {
-      "cat": "COLLAB / LIFESTYLE",
-      "month": 11,
-      "day": 10,
-      "name": "starbucks-bearista-glass-cold-cup-mystery-box",
-      "url1": "https://www.starbucks.com",
-      "url2": "https://about.starbucks.com/stories/2026/starbucks-2026-holiday-merchandise-begins-to-arrive-nov-5-heres-whats-coming/",
-      "time": "07:00",
-      "price": null
     }
   ],
-  "drop_count": 34
+  "drop_count": 52
 }
