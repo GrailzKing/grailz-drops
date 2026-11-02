@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-02T15:00:49+00:00",
+ "checked_at": "2026-11-02T15:15:16+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -725,25 +725,22 @@
    "title": ""
   },
   "Hardline Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Inner City Skate (IDS)": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Garage Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Kingswell": {
    "state": "unchecked",
@@ -890,7 +887,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "TimeoutError"
   },
   "Boardgarden": {
    "state": "unchecked",
