@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-02T22:54:54+00:00",
+ "checked_at": "2026-11-02T23:09:11+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -108,7 +108,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "SoCal Skateshop": {
    "state": "unchecked",
@@ -658,7 +658,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Reset Mercantile": {
    "state": "not_listed",
