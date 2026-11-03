@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-03T21:12:06+00:00",
+ "checked_at": "2026-11-03T21:26:39+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -154,11 +154,10 @@
    "title": ""
   },
   "Skates USA": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "in_stock",
+   "price": "$325.95",
+   "url": "https://www.skatesusa.com/products/santa-cruz-x-pokemon-tcg-blind-bag-deck-8-0",
+   "title": "Santa Cruz X Pokémon TCG Blind Bag Skateboard Deck - 8.0\" Assorted [Limited]"
   },
   "SPoT (Skatepark of Tampa)": {
    "state": "not_listed",
@@ -306,11 +305,10 @@
    "title": ""
   },
   "510 Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "818 Skate Shop": {
    "state": "not_listed",
@@ -456,11 +454,10 @@
    "title": ""
   },
   "Val Surf": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Xtreme Boardshop": {
    "state": "not_listed",
@@ -481,11 +478,10 @@
    "title": ""
   },
   "Stratosphere Skateboards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "First Gear Skateshop": {
    "state": "unchecked",
@@ -549,11 +545,10 @@
    "title": ""
   },
   "Familia": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Escapist Skateboarding": {
    "state": "unchecked",
@@ -589,11 +584,10 @@
    "title": ""
   },
   "Krudco": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$140.00",
+   "url": "https://www.krudco.com/products/pokemon-tcg-blind-bag-santa-cruz-deck",
+   "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
    "state": "not_listed",
@@ -654,10 +648,11 @@
    "title": ""
   },
   "Faith Skate Supply": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Funwheels": {
    "state": "unchecked",
@@ -667,10 +662,11 @@
    "error": "HTTPError"
   },
   "Reset Mercantile": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "World Conspiracy": {
    "state": "unchecked",
@@ -701,52 +697,60 @@
    "error": "HTTPError"
   },
   "Boarders LA": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Breakfree Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Brooklyn Projects": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Everyday Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Goodtimes": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Hardline Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Inner City Skate (IDS)": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Garage Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Kingswell": {
    "state": "unchecked",
@@ -756,22 +760,25 @@
    "error": "JSONDecodeError"
   },
   "Lowkey Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Marriage Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Midnite Theories": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Overload": {
    "state": "unchecked",
@@ -1114,7 +1121,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Parkside Skate Shop": {
    "state": "unchecked",
