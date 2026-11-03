@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-03T09:11:36+00:00",
+ "checked_at": "2026-11-03T09:25:59+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -644,11 +644,10 @@
    "error": "HTTPError"
   },
   "Holistic Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Salty Peaks": {
    "state": "unchecked",
@@ -728,10 +727,11 @@
    "error": "HTTPError"
   },
   "Boarders LA": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Breakfree Skateshop": {
    "state": "unchecked",
@@ -769,18 +769,16 @@
    "error": "HTTPError"
   },
   "Inner City Skate (IDS)": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Garage Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Kingswell": {
    "state": "unchecked",
@@ -797,11 +795,10 @@
    "error": "HTTPError"
   },
   "Marriage Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Midnite Theories": {
    "state": "unchecked",
@@ -846,10 +843,11 @@
    "error": "HTTPError"
   },
   "Rip City Skates": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rose Street Skateshop": {
    "state": "unchecked",
