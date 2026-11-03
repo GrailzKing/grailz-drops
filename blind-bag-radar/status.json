@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-03T09:40:26+00:00",
+ "checked_at": "2026-11-03T09:54:55+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -261,25 +261,22 @@
    "error": "JSONDecodeError"
   },
   "The Block Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Relief Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Plus Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Westside Skateshop": {
    "state": "unchecked",
@@ -296,11 +293,10 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Satellite Boardshop": {
    "state": "unchecked",
@@ -310,25 +306,22 @@
    "error": "HTTPError"
   },
   "510 Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "818 Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "APT Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Attic Skateshop": {
    "state": "unchecked",
@@ -1266,7 +1259,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Mocean": {
    "state": "unchecked",
