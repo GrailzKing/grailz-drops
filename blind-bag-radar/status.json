@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-03T13:02:17+00:00",
+ "checked_at": "2026-11-03T13:16:34+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -707,11 +707,10 @@
    "title": ""
   },
   "Brooklyn Projects": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Everyday Skateshop": {
    "state": "not_listed",
@@ -726,25 +725,22 @@
    "title": ""
   },
   "Hardline Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Inner City Skate (IDS)": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Garage Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Kingswell": {
    "state": "unchecked",
@@ -754,11 +750,10 @@
    "error": "JSONDecodeError"
   },
   "Lowkey Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Marriage Skateshop": {
    "state": "unchecked",
@@ -1027,10 +1022,11 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sartorius Sports": {
    "state": "unchecked",
