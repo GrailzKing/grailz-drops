@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-03T21:26:39+00:00",
+ "checked_at": "2026-11-03T21:41:13+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -648,11 +648,10 @@
    "title": ""
   },
   "Faith Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Funwheels": {
    "state": "unchecked",
@@ -662,11 +661,10 @@
    "error": "HTTPError"
   },
   "Reset Mercantile": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "World Conspiracy": {
    "state": "unchecked",
@@ -904,7 +902,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
