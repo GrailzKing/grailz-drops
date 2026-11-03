@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-03T04:52:30+00:00",
+ "checked_at": "2026-11-03T05:06:48+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -251,7 +251,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Faces Skateshop": {
    "state": "unchecked",
@@ -364,10 +364,11 @@
    "title": ""
   },
   "Icon Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Impact Skate": {
    "state": "not_listed",
@@ -572,10 +573,11 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pro Skateboard Shop": {
    "state": "not_listed",
@@ -609,17 +611,17 @@
    "title": ""
   },
   "Proper Skate Shop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
-  },
-  "Holistic Skate Shop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
+  },
+  "Holistic Skate Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Salty Peaks": {
    "state": "unchecked",
