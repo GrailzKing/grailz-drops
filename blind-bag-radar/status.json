@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-03T04:38:13+00:00",
+ "checked_at": "2026-11-03T04:52:30+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -251,7 +251,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Faces Skateshop": {
    "state": "unchecked",
@@ -615,10 +615,11 @@
    "title": ""
   },
   "Holistic Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Salty Peaks": {
    "state": "unchecked",
