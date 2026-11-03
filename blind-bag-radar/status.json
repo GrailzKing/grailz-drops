@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-03T14:27:57+00:00",
+ "checked_at": "2026-11-03T14:42:14+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -35,11 +35,10 @@
    "error": "HTTPError"
   },
   "TGM Skateboards": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "in_stock",
+   "price": "$219.95",
+   "url": "https://tgmskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag-skateboard-deck-8-0in-x-31-6in",
+   "title": "Santa Cruz x Pokémon TCG Blind Bag Skateboard Deck 8.0in x 31.6in"
   },
   "Old Skull Skateboards": {
    "state": "sold_out",
@@ -48,11 +47,10 @@
    "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Skateboard Deck"
   },
   "Pharmacy Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Mainland Skate & Surf": {
    "state": "not_listed",
@@ -150,11 +148,10 @@
    "title": ""
   },
   "Modern Skate & Surf": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skates USA": {
    "state": "in_stock",
@@ -163,18 +160,16 @@
    "title": "Santa Cruz X Pokémon TCG Blind Bag Skateboard Deck - 8.0\" Assorted [Limited]"
   },
   "SPoT (Skatepark of Tampa)": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Black Sheep Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "This Skateshop": {
    "state": "not_listed",
@@ -233,11 +228,10 @@
    "error": "JSONDecodeError"
   },
   "Geometric Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "South Side Skateshop": {
    "state": "not_listed",
@@ -273,11 +267,10 @@
    "title": ""
   },
   "Relief Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Plus Skateshop": {
    "state": "not_listed",
@@ -365,18 +358,16 @@
    "error": "HTTPError"
   },
   "Heritage Skateboards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Icon Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Impact Skate": {
    "state": "not_listed",
@@ -451,11 +442,10 @@
    "error": "HTTPError"
   },
   "Skateworks": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Status Skateshop": {
    "state": "not_listed",
@@ -464,11 +454,10 @@
    "title": ""
   },
   "Val Surf": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Xtreme Boardshop": {
    "state": "not_listed",
@@ -614,11 +603,10 @@
    "error": "HTTPError"
   },
   "Embassy Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Proper Skate Shop": {
    "state": "not_listed",
@@ -719,11 +707,10 @@
    "title": ""
   },
   "Brooklyn Projects": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Everyday Skateshop": {
    "state": "not_listed",
@@ -813,11 +800,10 @@
    "title": ""
   },
   "Rip City Skates": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rose Street Skateshop": {
    "state": "unchecked",
@@ -855,10 +841,11 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "in_stock",
-   "price": "$349.99",
-   "url": "https://unmodernskateshop.com/products/nhs-pokemon-tcg-blind-bag-santa-cruz-decks",
-   "title": "SANTA CRUZ X POKÉMON | TCG Blind BAG Deck"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Vault Boardshop": {
    "state": "unchecked",
@@ -1049,10 +1036,11 @@
    "title": ""
   },
   "Sister Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
