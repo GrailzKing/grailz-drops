@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T05:47:26+00:00",
+ "checked_at": "2026-11-04T06:01:42+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -533,18 +533,16 @@
    "title": ""
   },
   "Exodus Ride Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "3rd Lair": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Familia": {
    "state": "unchecked",
@@ -915,7 +913,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
