@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T14:24:52+00:00",
+ "checked_at": "2026-11-04T14:39:10+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -840,10 +840,11 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "in_stock",
-   "price": "$349.99",
-   "url": "https://unmodernskateshop.com/products/nhs-pokemon-tcg-blind-bag-santa-cruz-decks",
-   "title": "SANTA CRUZ X POKÉMON | TCG Blind BAG Deck"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Vault Boardshop": {
    "state": "unchecked",
@@ -885,7 +886,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
@@ -1252,11 +1253,10 @@
    "error": "HTTPError"
   },
   "Premier": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skater's Advocate": {
    "state": "unchecked",
