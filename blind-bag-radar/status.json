@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T01:15:41+00:00",
+ "checked_at": "2026-11-04T01:29:58+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -16,7 +16,7 @@
   },
   "Amateur Athlete": {
    "state": "sold_out",
-   "price": "$249.00",
+   "price": "$299.00",
    "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
    "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
   },
@@ -904,7 +904,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Crooks Skate Shop": {
    "state": "unchecked",
