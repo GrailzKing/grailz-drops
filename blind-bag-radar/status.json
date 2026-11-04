@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T13:13:32+00:00",
+ "checked_at": "2026-11-04T13:27:48+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -65,10 +65,11 @@
    "title": ""
   },
   "Humidity": {
-   "state": "sold_out",
-   "price": "$125.00",
-   "url": "https://humiditynola.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-deck",
-   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Deck"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Forever Fly": {
    "state": "unchecked",
@@ -108,7 +109,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "SoCal Skateshop": {
    "state": "unchecked",
@@ -148,10 +149,11 @@
    "title": ""
   },
   "Modern Skate & Surf": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Skates USA": {
    "state": "in_stock",
@@ -178,10 +180,11 @@
    "title": ""
   },
   "Bluetile": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Atlas": {
    "state": "sold_out",
@@ -196,10 +199,11 @@
    "title": ""
   },
   "Skate Hub": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Deli Skate Supply": {
    "state": "not_listed",
@@ -228,16 +232,18 @@
    "error": "JSONDecodeError"
   },
   "Geometric Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "South Side Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Freedom Boardshop": {
    "state": "unchecked",
@@ -273,10 +279,11 @@
    "title": ""
   },
   "Plus Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Westside Skateshop": {
    "state": "unchecked",
@@ -370,10 +377,11 @@
    "title": ""
   },
   "Impact Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Jokers Skate Shop": {
    "state": "unchecked",
@@ -416,10 +424,11 @@
    "error": "JSONDecodeError"
   },
   "Pawnshop Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Prodigy Skateshop": {
    "state": "not_listed",
@@ -448,10 +457,11 @@
    "title": ""
   },
   "Status Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Val Surf": {
    "state": "not_listed",
@@ -460,10 +470,11 @@
    "title": ""
   },
   "Xtreme Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sun Diego": {
    "state": "not_listed",
@@ -472,16 +483,18 @@
    "title": ""
   },
   "Kinetic Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Stratosphere Skateboards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "First Gear Skateshop": {
    "state": "unchecked",
@@ -521,10 +534,11 @@
    "title": ""
   },
   "Eastern Boarder": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Orchard Skateshop": {
    "state": "not_listed",
@@ -539,10 +553,11 @@
    "title": ""
   },
   "3rd Lair": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Familia": {
    "state": "not_listed",
@@ -609,10 +624,11 @@
    "title": ""
   },
   "Proper Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Holistic Skate Shop": {
    "state": "not_listed",
@@ -701,10 +717,11 @@
    "title": ""
   },
   "Breakfree Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Brooklyn Projects": {
    "state": "not_listed",
@@ -768,10 +785,11 @@
    "title": ""
   },
   "Overload": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pancho's": {
    "state": "unchecked",
@@ -794,10 +812,11 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rip City Skates": {
    "state": "not_listed",
@@ -916,10 +935,11 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -1012,10 +1032,11 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sartorius Sports": {
    "state": "unchecked",
@@ -1025,16 +1046,18 @@
    "error": "JSONDecodeError"
   },
   "Archives": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sister Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
@@ -1051,10 +1074,11 @@
    "error": "HTTPError"
   },
   "Andrew": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anchors Skate Shop": {
    "state": "unchecked",
