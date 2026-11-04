@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T18:14:08+00:00",
+ "checked_at": "2026-11-04T18:28:25+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -184,10 +184,10 @@
    "title": ""
   },
   "Atlas": {
-   "state": "sold_out",
-   "price": "$140.00",
-   "url": "https://shop.atlasskateboarding.com/products/santa-cruz-x-pokemon-tcg-blind-bag-deck",
-   "title": "Santa Cruz X Pokémon TCG Blind Bag Deck"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "DLX Shop": {
    "state": "not_listed",
@@ -497,18 +497,16 @@
    "title": ""
   },
   "Studio Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Home Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pure Boardshop": {
    "state": "not_listed",
@@ -517,46 +515,40 @@
    "title": ""
   },
   "Vu Skateboard Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Eastern Boarder": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Orchard Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Exodus Ride Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "3rd Lair": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Familia": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Escapist Skateboarding": {
    "state": "unchecked",
@@ -580,11 +572,10 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pro Skateboard Shop": {
    "state": "unchecked",
