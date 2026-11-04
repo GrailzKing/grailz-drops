@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T17:31:14+00:00",
+ "checked_at": "2026-11-04T17:45:32+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -472,11 +472,10 @@
    "title": ""
   },
   "Kinetic Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Stratosphere Skateboards": {
    "state": "not_listed",
@@ -492,18 +491,16 @@
    "error": "HTTPError"
   },
   "Warped Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Studio Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Home Skateshop": {
    "state": "unchecked",
@@ -513,11 +510,10 @@
    "error": "HTTPError"
   },
   "Pure Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vu Skateboard Shop": {
    "state": "unchecked",
