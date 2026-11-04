@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T22:31:47+00:00",
+ "checked_at": "2026-11-04T22:46:04+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -16,7 +16,7 @@
   },
   "Amateur Athlete": {
    "state": "in_stock",
-   "price": "$299.00",
+   "price": "$229.00",
    "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
    "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
   },
@@ -533,25 +533,22 @@
    "title": ""
   },
   "Exodus Ride Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "3rd Lair": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Familia": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Escapist Skateboarding": {
    "state": "unchecked",
@@ -575,11 +572,10 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pro Skateboard Shop": {
    "state": "unchecked",
