@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T09:51:15+00:00",
+ "checked_at": "2026-11-04T10:05:49+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -515,11 +515,10 @@
    "title": ""
   },
   "Vu Skateboard Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Eastern Boarder": {
    "state": "not_listed",
@@ -528,11 +527,10 @@
    "title": ""
   },
   "Orchard Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Exodus Ride Shop": {
    "state": "unchecked",
