@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T20:51:44+00:00",
+ "checked_at": "2026-11-04T21:06:02+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -522,11 +522,10 @@
    "error": "HTTPError"
   },
   "Eastern Boarder": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Orchard Skateshop": {
    "state": "unchecked",
@@ -1320,11 +1319,10 @@
    "error": "HTTPError"
   },
   "Cal Surf": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Northside Boards": {
    "state": "unchecked",
