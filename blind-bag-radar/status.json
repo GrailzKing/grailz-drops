@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-04T13:27:48+00:00",
+ "checked_at": "2026-11-04T13:42:04+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -65,11 +65,10 @@
    "title": ""
   },
   "Humidity": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$125.00",
+   "url": "https://humiditynola.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-deck",
+   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Deck"
   },
   "Forever Fly": {
    "state": "unchecked",
@@ -149,11 +148,10 @@
    "title": ""
   },
   "Modern Skate & Surf": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skates USA": {
    "state": "in_stock",
@@ -180,11 +178,10 @@
    "title": ""
   },
   "Bluetile": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Atlas": {
    "state": "sold_out",
@@ -199,11 +196,10 @@
    "title": ""
   },
   "Skate Hub": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Deli Skate Supply": {
    "state": "not_listed",
@@ -232,18 +228,16 @@
    "error": "JSONDecodeError"
   },
   "Geometric Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "South Side Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Freedom Boardshop": {
    "state": "unchecked",
@@ -279,11 +273,10 @@
    "title": ""
   },
   "Plus Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Westside Skateshop": {
    "state": "unchecked",
@@ -377,11 +370,10 @@
    "title": ""
   },
   "Impact Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Jokers Skate Shop": {
    "state": "unchecked",
@@ -424,11 +416,10 @@
    "error": "JSONDecodeError"
   },
   "Pawnshop Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Prodigy Skateshop": {
    "state": "not_listed",
@@ -457,11 +448,10 @@
    "title": ""
   },
   "Status Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Val Surf": {
    "state": "not_listed",
@@ -470,11 +460,10 @@
    "title": ""
   },
   "Xtreme Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sun Diego": {
    "state": "not_listed",
@@ -483,18 +472,16 @@
    "title": ""
   },
   "Kinetic Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Stratosphere Skateboards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "First Gear Skateshop": {
    "state": "unchecked",
@@ -534,11 +521,10 @@
    "title": ""
   },
   "Eastern Boarder": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Orchard Skateshop": {
    "state": "not_listed",
@@ -553,11 +539,10 @@
    "title": ""
   },
   "3rd Lair": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Familia": {
    "state": "not_listed",
@@ -624,11 +609,10 @@
    "title": ""
   },
   "Proper Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Holistic Skate Shop": {
    "state": "not_listed",
@@ -717,11 +701,10 @@
    "title": ""
   },
   "Breakfree Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Brooklyn Projects": {
    "state": "not_listed",
@@ -785,11 +768,10 @@
    "title": ""
   },
   "Overload": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pancho's": {
    "state": "unchecked",
@@ -799,10 +781,11 @@
    "error": "HTTPError"
   },
   "PLA Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Programme": {
    "state": "unchecked",
@@ -812,11 +795,10 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rip City Skates": {
    "state": "not_listed",
@@ -859,10 +841,11 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "in_stock",
-   "price": "$349.99",
-   "url": "https://unmodernskateshop.com/products/nhs-pokemon-tcg-blind-bag-santa-cruz-decks",
-   "title": "SANTA CRUZ X POKÉMON | TCG Blind BAG Deck"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Vault Boardshop": {
    "state": "unchecked",
@@ -991,10 +974,11 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "BC Surf & Sport": {
    "state": "unchecked",
