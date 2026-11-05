@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-05T17:35:46+00:00",
+ "checked_at": "2026-11-05T17:50:04+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -273,11 +273,10 @@
    "title": ""
   },
   "Plus Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Westside Skateshop": {
    "state": "unchecked",
