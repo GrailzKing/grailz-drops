@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-05T09:58:15+00:00",
+ "checked_at": "2026-11-05T10:12:31+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -794,11 +794,10 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rip City Skates": {
    "state": "unchecked",
