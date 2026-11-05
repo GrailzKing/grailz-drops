@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-05T09:00:45+00:00",
+ "checked_at": "2026-11-05T09:15:01+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -293,18 +293,16 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "510 Skateboarding": {
    "state": "unchecked",
@@ -377,11 +375,10 @@
    "error": "HTTPError"
   },
   "Impact Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Jokers Skate Shop": {
    "state": "unchecked",
@@ -1245,11 +1242,10 @@
    "error": "HTTPError"
   },
   "River Rat": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Thunderkats": {
    "state": "unchecked",
