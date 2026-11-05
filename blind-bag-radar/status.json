@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-05T02:06:28+00:00",
+ "checked_at": "2026-11-05T02:20:46+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -311,17 +311,17 @@
    "title": ""
   },
   "818 Skate Shop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
-  },
-  "APT Skateshop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
+  },
+  "APT Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Attic Skateshop": {
    "state": "unchecked",
@@ -1259,7 +1259,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Mocean": {
    "state": "unchecked",
