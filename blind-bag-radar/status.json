@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-05T19:16:25+00:00",
+ "checked_at": "2026-11-05T19:30:42+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -497,10 +497,11 @@
    "title": ""
   },
   "Studio Skate Supply": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Home Skateshop": {
    "state": "not_listed",
@@ -509,11 +510,10 @@
    "title": ""
   },
   "Pure Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vu Skateboard Shop": {
    "state": "unchecked",
@@ -523,10 +523,11 @@
    "error": "HTTPError"
   },
   "Eastern Boarder": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Orchard Skateshop": {
    "state": "unchecked",
