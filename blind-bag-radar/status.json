@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-05T22:51:21+00:00",
+ "checked_at": "2026-11-05T23:05:38+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -713,23 +713,24 @@
    "title": ""
   },
   "Everyday Skateshop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
-  },
-  "Goodtimes": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
   },
-  "Hardline Skateshop": {
+  "Goodtimes": {
    "state": "not_listed",
    "price": "",
    "url": "",
    "title": ""
+  },
+  "Hardline Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Inner City Skate (IDS)": {
    "state": "unchecked",
@@ -897,7 +898,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Witt's Carlsbad Pipelines": {
    "state": "unchecked",
