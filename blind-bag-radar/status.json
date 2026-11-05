@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-05T07:49:20+00:00",
+ "checked_at": "2026-11-05T08:03:37+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -293,18 +293,16 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "510 Skateboarding": {
    "state": "unchecked",
@@ -314,10 +312,11 @@
    "error": "HTTPError"
   },
   "818 Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "APT Skateshop": {
    "state": "unchecked",
@@ -488,10 +487,11 @@
    "error": "HTTPError"
   },
   "Kinetic Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Stratosphere Skateboards": {
    "state": "unchecked",
