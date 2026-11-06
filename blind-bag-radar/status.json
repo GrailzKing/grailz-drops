@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-06T10:32:07+00:00",
+ "checked_at": "2026-11-06T10:46:26+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -572,10 +572,11 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pro Skateboard Shop": {
    "state": "unchecked",
@@ -585,11 +586,10 @@
    "error": "HTTPError"
   },
   "Krudco": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$140.00",
+   "url": "https://www.krudco.com/products/pokemon-tcg-blind-bag-santa-cruz-deck",
+   "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
    "state": "unchecked",
@@ -1233,7 +1233,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Mocean": {
    "state": "unchecked",
