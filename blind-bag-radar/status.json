@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-06T17:13:12+00:00",
+ "checked_at": "2026-11-06T17:27:30+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -527,10 +527,10 @@
    "title": ""
   },
   "Orchard Skateshop": {
-   "state": "sold_out",
-   "price": "$155.00",
-   "url": "https://orchardshop.com/products/santa-cruz-x-pokemon-tcg-blind-bag-deck",
-   "title": "Santa Cruz x Pokémon TCG Blind Bag Deck"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Exodus Ride Shop": {
    "state": "unchecked",
