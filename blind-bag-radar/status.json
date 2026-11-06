@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-06T20:47:41+00:00",
+ "checked_at": "2026-11-06T21:01:59+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -442,16 +442,18 @@
    "error": "HTTPError"
   },
   "Skateworks": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Status Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Val Surf": {
    "state": "unchecked",
