@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-06T20:19:06+00:00",
+ "checked_at": "2026-11-06T20:33:24+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -492,16 +492,18 @@
    "error": "HTTPError"
   },
   "Warped Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Studio Skate Supply": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Home Skateshop": {
    "state": "unchecked",
