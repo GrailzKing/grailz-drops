@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-07T15:27:47+00:00",
+ "checked_at": "2026-11-07T15:42:04+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -794,25 +794,22 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rip City Skates": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rose Street Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
@@ -843,11 +840,10 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "in_stock",
+   "price": "$349.99",
+   "url": "https://unmodernskateshop.com/products/nhs-pokemon-tcg-blind-bag-santa-cruz-decks",
+   "title": "SANTA CRUZ X POKÉMON | TCG Blind BAG Deck"
   },
   "Vault Boardshop": {
    "state": "unchecked",
