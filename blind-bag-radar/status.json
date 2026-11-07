@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-07T05:37:38+00:00",
+ "checked_at": "2026-11-07T05:51:57+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -752,11 +752,10 @@
    "error": "HTTPError"
   },
   "Garage Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Kingswell": {
    "state": "unchecked",
