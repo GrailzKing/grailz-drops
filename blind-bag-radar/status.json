@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-07T06:06:16+00:00",
+ "checked_at": "2026-11-07T06:20:34+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -586,11 +586,10 @@
    "error": "HTTPError"
   },
   "Krudco": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$140.00",
+   "url": "https://www.krudco.com/products/pokemon-tcg-blind-bag-santa-cruz-deck",
+   "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
    "state": "unchecked",
