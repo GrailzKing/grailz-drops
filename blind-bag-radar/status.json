@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-07T04:54:35+00:00",
+ "checked_at": "2026-11-07T05:08:58+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -25,7 +25,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Skate Warehouse": {
    "state": "unchecked",
@@ -53,10 +53,11 @@
    "title": ""
   },
   "Mainland Skate & Surf": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "URLError"
   },
   "Coast Board Shop": {
    "state": "not_listed",
@@ -258,7 +259,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "The Block Skate Supply": {
    "state": "not_listed",
@@ -317,10 +318,11 @@
    "title": ""
   },
   "APT Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "URLError"
   },
   "Attic Skateshop": {
    "state": "unchecked",
@@ -358,10 +360,11 @@
    "error": "HTTPError"
   },
   "Heritage Skateboards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "URLError"
   },
   "Icon Boardshop": {
    "state": "not_listed",
@@ -521,10 +524,11 @@
    "title": ""
   },
   "Eastern Boarder": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "URLError"
   },
   "Orchard Skateshop": {
    "state": "not_listed",
@@ -590,10 +594,11 @@
    "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "URLError"
   },
   "Manifest Skateshop": {
    "state": "unchecked",
@@ -609,17 +614,17 @@
    "title": ""
   },
   "Proper Skate Shop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
-  },
-  "Holistic Skate Shop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
+  },
+  "Holistic Skate Shop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Salty Peaks": {
    "state": "unchecked",
