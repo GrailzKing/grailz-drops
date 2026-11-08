@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-08T13:12:30+00:00",
+ "checked_at": "2026-11-08T13:26:48+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -108,7 +108,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "SoCal Skateshop": {
    "state": "unchecked",
@@ -317,10 +317,11 @@
    "title": ""
   },
   "APT Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Attic Skateshop": {
    "state": "unchecked",
@@ -393,11 +394,10 @@
    "error": "HTTPError"
   },
   "LA Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "McGill's Skateshop": {
    "state": "unchecked",
