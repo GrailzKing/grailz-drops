@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-08T18:27:55+00:00",
+ "checked_at": "2026-11-08T18:42:14+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -300,11 +300,10 @@
    "error": "HTTPError"
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "510 Skateboarding": {
    "state": "unchecked",
@@ -314,10 +313,11 @@
    "error": "HTTPError"
   },
   "818 Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "APT Skateshop": {
    "state": "unchecked",
