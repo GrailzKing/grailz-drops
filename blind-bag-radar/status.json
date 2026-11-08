@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-08T12:58:12+00:00",
+ "checked_at": "2026-11-08T13:12:30+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -299,11 +299,10 @@
    "title": ""
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "510 Skateboarding": {
    "state": "not_listed",
