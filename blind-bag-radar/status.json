@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-08T17:01:56+00:00",
+ "checked_at": "2026-11-08T17:16:21+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -258,7 +258,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "TimeoutError"
   },
   "The Block Skate Supply": {
    "state": "not_listed",
@@ -1213,7 +1213,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
    "state": "unchecked",
