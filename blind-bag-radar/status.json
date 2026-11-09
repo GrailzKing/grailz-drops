@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-09T02:08:42+00:00",
+ "checked_at": "2026-11-09T02:23:08+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -65,10 +65,11 @@
    "title": ""
   },
   "Humidity": {
-   "state": "sold_out",
-   "price": "$125.00",
-   "url": "https://humiditynola.com/products/pokemon-tcg-blind-bag-8-0in-x-31-6in-santa-cruz-deck",
-   "title": "Pokémon TCG Blind Bag 8.0in x 31.6in Santa Cruz Deck"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Forever Fly": {
    "state": "unchecked",
@@ -293,10 +294,11 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Satellite Boardshop": {
    "state": "not_listed",
@@ -1212,7 +1214,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
    "state": "unchecked",
