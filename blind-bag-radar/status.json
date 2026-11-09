@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-09T22:15:26+00:00",
+ "checked_at": "2026-11-09T22:29:45+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -15,10 +15,10 @@
    "error": "JSONDecodeError"
   },
   "Amateur Athlete": {
-   "state": "sold_out",
-   "price": "$230.00",
-   "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
-   "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "The Longboard Store": {
    "state": "unchecked",
@@ -299,16 +299,18 @@
    "title": ""
   },
   "Satellite Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "510 Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "818 Skate Shop": {
    "state": "not_listed",
@@ -317,10 +319,11 @@
    "title": ""
   },
   "APT Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Attic Skateshop": {
    "state": "unchecked",
@@ -358,22 +361,25 @@
    "error": "HTTPError"
   },
   "Heritage Skateboards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Icon Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Impact Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Jokers Skate Shop": {
    "state": "unchecked",
@@ -383,16 +389,18 @@
    "error": "HTTPError"
   },
   "Kingpin Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "LA Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "McGill's Skateshop": {
    "state": "unchecked",
@@ -416,16 +424,18 @@
    "error": "JSONDecodeError"
   },
   "Pawnshop Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Prodigy Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Ray's Boardshop": {
    "state": "unchecked",
@@ -848,11 +858,10 @@
    "error": "HTTPError"
   },
   "Rose Street Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
