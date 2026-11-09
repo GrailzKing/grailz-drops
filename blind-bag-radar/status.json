@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-09T22:00:36+00:00",
+ "checked_at": "2026-11-09T22:14:56+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -15,10 +15,10 @@
    "error": "JSONDecodeError"
   },
   "Amateur Athlete": {
-   "state": "sold_out",
-   "price": "$230.00",
-   "url": "https://aa1982.com/products/santa-cruz-pokemon-tcg-blind-bag-skateboard-deck-8-0",
-   "title": "Santa Cruz Pokémon TCG Blind Bag Skateboard Deck 8.0"
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "The Longboard Store": {
    "state": "unchecked",
@@ -234,10 +234,11 @@
    "title": ""
   },
   "South Side Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Freedom Boardshop": {
    "state": "unchecked",
@@ -261,22 +262,25 @@
    "error": "JSONDecodeError"
   },
   "The Block Skate Supply": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Relief Skate Supply": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Plus Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Westside Skateshop": {
    "state": "unchecked",
@@ -293,10 +297,11 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Satellite Boardshop": {
    "state": "unchecked",
