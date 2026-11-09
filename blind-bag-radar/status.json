@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-09T07:39:24+00:00",
+ "checked_at": "2026-11-09T07:53:43+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -130,11 +130,10 @@
    "title": ""
   },
   "Cal Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Labor Skate Shop": {
    "state": "not_listed",
@@ -318,10 +317,11 @@
    "title": ""
   },
   "APT Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Attic Skateshop": {
    "state": "unchecked",
@@ -520,10 +520,11 @@
    "error": "HTTPError"
   },
   "Home Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pure Boardshop": {
    "state": "unchecked",
@@ -764,11 +765,10 @@
    "error": "HTTPError"
   },
   "Hardline Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Inner City Skate (IDS)": {
    "state": "unchecked",
