@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-10T21:26:24+00:00",
+ "checked_at": "2026-11-10T21:40:44+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1083,11 +1083,10 @@
    "title": ""
   },
   "Greater Miami Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
@@ -1097,11 +1096,10 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
@@ -1138,18 +1136,17 @@
    "title": ""
   },
   "Fargo Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Starlight Skatepark": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
    "state": "not_listed",
@@ -1158,11 +1155,10 @@
    "title": ""
   },
   "Killer Skatepark": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rhett Skateboarding": {
    "state": "unchecked",
@@ -1204,18 +1200,16 @@
    "title": "Santa Cruz X Pokémon TCG Blind Bag"
   },
   "Embark Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Boarding House": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Solstice Skateboarding": {
    "state": "unchecked",
@@ -1225,11 +1219,10 @@
    "error": "HTTPError"
   },
   "Theory Skate & Snow": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Plus Skateboarding": {
    "state": "not_listed",
@@ -1238,11 +1231,10 @@
    "title": ""
   },
   "Premier": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skater's Advocate": {
    "state": "not_listed",
@@ -1251,18 +1243,16 @@
    "title": ""
   },
   "Olympia Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "People Skate & Snowboard": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
@@ -1272,11 +1262,10 @@
    "error": "HTTPError"
   },
   "Cal Surf": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Northside Boards": {
    "state": "unchecked",
@@ -1286,11 +1275,10 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Change": {
    "state": "unchecked",
