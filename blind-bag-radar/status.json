@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-10T01:50:19+00:00",
+ "checked_at": "2026-11-10T02:04:39+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -190,11 +190,10 @@
    "title": "Santa Cruz X Pokémon TCG Blind Bag Deck"
   },
   "DLX Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skate Hub": {
    "state": "not_listed",
@@ -1244,11 +1243,10 @@
    "error": "HTTPError"
   },
   "River Rat": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Thunderkats": {
    "state": "unchecked",
