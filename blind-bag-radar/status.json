@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-10T09:43:34+00:00",
+ "checked_at": "2026-11-10T09:57:51+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1057,11 +1057,10 @@
    "title": ""
   },
   "Anchors Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Necessary Skate Co": {
    "state": "unchecked",
