@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-10T08:17:47+00:00",
+ "checked_at": "2026-11-10T08:32:05+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -954,7 +954,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "TimeoutError"
   },
   "Sifu Skate": {
    "state": "unchecked",
@@ -1051,18 +1051,16 @@
    "error": "HTTPError"
   },
   "Andrew": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Anchors Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Necessary Skate Co": {
    "state": "unchecked",
