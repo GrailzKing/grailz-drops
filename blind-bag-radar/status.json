@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-10T21:12:02+00:00",
+ "checked_at": "2026-11-10T21:26:24+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1057,11 +1057,10 @@
    "title": ""
   },
   "Anchors Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Necessary Skate Co": {
    "state": "unchecked",
@@ -1078,17 +1077,17 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Greater Miami Skateshop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
-  },
-  "Greater Miami Skateshop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
@@ -1139,24 +1138,24 @@
    "title": ""
   },
   "Fargo Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Starlight Skatepark": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Blacklist Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Killer Skatepark": {
    "state": "unchecked",
@@ -1173,11 +1172,10 @@
    "error": "TimeoutError"
   },
   "Subsect Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "River Rat": {
    "state": "not_listed",
@@ -1200,17 +1198,17 @@
    "error": "HTTPError"
   },
   "Mocean": {
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
+   "title": "Santa Cruz X Pokémon TCG Blind Bag"
+  },
+  "Embark Skateshop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
-  },
-  "Embark Skateshop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
   },
   "Boarding House": {
    "state": "unchecked",
@@ -1234,11 +1232,10 @@
    "error": "HTTPError"
   },
   "Plus Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Premier": {
    "state": "unchecked",
@@ -1261,10 +1258,11 @@
    "error": "HTTPError"
   },
   "People Skate & Snowboard": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
