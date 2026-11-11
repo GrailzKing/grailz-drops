@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T05:05:11+00:00",
+ "checked_at": "2026-11-11T05:19:29+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -972,11 +972,10 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "BC Surf & Sport": {
    "state": "unchecked",
