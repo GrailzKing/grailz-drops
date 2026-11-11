@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T20:06:41+00:00",
+ "checked_at": "2026-11-11T20:20:59+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -293,11 +293,10 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Satellite Boardshop": {
    "state": "unchecked",
@@ -591,7 +590,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Boardparadise": {
    "state": "unchecked",
@@ -871,7 +870,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "TimeoutError"
   },
   "Slappy's Garage": {
    "state": "unchecked",
