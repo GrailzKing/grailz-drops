@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T14:08:21+00:00",
+ "checked_at": "2026-11-11T14:22:39+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -579,11 +579,10 @@
    "error": "HTTPError"
   },
   "Pro Skateboard Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Krudco": {
    "state": "unchecked",
