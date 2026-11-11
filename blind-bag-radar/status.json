@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T14:51:16+00:00",
+ "checked_at": "2026-11-11T15:05:35+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -578,11 +578,10 @@
    "title": ""
   },
   "Pro Skateboard Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Krudco": {
    "state": "unchecked",
@@ -1089,10 +1088,11 @@
    "error": "HTTPError"
   },
   "Anchors Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Necessary Skate Co": {
    "state": "unchecked",
@@ -1193,10 +1193,11 @@
    "error": "HTTPError"
   },
   "Killer Skatepark": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rhett Skateboarding": {
    "state": "unchecked",
@@ -1276,10 +1277,11 @@
    "error": "HTTPError"
   },
   "Premier": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Skater's Advocate": {
    "state": "unchecked",
