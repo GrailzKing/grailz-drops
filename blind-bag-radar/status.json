@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T01:01:29+00:00",
+ "checked_at": "2026-11-11T01:15:50+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1096,10 +1096,11 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
@@ -1151,10 +1152,11 @@
    "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Killer Skatepark": {
    "state": "unchecked",
@@ -1178,10 +1180,11 @@
    "error": "HTTPError"
   },
   "River Rat": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Thunderkats": {
    "state": "unchecked",
@@ -1198,24 +1201,23 @@
    "error": "HTTPError"
   },
   "Mocean": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
+   "title": "Santa Cruz X Pokémon TCG Blind Bag"
   },
   "Embark Skateshop": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
-  },
-  "Boarding House": {
    "state": "not_listed",
    "price": "",
    "url": "",
    "title": ""
+  },
+  "Boarding House": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Solstice Skateboarding": {
    "state": "unchecked",
@@ -1245,10 +1247,11 @@
    "error": "HTTPError"
   },
   "Skater's Advocate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Olympia Skateshop": {
    "state": "unchecked",
