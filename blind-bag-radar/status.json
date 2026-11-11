@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T02:27:48+00:00",
+ "checked_at": "2026-11-11T02:42:05+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -794,11 +794,10 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rip City Skates": {
    "state": "not_listed",
@@ -807,11 +806,10 @@
    "title": ""
   },
   "Rose Street Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
@@ -1161,7 +1159,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Blacklist Boardshop": {
    "state": "unchecked",
