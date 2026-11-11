@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T20:49:36+00:00",
+ "checked_at": "2026-11-11T21:03:55+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -190,11 +190,10 @@
    "title": "Santa Cruz X Pokémon TCG Blind Bag Deck"
   },
   "DLX Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skate Hub": {
    "state": "not_listed",
@@ -300,24 +299,23 @@
    "title": ""
   },
   "Satellite Boardshop": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
-  },
-  "510 Skateboarding": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
-  },
-  "818 Skate Shop": {
    "state": "not_listed",
    "price": "",
    "url": "",
    "title": ""
+  },
+  "510 Skateboarding": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "818 Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "APT Skateshop": {
    "state": "unchecked",
@@ -590,7 +588,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Boardparadise": {
    "state": "unchecked",
@@ -1262,7 +1260,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Mocean": {
    "state": "unchecked",
