@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T16:08:30+00:00",
+ "checked_at": "2026-11-12T16:22:48+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -572,11 +572,10 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pro Skateboard Shop": {
    "state": "unchecked",
