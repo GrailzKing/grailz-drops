@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T03:01:46+00:00",
+ "checked_at": "2026-11-12T03:16:04+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -527,29 +527,31 @@
    "title": ""
   },
   "Orchard Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Exodus Ride Shop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
   },
-  "Exodus Ride Shop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
-  },
   "3rd Lair": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Familia": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Escapist Skateboarding": {
    "state": "unchecked",
