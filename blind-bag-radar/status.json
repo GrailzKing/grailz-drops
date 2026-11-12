@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T00:10:07+00:00",
+ "checked_at": "2026-11-12T00:24:25+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -527,11 +527,10 @@
    "title": ""
   },
   "Orchard Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Exodus Ride Shop": {
    "state": "unchecked",
