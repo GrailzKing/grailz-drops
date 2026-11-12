@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T12:48:01+00:00",
+ "checked_at": "2026-11-12T13:02:18+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -413,7 +413,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "JSONDecodeError"
   },
   "Pawnshop Skate": {
    "state": "not_listed",
@@ -545,11 +545,10 @@
    "title": ""
   },
   "Familia": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Escapist Skateboarding": {
    "state": "unchecked",
