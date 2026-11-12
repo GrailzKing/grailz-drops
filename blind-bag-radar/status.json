@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T21:37:28+00:00",
+ "checked_at": "2026-11-12T21:51:45+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -750,10 +750,11 @@
    "error": "JSONDecodeError"
   },
   "Lowkey Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Marriage Skateshop": {
    "state": "unchecked",
@@ -991,7 +992,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Emage": {
    "state": "unchecked",
@@ -1225,10 +1226,11 @@
    "error": "HTTPError"
   },
   "Embark Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Boarding House": {
    "state": "unchecked",
