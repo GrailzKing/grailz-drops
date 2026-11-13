@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-13T18:21:35+00:00",
+ "checked_at": "2026-11-13T18:35:51+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -737,10 +737,11 @@
    "title": ""
   },
   "Garage Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Kingswell": {
    "state": "unchecked",
@@ -762,16 +763,18 @@
    "title": ""
   },
   "Midnite Theories": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Overload": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pancho's": {
    "state": "unchecked",
@@ -781,10 +784,11 @@
    "error": "HTTPError"
   },
   "PLA Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Programme": {
    "state": "unchecked",
@@ -794,22 +798,25 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rip City Skates": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rose Street Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
