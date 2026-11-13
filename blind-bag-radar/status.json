@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-13T00:00:36+00:00",
+ "checked_at": "2026-11-13T00:14:55+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -806,11 +806,10 @@
    "title": ""
   },
   "Rose Street Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sideroom Skateshop": {
    "state": "unchecked",
@@ -1247,17 +1246,17 @@
    "error": "HTTPError"
   },
   "Plus Skateboarding": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
-  },
-  "Premier": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
+  },
+  "Premier": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Skater's Advocate": {
    "state": "unchecked",
