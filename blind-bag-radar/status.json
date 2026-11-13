@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-13T08:35:10+00:00",
+ "checked_at": "2026-11-13T08:49:28+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -383,10 +383,11 @@
    "error": "HTTPError"
   },
   "Kingpin Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "LA Skate": {
    "state": "not_listed",
@@ -572,10 +573,11 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pro Skateboard Shop": {
    "state": "unchecked",
