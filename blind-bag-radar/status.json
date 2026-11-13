@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-13T10:15:20+00:00",
+ "checked_at": "2026-11-13T10:29:37+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -540,11 +540,10 @@
    "error": "HTTPError"
   },
   "3rd Lair": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Familia": {
    "state": "unchecked",
@@ -1237,7 +1236,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "HTTPError"
   },
   "Mocean": {
    "state": "unchecked",
