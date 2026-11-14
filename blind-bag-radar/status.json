@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-14T21:08:32+00:00",
+ "checked_at": "2026-11-14T21:22:51+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1012,10 +1012,11 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sartorius Sports": {
    "state": "unchecked",
