@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-14T22:20:03+00:00",
+ "checked_at": "2026-11-14T22:34:21+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1031,10 +1031,11 @@
    "title": ""
   },
   "Sister Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
@@ -1051,10 +1052,11 @@
    "error": "HTTPError"
   },
   "Andrew": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anchors Skate Shop": {
    "state": "unchecked",
