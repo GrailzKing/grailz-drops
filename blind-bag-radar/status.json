@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15T06:56:23+00:00",
+ "checked_at": "2026-11-15T07:10:43+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -130,11 +130,10 @@
    "title": ""
   },
   "Cal Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Labor Skate Shop": {
    "state": "not_listed",
@@ -419,7 +418,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "JSONDecodeError"
   },
   "Pawnshop Skate": {
    "state": "unchecked",
