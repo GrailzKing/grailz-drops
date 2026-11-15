@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15T12:26:02+00:00",
+ "checked_at": "2026-11-15T12:40:20+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -919,7 +919,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Crooks Skate Shop": {
    "state": "unchecked",
