@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15T12:40:20+00:00",
+ "checked_at": "2026-11-15T12:54:38+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -642,11 +642,10 @@
    "error": "HTTPError"
   },
   "Blue and Gold": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Faith Skate Supply": {
    "state": "unchecked",
@@ -919,7 +918,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Crooks Skate Shop": {
    "state": "unchecked",
