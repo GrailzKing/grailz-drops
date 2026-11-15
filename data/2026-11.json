@@ -305,6 +305,20 @@
       "price": ""
     },
     {
+      "cat": "MATTEL CREATIONS",
+      "month": 11,
+      "day": 17,
+      "tbd": false,
+      "name": "hot-wheels-collectors-member-exclusive-11-17",
+      "url1": "https://creations.mattel.com/pages/launch-calendar",
+      "url2": "",
+      "time": "11:00",
+      "price": "",
+      "edition": "Member Exclusive",
+      "print_run": "",
+      "retailer": "Mattel Creations"
+    },
+    {
       "cat": "TOPPS",
       "month": 11,
       "day": 18,
@@ -327,6 +341,20 @@
       "price": ""
     },
     {
+      "cat": "MATTEL CREATIONS",
+      "month": 11,
+      "day": 18,
+      "tbd": false,
+      "name": "barbie-signature-11-18",
+      "url1": "https://creations.mattel.com/pages/launch-calendar",
+      "url2": "",
+      "time": "11:00",
+      "price": "",
+      "edition": "",
+      "print_run": "",
+      "retailer": "Mattel Creations"
+    },
+    {
       "cat": "TOPPS",
       "month": 11,
       "day": 19,
@@ -336,6 +364,34 @@
       "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
       "time": "10:00",
       "price": ""
+    },
+    {
+      "cat": "MATTEL CREATIONS",
+      "month": 11,
+      "day": 19,
+      "tbd": false,
+      "name": "hot-wheels-collectors-11-19",
+      "url1": "https://creations.mattel.com/pages/launch-calendar",
+      "url2": "",
+      "time": "11:00",
+      "price": "",
+      "edition": "",
+      "print_run": "",
+      "retailer": "Mattel Creations"
+    },
+    {
+      "cat": "MATTEL CREATIONS",
+      "month": 11,
+      "day": 23,
+      "tbd": false,
+      "name": "barbie-signature-member-only-11-23",
+      "url1": "https://creations.mattel.com/pages/launch-calendar",
+      "url2": "",
+      "time": "11:00",
+      "price": "",
+      "edition": "Member Only Access 24 Hours",
+      "print_run": "",
+      "retailer": "Mattel Creations"
     },
     {
       "cat": "TOPPS",
@@ -382,6 +438,20 @@
       "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
       "time": "12:00",
       "price": ""
+    },
+    {
+      "cat": "MATTEL CREATIONS",
+      "month": 11,
+      "day": 27,
+      "tbd": false,
+      "name": "wwe-creations-exclusive-design-11-27",
+      "url1": "https://creations.mattel.com/pages/launch-calendar",
+      "url2": "",
+      "time": "11:00",
+      "price": "",
+      "edition": "Creations Exclusive Design",
+      "print_run": "",
+      "retailer": "Mattel Creations"
     }
   ],
   "drop_count": 52
