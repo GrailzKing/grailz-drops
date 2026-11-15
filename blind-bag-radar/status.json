@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-14T23:45:51+00:00",
+ "checked_at": "2026-11-15T00:00:09+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1051,18 +1051,16 @@
    "error": "HTTPError"
   },
   "Andrew": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Anchors Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Necessary Skate Co": {
    "state": "unchecked",
@@ -1079,18 +1077,16 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Greater Miami Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
@@ -1100,11 +1096,10 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
