@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15T15:18:14+00:00",
+ "checked_at": "2026-11-15T15:32:33+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -590,10 +590,11 @@
    "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Manifest Skateshop": {
    "state": "unchecked",
