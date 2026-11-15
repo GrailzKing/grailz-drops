@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15T02:52:25+00:00",
+ "checked_at": "2026-11-15T03:06:45+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -293,11 +293,10 @@
    "error": "HTTPError"
   },
   "303 Boards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Satellite Boardshop": {
    "state": "not_listed",
@@ -600,11 +599,10 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pro Skateboard Shop": {
    "state": "unchecked",
@@ -684,11 +682,10 @@
    "error": "HTTPError"
   },
   "Faith Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Funwheels": {
    "state": "unchecked",
