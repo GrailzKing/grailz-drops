@@ -271,6 +271,19 @@ MANUAL_DROPS = [
     ("TOPPS","8-25","2026-topps-chrome-star-wars","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
     ("TOPPS","8-26","2026-topps-chrome-baseball-sapphire-edition","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
     ("TOPPS","8-26","2026-topps-chrome-team-japan-samurai-collection","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),    ("TOPPS","8-TBD","2026-skybox-metal-universe-space-jam-30th","https://www.beckett.com/news/sports-card-release-calendar-dates/","", "12:00"),
+    # ── TOPPS — November 2026 (from topps.com/release-calendar 11/15) ─────
+    ("TOPPS","11-16","2026-topps-black-and-white-baseball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "11:00"),
+    ("TOPPS","11-16","2025-26-topps-x-bob-ross-joy-of-basketball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "13:00"),
+    ("TOPPS","11-17","2026-topps-composite-formula-1","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "11:00"),
+    ("TOPPS","11-18","2026-topps-pro-debut-baseball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "11:00"),
+    ("TOPPS","11-18","2026-topps-chrome-football","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
+    ("TOPPS","11-19","2026-topps-finest-formula-1","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "10:00"),
+    ("TOPPS","11-24","2025-26-topps-five-star-basketball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "11:00"),
+    ("TOPPS","11-25","2025-26-topps-stadium-club-basketball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "11:00"),
+    ("TOPPS","11-25","2026-topps-gilded-collection-baseball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
+    # ── TOPPS — December 2026 release spotlight ───────────────────────────
+    ("TOPPS","12-4","2026-bowman-u-signature-football","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
+    ("TOPPS","12-9","2026-topps-chrome-update-series-baseball","https://www.topps.com/release-calendar","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
     # ── PANINI ────────────────────────────────────────────────────────────
     ("PANINI","8-5","2026-panini-contenders-pfl","https://www.overtimecardsandcollectibles.com/product-release-schedule","", "12:00"),
     ("PANINI","8-12","2026-panini-prizm-baseball","https://cardlines.com/the-biggest-sports-card-releases-of-august-2026/","https://www.beckett.com/news/sports-card-release-calendar-dates/", "12:00"),
