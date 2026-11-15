@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15T13:37:34+00:00",
+ "checked_at": "2026-11-15T13:51:52+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -609,10 +609,11 @@
    "title": ""
   },
   "Proper Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Holistic Skate Shop": {
    "state": "not_listed",
@@ -1307,10 +1308,11 @@
    "error": "HTTPError"
   },
   "Cal Surf": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Northside Boards": {
    "state": "unchecked",
