@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-16T04:12:30+00:00",
+ "checked_at": "2026-11-16T04:26:49+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -916,10 +916,11 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -1083,11 +1084,10 @@
    "title": ""
   },
   "Greater Miami Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
@@ -1097,11 +1097,10 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
@@ -1132,18 +1131,16 @@
    "error": "JSONDecodeError"
   },
   "Prestige Skateboards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Fargo Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Starlight Skatepark": {
    "state": "unchecked",
@@ -1153,11 +1150,10 @@
    "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Killer Skatepark": {
    "state": "unchecked",
@@ -1174,11 +1170,10 @@
    "error": "TimeoutError"
   },
   "Subsect Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "River Rat": {
    "state": "unchecked",
@@ -1202,10 +1197,11 @@
    "error": "HTTPError"
   },
   "Mocean": {
-   "state": "sold_out",
-   "price": "$139.95",
-   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
-   "title": "Santa Cruz X Pokémon TCG Blind Bag"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Embark Skateshop": {
    "state": "unchecked",
