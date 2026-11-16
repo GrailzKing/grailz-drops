@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-16T04:26:49+00:00",
+ "checked_at": "2026-11-16T04:41:06+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -916,11 +916,10 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -1156,11 +1155,10 @@
    "title": ""
   },
   "Killer Skatepark": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rhett Skateboarding": {
    "state": "unchecked",
@@ -1176,11 +1174,10 @@
    "title": ""
   },
   "River Rat": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Thunderkats": {
    "state": "unchecked",
