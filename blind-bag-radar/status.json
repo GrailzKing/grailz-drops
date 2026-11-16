@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-16T08:29:55+00:00",
+ "checked_at": "2026-11-16T08:44:38+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1231,22 +1231,25 @@
    "title": ""
   },
   "Premier": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Skater's Advocate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Olympia Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "People Skate & Snowboard": {
    "state": "not_listed",
@@ -1262,10 +1265,11 @@
    "error": "HTTPError"
   },
   "Cal Surf": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Northside Boards": {
    "state": "unchecked",
@@ -1275,10 +1279,11 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Change": {
    "state": "unchecked",
