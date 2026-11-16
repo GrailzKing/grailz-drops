@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-16T21:10:27+00:00",
+ "checked_at": "2026-11-16T21:24:47+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -509,39 +509,34 @@
    "title": ""
   },
   "Pure Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vu Skateboard Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Eastern Boarder": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Orchard Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Exodus Ride Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "3rd Lair": {
    "state": "unchecked",
@@ -873,10 +868,11 @@
    "error": "HTTPError"
   },
   "Unmodern Skateshop": {
-   "state": "in_stock",
-   "price": "$349.99",
-   "url": "https://unmodernskateshop.com/products/nhs-pokemon-tcg-blind-bag-santa-cruz-decks",
-   "title": "SANTA CRUZ X POKÉMON | TCG Blind BAG Deck"
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Vault Boardshop": {
    "state": "unchecked",
@@ -949,10 +945,11 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -1179,10 +1176,11 @@
    "error": "HTTPError"
   },
   "Fargo Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Starlight Skatepark": {
    "state": "unchecked",
