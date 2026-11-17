@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T20:36:03+00:00",
+ "checked_at": "2026-11-17T20:50:22+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -933,7 +933,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "TimeoutError"
   },
   "Milo Skate": {
    "state": "unchecked",
@@ -1031,10 +1031,11 @@
    "title": ""
   },
   "Sister Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
@@ -1051,16 +1052,18 @@
    "error": "HTTPError"
   },
   "Andrew": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anchors Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Necessary Skate Co": {
    "state": "unchecked",
@@ -1077,16 +1080,18 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Greater Miami Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
