@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T00:45:49+00:00",
+ "checked_at": "2026-11-17T01:00:07+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -768,11 +768,10 @@
    "title": ""
   },
   "Overload": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Pancho's": {
    "state": "unchecked",
@@ -782,11 +781,10 @@
    "error": "HTTPError"
   },
   "PLA Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Programme": {
    "state": "unchecked",
@@ -796,18 +794,16 @@
    "error": "JSONDecodeError"
   },
   "Prooflab": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rip City Skates": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rose Street Skateshop": {
    "state": "unchecked",
