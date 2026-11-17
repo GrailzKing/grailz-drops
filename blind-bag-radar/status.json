@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T22:02:34+00:00",
+ "checked_at": "2026-11-17T22:16:54+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1249,10 +1249,11 @@
    "title": ""
   },
   "People Skate & Snowboard": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
