@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T04:49:43+00:00",
+ "checked_at": "2026-11-17T05:04:00+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1130,10 +1130,11 @@
    "error": "JSONDecodeError"
   },
   "Prestige Skateboards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Fargo Skateboarding": {
    "state": "unchecked",
