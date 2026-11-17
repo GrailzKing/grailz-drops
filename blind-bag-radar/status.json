@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T22:59:51+00:00",
+ "checked_at": "2026-11-17T23:14:10+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -933,7 +933,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "TimeoutError"
   },
   "Milo Skate": {
    "state": "unchecked",
@@ -954,7 +954,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "Sifu Skate": {
    "state": "unchecked",
@@ -1225,11 +1225,10 @@
    "title": ""
   },
   "Plus Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Premier": {
    "state": "not_listed",
@@ -1238,25 +1237,22 @@
    "title": ""
   },
   "Skater's Advocate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Olympia Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "People Skate & Snowboard": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
@@ -1280,11 +1276,10 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Change": {
    "state": "unchecked",
