@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T02:55:07+00:00",
+ "checked_at": "2026-11-17T03:09:25+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1150,11 +1150,10 @@
    "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Killer Skatepark": {
    "state": "unchecked",
