@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T23:14:10+00:00",
+ "checked_at": "2026-11-17T23:28:29+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -933,7 +933,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "JSONDecodeError"
   },
   "Milo Skate": {
    "state": "unchecked",
@@ -1249,10 +1249,11 @@
    "title": ""
   },
   "People Skate & Snowboard": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
@@ -1276,10 +1277,11 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Change": {
    "state": "unchecked",
