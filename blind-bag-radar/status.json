@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T08:53:20+00:00",
+ "checked_at": "2026-11-17T09:07:38+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -218,7 +218,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "Insanity Boardshop": {
    "state": "unchecked",
@@ -244,7 +244,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "Sidewalk Surfer": {
    "state": "unchecked",
@@ -555,7 +555,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "Infinity Skateshop": {
    "state": "unchecked",
@@ -830,7 +830,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "Surfside Sports": {
    "state": "unchecked",
