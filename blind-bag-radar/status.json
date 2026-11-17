@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T07:56:06+00:00",
+ "checked_at": "2026-11-17T08:10:24+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -671,7 +671,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "URLError"
+   "error": "HTTPError"
   },
   "Action Park Alliance": {
    "state": "unchecked",
@@ -1155,11 +1155,10 @@
    "title": ""
   },
   "Killer Skatepark": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rhett Skateboarding": {
    "state": "unchecked",
@@ -1195,25 +1194,22 @@
    "error": "HTTPError"
   },
   "Mocean": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
+   "title": "Santa Cruz X Pokémon TCG Blind Bag"
   },
   "Embark Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Boarding House": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Solstice Skateboarding": {
    "state": "unchecked",
@@ -1223,46 +1219,40 @@
    "error": "HTTPError"
   },
   "Theory Skate & Snow": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Plus Skateboarding": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Premier": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Skater's Advocate": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Olympia Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "People Skate & Snowboard": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
