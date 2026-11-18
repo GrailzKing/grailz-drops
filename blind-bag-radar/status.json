@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-18T19:48:44+00:00",
+ "checked_at": "2026-11-18T20:03:04+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -590,11 +590,10 @@
    "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Manifest Skateshop": {
    "state": "unchecked",
@@ -618,11 +617,10 @@
    "error": "HTTPError"
   },
   "Holistic Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Salty Peaks": {
    "state": "unchecked",
@@ -916,7 +914,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "TimeoutError"
+   "error": "HTTPError"
   },
   "CB Supply Co": {
    "state": "unchecked",
