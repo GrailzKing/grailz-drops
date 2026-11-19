@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-19T04:38:51+00:00",
+ "checked_at": "2026-11-19T04:53:50+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -413,7 +413,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Pawnshop Skate": {
    "state": "not_listed",
@@ -678,7 +678,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Baker Street Skate": {
    "state": "unchecked",
@@ -815,7 +815,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "URLError"
   },
   "Slappy's Garage": {
    "state": "unchecked",
@@ -912,7 +912,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Furnace Skate": {
    "state": "not_listed",
