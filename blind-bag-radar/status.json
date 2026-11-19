@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-19T16:37:47+00:00",
+ "checked_at": "2026-11-19T16:52:08+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -915,10 +915,11 @@
    "error": "JSONDecodeError"
   },
   "Furnace Skate": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Grandeur Skate": {
    "state": "unchecked",
@@ -970,10 +971,11 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "BC Surf & Sport": {
    "state": "unchecked",
@@ -1011,10 +1013,11 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sartorius Sports": {
    "state": "unchecked",
@@ -1024,16 +1027,18 @@
    "error": "JSONDecodeError"
   },
   "Archives": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sister Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
@@ -1050,16 +1055,18 @@
    "error": "HTTPError"
   },
   "Andrew": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anchors Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Necessary Skate Co": {
    "state": "unchecked",
@@ -1076,16 +1083,18 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Greater Miami Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
