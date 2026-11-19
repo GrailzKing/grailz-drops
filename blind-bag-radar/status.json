@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-19T17:49:27+00:00",
+ "checked_at": "2026-11-19T18:03:49+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -75,7 +75,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Darkside Snowboards": {
    "state": "not_listed",
@@ -348,7 +348,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "East 4th": {
    "state": "unchecked",
@@ -692,7 +692,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Boarders LA": {
    "state": "not_listed",
@@ -755,10 +755,11 @@
    "title": ""
   },
   "Marriage Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Midnite Theories": {
    "state": "unchecked",
