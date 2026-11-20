@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-20T14:25:47+00:00",
+ "checked_at": "2026-11-20T14:40:07+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -994,7 +994,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Prom Skates": {
    "state": "unchecked",
@@ -1105,7 +1105,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Aloha Boards": {
    "state": "unchecked",
@@ -1154,11 +1154,10 @@
    "title": ""
   },
   "Killer Skatepark": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rhett Skateboarding": {
    "state": "unchecked",
