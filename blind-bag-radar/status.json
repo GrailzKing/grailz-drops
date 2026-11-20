@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-20T14:54:27+00:00",
+ "checked_at": "2026-11-20T15:08:47+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1154,11 +1154,10 @@
    "title": ""
   },
   "Killer Skatepark": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rhett Skateboarding": {
    "state": "unchecked",
@@ -1174,10 +1173,11 @@
    "title": ""
   },
   "River Rat": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Thunderkats": {
    "state": "unchecked",
@@ -1194,16 +1194,18 @@
    "error": "HTTPError"
   },
   "Mocean": {
-   "state": "sold_out",
-   "price": "$139.95",
-   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
-   "title": "Santa Cruz X Pokémon TCG Blind Bag"
-  },
-  "Embark Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Embark Skateshop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Boarding House": {
    "state": "unchecked",
