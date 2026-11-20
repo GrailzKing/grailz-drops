@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-20T17:32:44+00:00",
+ "checked_at": "2026-11-20T17:47:05+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -539,10 +539,11 @@
    "title": ""
   },
   "3rd Lair": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Familia": {
    "state": "not_listed",
@@ -713,11 +714,10 @@
    "title": ""
   },
   "Everyday Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Goodtimes": {
    "state": "not_listed",
@@ -726,11 +726,10 @@
    "title": ""
   },
   "Hardline Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Inner City Skate (IDS)": {
    "state": "not_listed",
@@ -739,11 +738,10 @@
    "title": ""
   },
   "Garage Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Kingswell": {
    "state": "unchecked",
