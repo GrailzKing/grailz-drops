@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-21T16:43:35+00:00",
+ "checked_at": "2026-11-21T16:57:53+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -767,10 +767,11 @@
    "title": ""
   },
   "Overload": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pancho's": {
    "state": "unchecked",
