@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-21T19:49:42+00:00",
+ "checked_at": "2026-11-21T20:04:01+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -488,7 +488,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "Warped Skateshop": {
    "state": "not_listed",
@@ -642,17 +642,17 @@
    "error": "HTTPError"
   },
   "Blue and Gold": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
-  },
-  "Faith Skate Supply": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
+  },
+  "Faith Skate Supply": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Funwheels": {
    "state": "unchecked",
