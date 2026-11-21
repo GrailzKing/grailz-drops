@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-21T21:16:40+00:00",
+ "checked_at": "2026-11-21T21:31:06+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -649,11 +649,10 @@
    "error": "HTTPError"
   },
   "Faith Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Funwheels": {
    "state": "unchecked",
