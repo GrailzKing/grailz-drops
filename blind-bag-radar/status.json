@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-22T18:23:29+00:00",
+ "checked_at": "2026-11-22T18:37:47+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -799,11 +799,10 @@
    "title": ""
   },
   "Rip City Skates": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rose Street Skateshop": {
    "state": "unchecked",
