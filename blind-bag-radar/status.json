@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-22T01:22:32+00:00",
+ "checked_at": "2026-11-22T01:36:51+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -702,10 +702,11 @@
    "error": "HTTPError"
   },
   "Breakfree Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Brooklyn Projects": {
    "state": "unchecked",
