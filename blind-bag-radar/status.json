@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-22T01:36:51+00:00",
+ "checked_at": "2026-11-22T01:51:10+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -695,25 +695,22 @@
    "error": "HTTPError"
   },
   "Boarders LA": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Breakfree Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Brooklyn Projects": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Everyday Skateshop": {
    "state": "unchecked",
@@ -723,11 +720,10 @@
    "error": "HTTPError"
   },
   "Goodtimes": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Hardline Skateshop": {
    "state": "unchecked",
