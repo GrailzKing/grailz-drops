@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-22T23:09:59+00:00",
+ "checked_at": "2026-11-22T23:24:17+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -648,11 +648,10 @@
    "title": ""
   },
   "Faith Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Funwheels": {
    "state": "unchecked",
@@ -662,11 +661,10 @@
    "error": "HTTPError"
   },
   "Reset Mercantile": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "World Conspiracy": {
    "state": "unchecked",
@@ -697,11 +695,10 @@
    "error": "HTTPError"
   },
   "Boarders LA": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Breakfree Skateshop": {
    "state": "unchecked",
@@ -711,18 +708,16 @@
    "error": "HTTPError"
   },
   "Brooklyn Projects": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Everyday Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Goodtimes": {
    "state": "unchecked",
