@@ -8,40 +8,7 @@
       "month": 11,
       "day": 2,
       "tbd": false,
-      "name": "topps-merlin-uefa-club-competitions-2025-26",
-      "url1": "https://www.topps.com/release-calendar",
-      "url2": "",
-      "time": "10:00",
-      "price": null
-    },
-    {
-      "cat": "TOPPS",
-      "month": 11,
-      "day": 2,
-      "tbd": false,
       "name": "topps-chrome-update-series-baseball-2026",
-      "url1": "https://www.topps.com/release-calendar",
-      "url2": "",
-      "time": "10:00",
-      "price": null
-    },
-    {
-      "cat": "TOPPS",
-      "month": 11,
-      "day": 2,
-      "tbd": false,
-      "name": "bowman-u-signature-football-2026",
-      "url1": "https://www.topps.com/release-calendar",
-      "url2": "",
-      "time": "10:00",
-      "price": null
-    },
-    {
-      "cat": "TOPPS",
-      "month": 11,
-      "day": 3,
-      "tbd": false,
-      "name": "topps-true-football-bundesliga-2025-26",
       "url1": "https://www.topps.com/release-calendar",
       "url2": "",
       "time": "10:00",
@@ -520,5 +487,5 @@
       "price": ""
     }
   ],
-  "drop_count": 45
+  "drop_count": 42
 }
