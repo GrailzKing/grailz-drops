@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-23T14:57:37+00:00",
+ "checked_at": "2026-11-23T15:12:05+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1076,10 +1076,11 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Greater Miami Skateshop": {
    "state": "unchecked",
