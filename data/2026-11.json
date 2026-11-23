@@ -484,6 +484,17 @@
       "price": ""
     },
     {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 11,
+      "day": 25,
+      "tbd": false,
+      "name": "kith-x-star-wars-sith-collection",
+      "url1": "https://kith.com/collections/star-wars",
+      "url2": "https://www.soleretriever.com/news/articles/kith-star-wars-sith-collection-action-figures-release-date-november-2026",
+      "time": "10:00",
+      "price": ""
+    },
+    {
       "cat": "MATTEL CREATIONS",
       "month": 11,
       "day": 27,
@@ -520,5 +531,5 @@
       "price": ""
     }
   ],
-  "drop_count": 45
+  "drop_count": 46
 }
