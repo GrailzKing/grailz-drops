@@ -15,6 +15,18 @@
       "time": "09:00"
     },
     {
+      "cat": "TOPPS",
+      "date": "12-1",
+      "month": 12,
+      "day": 1,
+      "tbd": false,
+      "name": "2026-topps-star-wars-masterwork",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
+      "time": "12:00",
+      "price": ""
+    },
+    {
       "cat": "SUPREME FW26",
       "date": "12-3",
       "month": 12,
@@ -56,6 +68,18 @@
       "url1": "https://tollhouse.com/adventcalendar",
       "time": "13:00",
       "price": 29.99
+    },
+    {
+      "cat": "TOPPS",
+      "date": "12-4",
+      "month": 12,
+      "day": 4,
+      "tbd": false,
+      "name": "2026-topps-royalty-wwe",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
+      "time": "12:00",
+      "price": ""
     },
     {
       "cat": "VINYL & MUSIC",
@@ -133,6 +157,30 @@
       "url1": "https://disneypinsblog.com",
       "url2": "https://wdwnt.com",
       "time": "09:00"
+    },
+    {
+      "cat": "TOPPS",
+      "date": "12-16",
+      "month": 12,
+      "day": 16,
+      "tbd": false,
+      "name": "2026-topps-chrome-football",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
+      "time": "12:00",
+      "price": ""
+    },
+    {
+      "cat": "TOPPS",
+      "date": "12-16",
+      "month": 12,
+      "day": 16,
+      "tbd": false,
+      "name": "2026-topps-black-and-white-baseball",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
+      "time": "11:00",
+      "price": ""
     },
     {
       "cat": "SUPREME FW26",
@@ -365,5 +413,6 @@
       "url2": "https://www.govmint.com/learn/post/united-states-mint-2026-coin-release-schedule",
       "time": "12:00"
     }
-  ]
+  ],
+  "drop_count": 37
 }

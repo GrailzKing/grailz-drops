@@ -276,17 +276,6 @@
       "month": 11,
       "day": 16,
       "tbd": false,
-      "name": "2026-topps-black-and-white-baseball",
-      "url1": "https://www.topps.com/release-calendar",
-      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
-      "time": "11:00",
-      "price": ""
-    },
-    {
-      "cat": "TOPPS",
-      "month": 11,
-      "day": 16,
-      "tbd": false,
       "name": "2025-26-topps-x-bob-ross-joy-of-basketball",
       "url1": "https://www.topps.com/release-calendar",
       "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
@@ -327,17 +316,6 @@
       "url1": "https://www.topps.com/release-calendar",
       "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
       "time": "11:00",
-      "price": ""
-    },
-    {
-      "cat": "TOPPS",
-      "month": 11,
-      "day": 18,
-      "tbd": false,
-      "name": "2026-topps-chrome-football",
-      "url1": "https://www.topps.com/release-calendar",
-      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
-      "time": "12:00",
       "price": ""
     },
     {
@@ -405,6 +383,17 @@
       "price": ""
     },
     {
+      "cat": "TOPPS",
+      "month": 11,
+      "day": 24,
+      "tbd": false,
+      "name": "2026-topps-chrome-marvel-studios",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
+      "time": "12:00",
+      "price": ""
+    },
+    {
       "cat": "FUNKO POP",
       "month": 11,
       "day": 25,
@@ -452,7 +441,18 @@
       "edition": "Creations Exclusive Design",
       "print_run": "",
       "retailer": "Mattel Creations"
+    },
+    {
+      "cat": "TOPPS",
+      "month": 11,
+      "day": 30,
+      "tbd": false,
+      "name": "2026-topps-mls-black-and-white-soccer",
+      "url1": "https://www.topps.com/release-calendar",
+      "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
+      "time": "12:00",
+      "price": ""
     }
   ],
-  "drop_count": 52
+  "drop_count": 39
 }
