@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-23T09:12:20+00:00",
+ "checked_at": "2026-11-23T09:26:40+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -749,11 +749,10 @@
    "title": ""
   },
   "Lowkey Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Marriage Skateshop": {
    "state": "unchecked",
@@ -963,7 +962,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "TimeoutError"
   },
   "Sifu Skate": {
    "state": "unchecked",
