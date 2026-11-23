@@ -82,6 +82,18 @@
       "price": ""
     },
     {
+      "cat": "COLLAB / LIFESTYLE",
+      "date": "12-4",
+      "month": 12,
+      "day": 4,
+      "tbd": false,
+      "name": "twilight-x-crocs-classic-clog-edward-and-bella",
+      "url1": "https://www.crocs.com",
+      "url2": "https://hypebeast.com/2026/11/twilight-crocs-classic-clog-edward-and-bella-215785-90h-following-robert-pattinson-named-next-james-bond-release-info",
+      "time": "10:00",
+      "price": "90.00"
+    },
+    {
       "cat": "VINYL & MUSIC",
       "date": "12-7",
       "month": 12,
@@ -414,5 +426,5 @@
       "time": "12:00"
     }
   ],
-  "drop_count": 37
+  "drop_count": 38
 }
