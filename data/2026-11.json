@@ -487,6 +487,17 @@
       "retailer": "Mattel Creations"
     },
     {
+      "cat": "VINYL & MUSIC",
+      "month": 11,
+      "day": 27,
+      "tbd": false,
+      "name": "record-store-day-black-friday-2026",
+      "url1": "https://recordstoreday.com/SpecialReleases",
+      "url2": "https://www.thelineofbestfit.com/news/record-store-day-black-friday-2026-check-out-the-full-list-of-releases",
+      "time": "08:00",
+      "price": ""
+    },
+    {
       "cat": "TOPPS",
       "month": 11,
       "day": 30,
@@ -498,5 +509,5 @@
       "price": ""
     }
   ],
-  "drop_count": 43
+  "drop_count": 44
 }
