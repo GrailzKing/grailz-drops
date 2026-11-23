@@ -5,7 +5,7 @@
   "drops": [
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 2,
       "tbd": false,
       "name": "topps-merlin-uefa-club-competitions-2025-26",
@@ -16,7 +16,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 2,
       "tbd": false,
       "name": "topps-chrome-update-series-baseball-2026",
@@ -27,7 +27,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 2,
       "tbd": false,
       "name": "bowman-u-signature-football-2026",
@@ -38,7 +38,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 3,
       "tbd": false,
       "name": "topps-true-football-bundesliga-2025-26",
@@ -49,7 +49,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 4,
       "tbd": false,
       "name": "topps-stadium-club-chrome-uefa-champions-league",
@@ -73,7 +73,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 4,
       "tbd": false,
       "name": "topps-cosmic-chrome-baseball-2026",
@@ -84,7 +84,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 4,
       "tbd": false,
       "name": "topps-heritage-football-2026",
@@ -95,7 +95,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 4,
       "tbd": false,
       "name": "topps-mint-disney-2026",
@@ -116,7 +116,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 5,
       "tbd": false,
       "name": "topps-flagship-basketball-2026-27",
@@ -127,7 +127,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 6,
       "tbd": false,
       "name": "topps-inception-football-2026",
@@ -151,7 +151,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 8,
       "tbd": false,
       "name": "topps-stadium-club-football-2026",
@@ -172,7 +172,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 10,
       "tbd": false,
       "name": "topps-hoops-basketball-2026-27",
@@ -196,7 +196,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 11,
       "tbd": false,
       "name": "topps-allen-ginter-x-baseball-2026",
@@ -207,7 +207,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 11,
       "tbd": false,
       "name": "topps-museum-collection-baseball-2026",
@@ -218,7 +218,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 12,
       "tbd": false,
       "name": "topps-flagship-bundesliga-2026-27",
@@ -229,7 +229,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 13,
       "tbd": false,
       "name": "topps-royalty-ufc-2026",
@@ -240,7 +240,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 13,
       "tbd": false,
       "name": "topps-midnight-football-2026",
@@ -251,7 +251,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 13,
       "tbd": false,
       "name": "topps-royalty-tennis-2026",
@@ -262,7 +262,7 @@
     },
     {
       "cat": "TOPPS",
-      "month": "2026-11",
+      "month": 11,
       "day": 13,
       "tbd": false,
       "name": "topps-t205-baseball-2026",
