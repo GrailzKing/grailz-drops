@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-23T22:38:38+00:00",
+ "checked_at": "2026-11-23T22:52:56+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -625,7 +625,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "Commonwealth": {
    "state": "unchecked",
@@ -1076,16 +1076,18 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Greater Miami Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
@@ -1095,10 +1097,11 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
@@ -1129,16 +1132,18 @@
    "error": "JSONDecodeError"
   },
   "Prestige Skateboards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Fargo Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Starlight Skatepark": {
    "state": "unchecked",
@@ -1148,10 +1153,11 @@
    "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Killer Skatepark": {
    "state": "unchecked",
@@ -1168,16 +1174,18 @@
    "error": "TimeoutError"
   },
   "Subsect Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "River Rat": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Thunderkats": {
    "state": "unchecked",
@@ -1271,11 +1279,10 @@
    "error": "HTTPError"
   },
   "Cal Surf": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Northside Boards": {
    "state": "unchecked",
