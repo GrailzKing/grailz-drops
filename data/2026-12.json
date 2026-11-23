@@ -27,6 +27,18 @@
       "price": ""
     },
     {
+      "cat": "COLLAB / LIFESTYLE",
+      "date": "12-1",
+      "month": 12,
+      "day": 1,
+      "tbd": false,
+      "name": "mcdonalds-x-home-alone-festive-meal-collectible-socks",
+      "url1": "https://www.mcdonalds.com",
+      "url2": "https://hypebeast.com/2026/11/mcdonalds-home-alone-festive-meal-socks-collaboration-release-info",
+      "time": "10:00",
+      "price": ""
+    },
+    {
       "cat": "SUPREME FW26",
       "date": "12-3",
       "month": 12,
@@ -426,5 +438,5 @@
       "time": "12:00"
     }
   ],
-  "drop_count": 38
+  "drop_count": 39
 }
