@@ -358,6 +358,17 @@
       "retailer": "Mattel Creations"
     },
     {
+      "cat": "COLLAB / LIFESTYLE",
+      "month": 11,
+      "day": 20,
+      "tbd": false,
+      "name": "dunkin-x-marvel-avengers-doomsday-collection",
+      "url1": "https://news.dunkindonuts.com/blog/assemble-your-dunkin-R-avengers-doomsday-collection",
+      "url2": "https://www.dunkindonuts.com/en/locations",
+      "time": "10:00",
+      "price": ""
+    },
+    {
       "cat": "MATTEL CREATIONS",
       "month": 11,
       "day": 23,
@@ -509,5 +520,5 @@
       "price": ""
     }
   ],
-  "drop_count": 44
+  "drop_count": 45
 }
