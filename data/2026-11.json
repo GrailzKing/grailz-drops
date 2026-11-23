@@ -372,6 +372,50 @@
       "retailer": "Mattel Creations"
     },
     {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 23,
+      "tbd": false,
+      "name": "pop-cyber-corrupted-sonic-with-protector-legendary",
+      "url1": "https://funko.com/limited-edition-calendar.html",
+      "url2": "",
+      "time": "10:00",
+      "price": "39.99"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 23,
+      "tbd": false,
+      "name": "pop-black-widow-black-suit-elite",
+      "url1": "https://funko.com/limited-edition-calendar.html",
+      "url2": "",
+      "time": "10:00",
+      "price": "19.99"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 23,
+      "tbd": false,
+      "name": "pop-howard-the-duck-power-cosmic-metallic-ultra",
+      "url1": "https://funko.com/limited-edition-calendar.html",
+      "url2": "",
+      "time": "10:00",
+      "price": "24.99"
+    },
+    {
+      "cat": "FUNKO POP",
+      "month": 11,
+      "day": 23,
+      "tbd": false,
+      "name": "pop-kevin-owens-with-protector-royalty",
+      "url1": "https://funko.com/limited-edition-calendar.html",
+      "url2": "",
+      "time": "10:00",
+      "price": "29.99"
+    },
+    {
       "cat": "TOPPS",
       "month": 11,
       "day": 24,
@@ -454,5 +498,5 @@
       "price": ""
     }
   ],
-  "drop_count": 39
+  "drop_count": 43
 }
