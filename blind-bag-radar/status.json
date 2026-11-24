@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-24T18:13:51+00:00",
+ "checked_at": "2026-11-24T18:28:10+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -603,32 +603,29 @@
    "error": "HTTPError"
   },
   "Embassy Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Proper Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Holistic Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Salty Peaks": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Commonwealth": {
    "state": "unchecked",
@@ -652,11 +649,10 @@
    "error": "HTTPError"
   },
   "Faith Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Funwheels": {
    "state": "unchecked",
