@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-24T18:42:31+00:00",
+ "checked_at": "2026-11-24T18:56:50+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -625,7 +625,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "JSONDecodeError"
   },
   "Commonwealth": {
    "state": "unchecked",
@@ -695,10 +695,11 @@
    "error": "HTTPError"
   },
   "Boarders LA": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Breakfree Skateshop": {
    "state": "not_listed",
@@ -707,16 +708,18 @@
    "title": ""
   },
   "Brooklyn Projects": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Everyday Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Goodtimes": {
    "state": "not_listed",
@@ -725,28 +728,32 @@
    "title": ""
   },
   "Hardline Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Inner City Skate (IDS)": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Garage Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Kingswell": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Lowkey Skateshop": {
    "state": "unchecked",
@@ -1035,11 +1042,10 @@
    "error": "JSONDecodeError"
   },
   "Archives": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sister Skate Shop": {
    "state": "unchecked",
@@ -1168,11 +1174,10 @@
    "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Killer Skatepark": {
    "state": "unchecked",
@@ -1245,11 +1250,10 @@
    "error": "HTTPError"
   },
   "Theory Skate & Snow": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Plus Skateboarding": {
    "state": "unchecked",
