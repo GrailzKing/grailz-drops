@@ -1,7 +1,7 @@
 {
   "month": "December 2026",
   "month_key": "2026-12",
-  "updated": "2026-09-05",
+  "updated": "2026-11-24T05:06:45Z",
   "drops": [
     {
       "cat": "DISNEY PINS",
@@ -331,6 +331,18 @@
       "time": "09:00"
     },
     {
+      "cat": "COLLAB / LIFESTYLE",
+      "date": "12-29",
+      "month": 12,
+      "day": 29,
+      "tbd": false,
+      "name": "ella-langley-be-her-noyz-eau-de-parfum-restock",
+      "url1": "https://noyz.com",
+      "url2": "https://www.ulta.com/p/be-her-by-ella-langley-pimprod2059021",
+      "time": "10:00",
+      "price": "$85.00"
+    },
+    {
       "cat": "SUPREME FW26",
       "date": "12-31",
       "month": 12,
@@ -474,5 +486,5 @@
       "time": "12:00"
     }
   ],
-  "drop_count": 42
+  "drop_count": 43
 }
