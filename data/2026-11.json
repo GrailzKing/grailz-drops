@@ -1,7 +1,7 @@
 {
   "month": "November 2026",
   "month_key": "2026-11",
-  "updated": "2026-09-05",
+  "updated": "2026-11-24T05:09:11Z",
   "drops": [
     {
       "cat": "TOPPS",
@@ -476,6 +476,18 @@
       "price": ""
     },
     {
+      "cat": "COLLAB / LIFESTYLE",
+      "date": "11-29",
+      "month": 11,
+      "day": 29,
+      "tbd": false,
+      "name": "ella-langley-be-her-noyz-eau-de-parfum-restock",
+      "url1": "https://noyz.com",
+      "url2": "https://www.ulta.com/p/be-her-by-ella-langley-pimprod2059021",
+      "time": "10:00",
+      "price": "$85.00"
+    },
+    {
       "cat": "TOPPS",
       "month": 11,
       "day": 30,
@@ -487,5 +499,5 @@
       "price": ""
     }
   ],
-  "drop_count": 42
+  "drop_count": 43
 }
