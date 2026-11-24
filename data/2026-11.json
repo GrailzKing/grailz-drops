@@ -1,7 +1,7 @@
 {
   "month": "November 2026",
   "month_key": "2026-11",
-  "updated": "2026-11-24T05:09:11Z",
+  "updated": "2026-11-24T05:45:39Z",
   "drops": [
     {
       "cat": "TOPPS",
@@ -497,7 +497,19 @@
       "url2": "https://www.beckett.com/news/sports-card-release-calendar-dates/",
       "time": "12:00",
       "price": ""
+    },
+    {
+      "cat": "COLLAB / LIFESTYLE",
+      "date": "11-30",
+      "month": 11,
+      "day": 30,
+      "tbd": false,
+      "name": "ihop-holiday-mug-2026",
+      "url1": "https://www.ihop.com",
+      "url2": "",
+      "time": "00:00",
+      "price": "$15.00"
     }
   ],
-  "drop_count": 43
+  "drop_count": 44
 }
