@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-24T16:33:35+00:00",
+ "checked_at": "2026-11-24T16:47:54+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -590,11 +590,10 @@
    "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Manifest Skateshop": {
    "state": "unchecked",
@@ -604,11 +603,10 @@
    "error": "HTTPError"
   },
   "Embassy Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Proper Skate Shop": {
    "state": "unchecked",
@@ -618,11 +616,10 @@
    "error": "HTTPError"
   },
   "Holistic Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Salty Peaks": {
    "state": "unchecked",
@@ -743,10 +740,11 @@
    "error": "HTTPError"
   },
   "Inner City Skate (IDS)": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Garage Skate Shop": {
    "state": "unchecked",
@@ -784,10 +782,11 @@
    "error": "HTTPError"
   },
   "Overload": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pancho's": {
    "state": "unchecked",
@@ -993,11 +992,10 @@
    "error": "URLError"
   },
   "Transport Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "BC Surf & Sport": {
    "state": "unchecked",
@@ -1056,11 +1054,10 @@
    "error": "HTTPError"
   },
   "Sister Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
@@ -1189,10 +1186,11 @@
    "error": "HTTPError"
   },
   "Killer Skatepark": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Rhett Skateboarding": {
    "state": "unchecked",
@@ -1230,24 +1228,23 @@
    "error": "HTTPError"
   },
   "Mocean": {
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
+   "title": "Santa Cruz X Pokémon TCG Blind Bag"
+  },
+  "Embark Skateshop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
   },
-  "Embark Skateshop": {
+  "Boarding House": {
    "state": "not_listed",
    "price": "",
    "url": "",
    "title": ""
-  },
-  "Boarding House": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
   },
   "Solstice Skateboarding": {
    "state": "unchecked",
@@ -1292,11 +1289,10 @@
    "error": "HTTPError"
   },
   "People Skate & Snowboard": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
