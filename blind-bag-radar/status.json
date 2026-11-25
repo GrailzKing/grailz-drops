@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-25T20:47:58+00:00",
+ "checked_at": "2026-11-25T21:02:17+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -572,28 +572,32 @@
    "error": "HTTPError"
   },
   "NJ Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pro Skateboard Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Krudco": {
-   "state": "sold_out",
-   "price": "$140.00",
-   "url": "https://www.krudco.com/products/pokemon-tcg-blind-bag-santa-cruz-deck",
-   "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
-  },
-  "Seasons Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
+  },
+  "Seasons Skate Shop": {
+   "state": "unchecked",
+   "price": "",
+   "url": "",
+   "title": "",
+   "error": "HTTPError"
   },
   "Manifest Skateshop": {
    "state": "unchecked",
@@ -603,10 +607,11 @@
    "error": "HTTPError"
   },
   "Embassy Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Proper Skate Shop": {
    "state": "not_listed",
@@ -615,10 +620,11 @@
    "title": ""
   },
   "Holistic Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Salty Peaks": {
    "state": "unchecked",
@@ -642,16 +648,18 @@
    "error": "HTTPError"
   },
   "Blue and Gold": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Faith Skate Supply": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Funwheels": {
    "state": "unchecked",
@@ -661,10 +669,11 @@
    "error": "HTTPError"
   },
   "Reset Mercantile": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "World Conspiracy": {
    "state": "unchecked",
@@ -701,17 +710,17 @@
    "title": ""
   },
   "Breakfree Skateshop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
-  },
-  "Brooklyn Projects": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
+  },
+  "Brooklyn Projects": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Everyday Skateshop": {
    "state": "unchecked",
@@ -721,18 +730,16 @@
    "error": "HTTPError"
   },
   "Goodtimes": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Hardline Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Inner City Skate (IDS)": {
    "state": "unchecked",
@@ -777,10 +784,11 @@
    "error": "HTTPError"
   },
   "Overload": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Pancho's": {
    "state": "unchecked",
@@ -1027,11 +1035,10 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Sartorius Sports": {
    "state": "unchecked",
@@ -1048,10 +1055,11 @@
    "error": "HTTPError"
   },
   "Sister Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Crushed Skate Shop": {
    "state": "unchecked",
@@ -1075,10 +1083,11 @@
    "error": "HTTPError"
   },
   "Anchors Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Necessary Skate Co": {
    "state": "unchecked",
@@ -1095,17 +1104,17 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
+  },
+  "Greater Miami Skateshop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
-  },
-  "Greater Miami Skateshop": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
@@ -1149,11 +1158,10 @@
    "error": "JSONDecodeError"
   },
   "Prestige Skateboards": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Fargo Skateboarding": {
    "state": "unchecked",
@@ -1170,11 +1178,10 @@
    "error": "JSONDecodeError"
   },
   "Blacklist Boardshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Killer Skatepark": {
    "state": "unchecked",
@@ -1218,17 +1225,17 @@
    "error": "HTTPError"
   },
   "Mocean": {
-   "state": "sold_out",
-   "price": "$139.95",
-   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
-   "title": "Santa Cruz X Pokémon TCG Blind Bag"
-  },
-  "Embark Skateshop": {
    "state": "unchecked",
    "price": "",
    "url": "",
    "title": "",
    "error": "HTTPError"
+  },
+  "Embark Skateshop": {
+   "state": "not_listed",
+   "price": "",
+   "url": "",
+   "title": ""
   },
   "Boarding House": {
    "state": "unchecked",
@@ -1308,10 +1315,11 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Change": {
    "state": "unchecked",
