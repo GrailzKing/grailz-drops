@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-25T20:33:40+00:00",
+ "checked_at": "2026-11-25T20:47:58+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -609,18 +609,16 @@
    "title": ""
   },
   "Proper Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Holistic Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Salty Peaks": {
    "state": "unchecked",
@@ -644,18 +642,16 @@
    "error": "HTTPError"
   },
   "Blue and Gold": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Faith Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Funwheels": {
    "state": "unchecked",
@@ -665,11 +661,10 @@
    "error": "HTTPError"
   },
   "Reset Mercantile": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "World Conspiracy": {
    "state": "unchecked",
@@ -700,18 +695,16 @@
    "error": "HTTPError"
   },
   "Boarders LA": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Breakfree Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Brooklyn Projects": {
    "state": "unchecked",
@@ -818,11 +811,10 @@
    "error": "HTTPError"
   },
   "Rip City Skates": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Rose Street Skateshop": {
    "state": "unchecked",
@@ -1035,10 +1027,11 @@
    "error": "HTTPError"
   },
   "Plush": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Sartorius Sports": {
    "state": "unchecked",
@@ -1082,11 +1075,10 @@
    "error": "HTTPError"
   },
   "Anchors Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Necessary Skate Co": {
    "state": "unchecked",
@@ -1123,11 +1115,10 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
@@ -1165,10 +1156,11 @@
    "error": "HTTPError"
   },
   "Fargo Skateboarding": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Starlight Skatepark": {
    "state": "unchecked",
@@ -1206,11 +1198,10 @@
    "error": "HTTPError"
   },
   "River Rat": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Thunderkats": {
    "state": "unchecked",
@@ -1227,11 +1218,10 @@
    "error": "HTTPError"
   },
   "Mocean": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$139.95",
+   "url": "https://moceanskateboards.com/products/santa-cruz-x-pokemon-tcg-blind-bag",
+   "title": "Santa Cruz X Pokémon TCG Blind Bag"
   },
   "Embark Skateshop": {
    "state": "unchecked",
@@ -1290,10 +1280,11 @@
    "error": "HTTPError"
   },
   "People Skate & Snowboard": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Anthem Skate Shop": {
    "state": "unchecked",
@@ -1317,11 +1308,10 @@
    "error": "HTTPError"
   },
   "After Hours Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Change": {
    "state": "unchecked",
