@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-26T04:55:35+00:00",
+ "checked_at": "2026-11-26T04:56:01+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1076,18 +1076,16 @@
    "error": "HTTPError"
   },
   "Waterboyz": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Greater Miami Skateshop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Ocala Skate Shop": {
    "state": "unchecked",
@@ -1097,11 +1095,10 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
