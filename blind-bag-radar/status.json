@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-26T07:18:52+00:00",
+ "checked_at": "2026-11-26T07:33:09+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -815,7 +815,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "JSONDecodeError"
+   "error": "HTTPError"
   },
   "Slappy's Garage": {
    "state": "unchecked",
@@ -891,7 +891,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "TimeoutError"
   },
   "CB Supply Co": {
    "state": "unchecked",
