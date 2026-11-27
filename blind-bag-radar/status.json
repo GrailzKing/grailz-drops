@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-27T21:50:32+00:00",
+ "checked_at": "2026-11-27T22:04:57+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -478,10 +478,11 @@
    "title": ""
   },
   "Stratosphere Skateboards": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "First Gear Skateshop": {
    "state": "unchecked",
@@ -491,10 +492,11 @@
    "error": "HTTPError"
   },
   "Warped Skateshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Studio Skate Supply": {
    "state": "unchecked",
