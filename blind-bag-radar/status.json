@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-27T00:05:17+00:00",
+ "checked_at": "2026-11-27T00:19:36+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -762,10 +762,11 @@
    "error": "HTTPError"
   },
   "Midnite Theories": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Overload": {
    "state": "unchecked",
