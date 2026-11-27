@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-27T03:40:33+00:00",
+ "checked_at": "2026-11-27T03:55:00+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -509,10 +509,11 @@
    "title": ""
   },
   "Pure Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Vu Skateboard Shop": {
    "state": "not_listed",
@@ -521,10 +522,11 @@
    "title": ""
   },
   "Eastern Boarder": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Orchard Skateshop": {
    "state": "not_listed",
@@ -578,25 +580,22 @@
    "title": ""
   },
   "Pro Skateboard Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Krudco": {
-   "state": "unchecked",
-   "price": "",
-   "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "state": "sold_out",
+   "price": "$140.00",
+   "url": "https://www.krudco.com/products/pokemon-tcg-blind-bag-santa-cruz-deck",
+   "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Manifest Skateshop": {
    "state": "unchecked",
@@ -1226,7 +1225,7 @@
    "price": "",
    "url": "",
    "title": "",
-   "error": "HTTPError"
+   "error": "URLError"
   },
   "Rukus": {
    "state": "unchecked",
