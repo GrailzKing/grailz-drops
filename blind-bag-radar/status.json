@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-28T08:22:58+00:00",
+ "checked_at": "2026-11-28T08:37:16+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -1095,11 +1095,10 @@
    "error": "HTTPError"
   },
   "Parkside Skate Shop": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Vinylyte Records & Skateshop": {
    "state": "unchecked",
