@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-28T01:41:32+00:00",
+ "checked_at": "2026-11-28T01:55:59+00:00",
  "shops": {
   "NHS Skate Direct (official Santa Cruz)": {
    "state": "sold_out",
@@ -53,10 +53,10 @@
    "title": ""
   },
   "Mainland Skate & Surf": {
-   "state": "not_listed",
-   "price": "",
-   "url": "",
-   "title": ""
+   "state": "in_stock",
+   "price": "$199.99",
+   "url": "https://mainlandskateandsurf.com/products/santa-cruz-skateboards-x-pokemon-tcg-blind-bag-skateboard-deck",
+   "title": "Santa Cruz Skateboards X Pokémon TCG Blind Bag Skateboard Deck"
   },
   "Coast Board Shop": {
    "state": "not_listed",
@@ -497,11 +497,10 @@
    "title": ""
   },
   "Studio Skate Supply": {
-   "state": "unchecked",
+   "state": "not_listed",
    "price": "",
    "url": "",
-   "title": "",
-   "error": "HTTPError"
+   "title": ""
   },
   "Home Skateshop": {
    "state": "not_listed",
@@ -591,10 +590,11 @@
    "title": "Pokémon TCG Blind Bag Santa Cruz Deck"
   },
   "Seasons Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Manifest Skateshop": {
    "state": "unchecked",
@@ -604,22 +604,25 @@
    "error": "HTTPError"
   },
   "Embassy Boardshop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Proper Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Holistic Skate Shop": {
-   "state": "not_listed",
+   "state": "unchecked",
    "price": "",
    "url": "",
-   "title": ""
+   "title": "",
+   "error": "HTTPError"
   },
   "Salty Peaks": {
    "state": "unchecked",
